@@ -1,0 +1,513 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\master master.lyx
+\maintain_unincluded_children false
+\language magyar
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\boxbgcolor #55aaff
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Mikrokanonikus sokaság
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Állapotok száma adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia alatt:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray}
+\text{Klasszikus rendszer: }\Omega_{0}(E) & = & \frac{1}{h^{N}}\underset{H(\mathbf{p},\mathbf{q})<E}{\int}\left(\mbox{d}p\mbox{d}q\right)^{N}\label{eq:klasszik-Omega-def}\\
+\text{Kvantumos rendszer: }\Omega_{0}(E) & = & \sum_{E_{n}<E}1=\sum_{n}\Theta\left(E-E_{N}\right)\label{eq:kvanum-Omega-def}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Weyl-szabály:
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+h=\mathrm{d}p\mathrm{d}q\label{eq:weyl-szabaly}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Egy darab, dobozba zárt, egy dimenziós részecske
+\end_layout
+
+\begin_layout Subsection
+Klasszikus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig/1D_doboz.svg
+	width 20col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Klasszikus dobozba zárt részecske fázistere
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}\left(E\right)=\underset{\frac{p^{2}}{2m}<E}{\int}\frac{\mathrm{d}p\mathrm{d}q}{h}=\frac{2a}{h}\sqrt{2mE}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kvantumos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+-\frac{\hbar^{2}}{2m}\partial_{x}^{2}\psi & = & E\psi\\
+\psi_{k}^{\infty}(x) & = & \mbox{e}^{\mbox{i}kx}\\
+E & = & \frac{\hbar^{2}k^{2}}{2m}\\
+k & = & \frac{\sqrt{2mE}}{\hbar}
+\end{eqnarray}
+
+\end_inset
+
+a) Zárt peremfeltétel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi\left(0\right)=\psi\left(a\right)=0
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig/1D_doboz_q_kter.svg
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kvantumos dobozba zárt részecske hullámszámtérben
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\psi_{k}^{\text{zárt}}\left(x\right)=\frac{\psi_{k}^{\infty}\left(x\right)-\psi_{-k}^{\infty}\left(x\right)}{2\mathrm{i}}=\sin\left(kx\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\psi(a) & = & 0\rightarrow k=\frac{n\pi}{a},\quad n=1,2,\dots n_{max}\\
+ &  & k_{max}=\frac{n_{max}\pi}{a}\\
+ &  & E_{max}=\frac{\hbar^{2}}{2m}\left(\frac{n_{max}\pi}{a}\right)^{2}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}\left(E\right)=\left[\frac{a}{\pi\hbar}\sqrt{2mE}\right]=\left[\frac{2a}{h}\sqrt{2mE}\right]
+\end{equation}
+
+\end_inset
+
+b) Periodikus peremfeltétel
+\begin_inset Formula 
+\begin{equation}
+\psi_{k}^{\text{periodikus}}\left(x\right)=\psi_{k}^{\infty}(x)=\mbox{e}^{\mbox{i}kx}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\psi\left(x+a\right) & = & \psi\left(x\right),\\
+ &  & \rightarrow\mbox{e}^{\mbox{i}kx}=\mbox{e}^{\mbox{i}kx+\mbox{i}ka}\\
+ &  & \rightarrow ka=2n\pi\\
+ &  & n=-n_{max}\dots0\dots n_{max}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}\left(E\right)=2\left[\frac{a}{2\pi}\frac{\sqrt{2mE}}{\hbar}\right]+1=2\left[\frac{a}{h}\sqrt{2mE}\right]+1
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/1d_doboz_Omega.png
+	lyxscale 40
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dobozba zárt részecske állapotainak száma
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1d-doboz-omega"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Rotátor
+\end_layout
+
+\begin_layout Standard
+A rotátor egy egy térbeli tömegpont melynek 
+\begin_inset Formula $r$
+\end_inset
+
+ távolsága a koordináta rendszer középpontjától időben állandó.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement l
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig/Spherical_coordinates.png
+	width 25col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rotátor és a gömbi koordináta rendszer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Klasszikus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+x & = & r\sin\vartheta\cos\varphi\nonumber \\
+y & = & r\sin\vartheta\sin\varphi\\
+z & = & r\cos\vartheta\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\dot{x} & = & r\left(\dot{\vartheta}\cos\vartheta\cos\varphi-\dot{\varphi}\sin\vartheta\sin\varphi\right)\nonumber \\
+\dot{y} & = & r\left(\dot{\vartheta}\cos\vartheta\sin\varphi+\dot{\varphi}\sin\vartheta\cos\varphi\right)\\
+\dot{z} & = & -r\dot{\vartheta}\sin\vartheta\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\dot{x}^{2} & = & r^{2}\left(\dot{\vartheta}^{2}\cos^{2}\vartheta\cos^{2}\varphi+\dot{\varphi}^{2}\sin^{2}\vartheta\sin^{2}\varphi-\frac{\dot{\vartheta}\dot{\varphi}\sin\left(2\vartheta\right)\sin\left(2\varphi\right)}{2}\right)\nonumber \\
+\dot{y}^{2} & = & r^{2}\left(\dot{\vartheta}^{2}\cos^{2}\vartheta\sin^{2}\varphi+\dot{\varphi}^{2}\sin^{2}\vartheta\cos^{2}\varphi+\frac{\dot{\vartheta}\dot{\varphi}\sin\left(2\vartheta\right)\sin\left(2\varphi\right)}{2}\right)\\
+\dot{z}^{2} & = & r^{2}\dot{\vartheta}^{2}\sin^{2}\vartheta\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)=r^{2}\left[\dot{\vartheta}^{2}\underbrace{\left(\cos^{2}\vartheta\cos^{2}\varphi+\cos^{2}\vartheta\sin^{2}\varphi+\sin^{2}\vartheta\right)}_{1}+\dot{\varphi}^{2}\overbrace{\left(\sin^{2}\vartheta\sin^{2}\varphi+\sin^{2}\vartheta\cos^{2}\varphi\right)}^{\sin^{2}\vartheta}\right]
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+E_{kin} & = & \frac{1}{2}m\left(\dot{x}^{2}+y^{2}+\dot{z}^{2}\right)\\
+ & = & \frac{1}{2}mr^{2}\left[\dot{\vartheta}^{2}+\dot{\varphi}^{2}\sin^{2}\vartheta\right]\\
+ & = & \frac{1}{2}\Theta\left[\dot{\vartheta}^{2}+\dot{\varphi}^{2}\sin^{2}\vartheta\right]
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}=E_{kin},\rightarrow p_{\vartheta}=\frac{\partial\mathcal{L}}{\partial\dot{\vartheta}}=\Theta\dot{\vartheta},\quad p_{\varphi}=\frac{\partial\mathcal{L}}{\partial\dot{\varphi}}=\Theta\sin^{2}\vartheta\dot{\varphi}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+H=E_{kin}=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kvantumos
+\end_layout
+
+\begin_layout Section
+Harmonikus oszcillátor
+\end_layout
+
+\end_body
+\end_document
