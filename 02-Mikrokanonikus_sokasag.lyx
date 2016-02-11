@@ -72,7 +72,7 @@
 \begin_body
 
 \begin_layout Part
-Mikrokanonikus sokaság
+Állapot számolás
 \end_layout
 
 \begin_layout Standard
@@ -285,7 +285,7 @@ Kvantumos dobozba zárt részecske hullámszámtérben
 
 \begin_inset Formula 
 \begin{equation}
-\Omega_{0}\left(E\right)=\left[\frac{a}{\pi\hbar}\sqrt{2mE}\right]=\left[\frac{2a}{h}\sqrt{2mE}\right]
+\Omega_{0}\left(E\right)=\left\lfloor \frac{a}{\pi\hbar}\sqrt{2mE}\right\rfloor =\left\lfloor \frac{2a}{h}\sqrt{2mE}\right\rfloor 
 \end{equation}
 
 \end_inset
@@ -312,7 +312,7 @@ b) Periodikus peremfeltétel
 
 \begin_inset Formula 
 \begin{equation}
-\Omega_{0}\left(E\right)=2\left[\frac{a}{2\pi}\frac{\sqrt{2mE}}{\hbar}\right]+1=2\left[\frac{a}{h}\sqrt{2mE}\right]+1
+\Omega_{0}\left(E\right)=2\left\lfloor \frac{a}{2\pi}\frac{\sqrt{2mE}}{\hbar}\right\rfloor +1=2\left\lfloor \frac{a}{h}\sqrt{2mE}\right\rfloor +1
 \end{equation}
 
 \end_inset
@@ -373,10 +373,14 @@ A rotátor egy egy térbeli tömegpont melynek
  
 \end_layout
 
+\begin_layout Subsection
+Klasszikus
+\end_layout
+
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
-placement l
+placement o
 overhang 0in
 width "30col%"
 status collapsed
@@ -405,17 +409,23 @@ Rotátor és a gömbi koordináta rendszer
 
 \end_layout
 
-\begin_layout Subsection
-Klasszikus
-\end_layout
-
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray}
-x & = & r\sin\vartheta\cos\varphi\nonumber \\
-y & = & r\sin\vartheta\sin\varphi\\
-z & = & r\cos\vartheta\nonumber 
-\end{eqnarray}
+\begin{equation}
+\vec{r}=\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=r\left(\begin{array}{c}
+\sin\vartheta\cos\varphi\\
+\sin\vartheta\sin\varphi\\
+\cos\vartheta
+\end{array}\right),\quad\dot{\vec{r}}=r\left(\begin{array}{c}
+\dot{\vartheta}\cos\vartheta\cos\varphi-\dot{\varphi}\sin\vartheta\sin\varphi\\
+\dot{\vartheta}\cos\vartheta\sin\varphi+\dot{\varphi}\sin\vartheta\cos\varphi\\
+-r\dot{\vartheta}\sin\vartheta
+\end{array}\right)
+\end{equation}
 
 \end_inset
 
@@ -423,16 +433,6 @@ z & = & r\cos\vartheta\nonumber
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray}
-\dot{x} & = & r\left(\dot{\vartheta}\cos\vartheta\cos\varphi-\dot{\varphi}\sin\vartheta\sin\varphi\right)\nonumber \\
-\dot{y} & = & r\left(\dot{\vartheta}\cos\vartheta\sin\varphi+\dot{\varphi}\sin\vartheta\cos\varphi\right)\\
-\dot{z} & = & -r\dot{\vartheta}\sin\vartheta\nonumber 
-\end{eqnarray}
-
-\end_inset
-
-
 \begin_inset Formula 
 \begin{eqnarray}
 \dot{x}^{2} & = & r^{2}\left(\dot{\vartheta}^{2}\cos^{2}\vartheta\cos^{2}\varphi+\dot{\varphi}^{2}\sin^{2}\vartheta\sin^{2}\varphi-\frac{\dot{\vartheta}\dot{\varphi}\sin\left(2\vartheta\right)\sin\left(2\varphi\right)}{2}\right)\nonumber \\
@@ -499,14 +499,120 @@ H=E_{kin}=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{
 \end_inset
 
 
+\begin_inset Formula 
+\begin{eqnarray}
+\Omega_{0}(E) & = & \frac{1}{h}\int_{H<E}\mathrm{d}\vartheta\mathrm{d}\varphi\mathrm{d}p_{\vartheta}\mathrm{d}p_{\varphi}\\
+ & = & \frac{1}{h}\sqrt{2E\Theta}\sqrt{2E\Theta}\underbrace{\int_{0}^{2\pi}\int_{0}^{\pi}\sin\vartheta\mathrm{d}\vartheta\mathrm{d}\varphi}_{\text{"térszög"}=4\pi}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=\frac{E\Theta}{\hbar}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Kvantumos
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{H}=\frac{\hat{L}^{2}}{2\Theta}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+E_{l}=\frac{l(l+1)}{2\Theta}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=\sum_{l=0}^{l_{max}}\left(2l+1\right)=(l_{max}+1)^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Harmonikus oszcillátor
+\end_layout
+
+\begin_layout Subsection
+Klasszikus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}q^{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=\frac{1}{h}\int_{H<E}\mathrm{d}p\mathrm{d}q=\frac{1}{h}\sqrt{2mE}\sqrt{\frac{2E}{m\omega^{2}}}\pi
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=\frac{E}{\hbar\omega}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kvantumos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{n}=\hbar\omega\left(n+\frac{1}{2}\right),\quad n=0,1,2\dots
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+n_{max}=\left\lfloor \frac{E}{\hbar\omega}-\frac{1}{2}\right\rfloor 
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\Omega_{0} & (E)= & \left\lfloor \frac{E}{\hbar\omega}-\frac{1}{2}\right\rfloor +1
+\end{eqnarray}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
