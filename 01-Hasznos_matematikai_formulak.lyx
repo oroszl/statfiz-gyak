@@ -1445,10 +1445,10 @@ b
 \sigma_{x}=\left(\begin{array}{cc}
 0 & 1\\
 1 & 0
-\end{array}\right),\quad\sigma_{x}=\left(\begin{array}{cc}
+\end{array}\right),\quad\sigma_{y}=\left(\begin{array}{cc}
 0 & -\mathrm{i}\\
 \mathrm{i} & 0
-\end{array}\right),\quad\sigma_{x}=\left(\begin{array}{cc}
+\end{array}\right),\quad\sigma_{z}=\left(\begin{array}{cc}
 1 & 0\\
 0 & -1
 \end{array}\right)
@@ -1462,6 +1462,26 @@ b
 \sigma_{0}=\left(\begin{array}{cc}
 1 & 0\\
 0 & 1
+\end{array}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\sigma_{i}\sigma_{j}=\mathrm{i}\varepsilon_{ijk}\sigma_{k}+\delta_{ij}\sigma_{0}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{\sigma}=\left(\begin{array}{c}
+\sigma_{x}\\
+\sigma_{y}\\
+\sigma_{z}
 \end{array}\right)
 \end{equation}
 
