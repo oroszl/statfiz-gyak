@@ -1440,6 +1440,20 @@ b
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \sigma_{x}=\left(\begin{array}{cc}
@@ -1468,9 +1482,14 @@ b
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
-\sigma_{i}\sigma_{j}=\mathrm{i}\varepsilon_{ijk}\sigma_{k}+\delta_{ij}\sigma_{0}
+\sigma_{i}\sigma_{j}=\mathrm{i}\varepsilon_{ijk}\sigma_{k}+\delta_{ij}\sigma_{0}\label{eq:pauli-szorzat-szabaly}
 \end{equation}
 
 \end_inset
@@ -1483,6 +1502,176 @@ b
 \sigma_{y}\\
 \sigma_{z}
 \end{array}\right)
+\end{equation}
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula 
+\begin{equation}
+\left(\vec{a}\cdot\vec{\sigma}\right)\left(\vec{b}\cdot\vec{\sigma}\right)=\left(\vec{a}\cdot\vec{b}\right)\sigma_{0}+\mathrm{i}\left(\vec{a}\times\vec{b}\right)\cdot\vec{\sigma}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\right)=0
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\sigma_{i}\right)=a_{i}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\det\left(\vec{a}\cdot\vec{\sigma}\right)=-\vec{a}\cdot\vec{a}=-a^{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+a=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}
+\end{equation}
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang magyar
+
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}=d_{0}\sigma_{0}+d_{x}\sigma_{x}+d_{y}\sigma_{y}+d_{z}\sigma_{z}\\
+ & =\left(\begin{array}{cc}
+d_{0}+d_{z} & d_{x}-\mathrm{i}d_{y}\\
+d_{x}+\mathrm{i}d_{y} & d_{0}-d_{z}
+\end{array}\right)
+\end{align}
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\hat{\rho}=1\rightarrow d_{0}=\frac{1}{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+\mathrm{Tr}\hat{\rho}^{2} & =\mathrm{Tr}\left(\left(d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}\right)\left(d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}\right)\right)\\
+ & =\mathrm{Tr}\left(\left(d_{0}^{2}+d^{2}\right)\sigma_{0}\right)=2\left(d_{0}^{2}+d^{2}\right)
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\hat{\rho}^{2}\le1\rightarrow d\le\frac{1}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Példák
+\end_layout
+
+\begin_layout Standard
+Tiszta állapot
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left|\varphi\right\rangle =\cos\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle +\mathrm{e}^{\mathrm{i}\phi}\sin\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =\left|\varphi\right\rangle \left\langle \varphi\right|=\cos^{2}\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle \left\langle \uparrow\right|+\mathrm{e}^{-\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\uparrow\right\rangle \left\langle \downarrow\right|+\mathrm{e}^{\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\downarrow\right\rangle \left\langle \uparrow\right|+\sin^{2}\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle \left\langle \downarrow\right|\\
+ & =\left(\begin{array}{cc}
+\cos^{2}\left(\frac{\theta}{2}\right) & \mathrm{e}^{-\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\\
+\mathrm{e}^{\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2} & \sin^{2}\left(\frac{\theta}{2}\right)
+\end{array}\right)=\frac{1}{2}\left(\begin{array}{cc}
+1+\cos^{2}\left(\theta\right) & \mathrm{e}^{-\mathrm{i}\phi}\sin\left(\theta\right)\\
+\mathrm{e}^{\mathrm{i}\phi}\sin\left(\theta\right) & 1-\cos^{2}\left(\theta\right)
+\end{array}\right)\\
+ & =\frac{1}{2}\left(\sigma_{0}+\cos^{2}\left(\theta\right)\sigma_{z}+\sin^{2}\left(\theta\right)\cos\left(\phi\right)\sigma_{x}+\sin^{2}\left(\theta\right)\sin\left(\phi\right)\sigma_{y}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\hat{\rho}=1
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\hat{\rho}^{2}=
 \end{equation}
 
 \end_inset
