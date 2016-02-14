@@ -289,7 +289,7 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1351,26 +1351,30 @@ A
 \end_layout
 
 \begin_layout Standard
+Kvantumos rendszerek statisztikus vizsgálatában kulcs szerep jut a 
+\begin_inset Formula $\hat{\rho}$
+\end_inset
+
+ sűrűségmátrixnak:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\hat{\rho} & =\sum_{\alpha}w_{\alpha}\left|\alpha\right\rangle \left\langle \alpha\right|
+\hat{\rho} & =\sum_{\alpha}w_{\alpha}\left|\alpha\right\rangle \left\langle \alpha\right|,
 \end{align}
 
 \end_inset
 
-Feltesszük hogy a bázis teljes ortonormált rendszert alkot:
-\begin_inset Formula 
-\begin{equation}
-\left\langle \beta\right.\left|\alpha\right\rangle =\delta_{\alpha,\beta}.
-\end{equation}
-
+ahol 
+\begin_inset Formula $\left|\alpha\right\rangle $
 \end_inset
 
-és természetesen a 
+ a rendszer valamely tiszta állapotát jelöli és a 
 \begin_inset Formula $w_{\alpha}>0$
 \end_inset
 
- súlyok összege egységnyi: 
+ valószínűségi súlyok összege egységnyi: 
 \begin_inset Formula 
 \begin{equation}
 \sum_{\alpha}w_{\alpha}=1.
@@ -1381,9 +1385,9 @@ Feltesszük hogy a bázis teljes ortonormált rendszert alkot:
 Ezekből 
 \begin_inset Formula 
 \begin{align}
-\hat{\rho} & =\hat{\rho}^{\dagger},\\
-\mathrm{Tr}\hat{\rho} & =1,\\
-\mathrm{Tr}\hat{\rho}^{2} & \le1.
+\hat{\rho} & =\hat{\rho}^{\dagger},\label{eq:suruseg-hermitikus}\\
+\mathrm{Tr}\hat{\rho} & =1,\label{eq:suruseg-trace-1}\\
+\mathrm{Tr}\hat{\rho}^{2} & \le1.\label{eq:suruseg2-trace-le-1}
 \end{align}
 
 \end_inset
@@ -1404,6 +1408,17 @@ Két állapotú kvantum rendszerek
 \end_layout
 
 \begin_layout Standard
+A legegyszerűbb nem triviális kvantum rendszer két állapottal bír.
+ Gondoljunk egy magányos elektron spin szabadsági fokára! Ebben az esetben
+ a két dimenziós Hilbert-teret kifeszítő bázisvektorok választhatóak például
+ a spin 
+\begin_inset Formula $z$
+\end_inset
+
+ komponensének sajátvektorjaiként:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \left|\uparrow\right\rangle =\left(\begin{array}{c}
@@ -1412,31 +1427,43 @@ Két állapotú kvantum rendszerek
 \end{array}\right),\quad\left|\downarrow\right\rangle =\left(\begin{array}{c}
 0\\
 1
-\end{array}\right)
+\end{array}\right).
 \end{equation}
 
 \end_inset
 
-
+Egy általános tiszta állapot ezek lineár kombinációjaként áll elő:
 \begin_inset Formula 
 \begin{equation}
 \left|\varphi\right\rangle =a\left|\uparrow\right\rangle +b\left|\downarrow\right\rangle =\left(\begin{array}{c}
 a\\
 b
-\end{array}\right)
+\end{array}\right).
 \end{equation}
 
 \end_inset
 
-
+Az állapotok normáltsága megszorítja a két kifejtési együtthatót:
 \begin_inset Formula 
 \begin{equation}
-\left\langle \varphi\right.\left|\varphi\right\rangle =1,\rightarrow aa^{*}+bb^{*}=1
+\left\langle \varphi\right.\left|\varphi\right\rangle =1,\rightarrow aa^{*}+bb^{*}=1.
 \end{equation}
 
 \end_inset
 
+Ezen a Hilbert-téren ható hermitikus operátorok, mint például a 
+\begin_inset Formula $\hat{\rho}$
+\end_inset
 
+ sűrűségmátrix, a Pauli-mátrixok 
+\begin_inset Formula $\sigma_{x,y,z}$
+\end_inset
+
+ és az egység mátrix 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ segítségével.
 \end_layout
 
 \begin_layout Standard
@@ -1454,6 +1481,11 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
+
+\series bold
+Pauli-mátrixok:
+\series default
+
 \begin_inset Formula 
 \begin{equation}
 \sigma_{x}=\left(\begin{array}{cc}
@@ -1471,6 +1503,14 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Identitás:
+\series default
+
 \begin_inset Formula 
 \begin{equation}
 \sigma_{0}=\left(\begin{array}{cc}
@@ -1486,15 +1526,25 @@ status open
 
 \end_inset
 
+A teljesség igénye nélkül tekintsünk át néhány a Pauli-mátrixokra vonatkozó
+ hasznos azonosságot! A Pauli-mátrixok négyzete az egység, illetve két Pauli-mát
+rix szorzata a harmadik mátrixszal arányos (sorrendtől függően
+\begin_inset Formula $\pm\mathrm{i}$
+\end_inset
 
+ faktorral): 
 \begin_inset Formula 
 \begin{equation}
-\sigma_{i}\sigma_{j}=\mathrm{i}\varepsilon_{ijk}\sigma_{k}+\delta_{ij}\sigma_{0}\label{eq:pauli-szorzat-szabaly}
+\sigma_{i}\sigma_{j}=\mathrm{i}\varepsilon_{ijk}\sigma_{k}+\delta_{ij}\sigma_{0}.\label{eq:pauli-szorzat-szabaly}
 \end{equation}
 
 \end_inset
 
+Vezessük be a Pauli-mátrixokból alkotott 
+\begin_inset Formula $\vec{\sigma}$
+\end_inset
 
+ vektort: 
 \begin_inset Formula 
 \begin{equation}
 \vec{\sigma}=\left(\begin{array}{c}
@@ -1506,73 +1556,63 @@ status open
 
 \end_inset
 
+A 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pauli-szorzat-szabaly"
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
+\end_inset
 
+ szorzat szabályokból következik hogy: 
+\begin_inset Formula 
+\begin{align}
+\left(\vec{a}\cdot\vec{\sigma}\right)\left(\vec{b}\cdot\vec{\sigma}\right) & =a_{p}\sigma_{p}b_{q}\sigma_{q}\\
+ & =\mathrm{i}\varepsilon_{pqk}a_{p}b_{q}\sigma_{k}+\delta_{pq}a_{p}b_{q}\sigma_{0}\\
+ & =\left(\vec{a}\cdot\vec{b}\right)\sigma_{0}+\mathrm{i}\left(\vec{a}\times\vec{b}\right)\cdot\vec{\sigma}
+\end{align}
+
+\end_inset
+
+Mivel a Pauli-mátrixok nyoma eltűnik ezért tetszőleges lineár kombinációik
+ nyoma is eltűnik: 
 \begin_inset Formula 
 \begin{equation}
-\left(\vec{a}\cdot\vec{\sigma}\right)\left(\vec{b}\cdot\vec{\sigma}\right)=\left(\vec{a}\cdot\vec{b}\right)\sigma_{0}+\mathrm{i}\left(\vec{a}\times\vec{b}\right)\cdot\vec{\sigma}
+\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\right)=0.
 \end{equation}
 
 \end_inset
 
-
+Szintén a szorzat szabályok és a nyomtalanság következménye hogy
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\right)=0
+\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\sigma_{i}\right)=a_{i}.
 \end{equation}
 
 \end_inset
 
-
+Pauli-mátrixok lineárkombinációjának determinánsa az együttható vektor hosszának
+ négyzetével arányos: 
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\sigma_{i}\right)=a_{i}
+\det\left(\vec{a}\cdot\vec{\sigma}\right)=-\vec{a}\cdot\vec{a}=-a^{2},
 \end{equation}
 
 \end_inset
 
-
+ahol
 \begin_inset Formula 
 \begin{equation}
-\det\left(\vec{a}\cdot\vec{\sigma}\right)=-\vec{a}\cdot\vec{a}=-a^{2}
+a=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}.
 \end{equation}
 
 \end_inset
 
-
-\begin_inset Formula 
-\begin{equation}
-a=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}
-\end{equation}
-
+Vizsgáljuk meg hogy egy általános 
+\begin_inset Formula $2\times2$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang magyar
-
+-es hermitikus mátrix mikor lehet egy rendszer sűrűség mátrixa! Induljunk
+ a legáltalánosabb alakból: 
 \begin_inset Formula 
 \begin{align}
 \hat{\rho} & =d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}=d_{0}\sigma_{0}+d_{x}\sigma_{x}+d_{y}\sigma_{y}+d_{z}\sigma_{z}\\
@@ -1584,41 +1624,92 @@ d_{x}+\mathrm{i}d_{y} & d_{0}-d_{z}
 
 \end_inset
 
+Mivel a Pauli-mátrixok nyoma zérus, ezért 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
+ együtthatóját 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:suruseg-trace-1"
 
+\end_inset
+
+ egyértelműen meghatározza: 
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Tr}\hat{\rho}=1\rightarrow d_{0}=\frac{1}{2}
+\mathrm{Tr}\hat{\rho}=1\rightarrow d_{0}=\frac{1}{2}.
 \end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+A 
+\begin_inset Formula $\hat{\rho}^{2}$
+\end_inset
+
+-re vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:suruseg2-trace-le-1"
+
+\end_inset
+
+ kritérium a 
+\begin_inset Formula $\vec{d}$
+\end_inset
+
+ vektor hosszára ró megszorítást:
 \begin_inset Formula 
 \begin{align}
 \mathrm{Tr}\hat{\rho}^{2} & =\mathrm{Tr}\left(\left(d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}\right)\left(d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}\right)\right)\\
- & =\mathrm{Tr}\left(\left(d_{0}^{2}+d^{2}\right)\sigma_{0}\right)=2\left(d_{0}^{2}+d^{2}\right)
+ & =\mathrm{Tr}\left(\left(d_{0}^{2}+d^{2}\right)\sigma_{0}\right)=2\left(d_{0}^{2}+d^{2}\right).
 \end{align}
 
 \end_inset
 
 
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Tr}\hat{\rho}^{2}\le1\rightarrow d\le\frac{1}{2}
+\mathrm{Tr}\hat{\rho}^{2}\le1\rightarrow0\le d\le\frac{1}{2}.
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1629,14 +1720,68 @@ d_{x}+\mathrm{i}d_{y} & d_{0}-d_{z}
 Példák
 \end_layout
 
+\begin_layout Subsubsection*
+a) Tiszta állapot:
+\end_layout
+
 \begin_layout Standard
-Tiszta állapot
+A kétállapotú kvantumrendszer egy tetszőleges állapotát szokás a Bloch-gömb
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ és 
+\begin_inset Formula $\phi$
+\end_inset
+
+ szögeivel paraméterezni:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left|\varphi\right\rangle =\cos\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle +\mathrm{e}^{\mathrm{i}\phi}\sin\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle 
+\left|\varphi\right\rangle =\cos\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle +\mathrm{e}^{\mathrm{i}\phi}\sin\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle .
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Bloch_Sphere.svg
+	width 20col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A Bloch-gömb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Számítsuk ki ebben a tiszta állapotban a sűrűség mátrixot:
+\begin_inset Formula 
+\begin{equation}
+\hat{\rho}=\left|\varphi\right\rangle \left\langle \varphi\right|
 \end{equation}
 
 \end_inset
@@ -1644,35 +1789,202 @@ Tiszta állapot
 
 \begin_inset Formula 
 \begin{align}
-\hat{\rho} & =\left|\varphi\right\rangle \left\langle \varphi\right|=\cos^{2}\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle \left\langle \uparrow\right|+\mathrm{e}^{-\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\uparrow\right\rangle \left\langle \downarrow\right|+\mathrm{e}^{\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\downarrow\right\rangle \left\langle \uparrow\right|+\sin^{2}\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle \left\langle \downarrow\right|\\
- & =\left(\begin{array}{cc}
+\hat{\rho} & =\cos^{2}\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle \left\langle \uparrow\right|+\mathrm{e}^{-\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\uparrow\right\rangle \left\langle \downarrow\right|\\
+ & +\mathrm{e}^{\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\downarrow\right\rangle \left\langle \uparrow\right|+\sin^{2}\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle \left\langle \downarrow\right|
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\hat{\rho} & = & \left(\begin{array}{cc}
 \cos^{2}\left(\frac{\theta}{2}\right) & \mathrm{e}^{-\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\\
 \mathrm{e}^{\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2} & \sin^{2}\left(\frac{\theta}{2}\right)
 \end{array}\right)=\frac{1}{2}\left(\begin{array}{cc}
-1+\cos^{2}\left(\theta\right) & \mathrm{e}^{-\mathrm{i}\phi}\sin\left(\theta\right)\\
-\mathrm{e}^{\mathrm{i}\phi}\sin\left(\theta\right) & 1-\cos^{2}\left(\theta\right)
-\end{array}\right)\\
- & =\frac{1}{2}\left(\sigma_{0}+\cos^{2}\left(\theta\right)\sigma_{z}+\sin^{2}\left(\theta\right)\cos\left(\phi\right)\sigma_{x}+\sin^{2}\left(\theta\right)\sin\left(\phi\right)\sigma_{y}\right)
-\end{align}
+1+\cos\left(\theta\right) & \mathrm{e}^{-\mathrm{i}\phi}\sin\left(\theta\right)\\
+\mathrm{e}^{\mathrm{i}\phi}\sin\left(\theta\right) & 1-\cos\left(\theta\right)
+\end{array}\right)
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\hat{\rho}=\frac{1}{2}\left(\sigma_{0}+\sin\left(\theta\right)\cos\left(\phi\right)\sigma_{x}+\sin\left(\theta\right)\sin\left(\phi\right)\sigma_{y}+\cos\left(\theta\right)\sigma_{z}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+d=\frac{1}{2}\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=1
+\end{equation}
 
 \end_inset
 
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+b) Teljesen kevert állapot:
+\end_layout
+
 \begin_layout Standard
+Határozzuk meg a 
+\begin_inset Formula $\left|\uparrow\right\rangle $
+\end_inset
+
+ és 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ állapotok 
+\begin_inset Formula $1/2$
+\end_inset
+
+ valószínűséggel vett statisztikus keverékének sűrűség mátrixát: 
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =\frac{\left|\uparrow\right\rangle \left\langle \uparrow\right|+\left|\downarrow\right\rangle \left\langle \downarrow\right|}{2},\\
+ & =\frac{1}{2}\left(\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right)=\frac{\sigma_{0}}{2}.
+\end{align}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Tr}\hat{\rho}=1
+d=0\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=\frac{1}{2}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+c) Részlegesen kevert állapot
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg a 
+\begin_inset Formula $\left|\uparrow\right\rangle $
+\end_inset
+
+ és 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ állapotok 
+\begin_inset Formula $p$
+\end_inset
+
+ valószínűséggel vett statisztikus keverékének sűrűség mátrixát:
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =p\left|\uparrow\right\rangle \left\langle \uparrow\right|+(1-p)\left|\downarrow\right\rangle \left\langle \downarrow\right|\\
+ & =\left(\begin{array}{cc}
+p & 0\\
+0 & 1-p
+\end{array}\right)=\frac{\sigma_{0}}{2}+\left(p-\frac{1}{2}\right)\sigma_{z}
+\end{align}
 
 \end_inset
 
 
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Tr}\hat{\rho}^{2}=
+d=\left(p-\frac{1}{2}\right)\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=\frac{1}{2}+\left(p-\frac{1}{2}\right)^{2}
 \end{equation}
+
+\end_inset
+
+
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+HF-02:
+\series default
+ Tekintsük egy két állapotú rendszer két (
+\begin_inset Formula $\left|\alpha\right\rangle $
+\end_inset
+
+ és 
+\begin_inset Formula $\left|\beta\right\rangle $
+\end_inset
+
+) nem ortogonális állapotából (
+\begin_inset Formula $\left\langle \alpha\right.\left|\beta\right\rangle =x$
+\end_inset
+
+) 
+\begin_inset Formula $p$
+\end_inset
+
+ valószínűséggel kevert állapotot.
+ Határozzuk meg 
+\begin_inset Formula $\mathrm{Tr}\hat{\rho}^{2}$
+\end_inset
+
+-t !
+\end_layout
 
 \end_inset
 

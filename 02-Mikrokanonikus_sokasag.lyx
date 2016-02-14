@@ -114,7 +114,43 @@ status open
 \begin_layout Plain Layout
 
 \series bold
-Weyl-szabály:
+Állapotok száma 
+\begin_inset Formula $E$
+\end_inset
+
+ és 
+\begin_inset Formula $E+\delta E$
+\end_inset
+
+ között:
+\begin_inset Formula 
+\begin{equation}
+\Omega(E,\delta E)=\Omega_{0}(E+\delta E)-\Omega_{0}(E)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Állapotsűrűség:
+\begin_inset Formula 
+\begin{equation}
+\omega\left(E\right)=\frac{\mathrm{d}\Omega_{0}}{\mathrm{d}E}=\lim_{\delta E\rightarrow0}\frac{\Omega(E,\delta E)}{\delta E}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Fázis térfogat elem szabály:
 \end_layout
 
 \begin_layout Plain Layout
@@ -132,7 +168,9 @@ h=\mathrm{d}p\mathrm{d}q\label{eq:weyl-szabaly}
 
 \end_inset
 
-
+Az alábbiakban három egyszerűen számítható rendszer állapotainak számát
+ határozzuk meg klasszikus és kvantumos módszerekkel.
+ 
 \end_layout
 
 \begin_layout Section
@@ -144,6 +182,27 @@ Klasszikus
 \end_layout
 
 \begin_layout Standard
+A Hamilton-függvény csak a kinetikus energiából származó tagot tartalmazza:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\frac{p^{2}}{2m}.
+\end{equation}
+
+\end_inset
+
+Egy adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia alatti állapotok a fázis térben egy ellipszist jelölnek ki, melynek
+ felülete adja 
+\begin_inset Formula $\Omega_{0}$
+\end_inset
+
+-t:
 \begin_inset Wrap figure
 lines 0
 placement o
@@ -173,10 +232,6 @@ Klasszikus dobozba zárt részecske fázistere
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -185,31 +240,7 @@ Klasszikus dobozba zárt részecske fázistere
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H=\frac{p^{2}}{2m}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-\begin_inset Formula 
-\begin{equation}
-\Omega_{0}\left(E\right)=\underset{H<E}{\int}\frac{\mathrm{d}p\mathrm{d}q}{h}=\frac{2a}{h}\sqrt{2mE}
+\Omega_{0}\left(E\right)=\underset{H<E}{\int}\frac{\mathrm{d}p\mathrm{d}q}{h}=\frac{2a}{h}\sqrt{2mE}.
 \end{equation}
 
 \end_inset
@@ -222,23 +253,34 @@ Kvantumos
 \end_layout
 
 \begin_layout Standard
+A kvantummechanikai leírás a Schrödinger-egyenlet megoldásával kezdődik.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
--\frac{\hbar^{2}}{2m}\partial_{x}^{2}\psi & = & E\psi\\
-\psi_{k}^{\infty}(x) & = & \mbox{e}^{\mbox{i}kx}\\
-E & = & \frac{\hbar^{2}k^{2}}{2m}\\
-k & = & \frac{\sqrt{2mE}}{\hbar}
+-\frac{\hbar^{2}}{2m}\partial_{x}^{2}\psi & = & E\psi,\\
+\psi_{k}^{\infty}(x) & = & \mbox{e}^{\mbox{i}kx},\\
+E & = & \frac{\hbar^{2}k^{2}}{2m},\\
+k & = & \frac{\sqrt{2mE}}{\hbar}.
 \end{eqnarray}
 
 \end_inset
 
+Itt feltettük hogy egy végtelen rendszert vizsgálunk.
+ A véges rendszer állapotait illetve spektrumát a végtelen rendszerből a
+ megfelelő peremfeltételek kirovásával és azok teljesítésével kapjuk.
+ Vizsgáljuk meg a két leggyakrabban tárgyalt peremfeltételt!
+\end_layout
+
+\begin_layout Subsubsection*
 a) Zárt peremfeltétel
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\psi\left(0\right)=\psi\left(a\right)=0
+\psi\left(0\right)=\psi\left(a\right)=0.
 \end{equation}
 
 \end_inset
@@ -276,6 +318,23 @@ Kvantumos dobozba zárt részecske hullámszámtérben
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energián a zárt peremfeltételt teljesítő hullámfüggvényt előáll mint a
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ és a 
+\begin_inset Formula $-k$
+\end_inset
+
+ hullámszámokhoz tatozó hullámfüggvények lineárkombinációja: 
 \begin_inset Formula 
 \begin{equation}
 \psi_{k}^{\text{zárt}}\left(x\right)=\frac{\psi_{k}^{\infty}\left(x\right)-\psi_{-k}^{\infty}\left(x\right)}{2\mathrm{i}}=\sin\left(kx\right)
@@ -283,17 +342,25 @@ Kvantumos dobozba zárt részecske hullámszámtérben
 
 \end_inset
 
+A peremfeltétel megköti a 
+\begin_inset Formula $k$
+\end_inset
 
+ hullámszám lehetséges értékét:
 \begin_inset Formula 
 \begin{eqnarray}
-\psi(a) & = & 0\rightarrow k=\frac{n\pi}{a},\quad n=1,2,\dots n_{max}\\
- &  & k_{max}=\frac{n_{max}\pi}{a}\\
- &  & E_{max}=\frac{\hbar^{2}}{2m}\left(\frac{n_{max}\pi}{a}\right)^{2}
+\psi(a) & = & 0\rightarrow k=\frac{n\pi}{a},\quad n=1,2,\dots n_{max},\\
+ &  & k_{max}=\frac{n_{max}\pi}{a},\\
+ &  & E_{max}=\frac{\hbar^{2}}{2m}\left(\frac{n_{max}\pi}{a}\right)^{2}.
 \end{eqnarray}
 
 \end_inset
 
+Adott 
+\begin_inset Formula $E$
+\end_inset
 
+energia alatt lévő állapotok száma tehát
 \begin_inset Formula 
 \begin{equation}
 \Omega_{0}\left(E\right)=\left\lfloor \frac{a}{\pi\hbar}\sqrt{2mE}\right\rfloor =\left\lfloor \frac{2a}{h}\sqrt{2mE}\right\rfloor 
@@ -310,50 +377,19 @@ ahol bevezettük a
 \end_inset
 
  valós szám egész részére.
- 
-\end_layout
-
-\begin_layout Standard
-b) Periodikus peremfeltétel
-\begin_inset Formula 
-\begin{equation}
-\psi_{k}^{\text{periodikus}}\left(x\right)=\psi_{k}^{\infty}(x)=\mbox{e}^{\mbox{i}kx}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray}
-\psi\left(x+a\right) & = & \psi\left(x\right),\\
- &  & \rightarrow\mbox{e}^{\mbox{i}kx}=\mbox{e}^{\mbox{i}kx+\mbox{i}ka}\\
- &  & \rightarrow ka=2n\pi\\
- &  & n=-n_{max}\dots0\dots n_{max}
-\end{eqnarray}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-\Omega_{0}\left(E\right)=2\left\lfloor \frac{a}{2\pi}\frac{\sqrt{2mE}}{\hbar}\right\rfloor +1=2\left\lfloor \frac{a}{h}\sqrt{2mE}\right\rfloor +1
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Fig/1d_doboz_Omega.png
 	lyxscale 40
-	width 50text%
+	width 30text%
 
 \end_inset
 
@@ -384,21 +420,61 @@ name "fig:1d-doboz-omega"
 
 \end_layout
 
-\begin_layout Section
-Rotátor
+\begin_layout Subsubsection*
+b) Periodikus peremfeltétel
 \end_layout
 
 \begin_layout Standard
-A rotátor egy egy térbeli tömegpont melynek 
-\begin_inset Formula $r$
+Ha periodikus peremfeltétellel élünk akkor a végtelen rendszer síkhullám
+ megoldásai megfelelő 
+\begin_inset Formula $k$
 \end_inset
 
- távolsága a koordináta rendszer középpontjától időben állandó.
+ hullámszámok mellett már kielégítő megoldásai a Schrödinger egyenletnek:
  
+\begin_inset Formula 
+\begin{equation}
+\psi_{k}^{\text{periodikus}}\left(x\right)=\psi_{k}^{\infty}(x)=\mbox{e}^{\mbox{i}kx},
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\psi\left(x+a\right) & = & \psi\left(x\right),\\
+ &  & \rightarrow\mbox{e}^{\mbox{i}kx}=\mbox{e}^{\mbox{i}kx+\mbox{i}ka}\\
+ &  & \rightarrow ka=2n\pi\\
+ &  & n=-n_{max}\dots0\dots n_{max}
+\end{eqnarray}
+
+\end_inset
+
+Adott 
+\begin_inset Formula $E$
+\end_inset
+
+energia alatt lévő állapotok száma tehát
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}\left(E\right)=2\left\lfloor \frac{a}{2\pi}\frac{\sqrt{2mE}}{\hbar}\right\rfloor +1=2\left\lfloor \frac{a}{h}\sqrt{2mE}\right\rfloor +1
+\end{equation}
+
+\end_inset
+
+Mindkét peremfeltétel esetén teljesül tehát hogy nagy energiákra a klasszikus
+ állapotszám jó közelítése a kvantumos kifejezéseknek.
 \end_layout
 
-\begin_layout Subsection
-Klasszikus
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Rotátor
 \end_layout
 
 \begin_layout Standard
@@ -411,22 +487,53 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Fig/Spherical_coordinates.png
-	width 25col%
+	filename Fig/rotator_phase_space.svg
+	width 30col%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rotátor és a gömbi koordináta rendszer
+A rotátor fázisterének impulzus altere
 \end_layout
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+
+A rotátor egy egy térbeli tömegpont melynek 
+\begin_inset Formula $r$
+\end_inset
+
+ távolsága a koordináta rendszer középpontjától időben állandó, azaz 
+\begin_inset Formula 
+\begin{equation}
+\frac{\mathrm{d}}{\mathrm{d}t}r=\dot{r}=0.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Klasszikus
+\end_layout
+
+\begin_layout Standard
+Fejezzük ki a pozíció és a sebesség vektorokat 
+\begin_inset CommandInset href
+LatexCommand href
+name "gömbi polárkoordináta rendszerben "
+target "https://en.wikipedia.org/wiki/Spherical_coordinate_system"
 
 \end_inset
 
@@ -453,15 +560,15 @@ z
 
 \end_inset
 
-
+A sebesség négyzete tehát
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-\dot{x}^{2} & = & r^{2}\left(\dot{\vartheta}^{2}\cos^{2}\vartheta\cos^{2}\varphi+\dot{\varphi}^{2}\sin^{2}\vartheta\sin^{2}\varphi-\frac{\dot{\vartheta}\dot{\varphi}\sin\left(2\vartheta\right)\sin\left(2\varphi\right)}{2}\right)\nonumber \\
-\dot{y}^{2} & = & r^{2}\left(\dot{\vartheta}^{2}\cos^{2}\vartheta\sin^{2}\varphi+\dot{\varphi}^{2}\sin^{2}\vartheta\cos^{2}\varphi+\frac{\dot{\vartheta}\dot{\varphi}\sin\left(2\vartheta\right)\sin\left(2\varphi\right)}{2}\right)\\
-\dot{z}^{2} & = & r^{2}\dot{\vartheta}^{2}\sin^{2}\vartheta\nonumber 
+\dot{x}^{2} & = & r^{2}\left(\dot{\vartheta}^{2}\cos^{2}\vartheta\cos^{2}\varphi+\dot{\varphi}^{2}\sin^{2}\vartheta\sin^{2}\varphi-\frac{\dot{\vartheta}\dot{\varphi}\sin\left(2\vartheta\right)\sin\left(2\varphi\right)}{2}\right),\nonumber \\
+\dot{y}^{2} & = & r^{2}\left(\dot{\vartheta}^{2}\cos^{2}\vartheta\sin^{2}\varphi+\dot{\varphi}^{2}\sin^{2}\vartheta\cos^{2}\varphi+\frac{\dot{\vartheta}\dot{\varphi}\sin\left(2\vartheta\right)\sin\left(2\varphi\right)}{2}\right),\\
+\dot{z}^{2} & = & r^{2}\dot{\vartheta}^{2}\sin^{2}\vartheta.\nonumber 
 \end{eqnarray}
 
 \end_inset
@@ -469,64 +576,52 @@ z
 
 \begin_inset Formula 
 \begin{equation}
-\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)=r^{2}\left[\dot{\vartheta}^{2}\underbrace{\left(\cos^{2}\vartheta\cos^{2}\varphi+\cos^{2}\vartheta\sin^{2}\varphi+\sin^{2}\vartheta\right)}_{1}+\dot{\varphi}^{2}\overbrace{\left(\sin^{2}\vartheta\sin^{2}\varphi+\sin^{2}\vartheta\cos^{2}\varphi\right)}^{\sin^{2}\vartheta}\right]
+\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)=r^{2}\left[\dot{\vartheta}^{2}\underbrace{\left(\cos^{2}\vartheta\cos^{2}\varphi+\cos^{2}\vartheta\sin^{2}\varphi+\sin^{2}\vartheta\right)}_{1}+\dot{\varphi}^{2}\overbrace{\left(\sin^{2}\vartheta\sin^{2}\varphi+\sin^{2}\vartheta\cos^{2}\varphi\right)}^{\sin^{2}\vartheta}\right].
 \end{equation}
 
 \end_inset
 
-
+A kinetikus energia szögváltozókkal kifejezve a következő alakot ölti 
 \begin_inset Formula 
 \begin{eqnarray}
-E_{kin} & = & \frac{1}{2}m\left(\dot{x}^{2}+y^{2}+\dot{z}^{2}\right)\\
- & = & \frac{1}{2}mr^{2}\left[\dot{\vartheta}^{2}+\dot{\varphi}^{2}\sin^{2}\vartheta\right]\\
- & = & \frac{1}{2}\Theta\left[\dot{\vartheta}^{2}+\dot{\varphi}^{2}\sin^{2}\vartheta\right]
+E_{kin} & = & \frac{1}{2}m\left(\dot{x}^{2}+y^{2}+\dot{z}^{2}\right),\\
+ & = & \frac{1}{2}mr^{2}\left[\dot{\vartheta}^{2}+\dot{\varphi}^{2}\sin^{2}\vartheta\right],\\
+ & = & \frac{1}{2}\Theta\left[\dot{\vartheta}^{2}+\dot{\varphi}^{2}\sin^{2}\vartheta\right].
 \end{eqnarray}
 
 \end_inset
 
-
+A Lagrange-függvény szokásos deriváltjaiból a szögváltozókhoz konjugált
+ impulzusok 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{L}=E_{kin},\rightarrow p_{\vartheta}=\frac{\partial\mathcal{L}}{\partial\dot{\vartheta}}=\Theta\dot{\vartheta},\quad p_{\varphi}=\frac{\partial\mathcal{L}}{\partial\dot{\varphi}}=\Theta\sin^{2}\vartheta\dot{\varphi}
+\mathcal{L}=E_{kin},\rightarrow p_{\vartheta}=\frac{\partial\mathcal{L}}{\partial\dot{\vartheta}}=\Theta\dot{\vartheta},\quad p_{\varphi}=\frac{\partial\mathcal{L}}{\partial\dot{\varphi}}=\Theta\sin^{2}\vartheta\dot{\varphi},
 \end{equation}
 
 \end_inset
 
-
+és a Hamilton-függvény pedig 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Shaded
-position "t"
-hor_pos "c"
-has_inner_box 0
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width ""
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-H=E_{kin}=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)
+H=E_{kin}=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right).
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
+Adott 
+\begin_inset Formula $E$
 \end_inset
 
-
+ energia alatti állapotok száma az impulzus altérben egy ellipszis területének
+ számításával illetve a koordinátákban egy gömb felületének számításával
+ kapható meg 
 \begin_inset Formula 
 \begin{eqnarray}
-\Omega_{0}(E) & = & \frac{1}{h}\int_{H<E}\mathrm{d}\vartheta\mathrm{d}\varphi\mathrm{d}p_{\vartheta}\mathrm{d}p_{\varphi}\\
- & = & \frac{1}{h}\sqrt{2E\Theta}\sqrt{2E\Theta}\underbrace{\int_{0}^{2\pi}\int_{0}^{\pi}\sin\vartheta\mathrm{d}\vartheta\mathrm{d}\varphi}_{\text{"térszög"}=4\pi}
+\Omega_{0}(E) & = & \frac{1}{h^{2}}\int_{H<E}\mathrm{d}\vartheta\mathrm{d}\varphi\mathrm{d}p_{\vartheta}\mathrm{d}p_{\varphi},\\
+ & = & \frac{1}{h^{2}}\pi\sqrt{2E\Theta}\sqrt{2E\Theta}\underbrace{\int_{0}^{2\pi}\int_{0}^{\pi}\sin\vartheta\mathrm{d}\vartheta\mathrm{d}\varphi}_{\text{"térszög"}=4\pi},
 \end{eqnarray}
 
 \end_inset
@@ -534,7 +629,7 @@ H=E_{kin}=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{
 
 \begin_inset Formula 
 \begin{equation}
-\Omega_{0}(E)=\frac{E\Theta}{\hbar}
+\Omega_{0}(E)=\frac{2\Theta E}{\hbar^{2}}.
 \end{equation}
 
 \end_inset
@@ -547,25 +642,111 @@ Kvantumos
 \end_layout
 
 \begin_layout Standard
+A kvantumos leíráshoz egy forgó test 
+\begin_inset CommandInset href
+LatexCommand href
+name "Hamilton-operátorából"
+target "https://en.wikipedia.org/wiki/Rigid_rotor"
+
+\end_inset
+
+ indulunk ki:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\hat{H}=\frac{\hat{L}^{2}}{2\Theta}
+\hat{H}=\frac{\hat{L}^{2}}{2\Theta}.
 \end{equation}
 
 \end_inset
 
 
-\begin_inset Formula 
-\begin{equation}
-E_{l}=\frac{l(l+1)}{2\Theta}
-\end{equation}
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/rotator_Omega.png
+	lyxscale 30
+	width 30col%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A klasszikus és kvantumos rotátor állapotainak száma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Ennek az operátornak a spektruma
 \begin_inset Formula 
 \begin{equation}
-\Omega_{0}(E)=\sum_{l=0}^{l_{max}}\left(2l+1\right)=(l_{max}+1)^{2}
+E_{l}=\frac{\hbar^{2}l(l+1)}{2\Theta}.
+\end{equation}
+
+\end_inset
+
+Egy adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia és az alatta lévő legnagyobb impulzus momentum érték 
+\begin_inset Formula $l_{max}$
+\end_inset
+
+ kapcsolata tehát
+\begin_inset Formula 
+\begin{equation}
+l_{max}(l_{max}+1)=\left\lfloor \frac{2\Theta E}{\hbar^{2}}\right\rfloor .
+\end{equation}
+
+\end_inset
+
+Mivel minden 
+\begin_inset Formula $l$
+\end_inset
+
+ állapot 
+\begin_inset Formula $\left(2l+1\right)$
+\end_inset
+
+-szeresen degenerált ezért az adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia alatti állapotok összege előáll páratlan számok összegeként: 
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=\sum_{l=0}^{l_{max}}\left(2l+1\right)=(l_{max}+1)^{2}.
+\end{equation}
+
+\end_inset
+
+A klasszikus kifejezést vissza kapjuk ha 
+\begin_inset Formula $l_{max}\gg1\rightarrow l_{max}(l_{max}+1)\approx(l_{max}+1)^{2}$
+\end_inset
+
+, ekkor
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)\approx\frac{2\Theta E}{\hbar^{2}}.
 \end{equation}
 
 \end_inset
@@ -577,14 +758,68 @@ E_{l}=\frac{l(l+1)}{2\Theta}
 Harmonikus oszcillátor
 \end_layout
 
+\begin_layout Standard
+A harmonikus oszcillátor (és a hidrogén atom ...) sok szempontból az elméleti
+ számítások állatorvosi lova.
+ Határozzuk meg az állapotok számát ebben az egyszerű rendszerben is.
+\end_layout
+
 \begin_layout Subsection
 Klasszikus
 \end_layout
 
 \begin_layout Standard
+A Hamilton-függvény alakjából 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H=\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}q^{2}
+H=\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}q^{2},
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig/oscillator_phase_space.svg
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Az oszcillátor fázistere
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+jól látszik hogy egy adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia egy ellipszist határoz meg, azaz az állapotok száma 
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=\frac{1}{h}\int_{H<E}\mathrm{d}p\mathrm{d}q=\frac{1}{h}\sqrt{2mE}\sqrt{\frac{2E}{m\omega^{2}}}\pi,
 \end{equation}
 
 \end_inset
@@ -592,15 +827,7 @@ H=\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}q^{2}
 
 \begin_inset Formula 
 \begin{equation}
-\Omega_{0}(E)=\frac{1}{h}\int_{H<E}\mathrm{d}p\mathrm{d}q=\frac{1}{h}\sqrt{2mE}\sqrt{\frac{2E}{m\omega^{2}}}\pi
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-\Omega_{0}(E)=\frac{E}{\hbar\omega}
+\Omega_{0}(E)=\frac{E}{\hbar\omega}.\label{eq:harmonikus-oszci-omega0}
 \end{equation}
 
 \end_inset
@@ -613,6 +840,11 @@ Kvantumos
 \end_layout
 
 \begin_layout Standard
+A kvantumos állapotszámoláshoz induljunk ki a harmonikus oszcillátor spektrumábó
+l:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 E_{n}=\hbar\omega\left(n+\frac{1}{2}\right),\quad n=0,1,2\dots
@@ -621,22 +853,210 @@ E_{n}=\hbar\omega\left(n+\frac{1}{2}\right),\quad n=0,1,2\dots
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/oscillator_spectrum.svg
+	height 20col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Az oszcillátor spektruma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Azaz egy adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia alatt az 
+\begin_inset Formula $n$
+\end_inset
+
+ index maximális értéke
 \begin_inset Formula 
 \begin{equation}
-n_{max}=\left\lfloor \frac{E}{\hbar\omega}-\frac{1}{2}\right\rfloor 
+n_{max}=\left\lfloor \frac{E}{\hbar\omega}-\frac{1}{2}\right\rfloor ,
+\end{equation}
+
+\end_inset
+
+amiből
+\begin_inset Formula 
+\begin{eqnarray}
+\Omega_{0} & (E)= & \left\lfloor \frac{E}{\hbar\omega}-\frac{1}{2}\right\rfloor +1=\left\lfloor \frac{E}{\hbar\omega}+\frac{1}{2}\right\rfloor .
+\end{eqnarray}
+
+\end_inset
+
+Itt is látjuk hogy nagy energiákra vagy a 
+\begin_inset Formula $\hbar\rightarrow0$
+\end_inset
+
+ határesetben a klasszikus és a kvantumos állapotszám megegyezik.
+\end_layout
+
+\begin_layout Subsection
+Egy érdekes feladat
+\end_layout
+
+\begin_layout Standard
+Mikrokanonikus sokaságot feltételezve lássuk be hogy annak a valószínűsége
+ hogy egy klasszikus harmonikus oszcillátor helyzete 
+\begin_inset Formula $x$
+\end_inset
+
+ és 
+\begin_inset Formula $x+\delta x$
+\end_inset
+
+ között van, 
+\begin_inset Formula $P(x,x+\delta x)$
+\end_inset
+
+, megegyezik az oszcillátor ezen intervallumban eltöltött ideje, 
+\begin_inset Formula $t(x,x+\delta x)$
+\end_inset
+
+, és a periódus idő, 
+\begin_inset Formula $T_{per}=\frac{2\pi}{\omega}$
+\end_inset
+
+, hányadosával: 
+\begin_inset Formula 
+\begin{equation}
+P(x,x+\delta x)=\frac{t(x,x+\delta x)}{T_{per}}
+\end{equation}
+
+\end_inset
+
+A kérdéses tartományban töltött idő a tartomány hosszával egyenesen a tartományo
+n történő áthaladás sebességével viszont fordítottan arányos.
+ Az arányossági tényező 
+\begin_inset Formula $2$
+\end_inset
+
+ hszen odafele és visszafele is időzünk 
+\begin_inset Formula $x$
+\end_inset
+
+ közelében! 
+\begin_inset Formula 
+\begin{equation}
+t(x,x+\delta x)=2\frac{\delta x}{v(x)}.
+\end{equation}
+
+\end_inset
+
+A vizsgált 
+\begin_inset Formula $P(x,x+\delta x)$
+\end_inset
+
+ valószínűség a megfelelő fázistér térfogatok arányával kifejezve: 
+\begin_inset Formula 
+\begin{equation}
+P(x,x+\delta x)=\frac{2\mathrm{d}p(x)\delta x/h}{\Omega\left(E,\delta E\right)}=\frac{2\frac{\mathrm{d}p(x)}{\mathrm{d}E}\delta E\delta x/h}{\Omega\left(E,\delta E\right)}\label{eq:harmonikus-oszci-Pxpdx}
+\end{equation}
+
+\end_inset
+
+Felhasználva 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ definícióját 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-Omega-def"
+
+\end_inset
+
+ és a harmonikus oszcillátor állapotainak számát 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:harmonikus-oszci-omega0"
+
+\end_inset
+
+ kapjuk, hogy 
+\begin_inset Formula 
+\begin{equation}
+\Omega\left(E,\delta E\right)=\frac{\mathrm{d}\Omega_{0}}{\mathrm{d}E}\delta E=\frac{2\pi}{h\omega}\delta E.
+\end{equation}
+
+\end_inset
+
+Felhasználva a harmonikus oszcillátor energiáját 
+\begin_inset Formula 
+\begin{equation}
+E=\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}x^{2}=\frac{mv^{2}}{2}+\frac{1}{2}m\omega^{2}x^{2},
+\end{equation}
+
+\end_inset
+
+a
+\begin_inset Formula $\mathrm{d}p/\mathrm{d}E$
+\end_inset
+
+ derivált (talán nem túl meglepő módon) 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\frac{\mathrm{d}p}{\mathrm{d}E}}=\frac{\mathrm{d}E}{\mathrm{d}p}=\frac{p}{m}=v.
+\end{equation}
+
+\end_inset
+
+A fentieket visszahelyettesítve 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:harmonikus-oszci-Pxpdx"
+
+\end_inset
+
+-be kapjuk, hogy 
+\begin_inset Formula 
+\begin{equation}
+P(x,x+\delta x)=\frac{2\frac{1}{v}\delta E\delta x/h}{\frac{2\pi}{h\omega}\delta E}=2\frac{\frac{\delta x}{v}}{\frac{2\pi}{\omega}}=\frac{t(x,x+\delta x)}{T_{per}}.
 \end{equation}
 
 \end_inset
 
 
-\begin_inset Formula 
-\begin{eqnarray}
-\Omega_{0} & (E)= & \left\lfloor \frac{E}{\hbar\omega}-\frac{1}{2}\right\rfloor +1=\left\lfloor \frac{E}{\hbar\omega}+\frac{1}{2}\right\rfloor 
-\end{eqnarray}
+\begin_inset CommandInset href
+LatexCommand href
+name "q.e.d"
+target "https://en.wikipedia.org/wiki/Q.E.D."
 
 \end_inset
 
-
+ (nem kvantum elektrodinamika...)
 \end_layout
 
 \end_body
