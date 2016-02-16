@@ -656,7 +656,7 @@ target "https://en.wikipedia.org/wiki/Rigid_rotor"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\hat{H}=\frac{\hat{L}^{2}}{2\Theta}.
+\hat{H}=\frac{\left(\hat{\vec{r}}\times\hat{\vec{p}}\right)\cdot\left(\hat{\vec{r}}\times\hat{\vec{p}}\right)}{2\Theta}=\frac{\hat{\vec{L}}^{2}}{2\Theta}.
 \end{equation}
 
 \end_inset
@@ -1057,6 +1057,77 @@ target "https://en.wikipedia.org/wiki/Q.E.D."
 \end_inset
 
  (nem kvantum elektrodinamika...)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+HF-03:
+\series default
+ Határozzuk meg a klasszikus állapotok 
+\begin_inset Formula $\Omega_{0}$
+\end_inset
+
+ számát adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia alatt a következő rendszerekre!
+\end_layout
+
+\begin_layout Enumerate
+Pattogó labda
+\begin_inset Formula 
+\begin{equation}
+H=\frac{p^{2}}{2m}+gx,\quad x\ge0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Relativisztikus oszcillátor
+\begin_inset Formula 
+\begin{equation}
+H=c\left|p\right|+\frac{1}{2}\alpha\omega^{2}x,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Relativisztikus pattogó labda
+\begin_inset Formula 
+\begin{equation}
+H=c\left|p\right|+gx,x\ge0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
