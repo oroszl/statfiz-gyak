@@ -1104,7 +1104,7 @@ H=\frac{p^{2}}{2m}+gx,\quad x\ge0
 Relativisztikus oszcillátor
 \begin_inset Formula 
 \begin{equation}
-H=c\left|p\right|+\frac{1}{2}\alpha\omega^{2}x,
+H=c\left|p\right|+\frac{1}{2}\alpha\omega^{2}x^{2},
 \end{equation}
 
 \end_inset
