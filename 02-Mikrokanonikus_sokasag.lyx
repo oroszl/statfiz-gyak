@@ -1127,6 +1127,1013 @@ H=c\left|p\right|+gx,x\ge0
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Termodinamikai mennyiségek mikrokanonikus sokaságból
+\end_layout
+
+\begin_layout Standard
+Ebben a fejezetben a mikrokanonikus formalizmus segítségévvel néhány alapvető
+ modell rendszer termodinamikai mennyiségeinek származtatását fogjuk vizsgálni.
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Entrópia:
+\end_layout
+
+\begin_layout Plain Layout
+Ha a rendszer energiája 
+\begin_inset Formula $E$
+\end_inset
+
+ és 
+\begin_inset Formula $E$
+\end_inset
+
+ és 
+\begin_inset Formula $E+\delta E$
+\end_inset
+
+ között az állapotok száma 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ akkor a rendszer entrópiája:
+\series bold
+
+\begin_inset Formula 
+\begin{equation}
+S=k_{\mathrm{B}}\ln\Omega(E,\delta E)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Termodinamikai határesetben használható feltevés:
+\begin_inset Formula 
+\begin{equation}
+S=k_{\mathrm{B}}\ln\Omega(E,\delta E)=k_{\mathrm{B}}\ln\omega(E)\delta E=k_{\mathrm{B}}\ln\Omega_{0}(E)\label{eq:entropia-praktice}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Hőmérséklet:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{V,N}\label{eq:homerseklet}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Nyomás:
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+\frac{p}{T}=\left.\frac{\partial S}{\partial V}\right|_{E,N}\label{eq:nyomas}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Fajhő:
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+C=\left.\frac{\partial E}{\partial T}\right|_{V}\label{eq:fajho}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $N$
+\end_inset
+
+ darab két állapotú rendszer
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/N2all_setup.svg
+	height 10col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ darab két állapotú rendszer 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vizsgáljunk egy olyan 
+\begin_inset Formula $N$
+\end_inset
+
+ részecskéből álló rendszert amelyben egy adott részecske energiája vagy
+ 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ vagy 
+\begin_inset Formula $-\varepsilon$
+\end_inset
+
+.
+ Gondolhatunk itt például egy klasszikus két állapotú spin rendszerre, vagy
+ valamilyen adattárolóban klasszikus bitekre! Jelölje 
+\begin_inset Formula $N_{+}$
+\end_inset
+
+az 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ energiájú részecskék számát illetve 
+\begin_inset Formula $N_{-}$
+\end_inset
+
+ a 
+\begin_inset Formula $-\varepsilon$
+\end_inset
+
+ energiájú részecskék számát.
+ Természetesen
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\begin_inset Formula 
+\begin{equation}
+N=N_{+}+N_{-}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A rendszer teljes 
+\begin_inset Formula $E$
+\end_inset
+
+ energiája értelem szerűen 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=\left(N_{+}-N_{-}\right)\varepsilon=M\varepsilon,\quad M=-N,-N+2,\dots N
+\end{equation}
+
+\end_inset
+
+Ahol bevezettük az 
+\begin_inset Formula $M$
+\end_inset
+
+ változót amire gondolhatunk úgy mint a rendszer 
+\begin_inset Quotes eld
+\end_inset
+
+mágnesezettsége
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray}
+N & = & N_{+}+N_{-},\quad N_{+}=\frac{N+M}{2}\\
+M & = & N_{+}-N_{-},\quad N_{-}=\frac{N-M}{2}
+\end{eqnarray}
+
+\end_inset
+
+Hány olyan konfiguráció van amely energiája 
+\begin_inset Formula $E=M\varepsilon$
+\end_inset
+
+? Másféleképpen hányféle módon tudunk kiválasztani 
+\begin_inset Formula $N$
+\end_inset
+
+ felső szintből 
+\begin_inset Formula $N_{+}$
+\end_inset
+
+-at ? 
+\begin_inset Formula 
+\begin{equation}
+\Omega\left(E,\delta E\right)=\left(\begin{array}{c}
+N\\
+N_{+}
+\end{array}\right)=\frac{N!}{N_{+}!\left(N-N_{+}\right)!}=\frac{N!}{N_{+}!N_{-}!}
+\end{equation}
+
+\end_inset
+
+Az állapotok számának ismeretében az entrópia 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:entropia-praktice"
+
+\end_inset
+
+-nak megfelelően
+\begin_inset Formula 
+\begin{equation}
+S=k_{\mathrm{B}}\ln\Omega=k_{\mathrm{B}}\left(\ln N!-\ln N_{+}!-\ln N_{-}!\right).
+\end{equation}
+
+\end_inset
+
+Termodinamikai határesetben 
+\begin_inset Formula $N\rightarrow\infty$
+\end_inset
+
+, 
+\begin_inset Formula $E/N=\mathrm{const.}$
+\end_inset
+
+ azaz 
+\begin_inset Formula $M/N=\mathrm{const.}$
+\end_inset
+
+ Ebben a határesetben alkalmazhatjuk a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:stirling-log"
+
+\end_inset
+
+ Stirling-formulát! Elhanyagolva a 
+\begin_inset Formula $\ln N$
+\end_inset
+
+-es járulékokat:
+\begin_inset Formula 
+\begin{equation}
+\ln N!\approx N\ln N-N
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/N2all_entropia.png
+	lyxscale 30
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/N2all_homerseklet.png
+	lyxscale 30
+	width 30col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ darab két állapotú rendszer entrópiája és hőmérséklete
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{S}{k_{\mathrm{B}}} & = & N\ln N-N-N_{+}\ln N_{+}+N_{+}-N_{-}\ln N_{-}+N_{-}\\
+ & = & N\ln N-N\nonumber \\
+ &  & -\frac{N+M}{2}\ln\frac{N+M}{2}+\frac{N+M}{2}\nonumber \\
+ &  & -\frac{N-M}{2}\ln\frac{N-M}{2}+\frac{N-M}{2}\nonumber \\
+ & = & N\ln N-\frac{N+M}{2}\ln\frac{N+M}{2}-\frac{N-M}{2}\ln\frac{N-M}{2}\nonumber \\
+ & = & \left(\frac{N+M}{2}+\frac{N-M}{2}\right)\ln N-\frac{N+M}{2}\ln\frac{N+M}{2}-\frac{N-M}{2}\ln\frac{N-M}{2}\nonumber \\
+\frac{S}{k_{\mathrm{B}}} & = & -\frac{N+M}{2}\ln\frac{N+M}{2N}-\frac{N-M}{2}\ln\frac{N-M}{2N}\label{eq:N2all-entropia}
+\end{eqnarray}
+
+\end_inset
+
+Ha 
+\begin_inset Formula $M=0$
+\end_inset
+
+ azaz azok az állapotok amelyekben ugyan annyi a
+\begin_inset Formula $+\varepsilon$
+\end_inset
+
+ energiájú állapot mint a 
+\begin_inset Formula $-\varepsilon$
+\end_inset
+
+ energiájú állapot akkor 
+\begin_inset Formula 
+\begin{equation}
+S=k_{\mathrm{B}}N\ln2=k_{\mathrm{B}}\ln2^{N}
+\end{equation}
+
+\end_inset
+
+ami várható hiszen ekkor 
+\begin_inset Formula $\Omega=2^{n}$
+\end_inset
+
+.
+ Érdemes megjegyezni hogy az entrópia energia szerinti deriváltja csak negatív
+ energiákra pozitív mennyiség! Pozitív energiákra viszont negatív azaz ezen
+ a tartományon a hőmérséklet negatív! Ez a rendszer tehát termodinamikai
+ értelemben nem 
+\begin_inset Quotes eld
+\end_inset
+
+normál
+\begin_inset Quotes erd
+\end_inset
+
+ rendszer! Hasonló viselkedést mutat minden olyan rendszer melynek lehetséges
+ energiái korlátos tartományra szorítkoznak.
+ 
+\end_layout
+
+\begin_layout Standard
+Az entrópia ismeretében a hőmérséklet 
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{\partial S}{\partial M}\frac{\partial M}{\partial E}=\frac{1}{\varepsilon}\frac{\partial S}{\partial M}.
+\end{eqnarray}
+
+\end_inset
+
+Némi algebrával 
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\mathrm{d}}{\mathrm{d}M}\left(\frac{N+M}{2}\ln\frac{N+M}{2N}\right) & = & \frac{1}{2}\ln\frac{N+M}{2N}+\frac{N+M}{2}\frac{2N}{N+M}\frac{1}{2N}\\
+ & = & \frac{1}{2}\ln\frac{N+M}{2N}+1,\\
+\frac{\mathrm{d}}{\mathrm{d}M}\left(\frac{N-M}{2}\ln\frac{N-M}{2N}\right) & = & -\frac{1}{2}\ln\frac{N-M}{2N}-1,
+\end{eqnarray}
+
+\end_inset
+
+kapjuk hogy,
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{T}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{N-M}{N+M}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{1-M/N}{1+M/N},\label{eq:N2all-homerseklet}
+\end{equation}
+
+\end_inset
+
+azaz
+\begin_inset Formula 
+\begin{equation}
+\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}=\frac{1-M/N}{1+M/N}.
+\end{equation}
+
+\end_inset
+
+A fenti összefüggés segítségével ki tudjuk fejezni a rendszer energiáját
+ a hőmérséklettel: 
+\begin_inset Formula 
+\begin{equation}
+E=\varepsilon M=\varepsilon N\frac{1-\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}}{1+\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}}=-\varepsilon N\tanh\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right).\label{eq:N2all-energia}
+\end{equation}
+
+\end_inset
+
+Hasonlóan a pozitív illetve negatív energiájú 
+\begin_inset Quotes eld
+\end_inset
+
+részecskék száma
+\begin_inset Quotes erd
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray}
+N_{+} & = & \frac{N+M}{2}=N\frac{\mbox{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}}{\mbox{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}+\mbox{e}^{\frac{\varepsilon}{k_{\mathrm{B}}T}}},\\
+N_{-} & = & \frac{N-M}{2}=N\frac{\mbox{e}^{\frac{\varepsilon}{k_{\mathrm{B}}T}}}{\mbox{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}+\mbox{e}^{\frac{\varepsilon}{k_{\mathrm{B}}T}}}.
+\end{eqnarray}
+
+\end_inset
+
+A fajhő a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fajho"
+
+\end_inset
+
+ szerint 
+\begin_inset Formula 
+\begin{eqnarray}
+C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=\frac{\varepsilon N}{\cosh^{2}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)}\frac{\varepsilon}{k_{\mathrm{B}}T^{2}}=k_{\mathrm{B}}N\frac{\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)^{2}}{\cosh^{2}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)},\\
+ & = & k_{\mathrm{B}}N\frac{x^{2}}{\cosh^{2}x},\quad x=\frac{\varepsilon}{k_{\mathrm{B}}T}.
+\end{eqnarray}
+
+\end_inset
+
+A fajhő alacsony illetve magas hőmérsékletű viselkedésére a 
+\begin_inset Formula $\cosh$
+\end_inset
+
+ függvény tulajdonságaiból következtethetünk.
+ Alacsony hőmérsékleten, azaz 
+\begin_inset Formula $x\rightarrow\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\cosh x=\frac{\mbox{e}^{x}+\mbox{e}^{-x}}{2}\underset{x\rightarrow\infty}{=}\frac{\mbox{e}^{x}}{2},
+\end{equation}
+
+\end_inset
+
+míg magas hőmérsékleten azaz 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang magyar
+
+\begin_inset Formula 
+\begin{equation}
+\lim_{x\rightarrow0}\cosh x=1.
+\end{equation}
+
+\end_inset
+
+Ezen összefüggések segítségével:
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/N2all_hokapacitas.png
+	lyxscale 30
+	width 30col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ darab két állapotú rendszer fajhője
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+T & \rightarrow & 0,x\rightarrow\infty,\quad C\rightarrow k_{\mathrm{B}}N\left(\frac{2\varepsilon}{k_{\mathrm{B}}T}\right)^{2}\mbox{e}^{-\frac{2\varepsilon}{k_{\mathrm{B}}T}},\\
+T & \rightarrow & \infty,x\rightarrow0,\quad C\rightarrow\frac{N\varepsilon^{2}}{k_{\mathrm{B}}T^{2}}.
+\end{eqnarray}
+
+\end_inset
+
+Amint azt az ábra is mutatja a fajhő hőmérséklet függése maximális egy adott
+ hőmérséklet értéknél.
+ Határozzuk meg ezt a Hőmérséklet értéket! 
+\begin_inset Formula 
+\begin{equation}
+\partial_{x}C\propto\partial_{x}\left(\frac{x^{2}}{\cosh^{2}x}\right)=\frac{2x}{\cosh^{2}x}-\frac{x^{2}2\sinh^{2}x}{\cosh^{4}x}=\frac{2x\left(1-x\tanh x\right)}{\cosh^{2}x}
+\end{equation}
+
+\end_inset
+
+A derivált két helyen válik zérussá 
+\begin_inset Formula $x=0$
+\end_inset
+
+-ban illetve 
+\begin_inset Formula $x=x_{max}$
+\end_inset
+
+-nál ahol 
+\begin_inset Formula 
+\begin{equation}
+1-x_{max}\tanh x_{max}=0.
+\end{equation}
+
+\end_inset
+
+Az egyenletet numerikusan megoldva 
+\begin_inset Formula $x_{max}\approx1.199$
+\end_inset
+
+, 
+\begin_inset Formula $x_{max}^{-1}\approx0.8335$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg most a rendszerből kiszemelt egy alrendszer statisztikáját.
+ Mi a valószínűsége hogy az 1.
+ rendszer a 
+\begin_inset Formula $+\varepsilon$
+\end_inset
+
+ állapotban van, ha a rendszer adott 
+\begin_inset Formula $E=\varepsilon M$
+\end_inset
+
+ energián van? 
+\begin_inset Formula 
+\begin{equation}
+P_{1}^{+}=\frac{\left(N-1\right)!}{\left(N_{+}-1\right)!N_{-}!}\frac{N_{+}!N_{-}!}{N!}=\frac{N_{+}}{N}=\frac{\mbox{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}}{\mbox{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}+\mbox{e}^{\frac{\varepsilon}{k_{\mathrm{B}}T}}}.
+\end{equation}
+
+\end_inset
+
+Hasonló megfontolások alapján annak a valószínűsége hogy az 1.
+ rendszer a 
+\begin_inset Formula $-\varepsilon$
+\end_inset
+
+ állapotban van:
+\begin_inset Formula 
+\begin{equation}
+P_{1}^{-}=\frac{\mbox{e}^{\frac{\varepsilon}{k_{\mathrm{B}}T}}}{\mbox{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}+\mbox{e}^{\frac{\varepsilon}{k_{\mathrm{B}}T}}}.
+\end{equation}
+
+\end_inset
+
+A két valószínűség hányadosa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{P_{1}^{+}}{P_{1}^{-}}=\mbox{e}^{-\frac{2\varepsilon}{k_{\mathrm{B}}T}}.
+\end{equation}
+
+\end_inset
+
+Amint később látni fogjuk, a kanonikus sokaság terminológiáit használva
+ pontosan ugyan ezek a valószínűségi súlyok fogják jellemezni a rendszert.
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $N$
+\end_inset
+
+ darab harmonikus oszcillátor
+\end_layout
+
+\begin_layout Standard
+A második példában vizsgáljunk meg 
+\begin_inset Formula $N$
+\end_inset
+
+ darab harmonikus oszcillátort.
+ A rendszer Hamilton-operátora: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{H}=\sum_{i=1}^{N}\frac{\hat{p}_{i}^{2}}{2m}+\frac{1}{2}m\omega^{2}\hat{x}_{i}^{2}
+\end{equation}
+
+\end_inset
+
+A rendszer teljes energiája a részrendszerek energiájának összege, azaz
+\begin_inset Formula 
+\begin{equation}
+E=\sum_{i=1}^{N}\hbar\omega\left(n_{i}+\frac{1}{2}\right)=\frac{1}{2}\hbar\omega N+\hbar\omega\underbrace{\sum_{i=1}^{N}n_{i}}_{M}
+\end{equation}
+
+\end_inset
+
+Itt ismét érdemes bevezetni egy 
+\begin_inset Formula $M$
+\end_inset
+
+ paramétert: 
+\begin_inset Formula 
+\begin{equation}
+E=\hbar\omega\left(\frac{1}{2}N+M\right),\quad M\Leftrightarrow E,
+\end{equation}
+
+\end_inset
+
+most azonban az 
+\begin_inset Formula $M$
+\end_inset
+
+ az összes gerjesztések száma.
+ Figyeljük meg hogy az előző példával ellentétben az energia (adott 
+\begin_inset Formula $N$
+\end_inset
+
+ esetén) nem korlátos felülről hiszen az egyes 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ tetszőleges nem negatív egész értéket felvehetnek.
+ Az állapotok számának meghatározásához vegyük észere hogy az állapotok
+ száma adott 
+\begin_inset Formula $M$
+\end_inset
+
+ esetén megegyezik 
+\begin_inset Formula $N-1$
+\end_inset
+
+ darab fekete és 
+\begin_inset Formula $M$
+\end_inset
+
+ darab fehér golyó lehetséges permutációinak számával: 
+\begin_inset Formula 
+\begin{equation}
+\Omega(E,\delta E)=\frac{\left(M+N-1\right)!}{M!\left(N-1\right)!}
+\end{equation}
+
+\end_inset
+
+Alkalmazva a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:stirling-log"
+
+\end_inset
+
+ Stirling-formulát termodinamikai határesetben kapjuk hogy az entrópia
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{S}{k_{\mathrm{B}}} & = & \ln\Omega(E,\delta E)\\
+ & \approx & \left(M+N\right)\ln\left(M+N\right)-\left(M+N\right)-M\ln M+M-N\ln N-N\\
+ & = & \left(M+N\right)\ln\left(M+N\right)-M\ln M-N\ln N.
+\end{eqnarray}
+
+\end_inset
+
+A hőmérsékletet 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:homerseklet"
+
+\end_inset
+
+-nek megfelelően számítva kapjuk hogy
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{k_{\mathrm{B}}}{\hbar\omega}\left[\ln\left(M+N\right)+1-\ln M-1\right]=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{M+N}{M}\\
+ & = & \frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{\hbar\omega}+\frac{N}{2}}{\frac{E}{\hbar\omega}-\frac{N}{2}}=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{N}+N\frac{\hbar\omega}{2}}{\frac{E}{N}-N\frac{\hbar\omega}{2}}.
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "15col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Noszcillator_energia.png
+	lyxscale 30
+	width 15col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Noszcillator_fajho.png
+	lyxscale 30
+	width 15col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ oszcillátor energiája és fajhője
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Exponencializálva ezt a kifejezést kapjuk hogy 
+\begin_inset Formula 
+\begin{equation}
+\frac{\frac{E}{N}+N\frac{\hbar\omega}{2}}{\frac{E}{N}-N\frac{\hbar\omega}{2}}=\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}.
+\end{equation}
+
+\end_inset
+
+Amelyből némi algebra után egy oszcillátorra jutó energia a hőmérséklet
+ függésére kapjuk hogy
+\begin_inset Formula 
+\begin{equation}
+\frac{E}{N}=\left(\frac{\hbar\omega}{2}+\frac{\hbar\omega}{\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}-1}\right).
+\end{equation}
+
+\end_inset
+
+A fajhő ezek után 
+\begin_inset Formula 
+\begin{eqnarray}
+C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=k_{\mathrm{B}}N\frac{\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)^{2}}{\sinh^{2}\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)}\\
+ & = & k_{\mathrm{B}}N\frac{x^{2}}{\sinh^{2}\left(x\right)},\quad x=\frac{\hbar\omega}{2k_{\mathrm{B}}T}.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ideális gáz
+\end_layout
+
+\begin_layout Standard
+Vizsgáljunk meg most az ideális gáz esetét.
+ A Hamilton-függvény a szokásos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\sum_{i=1}^{3N}\frac{p_{i}^{2}}{2m}
+\end{equation}
+
+\end_inset
+
+alakot ölti.
+ Adott 
+\begin_inset Formula $E$
+\end_inset
+
+ energia alatt az állapotok 
+\begin_inset Formula $\Omega_{0}$
+\end_inset
+
+ számát a Gibbs-paradoxon figyelembevételével az alábbiak szerint fejezhetjük
+ ki 
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}=\int_{H(p,q)<E}\frac{\mathrm{d}^{3N}p\mathrm{d}^{3N}q}{h^{3N}N!}=\frac{V^{N}}{h^{3N}N!}\int_{\sum_{i=1}^{3N}\frac{p_{i}^{2}}{2m}<E}\mathrm{d}^{3N}p.
+\end{equation}
+
+\end_inset
+
+Az impulzus térbeli integrál a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:D-dim-gomb-terfogat-eggyutthat"
+
+\end_inset
+
+ segítségével kiértékelhető mint egy 
+\begin_inset Formula $\sqrt{2mE}$
+\end_inset
+
+ sugarú 
+\begin_inset Formula $3N$
+\end_inset
+
+ dimenziós gömb térfogata:
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}=\frac{V^{N}}{h^{3N}N!}\frac{\pi^{3N/2}}{\left(\frac{3N}{2}\right)!}\left(\sqrt{2mE}\right)^{3N}=\frac{1}{N!}\frac{1}{\left(\frac{3N}{2}\right)!}\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)^{\frac{3}{2}N}.
+\end{equation}
+
+\end_inset
+
+Az entrópia meghatározásához 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ helyett 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:entropia-praktice"
+
+\end_inset
+
+ szerint termodinamikai határesetben 
+\begin_inset Formula $\Omega_{0}$
+\end_inset
+
+-t is használhatjuk.
+ 
+\begin_inset Formula 
+\begin{eqnarray}
+S/k_{\mathrm{B}} & = & \ln\Omega_{0}\\
+ & = & \frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)-\ln N!-\ln\left(\frac{3N}{2}\right)!\nonumber \\
+ & \approx & \frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)-N\ln N+N-\left(\frac{3N}{2}\right)\ln\left(\frac{3N}{2}\right)+\left(\frac{3N}{2}\right)\nonumber \\
+ & = & \frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)-\frac{3}{2}N\ln N^{\frac{2}{3}}+N-\left(\frac{3N}{2}\right)\ln\left(\frac{3N}{2}\right)+\left(\frac{3N}{2}\right)\nonumber \\
+ & = & \frac{5}{2}N+\frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\frac{1}{N^{\frac{2}{3}}}\frac{2}{3N}\right)\nonumber \\
+ & = & \frac{5}{2}N+\frac{3}{2}N\ln\left(\frac{4\pi m}{3h^{2}}\left(\frac{V}{N}\right)^{\frac{2}{3}}\frac{E}{N}\right)
+\end{eqnarray}
+
+\end_inset
+
+Kiindulva a hőmérsékletet 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:homerseklet"
+
+\end_inset
+
+ és a nyomást 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:nyomas"
+
+\end_inset
+
+ definiáló összefüggésekből megkapjuk az ekvipartició tételből ismert energia
+ kifejezést
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{3}{2}Nk_{\mathrm{B}}\frac{1}{E},\Rightarrow E=\frac{3}{2}Nk_{\mathrm{B}}T,
+\end{equation}
+
+\end_inset
+
+és az ideális gáz állapotegyenletét
+\begin_inset Formula 
+\begin{equation}
+\frac{p}{T}=\left.\frac{\partial S}{\partial V}\right|_{E,N}=\frac{Nk_{\mathrm{B}}}{V},\Rightarrow pV=Nk_{\mathrm{B}}T.
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \end_body

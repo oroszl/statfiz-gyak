@@ -951,7 +951,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\ln n!\approx n\ln n-n+\frac{1}{2}\ln\left(2\pi n\right)
+\ln n!\approx n\ln n-n+\frac{1}{2}\ln\left(2\pi n\right)\label{eq:stirling-log}
 \end{equation}
 
 \end_inset
@@ -1301,7 +1301,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-C_{D}=\frac{\pi^{D/2}}{\Gamma\left(\frac{D}{2}+1\right)}.
+C_{D}=\frac{\pi^{D/2}}{\Gamma\left(\frac{D}{2}+1\right)}.\label{eq:D-dim-gomb-terfogat-eggyutthat}
 \end{equation}
 
 \end_inset
