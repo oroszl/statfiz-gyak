@@ -962,7 +962,7 @@ n történő áthaladás sebességével viszont fordítottan arányos.
 \begin_inset Formula $2$
 \end_inset
 
- hszen odafele és visszafele is időzünk 
+ hiszen odafele és visszafele is időzünk 
 \begin_inset Formula $x$
 \end_inset
 
@@ -1204,6 +1204,23 @@ S=k_{\mathrm{B}}\ln\Omega(E,\delta E)=k_{\mathrm{B}}\ln\omega(E)\delta E=k_{\mat
 \begin_layout Plain Layout
 
 \series bold
+Fundamentális egyenlet:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathrm{d}E=T\mathrm{d}S-p\mathrm{d}V+\mu\mathrm{d}N\label{eq:mikro-fundamental}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
 Hőmérséklet:
 \end_layout
 
@@ -1237,7 +1254,23 @@ Nyomás:
 \begin_layout Plain Layout
 
 \series bold
-Fajhő:
+Kémiai potenciál:
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+\frac{\mu}{T}=-\left.\frac{\partial S}{\partial N}\right|_{E,V}\label{eq:kemiai-potencial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Hőkapacitás:
 \series default
 
 \begin_inset Formula 
@@ -1513,12 +1546,9 @@ status collapsed
 \begin_inset Formula 
 \begin{eqnarray}
 \frac{S}{k_{\mathrm{B}}} & = & N\ln N-N-N_{+}\ln N_{+}+N_{+}-N_{-}\ln N_{-}+N_{-}\\
- & = & N\ln N-N\nonumber \\
- &  & -\frac{N+M}{2}\ln\frac{N+M}{2}+\frac{N+M}{2}\nonumber \\
- &  & -\frac{N-M}{2}\ln\frac{N-M}{2}+\frac{N-M}{2}\nonumber \\
- & = & N\ln N-\frac{N+M}{2}\ln\frac{N+M}{2}-\frac{N-M}{2}\ln\frac{N-M}{2}\nonumber \\
- & = & \left(\frac{N+M}{2}+\frac{N-M}{2}\right)\ln N-\frac{N+M}{2}\ln\frac{N+M}{2}-\frac{N-M}{2}\ln\frac{N-M}{2}\nonumber \\
-\frac{S}{k_{\mathrm{B}}} & = & -\frac{N+M}{2}\ln\frac{N+M}{2N}-\frac{N-M}{2}\ln\frac{N-M}{2N}\label{eq:N2all-entropia}
+ & = & \left(N_{+}+N_{-}\right)\ln N-N_{+}\ln N_{+}-N_{-}\ln N_{-}\nonumber \\
+ & = & -N_{+}\ln\frac{N_{+}}{N}-N_{-}\ln\frac{N_{-}}{N}\nonumber \\
+\frac{S}{k_{\mathrm{B}}N} & = & -\frac{1+M/N}{2}\ln\frac{1+M/N}{2}-\frac{1-M/N}{2}\ln\frac{1-M/N}{2}\label{eq:N2all-entropia}
 \end{eqnarray}
 
 \end_inset
@@ -1583,24 +1613,46 @@ Némi algebrával
 
 \end_inset
 
-kapjuk hogy,
+kapjuk, hogy
 \begin_inset Formula 
 \begin{equation}
-\frac{1}{T}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{N-M}{N+M}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{1-M/N}{1+M/N},\label{eq:N2all-homerseklet}
+\frac{1}{T}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{N-M}{N+M}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{1-M/N}{1+M/N}.\label{eq:N2all-homerseklet}
 \end{equation}
 
 \end_inset
 
-azaz
+Mivel
+\begin_inset Formula $\frac{M}{N}\sim\frac{E}{N}$
+\end_inset
+
+ ezért a hőmérséklet, ahogy azt várjuk, intenzív mennyiség.
+ Érdemes megjegyezni hogy az entrópia deriváltja 
+\begin_inset Formula $M/N=\pm1$
+\end_inset
+
+ esetén tart 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+-hez.
+ Ennek megfelelően a hőmérséklet mind két esetben zérushoz tart.
+ Exponencializálva a fenti 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:N2all-homerseklet"
+
+\end_inset
+
+ kifejezést 
 \begin_inset Formula 
 \begin{equation}
-\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}=\frac{1-M/N}{1+M/N}.
+\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}=\frac{1-M/N}{1+M/N},
 \end{equation}
 
 \end_inset
 
-A fenti összefüggés segítségével ki tudjuk fejezni a rendszer energiáját
- a hőmérséklettel: 
+a hőmérséklet és a rendszer energiája között az alábbi kapcsolatot állapíthatjuk
+ meg: 
 \begin_inset Formula 
 \begin{equation}
 E=\varepsilon M=\varepsilon N\frac{1-\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}}{1+\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}}=-\varepsilon N\tanh\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right).\label{eq:N2all-energia}
@@ -1625,7 +1677,7 @@ N_{-} & = & \frac{N-M}{2}=N\frac{\mbox{e}^{\frac{\varepsilon}{k_{\mathrm{B}}T}}}
 
 \end_inset
 
-A fajhő a 
+A hőkapacitás a 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:fajho"
@@ -1720,7 +1772,7 @@ status collapsed
 \begin_inset Formula $N$
 \end_inset
 
- darab két állapotú rendszer fajhője
+ darab két állapotú rendszer hőkapacitása
 \end_layout
 
 \end_inset
@@ -1910,7 +1962,15 @@ reference "eq:stirling-log"
 
 \end_inset
 
- Stirling-formulát termodinamikai határesetben kapjuk hogy az entrópia
+ Stirling-formulát termodinamikai határesetben (mindegy hogy 
+\begin_inset Formula $N$
+\end_inset
+
+ vagy 
+\begin_inset Formula $N-1$
+\end_inset
+
+ oszcillátort vizsgálunk) kapjuk hogy az entrópia
 \begin_inset Formula 
 \begin{eqnarray}
 \frac{S}{k_{\mathrm{B}}} & = & \ln\Omega(E,\delta E)\\
@@ -1930,13 +1990,20 @@ reference "eq:homerseklet"
 -nek megfelelően számítva kapjuk hogy
 \begin_inset Formula 
 \begin{eqnarray}
-\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{k_{\mathrm{B}}}{\hbar\omega}\left[\ln\left(M+N\right)+1-\ln M-1\right]=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{M+N}{M}\\
- & = & \frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{\hbar\omega}+\frac{N}{2}}{\frac{E}{\hbar\omega}-\frac{N}{2}}=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{N}+N\frac{\hbar\omega}{2}}{\frac{E}{N}-N\frac{\hbar\omega}{2}}.
+\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\left.\frac{\partial S}{\partial M}\right|_{V,N}\underbrace{\left.\frac{\partial M}{\partial E}\right|_{V,N}}_{1/\hbar\omega}=\frac{k_{\mathrm{B}}}{\hbar\omega}\left[\ln\left(M+N\right)+1-\ln M-1\right]=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{M+N}{M}\\
+ & = & \frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{\hbar\omega}+\frac{N}{2}}{\frac{E}{\hbar\omega}-\frac{N}{2}}=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{N}+\frac{\hbar\omega}{2}}{\frac{E}{N}-\frac{\hbar\omega}{2}}.
 \end{eqnarray}
 
 \end_inset
 
+Mivel a hőmérséklet tehát 
+\begin_inset Formula $E/N$
+\end_inset
 
+ függvénye azaz, talán nem túl meglepő módon, intenzív mennyiség!
+\end_layout
+
+\begin_layout Standard
 \begin_inset Wrap figure
 lines 0
 placement o
@@ -1972,7 +2039,7 @@ status collapsed
 \begin_inset Formula $N$
 \end_inset
 
- oszcillátor energiája és fajhője
+ oszcillátor energiája és hőkapacitása
 \end_layout
 
 \end_inset
@@ -1989,7 +2056,7 @@ status collapsed
 Exponencializálva ezt a kifejezést kapjuk hogy 
 \begin_inset Formula 
 \begin{equation}
-\frac{\frac{E}{N}+N\frac{\hbar\omega}{2}}{\frac{E}{N}-N\frac{\hbar\omega}{2}}=\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}.
+\frac{\frac{E}{N}+\frac{\hbar\omega}{2}}{\frac{E}{N}-\frac{\hbar\omega}{2}}=\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}.
 \end{equation}
 
 \end_inset
@@ -1998,12 +2065,53 @@ Amelyből némi algebra után egy oszcillátorra jutó energia a hőmérséklet
  függésére kapjuk hogy
 \begin_inset Formula 
 \begin{equation}
-\frac{E}{N}=\left(\frac{\hbar\omega}{2}+\frac{\hbar\omega}{\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}-1}\right).
+\frac{E}{N}=\hbar\omega\left(\frac{1}{2}+\frac{1}{\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}-1}\right).
 \end{equation}
 
 \end_inset
 
-A fajhő ezek után 
+Az energia alacsony hőmérsékleten jó közelítéssel 
+\begin_inset Formula 
+\begin{equation}
+E\approx N\frac{\hbar\omega}{2}.
+\end{equation}
+
+\end_inset
+
+A magas-hőmérsékletű viselkedés megértésére vezessük be az 
+\begin_inset Formula 
+\begin{equation}
+x=\frac{\hbar\omega}{k_{\mathrm{B}}T}=\beta\hbar\omega
+\end{equation}
+
+\end_inset
+
+változót.
+ Magas hőmérsékleten, azaz 
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+ ekkor 
+\begin_inset Formula 
+\begin{equation}
+\frac{E}{N\hbar\omega}=\frac{1}{2}+\frac{1}{x}\left(\frac{x}{\mathrm{e}^{x}-1}\right)\approx\frac{1}{2}+\frac{1}{x}\left(1-\frac{x}{2}+\mathcal{O}\left(x^{2}\right)\right)=\frac{1}{x}
+\end{equation}
+
+\end_inset
+
+tehát 
+\begin_inset Formula $k_{\mathrm{B}}T\gg\hbar\omega$
+\end_inset
+
+ esetén
+\begin_inset Formula 
+\begin{equation}
+E\approx Nk_{\mathrm{B}}T
+\end{equation}
+
+\end_inset
+
+A hőkapacitás ezek után 
 \begin_inset Formula 
 \begin{eqnarray}
 C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=k_{\mathrm{B}}N\frac{\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)^{2}}{\sinh^{2}\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)}\\
@@ -2041,11 +2149,22 @@ alakot ölti.
 \begin_inset Formula $\Omega_{0}$
 \end_inset
 
- számát a Gibbs-paradoxon figyelembevételével az alábbiak szerint fejezhetjük
- ki 
+ számát a 
+\begin_inset CommandInset href
+LatexCommand href
+name "Gibbs-paradoxon"
+target "https://en.wikipedia.org/wiki/Gibbs_paradox"
+
+\end_inset
+
+ figyelembevételével (
+\begin_inset Formula $N!$
+\end_inset
+
+ a nevezőben) az alábbiak szerint fejezhetjük ki 
 \begin_inset Formula 
 \begin{equation}
-\Omega_{0}=\int_{H(p,q)<E}\frac{\mathrm{d}^{3N}p\mathrm{d}^{3N}q}{h^{3N}N!}=\frac{V^{N}}{h^{3N}N!}\int_{\sum_{i=1}^{3N}\frac{p_{i}^{2}}{2m}<E}\mathrm{d}^{3N}p.
+\Omega_{0}=\int_{H(p,q)<E}\frac{\mathrm{d}^{3N}p\mathrm{d}^{3N}q}{h^{3N}{\color{red}N!}}=\frac{V^{N}}{h^{3N}N!}\int_{\sum_{i=1}^{3N}\frac{p_{i}^{2}}{2m}<E}\mathrm{d}^{3N}p.
 \end{equation}
 
 \end_inset
@@ -2094,10 +2213,11 @@ reference "eq:entropia-praktice"
 \begin{eqnarray}
 S/k_{\mathrm{B}} & = & \ln\Omega_{0}\\
  & = & \frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)-\ln N!-\ln\left(\frac{3N}{2}\right)!\nonumber \\
- & \approx & \frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)-N\ln N+N-\left(\frac{3N}{2}\right)\ln\left(\frac{3N}{2}\right)+\left(\frac{3N}{2}\right)\nonumber \\
+\text{Stirling-formula szerint} & \approx & \frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)-N\ln N+N-\left(\frac{3N}{2}\right)\ln\left(\frac{3N}{2}\right)+\left(\frac{3N}{2}\right)\nonumber \\
  & = & \frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\right)-\frac{3}{2}N\ln N^{\frac{2}{3}}+N-\left(\frac{3N}{2}\right)\ln\left(\frac{3N}{2}\right)+\left(\frac{3N}{2}\right)\nonumber \\
  & = & \frac{5}{2}N+\frac{3}{2}N\ln\left(\frac{2\pi mEV^{\frac{2}{3}}}{h^{2}}\frac{1}{N^{\frac{2}{3}}}\frac{2}{3N}\right)\nonumber \\
- & = & \frac{5}{2}N+\frac{3}{2}N\ln\left(\frac{4\pi m}{3h^{2}}\left(\frac{V}{N}\right)^{\frac{2}{3}}\frac{E}{N}\right)
+ & = & \frac{5}{2}N+\frac{3}{2}N\ln\left(\frac{4\pi m}{3h^{2}}\left(\frac{V}{N}\right)^{\frac{2}{3}}\frac{E}{N}\right)\nonumber \\
+ & = & N\left[\frac{3}{2}\ln\frac{2}{3}\frac{E}{N}+\ln\frac{V}{N}+\ln\left(\frac{\left(2\pi m\right)^{3/2}}{h^{3}}\mathrm{e}^{5/2}\right)\right]
 \end{eqnarray}
 
 \end_inset
@@ -2116,16 +2236,31 @@ reference "eq:nyomas"
 
 \end_inset
 
- definiáló összefüggésekből megkapjuk az ekvipartició tételből ismert energia
- kifejezést
+ definiáló összefüggésekből megkapjuk az 
+\begin_inset CommandInset href
+LatexCommand href
+name "ekvipartició-tételből"
+target "https://hu.wikipedia.org/wiki/Ekvipart%C3%ADci%C3%B3-t%C3%A9tel"
+
+\end_inset
+
+ ismert energia kifejezést
 \begin_inset Formula 
 \begin{equation}
-\frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{3}{2}Nk_{\mathrm{B}}\frac{1}{E},\Rightarrow E=\frac{3}{2}Nk_{\mathrm{B}}T,
+\frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{3}{2}Nk_{\mathrm{B}}\frac{1}{E},\Rightarrow E=\frac{3}{2}Nk_{\mathrm{B}}T,\label{eq:idgaz-equipart}
 \end{equation}
 
 \end_inset
 
-és az ideális gáz állapotegyenletét
+és az 
+\begin_inset CommandInset href
+LatexCommand href
+name "ideális gáz állapotegyenletét"
+target "https://en.wikipedia.org/wiki/Gas_laws"
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 \frac{p}{T}=\left.\frac{\partial S}{\partial V}\right|_{E,N}=\frac{Nk_{\mathrm{B}}}{V},\Rightarrow pV=Nk_{\mathrm{B}}T.
@@ -2133,7 +2268,25 @@ reference "eq:nyomas"
 
 \end_inset
 
+A kémiai potenciál 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kemiai-potencial"
 
+\end_inset
+
+ alapján
+\begin_inset Formula 
+\begin{eqnarray}
+\mu & = & -T\left.\frac{\partial S}{\partial N}\right|_{E,V}=-k_{\mathrm{B}}T\left[\frac{3}{2}\ln\frac{2}{3}\frac{E}{N}+\ln\frac{V}{N}+\ln\left(\frac{\left(2\pi m\right)^{3/2}}{h^{3}}\mathrm{e}^{5/2}\right)-\frac{3}{2}-1\right],\\
+ & = & -k_{\mathrm{B}}T\left[\frac{3}{2}\ln\frac{2}{3}\frac{E}{N}+\ln\frac{V}{N}+\ln\left(\frac{\left(2\pi m\right)^{3/2}}{h^{3}}\right)\right],\\
+ & = & -k_{\mathrm{B}}T\left[\ln\frac{V}{N}+\frac{3}{2}\ln\left(\frac{2\pi mk_{\mathrm{B}}T}{h^{2}}\right)\right].
+\end{eqnarray}
+
+\end_inset
+
+Ahogy vártuk a kémiai potenciál is intenzív mennyiség.
+ 
 \end_layout
 
 \end_body
