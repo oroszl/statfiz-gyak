@@ -187,7 +187,7 @@ Végezzünk el még egy változó cserét!
 \begin_inset Formula 
 \begin{eqnarray}
 u & = & r^{2},\label{eq:gauss-rtou}\\
-\frac{\mathrm{d}u}{\mathrm{d}r} & = & 2r\rightarrow\mathrm{d}u=2r\mathrm{d}r.\nonumber 
+\frac{\mathrm{d}u}{\mathrm{d}r} & = & 2r\rightarrow\mathrm{d}r=\frac{\mathrm{d}u}{2r}.\nonumber 
 \end{eqnarray}
 
 \end_inset
@@ -222,6 +222,49 @@ A keresett integrál tehát:
 
 \end_inset
 
+
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+Megjegyzés: Vegyük észre, hogy míg a polárkoordinátáknál 
+\begin_inset Formula $0$
+\end_inset
+
+-tól 
+\begin_inset Formula $\infty$
+\end_inset
+
+-ig integráltunk, az eredeti integrálunk 
+\begin_inset Formula $-\infty$
+\end_inset
+
+-től 
+\begin_inset Formula $\infty$
+\end_inset
+
+-ig megy.
+ Itt nem követtünk el semmilyen matematikai hibát ugyanis ezt a szögfüggéssel
+ figyelembe vettük a polárkoordináták segítségével.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Egy egyszerű változó cserével lássuk be a Gauss-integrál egyszerű általánosításá
 t:
 \end_layout
@@ -427,7 +470,7 @@ A Gamma-függvény:
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\Gamma(z)=\int_{0}^{\infty}\mathrm{e}^{-t}t^{z-1}\mathrm{d}t,\quad\mathrm{Re}(z)>0,\label{eq:gamma-def}
+\Gamma(x)=\int_{0}^{\infty}\mathrm{e}^{-t}t^{x-1}\mathrm{d}t,\quad\mathrm{Re}(x)>0,\label{eq:gamma-def}
 \end{equation}
 
 \end_inset
@@ -1055,6 +1098,9 @@ dimenzió
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $2\mathrm{d}r$
+\end_inset
+
 
 \end_layout
 
@@ -1087,7 +1133,7 @@ dimenzió
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $2\pi r$
+\begin_inset Formula $2\pi r\mathrm{d}r$
 \end_inset
 
 
@@ -1122,7 +1168,7 @@ dimenzió
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $4\pi r^{2}$
+\begin_inset Formula $4\pi r^{2}\mathrm{d}r$
 \end_inset
 
 
@@ -1192,7 +1238,7 @@ dimenzió
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $C_{D}Dr^{D-1}$
+\begin_inset Formula $C_{D}Dr^{D-1}\mathrm{d}r$
 \end_inset
 
 
@@ -1382,6 +1428,14 @@ ahol
 
 \end_inset
 
+
+\begin_inset Formula 
+\begin{equation}
+\psi=\sum p_{\alpha}\left|\alpha\right\rangle 
+\end{equation}
+
+\end_inset
+
 Ezekből 
 \begin_inset Formula 
 \begin{align}
@@ -1397,6 +1451,37 @@ Az utolsó egyenlőség tiszta állapotokra áll fenn, azaz ha igaz, hogy
 \begin{equation}
 \hat{\rho}=\left|\varphi\right\rangle \left\langle \varphi\right|.
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Megjegyzés: A legegyszerűbb a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:suruseg2-trace-le-1"
+
+\end_inset
+
+.
+ egyenletből megkapni, hogy mennyire tiszta az állapot.
+\end_layout
 
 \end_inset
 
