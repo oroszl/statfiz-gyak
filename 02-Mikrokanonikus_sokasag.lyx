@@ -1548,13 +1548,15 @@ status collapsed
 \frac{S}{k_{\mathrm{B}}} & = & N\ln N-N-N_{+}\ln N_{+}+N_{+}-N_{-}\ln N_{-}+N_{-}\\
  & = & \left(N_{+}+N_{-}\right)\ln N-N_{+}\ln N_{+}-N_{-}\ln N_{-}\nonumber \\
  & = & -N_{+}\ln\frac{N_{+}}{N}-N_{-}\ln\frac{N_{-}}{N}\nonumber \\
-\frac{S}{k_{\mathrm{B}}N} & = & -\frac{1+M/N}{2}\ln\frac{1+M/N}{2}-\frac{1-M/N}{2}\ln\frac{1-M/N}{2}\label{eq:N2all-entropia}
+ & = & -\frac{N+M}{2}\ln\frac{N+M}{2N}-\frac{N-M}{2}\ln\frac{N-M}{2N}\nonumber \\
+S & = & -k_{\mathrm{B}}N\left[\frac{1+m}{2}\ln\frac{1+m}{2}+\frac{1-m}{2}\ln\frac{1-m}{2}\right],\label{eq:N2all-entropia}\\
+m & = & \frac{M}{N}=\frac{E}{\varepsilon N}\nonumber 
 \end{eqnarray}
 
 \end_inset
 
 Ha 
-\begin_inset Formula $M=0$
+\begin_inset Formula $m=0$
 \end_inset
 
  azaz azok az állapotok amelyekben ugyan annyi a
@@ -1598,36 +1600,45 @@ normál
 Az entrópia ismeretében a hőmérséklet 
 \begin_inset Formula 
 \begin{eqnarray}
-\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{\partial S}{\partial M}\frac{\partial M}{\partial E}=\frac{1}{\varepsilon}\frac{\partial S}{\partial M}.
+\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{\partial S}{\partial M}\frac{\partial m}{\partial E}=\frac{1}{\varepsilon N}\frac{\partial S}{\partial m}.
 \end{eqnarray}
 
 \end_inset
 
-Némi algebrával 
-\begin_inset Formula 
-\begin{eqnarray}
-\frac{\mathrm{d}}{\mathrm{d}M}\left(\frac{N+M}{2}\ln\frac{N+M}{2N}\right) & = & \frac{1}{2}\ln\frac{N+M}{2N}+\frac{N+M}{2}\frac{2N}{N+M}\frac{1}{2N}\\
- & = & \frac{1}{2}\ln\frac{N+M}{2N}+1,\\
-\frac{\mathrm{d}}{\mathrm{d}M}\left(\frac{N-M}{2}\ln\frac{N-M}{2N}\right) & = & -\frac{1}{2}\ln\frac{N-M}{2N}-1,
-\end{eqnarray}
-
-\end_inset
-
-kapjuk, hogy
+Felhasználva hogy
 \begin_inset Formula 
 \begin{equation}
-\frac{1}{T}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{N-M}{N+M}=\frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{1-M/N}{1+M/N}.\label{eq:N2all-homerseklet}
+\frac{\partial}{\partial x}(1+px)\ln(1+px)=p\left[\ln(1+px)+1\right],
 \end{equation}
 
 \end_inset
 
-Mivel
-\begin_inset Formula $\frac{M}{N}\sim\frac{E}{N}$
+
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{1}{T} & = & \frac{1}{\varepsilon N}\frac{\partial S}{\partial m}\\
+ & = & -\frac{k_{\mathrm{B}}}{\varepsilon}\frac{\partial}{\partial m}\left[\frac{1+m}{2}\ln\frac{1+m}{2}+\frac{1-m}{2}\ln\frac{1-m}{2}\right]\\
+ & = & -\frac{k_{\mathrm{B}}}{2\varepsilon}\frac{\partial}{\partial m}\left[\left(1+m\right)\ln\left(1+m\right)+\left(1-m\right)\ln\left(1-m\right)-2\ln2\right]\\
+ & = & -\frac{k_{\mathrm{B}}}{2\varepsilon}\left[\ln\left(1+m\right)+1-\ln\left(1-m\right)-1\right]
+\end{eqnarray}
+
 \end_inset
 
- ezért a hőmérséklet, ahogy azt várjuk, intenzív mennyiség.
+ kapjuk, hogy
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{1}{T} & = & \frac{k_{\mathrm{B}}}{2\varepsilon}\ln\frac{1-m}{1+m}.\label{eq:N2all-homerseklet}
+\end{eqnarray}
+
+\end_inset
+
+A hőmérséklet, ahogy azt várjuk, intenzív mennyiség hiszen 
+\begin_inset Formula $E/N$
+\end_inset
+
+ függvénye.
  Érdemes megjegyezni hogy az entrópia deriváltja 
-\begin_inset Formula $M/N=\pm1$
+\begin_inset Formula $m=\pm1$
 \end_inset
 
  esetén tart 
@@ -1646,7 +1657,19 @@ reference "eq:N2all-homerseklet"
  kifejezést 
 \begin_inset Formula 
 \begin{equation}
-\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}=\frac{1-M/N}{1+M/N},
+\mbox{e}^{2x}=\frac{1-m}{1+m},\,x=\frac{\varepsilon}{k_{\mathrm{B}}T}.
+\end{equation}
+
+\end_inset
+
+Kifejezve 
+\begin_inset Formula $m$
+\end_inset
+
+-et 
+\begin_inset Formula 
+\begin{equation}
+m=\frac{1-\mbox{e}^{2x}}{1+\mbox{e}^{2x}}=\frac{\mbox{e}^{-x}-\mbox{e}^{x}}{\mbox{e}^{-x}+\mbox{e}^{x}}=-\tanh\left(x\right),
 \end{equation}
 
 \end_inset
@@ -1655,7 +1678,7 @@ a hőmérséklet és a rendszer energiája között az alábbi kapcsolatot álla
  meg: 
 \begin_inset Formula 
 \begin{equation}
-E=\varepsilon M=\varepsilon N\frac{1-\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}}{1+\mbox{e}^{\frac{2\varepsilon}{k_{\mathrm{B}}T}}}=-\varepsilon N\tanh\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right).\label{eq:N2all-energia}
+E=-\varepsilon N\tanh\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right).\label{eq:N2all-energia}
 \end{equation}
 
 \end_inset
@@ -1687,13 +1710,14 @@ reference "eq:fajho"
  szerint 
 \begin_inset Formula 
 \begin{eqnarray}
-C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=\frac{\varepsilon N}{\cosh^{2}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)}\frac{\varepsilon}{k_{\mathrm{B}}T^{2}}=k_{\mathrm{B}}N\frac{\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)^{2}}{\cosh^{2}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)},\\
- & = & k_{\mathrm{B}}N\frac{x^{2}}{\cosh^{2}x},\quad x=\frac{\varepsilon}{k_{\mathrm{B}}T}.
+C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=\frac{\partial E}{\partial x}\frac{\partial x}{\partial T}=-\frac{\varepsilon}{k_{\mathrm{B}}T^{2}}\frac{\partial E}{\partial x}\\
+ & = & \frac{\varepsilon^{2}N}{k_{\mathrm{B}}T^{2}}\frac{\partial\tanh\left(x\right)}{\partial x}=k_{\mathrm{B}}N\frac{x^{2}}{\cosh^{2}x},\\
+ & = & k_{\mathrm{B}}N\frac{\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)^{2}}{\cosh^{2}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)}.
 \end{eqnarray}
 
 \end_inset
 
-A fajhő alacsony illetve magas hőmérsékletű viselkedésére a 
+A hőkapacitás alacsony illetve magas hőmérsékletű viselkedésére a 
 \begin_inset Formula $\cosh$
 \end_inset
 
@@ -1748,7 +1772,7 @@ míg magas hőmérsékleten azaz
 
 \end_inset
 
-Ezen összefüggések segítségével:
+Ezen összefüggések segítségével: 
 \begin_inset Wrap figure
 lines 0
 placement o
@@ -2077,12 +2101,12 @@ reference "eq:homerseklet"
 \begin_inset Formula 
 \begin{eqnarray}
 \frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\left.\frac{\partial S}{\partial M}\right|_{V,N}\underbrace{\left.\frac{\partial M}{\partial E}\right|_{V,N}}_{1/\hbar\omega}=\frac{k_{\mathrm{B}}}{\hbar\omega}\left[\ln\left(M+N\right)+1-\ln M-1\right]=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{M+N}{M}\\
- & = & \frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{\hbar\omega}+\frac{N}{2}}{\frac{E}{\hbar\omega}-\frac{N}{2}}=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{N}+\frac{\hbar\omega}{2}}{\frac{E}{N}-\frac{\hbar\omega}{2}}.
+ & = & \frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{\hbar\omega}+\frac{N}{2}}{\frac{E}{\hbar\omega}-\frac{N}{2}}=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\alpha+\frac{1}{2}}{\alpha-\frac{1}{2}},\quad\alpha=\frac{E}{\hbar\omega N}.
 \end{eqnarray}
 
 \end_inset
 
-Mivel a hőmérséklet tehát 
+A hőmérséklet tehát 
 \begin_inset Formula $E/N$
 \end_inset
 
@@ -2090,16 +2114,23 @@ Mivel a hőmérséklet tehát
 lva ezt a kifejezést kapjuk hogy 
 \begin_inset Formula 
 \begin{equation}
-\frac{\frac{E}{N}+\frac{\hbar\omega}{2}}{\frac{E}{N}-\frac{\hbar\omega}{2}}=\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}.
+\frac{\alpha+\frac{1}{2}}{\alpha-\frac{1}{2}}=\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}=\mathrm{e}^{x},\quad x=\frac{\hbar\omega}{k_{\mathrm{B}}T}.
 \end{equation}
 
 \end_inset
 
-Amelyből némi algebra után egy oszcillátorra jutó energia a hőmérséklet
- függésére kapjuk hogy
+Amelyből némi algebra után az energia a hőmérséklet függésére kapjuk hogy
 \begin_inset Formula 
 \begin{equation}
-\frac{E}{N}=\hbar\omega\left(\frac{1}{2}+\frac{1}{\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}-1}\right).
+\alpha=\left(\frac{1}{2}+\frac{1}{\mathrm{e}^{x}-1}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+E=N\hbar\omega\left(\frac{1}{2}+\frac{1}{\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}-1}\right).
 \end{equation}
 
 \end_inset
@@ -2112,16 +2143,7 @@ E\approx N\frac{\hbar\omega}{2}.
 
 \end_inset
 
-A magas-hőmérsékletű viselkedés megértésére vezessük be az 
-\begin_inset Formula 
-\begin{equation}
-x=\frac{\hbar\omega}{k_{\mathrm{B}}T}=\beta\hbar\omega
-\end{equation}
-
-\end_inset
-
-változót.
- Magas hőmérsékleten, azaz 
+Magas hőmérsékleten, azaz 
 \begin_inset Formula $x\rightarrow0$
 \end_inset
 
@@ -2148,8 +2170,11 @@ E\approx Nk_{\mathrm{B}}T.
 A hőkapacitás ezek után 
 \begin_inset Formula 
 \begin{eqnarray}
-C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=k_{\mathrm{B}}N\frac{\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)^{2}}{\sinh^{2}\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)}\\
- & = & k_{\mathrm{B}}N\frac{\left(x/2\right)^{2}}{\sinh^{2}\left(x/2\right)}.
+C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=\frac{\partial E}{\partial x}\frac{\partial x}{\partial T}=-\frac{\hbar\omega}{k_{\mathrm{B}}T^{2}}\frac{\partial E}{\partial x}\\
+ & = & -Nk_{\mathrm{B}}\left(\frac{\hbar\omega}{k_{\mathrm{B}}T}\right)^{2}\frac{\partial}{\partial x}\left(\frac{1}{2}+\frac{1}{\mathrm{e}^{x}-1}\right)\nonumber \\
+ & = & -Nk_{\mathrm{B}}x^{2}\left(\frac{-1}{\left(\mathrm{e}^{x}-1\right)^{2}}\mathrm{e}^{x}\right)\nonumber \\
+ & = & Nk_{\mathrm{B}}\left(\frac{x/2}{\sinh\left(x/2\right)}\right)^{2}\nonumber \\
+C & = & Nk_{\mathrm{B}}\left(\frac{\frac{\hbar\omega}{2k_{\mathrm{B}}T}}{\sinh\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)}\right)^{2}
 \end{eqnarray}
 
 \end_inset
@@ -2335,7 +2360,7 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2343,16 +2368,23 @@ status collapsed
 HF-04:
 \series default
  Határozzuk meg a hőmérséklet a nyomás és a kémiai potenciálra vonatkozó
- összefüggéseket relativisztikus, esetben! Azaz ha egy részecskére vonatkozó
- Hamilton-függvény 
+ összefüggéseket a klasszikus relativisztikus 
+\begin_inset Quotes eld
+\end_inset
+
+foton
+\begin_inset Quotes erd
+\end_inset
+
+ gáz esetére! Azaz ha egy részecskére vonatkozó Hamilton-függvény 
 \begin_inset Formula 
 \begin{equation}
-H=c\left|p\right|
+H=c\left|p\right|.
 \end{equation}
 
 \end_inset
 
-alakú.
+
 \end_layout
 
 \end_inset
