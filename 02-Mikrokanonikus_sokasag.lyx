@@ -1070,7 +1070,7 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1301,7 +1301,7 @@ lines 0
 placement o
 overhang 0in
 width "30col%"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1900,6 +1900,42 @@ A második példában vizsgáljunk meg
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Noscillator_spectrum.svg
+	width 30col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+ oszcillátor rendszer 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 A rendszer teljes energiája a részrendszerek energiájának összege, azaz
 \begin_inset Formula 
 \begin{equation}
@@ -1980,30 +2016,7 @@ reference "eq:stirling-log"
 
 \end_inset
 
-A hőmérsékletet 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:homerseklet"
 
-\end_inset
-
--nek megfelelően számítva kapjuk hogy
-\begin_inset Formula 
-\begin{eqnarray}
-\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\left.\frac{\partial S}{\partial M}\right|_{V,N}\underbrace{\left.\frac{\partial M}{\partial E}\right|_{V,N}}_{1/\hbar\omega}=\frac{k_{\mathrm{B}}}{\hbar\omega}\left[\ln\left(M+N\right)+1-\ln M-1\right]=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{M+N}{M}\\
- & = & \frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{\hbar\omega}+\frac{N}{2}}{\frac{E}{\hbar\omega}-\frac{N}{2}}=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{N}+\frac{\hbar\omega}{2}}{\frac{E}{N}-\frac{\hbar\omega}{2}}.
-\end{eqnarray}
-
-\end_inset
-
-Mivel a hőmérséklet tehát 
-\begin_inset Formula $E/N$
-\end_inset
-
- függvénye azaz, talán nem túl meglepő módon, intenzív mennyiség!
-\end_layout
-
-\begin_layout Standard
 \begin_inset Wrap figure
 lines 0
 placement o
@@ -2053,7 +2066,28 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-Exponencializálva ezt a kifejezést kapjuk hogy 
+A hőmérsékletet 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:homerseklet"
+
+\end_inset
+
+-nek megfelelően számítva kapjuk hogy
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\left.\frac{\partial S}{\partial M}\right|_{V,N}\underbrace{\left.\frac{\partial M}{\partial E}\right|_{V,N}}_{1/\hbar\omega}=\frac{k_{\mathrm{B}}}{\hbar\omega}\left[\ln\left(M+N\right)+1-\ln M-1\right]=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{M+N}{M}\\
+ & = & \frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{\hbar\omega}+\frac{N}{2}}{\frac{E}{\hbar\omega}-\frac{N}{2}}=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{\frac{E}{N}+\frac{\hbar\omega}{2}}{\frac{E}{N}-\frac{\hbar\omega}{2}}.
+\end{eqnarray}
+
+\end_inset
+
+Mivel a hőmérséklet tehát 
+\begin_inset Formula $E/N$
+\end_inset
+
+ függvénye azaz, talán nem túl meglepő módon, intenzív mennyiség! Exponencializá
+lva ezt a kifejezést kapjuk hogy 
 \begin_inset Formula 
 \begin{equation}
 \frac{\frac{E}{N}+\frac{\hbar\omega}{2}}{\frac{E}{N}-\frac{\hbar\omega}{2}}=\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}.
@@ -2091,10 +2125,10 @@ változót.
 \begin_inset Formula $x\rightarrow0$
 \end_inset
 
- ekkor 
+ esetén a következő közelítés alkalmazható: 
 \begin_inset Formula 
 \begin{equation}
-\frac{E}{N\hbar\omega}=\frac{1}{2}+\frac{1}{x}\left(\frac{x}{\mathrm{e}^{x}-1}\right)\approx\frac{1}{2}+\frac{1}{x}\left(1-\frac{x}{2}+\mathcal{O}\left(x^{2}\right)\right)=\frac{1}{x}
+\frac{E}{N\hbar\omega}=\frac{1}{2}+\left(\frac{1}{\mathrm{e}^{x}-1}\right)\approx\frac{1}{2}+\left(\frac{1}{1+x+\frac{x^{2}}{2}-1}\right)=\frac{1}{2}+\frac{1}{x}\left(\frac{1}{1+\frac{x}{2}}\right)\approx\frac{1}{2}+\frac{1}{x}\left(1-\frac{x}{2}\right)=\frac{1}{x},
 \end{equation}
 
 \end_inset
@@ -2106,7 +2140,7 @@ tehát
  esetén
 \begin_inset Formula 
 \begin{equation}
-E\approx Nk_{\mathrm{B}}T
+E\approx Nk_{\mathrm{B}}T.
 \end{equation}
 
 \end_inset
@@ -2115,7 +2149,7 @@ A hőkapacitás ezek után
 \begin_inset Formula 
 \begin{eqnarray}
 C & = & \left.\frac{\partial E}{\partial T}\right|_{V}=k_{\mathrm{B}}N\frac{\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)^{2}}{\sinh^{2}\left(\frac{\hbar\omega}{2k_{\mathrm{B}}T}\right)}\\
- & = & k_{\mathrm{B}}N\frac{x^{2}}{\sinh^{2}\left(x\right)},\quad x=\frac{\hbar\omega}{2k_{\mathrm{B}}T}.
+ & = & k_{\mathrm{B}}N\frac{\left(x/2\right)^{2}}{\sinh^{2}\left(x/2\right)}.
 \end{eqnarray}
 
 \end_inset
@@ -2287,6 +2321,43 @@ reference "eq:kemiai-potencial"
 
 Ahogy vártuk a kémiai potenciál is intenzív mennyiség.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+HF-04:
+\series default
+ Határozzuk meg a hőmérséklet a nyomás és a kémiai potenciálra vonatkozó
+ összefüggéseket relativisztikus, esetben! Azaz ha egy részecskére vonatkozó
+ Hamilton-függvény 
+\begin_inset Formula 
+\begin{equation}
+H=c\left|p\right|
+\end{equation}
+
+\end_inset
+
+alakú.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

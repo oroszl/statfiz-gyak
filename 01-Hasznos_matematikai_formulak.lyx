@@ -133,10 +133,6 @@ I=\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}.\label{eq:gau
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Célszerű a kifejezés négyzetét vizsgálni!
 \end_layout
 
@@ -148,10 +144,6 @@ I^{2}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}-y^{2}}\ma
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Az integrált írjuk át polárkoordinátákba!
 \end_layout
 
@@ -180,65 +172,12 @@ I^{2}=\int_{0}^{\infty}\int_{0}^{2\pi}\mathrm{e}^{-r^{2}}r\mathrm{d}\varphi\math
 \end_layout
 
 \begin_layout Standard
-Végezzünk el még egy változó cserét!
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray}
-u & = & r^{2},\label{eq:gauss-rtou}\\
-\frac{\mathrm{d}u}{\mathrm{d}r} & = & 2r\rightarrow\mathrm{d}r=\frac{\mathrm{d}u}{2r}.\nonumber 
-\end{eqnarray}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Így már elemi integrációs szabályokkal kiértékelhető összefüggésre jutunk:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-I^{2}=2\pi\int_{0}^{\infty}\frac{\mathrm{e}^{-u}}{2}\mathrm{d}u=\pi\left[-\mathrm{e}^{-u}\right]_{0}^{\infty}=\pi.\label{eq:gauss-levezet-3}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A keresett integrál tehát:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}.\label{eq:gauss-eredmeny}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Box ovalbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\align center
-Megjegyzés: Vegyük észre, hogy míg a polárkoordinátáknál 
+\emph on
+\color blue
+Megjegyzés:
+\emph default
+ Vegyük észre, hogy míg a polárkoordinátáknál 
 \begin_inset Formula $0$
 \end_inset
 
@@ -257,14 +196,45 @@ Megjegyzés: Vegyük észre, hogy míg a polárkoordinátáknál
 -ig megy.
  Itt nem követtünk el semmilyen matematikai hibát ugyanis ezt a szögfüggéssel
  figyelembe vettük a polárkoordináták segítségével.
-\end_layout
+\color inherit
 
+\begin_inset Newline newline
 \end_inset
 
-
+Végezzünk el még egy változó cserét!
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+u & = & r^{2},\label{eq:gauss-rtou}\\
+\frac{\mathrm{d}u}{\mathrm{d}r} & = & 2r\rightarrow\mathrm{d}r=\frac{\mathrm{d}u}{2r}.\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Így már elemi integrációs szabályokkal kiértékelhető összefüggésre jutunk:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I^{2}=2\pi\int_{0}^{\infty}\frac{\mathrm{e}^{-u}}{2}\mathrm{d}u=\pi\left[-\mathrm{e}^{-u}\right]_{0}^{\infty}=\pi.\label{eq:gauss-levezet-3}
+\end{equation}
+
+\end_inset
+
+A keresett integrál tehát:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}.\label{eq:gauss-eredmeny}
+\end{equation}
+
+\end_inset
+
 Egy egyszerű változó cserével lássuk be a Gauss-integrál egyszerű általánosításá
 t:
 \end_layout
@@ -332,7 +302,7 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -528,10 +498,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 ahol kihasználtuk a parciális integrálás szabályát
 \end_layout
 
@@ -543,10 +509,6 @@ ahol kihasználtuk a parciális integrálás szabályát
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 és az alábbi két ismert összefüggést
 \end_layout
 
@@ -559,10 +521,6 @@ ahol kihasználtuk a parciális integrálás szabályát
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Lássuk be a következő két összefüggést is!
 \end_layout
 
@@ -607,10 +565,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Felhasználva a (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1063,7 +1017,7 @@ dimenzió
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $S_{D}(r)$
+\begin_inset Formula $S_{D}(r)\mathrm{d}r$
 \end_inset
 
 
@@ -1455,24 +1409,11 @@ Az utolsó egyenlőség tiszta állapotokra áll fenn, azaz ha igaz, hogy
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box ovalbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-Megjegyzés: A legegyszerűbb a 
+\emph on
+\color blue
+Megjegyzés:
+\emph default
+ A legegyszerűbb a 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:suruseg2-trace-le-1"
@@ -1481,11 +1422,6 @@ reference "eq:suruseg2-trace-le-1"
 
 .
  egyenletből megkapni, hogy mennyire tiszta az állapot.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
