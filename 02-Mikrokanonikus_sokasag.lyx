@@ -1820,7 +1820,7 @@ Amint azt az ábra is mutatja a fajhő hőmérséklet függése maximális egy a
  Határozzuk meg ezt a Hőmérséklet értéket! 
 \begin_inset Formula 
 \begin{equation}
-\partial_{x}C\propto\partial_{x}\left(\frac{x^{2}}{\cosh^{2}x}\right)=\frac{2x}{\cosh^{2}x}-\frac{x^{2}2\sinh^{2}x}{\cosh^{4}x}=\frac{2x\left(1-x\tanh x\right)}{\cosh^{2}x}
+\partial_{x}C\propto\partial_{x}\left(\frac{x^{2}}{\cosh^{2}x}\right)=\frac{2x}{\cosh^{2}x}-\frac{x^{2}2\sinh x}{\cosh^{3}x}=\frac{2x\left(1-x\tanh x\right)}{\cosh^{2}x}
 \end{equation}
 
 \end_inset

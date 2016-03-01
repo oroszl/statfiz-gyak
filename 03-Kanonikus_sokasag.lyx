@@ -5,7 +5,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language magyar
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -28,7 +28,7 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,13 +53,6 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1cm
-\topmargin 2cm
-\rightmargin 1cm
-\bottommargin 2cm
-\headheight 1cm
-\headsep 1cm
-\footskip 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -77,95 +70,68 @@
 
 \begin_body
 
-\begin_layout Title
-Statisztikus Fizika Gyakorlat
+\begin_layout Part
+Kanonikus sokaság
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
 
+\lang magyar
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
-\begin_inset VSpace defskip
-\end_inset
+\begin_layout Plain Layout
 
-
+\series bold
+Állapot összeg:
 \end_layout
 
-\begin_layout Standard
-\align center
-\begin_inset Quotes eld
-\end_inset
+\begin_layout Plain Layout
 
-Ludwig Boltzmann, who spent much of his life studying statistical mechanics,
- died in 1906, by his own hand.
- 
-\end_layout
+\lang magyar
+\begin_inset Formula 
+\begin{eqnarray}
+\text{Klasszikus rendszer: }Z & = & \frac{1}{h^{N}}\int\left(\mbox{d}p\mbox{d}q\right)^{N}\mathrm{e}^{-\frac{H(p,q)}{k_{\mathrm{B}}T}}\label{eq:klasszik-Z}\\
+\text{Kvantumos rendszer: }Z & = & \sum_{n}\mathrm{e}^{-\frac{E_{n}}{k_{\mathrm{B}}T}}\label{eq:kvanum-Z}
+\end{eqnarray}
 
-\begin_layout Standard
-\align center
-Paul Ehrenfest, carrying on the work, died similarly in 1933.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-Now it is our turn to study statistical mechanics.
-\begin_inset Quotes erd
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\begin_inset VSpace defskip
-\end_inset
-
-
-\begin_inset VSpace defskip
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\align center
-DAVID L.
- GOODSTEIN 
-\end_layout
+\begin_layout Plain Layout
 
-\begin_layout Standard
-\align center
-in 
-\end_layout
-
-\begin_layout Standard
-\align center
-STATES OF MATTER
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "01-Hasznos_matematikai_formulak.lyx"
+\series bold
+\lang magyar
+Szabad energia:
+\begin_inset Formula 
+\begin{equation}
+F=-k_{\mathrm{B}}T\ln Z
+\end{equation}
 
 \end_inset
 
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "02-Mikrokanonikus_sokasag.lyx"
+\begin_inset Formula 
+\begin{equation}
+\mathrm{d}F=-S\mathrm{d}T-p\mathrm{d}V+\mu\mathrm{d}N
+\end{equation}
 
 \end_inset
 
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "03-Kanonikus_sokasag.lyx"
+\end_layout
 
 \end_inset
 
