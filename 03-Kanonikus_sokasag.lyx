@@ -71,7 +71,7 @@
 \begin_body
 
 \begin_layout Part
-Kanonikus sokaság
+Állapotösszegek kanonikus sokaságban
 \end_layout
 
 \begin_layout Standard
@@ -91,7 +91,7 @@ status open
 \begin_layout Plain Layout
 
 \series bold
-Állapot összeg:
+Állapotösszeg:
 \end_layout
 
 \begin_layout Plain Layout
@@ -112,6 +112,10 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \series bold
 Az 
@@ -134,10 +138,10 @@ P_{n}=\frac{\mathrm{e}^{-\beta E_{n}}}{Z}
 \begin_layout Plain Layout
 
 \series bold
-Szabad energia:
+Szabadenergia:
 \begin_inset Formula 
 \begin{equation}
-F=-k_{\mathrm{B}}T\ln Z
+F=-k_{\mathrm{B}}T\ln Z\label{eq:szabad_energia_lnz}
 \end{equation}
 
 \end_inset
@@ -145,7 +149,7 @@ F=-k_{\mathrm{B}}T\ln Z
 
 \begin_inset Formula 
 \begin{equation}
-F(T,V,N)=E-TS
+F(T,V,N)=E-TS\label{eq:szabad_energia_legendre}
 \end{equation}
 
 \end_inset
@@ -153,24 +157,7 @@ F(T,V,N)=E-TS
 
 \begin_inset Formula 
 \begin{equation}
-\mathrm{d}F=-S\mathrm{d}T-p\mathrm{d}V+\mu\mathrm{d}N
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-Energia és szabad energia (Legendre-transzformáció):
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-F=E-TS
+\mathrm{d}F=-S\mathrm{d}T-p\mathrm{d}V+\mu\mathrm{d}N\label{eq:szabad_energia_diferencialis_alak}
 \end{equation}
 
 \end_inset
@@ -187,7 +174,7 @@ Energia (átlagos):
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-E=-\frac{\partial}{\partial\beta}\ln Z=-\frac{1}{Z}\frac{\partial Z}{\partial\beta}=\frac{\int_{0}^{\infty}\omega\left(E\right)E\mathrm{e}^{-\beta E}\mbox{d}E}{\int_{0}^{\infty}\omega\left(E\right)\mathrm{e}^{-\beta E}\mbox{d}E}
+E=-\frac{\partial}{\partial\beta}\ln Z=-\frac{1}{Z}\frac{\partial Z}{\partial\beta}=\frac{\int_{0}^{\infty}\omega\left(E\right)E\mathrm{e}^{-\beta E}\mbox{d}E}{\int_{0}^{\infty}\omega\left(E\right)\mathrm{e}^{-\beta E}\mbox{d}E}\label{eq:kanonikus-energia}
 \end{equation}
 
 \end_inset
@@ -203,11 +190,15 @@ Nyomás:
 
 \begin_inset Formula 
 \begin{equation}
-p=-\left.\frac{\partial F}{\partial V}\right|_{T,N}
+p=-\left.\frac{\partial F}{\partial V}\right|_{T,N}\label{eq:kanonikus-nyomas}
 \end{equation}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \series bold
 Entrópia:
@@ -215,7 +206,7 @@ Entrópia:
 
 \begin_inset Formula 
 \begin{equation}
-S=-\left.\frac{\partial F}{\partial T}\right|_{V,N}
+S=-\left.\frac{\partial F}{\partial T}\right|_{V,N}\label{eq:kanonikus-entropia-derival}
 \end{equation}
 
 \end_inset
@@ -229,7 +220,8 @@ S=-\left.\frac{\partial F}{\partial T}\right|_{V,N}
 \end_layout
 
 \begin_layout Section
-Mikrokanonikus vs Kanonikus formalizmus, két egyszerű példa
+Mikrokanonikus vs.
+ Kanonikus formalizmus, két egyszerű példa
 \end_layout
 
 \begin_layout Subsection
@@ -253,25 +245,43 @@ Mikrokanonikus
 \end_layout
 
 \begin_layout Standard
+Kiindulva az entrópia számítására vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:entropia-praktice"
+
+\end_inset
+
+ praktikus összefüggésből kapjuk hogy
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-S=k_{\mathrm{B}}\ln\omega\left(E\right)\delta E=k_{\mathrm{B}}\ln A\left(N\right)E^{\alpha N}\delta E=k_{\mathrm{B}}\alpha N\ln E+k_{\mathrm{B}}\ln A\left(N\right)\delta E
+S=k_{\mathrm{B}}\ln\omega\left(E\right)\delta E=k_{\mathrm{B}}\ln A\left(N\right)E^{\alpha N}\delta E=k_{\mathrm{B}}\alpha N\ln E+k_{\mathrm{B}}\ln A\left(N\right)\delta E.
 \end{equation}
 
 \end_inset
 
+A hőmérséklet 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:homerseklet"
 
+\end_inset
+
+ alapján
 \begin_inset Formula 
 \begin{equation}
-\frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{k_{\mathrm{B}}\alpha N}{E}
+\frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{k_{\mathrm{B}}\alpha N}{E}.
 \end{equation}
 
 \end_inset
 
-
+Az energia illetve a fajhő pedig
 \begin_inset Formula 
 \begin{equation}
-E=k_{\mathrm{B}}\alpha NT,\rightarrow C=\frac{\partial E}{\partial T}=k_{\mathrm{B}}\alpha N
+E=k_{\mathrm{B}}\alpha NT,\rightarrow C=\frac{\partial E}{\partial T}=k_{\mathrm{B}}\alpha N.
 \end{equation}
 
 \end_inset
@@ -284,50 +294,61 @@ Kanonikus
 \end_layout
 
 \begin_layout Standard
+Az állapotösszeget 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-Z"
+
+\end_inset
+
+ alapján 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Z=\int_{0}^{\infty}\omega\left(E\right)\mathrm{e}^{-\beta E}\mbox{d}E=\int_{0}^{\infty}A\left(N\right)E^{\alpha N}\mathrm{e}^{-\beta E}\mbox{d}E
+Z=\int_{0}^{\infty}\omega\left(E\right)\mathrm{e}^{-\beta E}\mbox{d}E=\int_{0}^{\infty}A\left(N\right)E^{\alpha N}\mathrm{e}^{-\beta E}\mbox{d}E,
 \end{equation}
 
 \end_inset
 
-
+egy változó csere végrehajtásával
 \begin_inset Formula 
 \begin{equation}
-u=\beta E,\quad\mbox{d}E=\frac{\mbox{d}u}{\beta}
+u=\beta E,\quad\mbox{d}E=\frac{\mbox{d}u}{\beta},
 \end{equation}
 
 \end_inset
 
-
+kapjuk hogy
 \begin_inset Formula 
 \begin{eqnarray}
-Z & = & \int_{0}^{\infty}A\left(N\right)\left(\frac{u}{\beta}\right)^{-\alpha N}\mathrm{e}^{-u}\frac{\mbox{d}u}{\beta}=A\left(N\right)\beta^{-(\alpha N+1)}\underbrace{\int_{0}^{\infty}u^{-\alpha N}\mathrm{e}^{-u}\mbox{d}u}_{\Gamma\left(\alpha N+1\right)}\\
- & = & A\left(N\right)\beta^{-(\alpha N+1)}\Gamma\left(\alpha N+1\right)
+Z & = & \int_{0}^{\infty}A\left(N\right)\left(\frac{u}{\beta}\right)^{-\alpha N}\mathrm{e}^{-u}\frac{\mbox{d}u}{\beta}=A\left(N\right)\beta^{-(\alpha N+1)}\underbrace{\int_{0}^{\infty}u^{-\alpha N}\mathrm{e}^{-u}\mbox{d}u}_{\Gamma\left(\alpha N+1\right)},\\
+ & = & A\left(N\right)\beta^{-(\alpha N+1)}\Gamma\left(\alpha N+1\right).
 \end{eqnarray}
 
 \end_inset
 
-
+Véve ezen kifejezés logaritmusát
 \begin_inset Formula 
 \begin{equation}
-\ln Z=-(\alpha N+1)\ln\beta+\ln A\left(N\right)\Gamma\left(\alpha N+1\right)
+\ln Z=-(\alpha N+1)\ln\beta+\ln A\left(N\right)\Gamma\left(\alpha N+1\right),
 \end{equation}
 
 \end_inset
 
-
+az energia 
 \begin_inset Formula 
 \begin{equation}
-E=-\frac{\partial}{\partial\beta}\ln Z=\frac{(\alpha N+1)}{\beta}=k_{\mathrm{B}}T(\alpha N+1)
+E=-\frac{\partial}{\partial\beta}\ln Z=\frac{(\alpha N+1)}{\beta}=k_{\mathrm{B}}T(\alpha N+1),
 \end{equation}
 
 \end_inset
 
-
+és a fajhő
 \begin_inset Formula 
 \begin{equation}
-C=\frac{\partial E}{\partial T}=k_{\mathrm{B}}T(\alpha N+1)
+C=\frac{\partial E}{\partial T}=k_{\mathrm{B}}T(\alpha N+1).
 \end{equation}
 
 \end_inset
@@ -361,14 +382,32 @@ Mikrokanonikus
 \end_layout
 
 \begin_layout Standard
+Az előző feladathoz hasonlóan az entrópia 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:entropia-praktice"
+
+\end_inset
+
+ alapján
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-S=k_{\mathrm{B}}\ln\omega\left(E\right)\delta E=k_{\mathrm{B}}N\ln V+k_{\mathrm{B}}\ln A\left(\frac{\alpha1}{N}\right)^{N}\left(\frac{E}{N}\right)^{fN}\delta E
+S=k_{\mathrm{B}}\ln\omega\left(E\right)\delta E=k_{\mathrm{B}}N\ln V+k_{\mathrm{B}}\ln A\left(\frac{\alpha1}{N}\right)^{N}\left(\frac{E}{N}\right)^{fN}\delta E.
 \end{equation}
 
 \end_inset
 
+A nyomás pedig 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:nyomas"
 
+\end_inset
+
+ alapján
 \begin_inset Formula 
 \begin{equation}
 \frac{p}{T}=\left.\frac{\partial S}{\partial V}\right|_{E,N}=\frac{k_{\mathrm{B}}N}{V},\rightarrow p=\frac{k_{\mathrm{B}}NT}{V}
@@ -384,6 +423,14 @@ Kanonikus
 \end_layout
 
 \begin_layout Standard
+Az állapotösszeg ismételten 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-Z"
+
+\end_inset
+
+ szerint
 \begin_inset Formula 
 \begin{eqnarray}
 Z & = & \int_{0}^{\infty}\omega\left(E\right)\mathrm{e}^{-\beta E}\mbox{d}E=\int_{0}^{\infty}A\left(\frac{\alpha V}{N}\right)^{N}\left(\frac{E}{N}\right)^{fN}\mathrm{e}^{-\beta E}\mbox{d}E\\
@@ -392,7 +439,14 @@ Z & = & \int_{0}^{\infty}\omega\left(E\right)\mathrm{e}^{-\beta E}\mbox{d}E=\int
 
 \end_inset
 
+Melyből a szabadenergia az 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:szabad_energia_lnz"
 
+\end_inset
+
+ összefüggésből
 \begin_inset Formula 
 \begin{equation}
 F=-k_{\mathrm{B}}T\ln Z=-k_{\mathrm{B}}TN\ln V+\dots
@@ -400,7 +454,14 @@ F=-k_{\mathrm{B}}T\ln Z=-k_{\mathrm{B}}TN\ln V+\dots
 
 \end_inset
 
+és a nyomás a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kanonikus-nyomas"
 
+\end_inset
+
+ kifejezésből 
 \begin_inset Formula 
 \begin{equation}
 p=-\left.\frac{\partial F}{\partial V}\right|_{T,N}=\frac{k_{\mathrm{B}}TN}{V}
@@ -408,7 +469,7 @@ p=-\left.\frac{\partial F}{\partial V}\right|_{T,N}=\frac{k_{\mathrm{B}}TN}{V}
 
 \end_inset
 
-
+adódik.
 \end_layout
 
 \begin_layout Section
@@ -420,35 +481,60 @@ Klasszikus
 \end_layout
 
 \begin_layout Standard
+Induljunk ki a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:rotator-hamilton-klasszik"
+
+\end_inset
+
+ Hamilton-függvényből
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)
+H=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right).
 \end{equation}
 
 \end_inset
 
+Az állapotösszeg klasszikus rendszerekre vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-Z"
 
+\end_inset
+
+ alakját felhasználva kapjuk hogy 
 \begin_inset Formula 
 \begin{eqnarray}
-Z & = & \frac{1}{h^{2}}\int_{0}^{2\pi}\mbox{d}\varphi\int_{0}^{\pi}\mbox{d}\vartheta\underbrace{\int_{-\infty}^{\infty}\mbox{d}p_{\vartheta}\int_{-\infty}^{\infty}\mbox{d}p_{\varphi}\mathrm{e}^{-\frac{\beta}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)}}_{\text{2 db Gauss integrál!!}}\\
- & = & \frac{1}{h^{2}}\underbrace{\int_{0}^{2\pi}\mbox{d}\varphi\int_{0}^{\pi}\mbox{d}\vartheta\sin\vartheta}_{\text{Térszög! \ensuremath{4\pi}}}\sqrt{\frac{2\Theta\pi}{\beta}}\sqrt{\frac{2\Theta\pi}{\beta}}\nonumber \\
- & = & \frac{2\Theta}{\hbar^{2}\beta}\nonumber 
+Z & = & \frac{1}{h^{2}}\int_{0}^{2\pi}\mbox{d}\varphi\int_{0}^{\pi}\mbox{d}\vartheta\underbrace{\int_{-\infty}^{\infty}\mbox{d}p_{\vartheta}\int_{-\infty}^{\infty}\mbox{d}p_{\varphi}\mathrm{e}^{-\frac{\beta}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)}}_{\text{2 db Gauss integrál!!}},\\
+ & = & \frac{1}{h^{2}}\underbrace{\int_{0}^{2\pi}\mbox{d}\varphi\int_{0}^{\pi}\mbox{d}\vartheta\sin\vartheta}_{\text{Térszög! \ensuremath{4\pi}}}\sqrt{\frac{2\Theta\pi}{\beta}}\sqrt{\frac{2\Theta\pi}{\beta}},\nonumber \\
+ & = & \frac{2\Theta}{\hbar^{2}\beta}.\nonumber 
 \end{eqnarray}
 
 \end_inset
 
-
+Azaz 
 \begin_inset Formula 
 \begin{equation}
-\ln Z=\ln\frac{2\Theta}{\hbar^{2}}-\ln\beta
+\ln Z=\ln\frac{2\Theta}{\hbar^{2}}-\ln\beta,
 \end{equation}
 
 \end_inset
 
+Melyből az energia a szokásos 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kanonikus-energia"
 
+\end_inset
+
+ módon 
 \begin_inset Formula 
 \begin{equation}
-E=-\frac{\partial}{\partial\beta}\ln Z=\frac{\partial}{\partial\beta}\ln\beta=\frac{1}{\beta}=k_{\mathrm{B}}T
+E=-\frac{\partial}{\partial\beta}\ln Z=\frac{\partial}{\partial\beta}\ln\beta=\frac{1}{\beta}=k_{\mathrm{B}}T.
 \end{equation}
 
 \end_inset
@@ -461,17 +547,29 @@ Kvantumos
 \end_layout
 
 \begin_layout Standard
+A rotátor nívói 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:rotator-kvantum-spektrum"
+
+\end_inset
+
+ alapján adottak:
 \begin_inset Formula 
 \begin{equation}
-E_{l}=\frac{\hbar^{2}}{2\Theta}l(l+1)
+E_{l}=\frac{\hbar^{2}}{2\Theta}l(l+1).
 \end{equation}
 
 \end_inset
 
+Az állapotösszeg az eggyes nívók ismert 
+\begin_inset Formula $(2l+1)$
+\end_inset
 
+-szeres degenerációját figyelembe véve
 \begin_inset Formula 
 \begin{equation}
-Z=\sum_{l=0}^{\infty}\underbrace{\left(2l+1\right)}_{\text{degeneráció miatt}}\mathrm{e}^{-\beta\frac{\hbar^{2}}{2\Theta}l(l+1)}
+Z=\sum_{l=0}^{\infty}\underbrace{\left(2l+1\right)}_{\text{degeneráció miatt}}\mathrm{e}^{-\beta\frac{\hbar^{2}}{2\Theta}l(l+1)}.
 \end{equation}
 
 \end_inset
@@ -489,7 +587,29 @@ Z\underset{T\rightarrow0}{\approx}1+3\mathrm{e}^{-\beta\frac{\hbar^{2}}{2\Theta}
 
 \end_inset
 
+Felhasználva az 
+\begin_inset Formula $\ln$
+\end_inset
 
+ függvény közelítését az 
+\begin_inset Formula $1$
+\end_inset
+
+körül 
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \ln\left(1+x\right)\underset{x\ll1}{\approx}x
@@ -498,9 +618,36 @@ Z\underset{T\rightarrow0}{\approx}1+3\mathrm{e}^{-\beta\frac{\hbar^{2}}{2\Theta}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+kapjuk egyszerűen, hogy
 \begin_inset Formula 
 \begin{equation}
-\ln Z\approx3\mathrm{e}^{-\beta\frac{\hbar^{2}}{\Theta}}
+\ln Z\approx3\mathrm{e}^{-\beta\frac{\hbar^{2}}{\Theta}}.
+\end{equation}
+
+\end_inset
+
+Az energia és a fajhő 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kanonikus-energia"
+
+\end_inset
+
+ illetve 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fajho"
+
+\end_inset
+
+ alapján 
+\begin_inset Formula 
+\begin{equation}
+E=-\frac{\partial}{\partial\beta}\ln Z=\frac{3\hbar^{2}}{\Theta}\mathrm{e}^{-\beta\frac{\hbar^{2}}{\Theta}},
 \end{equation}
 
 \end_inset
@@ -508,15 +655,7 @@ Z\underset{T\rightarrow0}{\approx}1+3\mathrm{e}^{-\beta\frac{\hbar^{2}}{2\Theta}
 
 \begin_inset Formula 
 \begin{equation}
-E=-\frac{\partial}{\partial\beta}\ln Z=\frac{3\hbar^{2}}{\Theta}\mathrm{e}^{-\beta\frac{\hbar^{2}}{\Theta}}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-C=\frac{\partial E}{\partial T}=3\left(\frac{\hbar^{2}}{\Theta}\right)^{2}\frac{1}{k_{\mathrm{B}}T^{2}}\mathrm{e}^{-k_{\mathrm{B}}T\frac{\hbar^{2}}{\Theta}}
+C=\frac{\partial E}{\partial T}=3\left(\frac{\hbar^{2}}{\Theta}\right)^{2}\frac{1}{k_{\mathrm{B}}T^{2}}\mathrm{e}^{-k_{\mathrm{B}}T\frac{\hbar^{2}}{\Theta}}.
 \end{equation}
 
 \end_inset
@@ -527,7 +666,7 @@ Magas hőmérsékleten egy durva becslés, hogy csak azon tagokat vesszük melye
 \end_inset
 
  és ezeket úgy vesszük figyelembe hogy mindegyiknek ugyan azt a súlyt adjuk!
- A feltevés matematikailag egy a legnagyobb 
+ A feltevés matematikailag a legnagyobb 
 \begin_inset Formula $l$
 \end_inset
 
@@ -539,10 +678,10 @@ Magas hőmérsékleten egy durva becslés, hogy csak azon tagokat vesszük melye
 
 \end_inset
 
- 
+Ezt felhasználva kapjuk hogy 
 \begin_inset Formula 
 \begin{equation}
-Z=\sum_{l=0}^{l_{max}}\left(2l+1\right)=\left(l_{max}+1\right)^{2}\approx l_{max}^{2}=\frac{2\Theta}{\hbar^{2}\beta}
+Z=\sum_{l=0}^{l_{max}}\left(2l+1\right)=\left(l_{max}+1\right)^{2}\approx l_{max}^{2}=\frac{2\Theta}{\hbar^{2}\beta}.
 \end{equation}
 
 \end_inset
@@ -560,14 +699,13 @@ Z=\sum_{l=0}^{l_{max}}\left(2l+1\right)=\left(l_{max}+1\right)^{2}\approx l_{max
 \begin_layout Standard
 Sok rendszerben (ahogy láttuk a rotátornál is) sokszor alacsony hőmérsékleten
  jó közelítéssel csak az első gerjesztett állapotig tudjuk gerjeszteni a
- rendszert.
- 
+ rendszert: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{0}=-\varepsilon,\quad E_{1}=0
+E_{0}=-\varepsilon,\quad E_{1}=0.
 \end{equation}
 
 \end_inset
@@ -580,10 +718,18 @@ nívó
 \begin_inset Formula $g$
 \end_inset
 
--szeresen degenerált 
+-szeresen degenerált tehát az állapotösszeg 
 \begin_inset Formula 
 \begin{equation}
-Z=\left(g+\mathrm{e}^{\beta\varepsilon}\right)^{N}
+Z=\left(g+\mathrm{e}^{\beta\varepsilon}\right)^{N},
+\end{equation}
+
+\end_inset
+
+melyből a szabadenergia és az energia
+\begin_inset Formula 
+\begin{equation}
+F=-k_{\mathrm{B}}T\ln Z=-k_{\mathrm{B}}TN\ln\left(g+\mathrm{e}^{\beta\varepsilon}\right),
 \end{equation}
 
 \end_inset
@@ -591,7 +737,165 @@ Z=\left(g+\mathrm{e}^{\beta\varepsilon}\right)^{N}
 
 \begin_inset Formula 
 \begin{equation}
-F=-k_{\mathrm{B}}T\ln Z=-k_{\mathrm{B}}TN\ln\left(g+\mathrm{e}^{\beta\varepsilon}\right)
+E=-\frac{\partial}{\partial\beta}\ln Z=-N\frac{\partial}{\partial\beta}\ln\left(g+\mathrm{e}^{\beta\varepsilon}\right)=-N\varepsilon\frac{\mathrm{e}^{\beta\varepsilon}}{\left(g+\mathrm{e}^{\beta\varepsilon}\right)},
+\end{equation}
+
+\end_inset
+
+Alacsony hőmérsékleten kapjuk egyszerűen, hogy
+\begin_inset Formula 
+\begin{equation}
+T\rightarrow0,\beta\rightarrow\infty,\quad E=-N\varepsilon,
+\end{equation}
+
+\end_inset
+
+illetve magas hőmérsékleten
+\begin_inset Formula 
+\begin{equation}
+T\rightarrow\infty,\beta\rightarrow0,\quad E=-N\varepsilon\frac{1}{\left(g+1\right)}.
+\end{equation}
+
+\end_inset
+
+Az entrópiát 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:szabad_energia_legendre"
+
+\end_inset
+
+ alapján
+\begin_inset Formula 
+\begin{equation}
+S=\frac{E-F}{T}=k_{\mathrm{B}}N\ln\left(g+\mathrm{e}^{\beta\varepsilon}\right)-\frac{N\varepsilon}{T}\frac{\mathrm{e}^{\beta\varepsilon}}{\left(g+\mathrm{e}^{\beta\varepsilon}\right)}.
+\end{equation}
+
+\end_inset
+
+Magas hőmérsékleten csak az első tag játszik szerepet,
+\begin_inset Formula 
+\begin{equation}
+T\rightarrow\infty,\beta\rightarrow0,\quad S=k_{\mathrm{B}}N\ln\left(g+1\right),
+\end{equation}
+
+\end_inset
+
+azaz minden állapot demokratikusan van betöltve.
+ Alacsony hőmérsékleten pedig
+\begin_inset Formula 
+\begin{eqnarray}
+T & \rightarrow & 0,\beta\rightarrow\infty\nonumber \\
+S & \approx & k_{\mathrm{B}}N\ln\mathrm{e}^{\beta\varepsilon}\left(g\mathrm{e}^{-\beta\varepsilon}+1\right)-\frac{N\varepsilon}{T}\left(1-g\mathrm{e}^{-\beta\varepsilon}\right),\label{eq:entropia-degeneralt-2szint}\\
+ & = & k_{\mathrm{B}}N\left(\beta\varepsilon+g\mathrm{e}^{-\beta\varepsilon}\right)-\frac{N\varepsilon}{T}\left(1-g\mathrm{e}^{-\beta\varepsilon}\right),\nonumber \\
+ & = & g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}\left(k_{\mathrm{B}}N+\frac{N\varepsilon}{T}\right).\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+HF-05:
+\series default
+ Határozzuk meg az előző feladatban kiszámított entrópiát mikrokanonikus
+ formalizmusban is! 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Számítsuk ki a 
+\begin_inset Formula $C$
+\end_inset
+
+ fajhőt 
+\begin_inset Formula $T=0$
+\end_inset
+
+ környezetében 
+\begin_inset Formula $F$
+\end_inset
+
+-en illetve 
+\begin_inset Formula $E$
+\end_inset
+
+-n keresztül! Célszerű először egy közelítő kifejezést keresni 
+\begin_inset Formula $\ln Z$
+\end_inset
+
+-re:
+\begin_inset Formula 
+\begin{equation}
+\ln Z=N\ln\mathrm{e}^{\beta\varepsilon}\left(1+g\mathrm{e}^{-\beta\varepsilon}\right)\approx Ng\mathrm{e}^{-\beta\varepsilon}+N\beta\varepsilon.
+\end{equation}
+
+\end_inset
+
+Ebből a szabadenergia
+\begin_inset Formula 
+\begin{eqnarray}
+F & = & -k_{\mathrm{B}}T\ln Z=-k_{\mathrm{B}}T\left(Ng\mathrm{e}^{-\beta\varepsilon}+N\beta\varepsilon\right),\\
+ & = & -\left(k_{\mathrm{B}}TNg\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}+N\varepsilon\right).\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Felhasználva 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kanonikus-entropia-derival"
+
+\end_inset
+
+-t visszakapjuk az előző 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:entropia-degeneralt-2szint"
+
+\end_inset
+
+ kifejezést 
+\begin_inset Formula 
+\begin{eqnarray}
+S & = & -\frac{\partial F}{\partial T}=k_{\mathrm{B}}Ng\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}+k_{\mathrm{B}}TNg\frac{\varepsilon}{k_{\mathrm{B}}T^{2}}\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}},\\
+ & = & k_{\mathrm{B}}Ng\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}+Ng\frac{\varepsilon}{T}\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}=g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}\left(k_{\mathrm{B}}N+\frac{N\varepsilon}{T}\right).\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+A fajhő a láncszabály használatával 
+\begin_inset Formula 
+\begin{eqnarray}
+C & = & \frac{\partial E}{\partial T}=\underbrace{\frac{\partial E}{\partial S}}_{T}\frac{\partial S}{\partial T}=T\left[g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}\frac{\varepsilon}{k_{\mathrm{B}}T^{2}}\left(k_{\mathrm{B}}N+\frac{N\varepsilon}{T}\right)-g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}\frac{N\varepsilon}{T^{2}}\right],\\
+ & = & g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\left(k_{\mathrm{B}}N+\frac{N\varepsilon}{T}\right)-\frac{N\varepsilon}{T}\right)=g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}\left(\left(\frac{\varepsilon N}{T}+N\frac{\varepsilon^{2}}{k_{\mathrm{B}}T^{2}}\right)-\frac{N\varepsilon}{T}\right),\\
+ & = & Ngk_{\mathrm{B}}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)^{2}\mathrm{e^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}}.
+\end{eqnarray}
+
+\end_inset
+
+Ha az energiából indulunk ki akkor némileg rövidebb úton célba érünk
+\begin_inset Formula 
+\begin{equation}
+E=-\frac{\partial}{\partial\beta}\ln Z=Ng\varepsilon\mathrm{e}^{-\beta\varepsilon}-N\varepsilon=N\varepsilon\left(g\mathrm{e}^{-\beta\varepsilon}-1\right)=N\varepsilon\left(g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}-1\right),
 \end{equation}
 
 \end_inset
@@ -599,48 +903,36 @@ F=-k_{\mathrm{B}}T\ln Z=-k_{\mathrm{B}}TN\ln\left(g+\mathrm{e}^{\beta\varepsilon
 
 \begin_inset Formula 
 \begin{equation}
-E=-\frac{\partial}{\partial\beta}\ln Z=-N\frac{\partial}{\partial\beta}\ln\left(g+\mathrm{e}^{\beta\varepsilon}\right)=-N\varepsilon\frac{\mathrm{e}^{\beta\varepsilon}}{\left(g+\mathrm{e}^{\beta\varepsilon}\right)}
+C=\frac{\partial E}{\partial T}=N\varepsilon g\mathrm{e}^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}\left(-\frac{\varepsilon}{k_{\mathrm{B}}}\right)\left(-\frac{1}{T^{2}}\right)=Ngk_{\mathrm{B}}\left(\frac{\varepsilon}{k_{\mathrm{B}}T}\right)^{2}\mathrm{e^{-\frac{\varepsilon}{k_{\mathrm{B}}T}}}.
 \end{equation}
 
 \end_inset
 
 
-\begin_inset Formula 
-\begin{equation}
-T\rightarrow0,\beta\rightarrow\infty,\quad E=-N\varepsilon
-\end{equation}
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
+\begin_layout Plain Layout
+
+\series bold
+HF-06:
+\series default
+ Egy rendszer fajhője 
+\begin_inset Formula $C=fk_{\mathrm{B}}$
 \end_inset
 
-
-\begin_inset Formula 
-\begin{equation}
-T\rightarrow\infty,\beta\rightarrow0,\quad E=-N\varepsilon\frac{1}{\left(g+1\right)}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-S=-\left.\frac{\partial F}{\partial T}\right|_{V,N}=\frac{E-F}{T}=k_{\mathrm{B}}N\ln\left(g+\mathrm{e}^{\beta\varepsilon}\right)-\frac{N\varepsilon}{T}\frac{\mathrm{e}^{\beta\varepsilon}}{\left(g+\mathrm{e}^{\beta\varepsilon}\right)}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-T\rightarrow0,\beta\rightarrow\infty,\quad S=-N\varepsilon
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-T\rightarrow\infty,\beta\rightarrow0,\quad S=k_{\mathrm{B}}N\ln\left(g+1\right)
-\end{equation}
+ határozzuk meg a rendszer állapotsűrűségét!
+\end_layout
 
 \end_inset
 

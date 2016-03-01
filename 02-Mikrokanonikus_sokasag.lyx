@@ -605,7 +605,7 @@ A Lagrange-függvény szokásos deriváltjaiból a szögváltozókhoz konjugált
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H=E_{kin}=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right).
+H=E_{kin}=\frac{1}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right).\label{eq:rotator-hamilton-klasszik}
 \end{equation}
 
 \end_inset
@@ -697,7 +697,7 @@ A klasszikus és kvantumos rotátor állapotainak száma
 Ennek az operátornak a spektruma
 \begin_inset Formula 
 \begin{equation}
-E_{l}=\frac{\hbar^{2}l(l+1)}{2\Theta}.
+E_{l}=\frac{\hbar^{2}l(l+1)}{2\Theta}.\label{eq:rotator-kvantum-spektrum}
 \end{equation}
 
 \end_inset
