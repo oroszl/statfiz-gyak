@@ -939,5 +939,1472 @@ HF-06:
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Fizikai mennyiségek eloszlásai
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Várható értékek:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray}
+\text{Klasszikus rendszer: }\left\langle A\right\rangle  & = & \frac{1}{Zh^{N}}\int\left(\mbox{d}p\mbox{d}q\right)^{N}A(p,q)\mathrm{e}^{-\beta H(p,q)}\label{eq:klasszik-varhato-ertek}\\
+\text{Kvantumos rendszer: }\left\langle A\right\rangle  & = & \frac{1}{Z}\sum_{n}\left\langle n\left|\hat{A}\right|n\right\rangle \mathrm{e}^{-\beta E_{n}}\label{eq:kvanum-varhato-ertek}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Deriváltak várható értéke (
+\begin_inset CommandInset href
+LatexCommand href
+name "Hellmann-Feynman tétel"
+target "https://en.wikipedia.org/wiki/Hellmann%E2%80%93Feynman_theorem"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\left\langle \frac{\partial}{\partial\lambda}H(\lambda)\right\rangle =\frac{\partial}{\partial\lambda}F(\lambda)\label{eq:hellmann-feynman-tetel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Ekvipartició tétel
+\end_layout
+
+\begin_layout Plain Layout
+Ha
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+H=\lambda_{1}x_{1}^{2}+g(x_{2},x_{3},\dots),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+akkor 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\left\langle \lambda_{1}x_{1}^{2}\right\rangle =\frac{1}{2}k_{\mathrm{B}}T,\label{eq:ekviparticio-tetel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+általánosabban
+\begin_inset Formula 
+\begin{equation}
+\left\langle x_{i}\frac{\partial H}{\partial x_{j}}\right\rangle =k_{\mathrm{B}}T\delta_{ij}\label{eq:altalanos-ekviparticio-tetel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kétállapotú rendszerek energia eloszlásai
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z_{1}=\mathrm{e}^{\beta\varepsilon}+\mathrm{e}^{-\beta\varepsilon}=2\cosh\beta\varepsilon
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Z=Z_{1}^{N}=\left(2\cosh\beta\varepsilon\right)^{N},\rightarrow\ln Z=N\ln2\cosh\beta\varepsilon\label{eq:2all-kanonikus-Z}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+N_{+} & = & \frac{N+M}{2}=\frac{N}{2}+\frac{E}{2\varepsilon}\\
+E & = & \varepsilon\left(2N_{+}-N\right)\label{eq:2allapot-kanonikus-evs-nplus}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left\langle E\right\rangle =-\partial_{\beta}\ln Z=-N\varepsilon\frac{2\sinh\beta\varepsilon}{2\cosh\beta\varepsilon}=-N\varepsilon\tanh\beta\varepsilon
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left\langle N_{+}\right\rangle =\frac{N}{2}\left[1+\tanh\beta\varepsilon\right]
+\end{equation}
+
+\end_inset
+
+Mi a valószínűsége hogy 
+\begin_inset Formula $n$
+\end_inset
+
+ darab részecske a 
+\begin_inset Formula $+\varepsilon$
+\end_inset
+
+ energiájú állapotban van.
+ 
+\begin_inset Formula 
+\begin{equation}
+P\left(N_{+}=n\right)=\frac{\left(\begin{array}{c}
+N\\
+n
+\end{array}\right)\mathrm{e}^{\beta E(n)}}{Z}=\frac{\left(\begin{array}{c}
+N\\
+n
+\end{array}\right)\mathrm{e}^{\beta\varepsilon\left(2n-N\right)}}{Z}
+\end{equation}
+
+\end_inset
+
+A legvalószínűbb állapotban 
+\begin_inset Formula 
+\begin{equation}
+\partial_{n}\ln P=0
+\end{equation}
+
+\end_inset
+
+Termodinamikai határesetben kihasználva a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:stirling-log"
+
+\end_inset
+
+ Stirling-formulát 
+\begin_inset Formula 
+\begin{equation}
+\ln\frac{N!}{n!\left(N-n\right)!}\mathrm{e}^{\beta E(n)}\approx\beta\varepsilon\left(2n-N\right)+N\ln N-n\ln n-\left(N-n\right)\ln\left(N-n\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\partial_{n}\ln P & = & 2\beta\varepsilon-\ln n-1+\ln\left(N-n\right)+1\\
+ & = & 2\beta\varepsilon+\ln\frac{N-n}{n}
+\end{eqnarray}
+
+\end_inset
+
+kapjuk tehát hogy a legvalószínűbb állapotban a pozitív energiás részecskék
+ száma
+\begin_inset Formula 
+\begin{equation}
+n=N\frac{1}{\mathrm{e}^{2\beta\varepsilon}+1}.
+\end{equation}
+
+\end_inset
+
+Vizsgáljuk meg ennek az eloszlásnak a szórását, azaz határozzuk meg a következő
+ mennyiséget
+\begin_inset Formula 
+\begin{equation}
+\left\langle N_{+}^{2}\right\rangle -\left\langle N_{+}\right\rangle ^{2}=?
+\end{equation}
+
+\end_inset
+
+Ez a mennyiség 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2allapot-kanonikus-evs-nplus"
+
+\end_inset
+
+ alapján az energia és az energia négyzet várhatóértékkel fejezhető ki.
+ Az energia várhatóértékének négyzete 
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle E\right\rangle  & = & 2\varepsilon\left\langle N_{+}\right\rangle -N\varepsilon,\nonumber \\
+\left\langle E\right\rangle ^{2} & = & 4\varepsilon^{2}\left\langle N_{+}\right\rangle ^{2}+N^{2}\varepsilon^{2}-2\varepsilon^{2}\left\langle N_{+}\right\rangle N,
+\end{eqnarray}
+
+\end_inset
+
+illetve az energia négyzetének várható értéke
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle E^{2}\right\rangle  & = & \left\langle \left(2\varepsilon N_{+}-N\varepsilon\right)^{2}\right\rangle ,\\
+ & = & \left\langle 4\varepsilon^{2}N_{+}^{2}+N^{2}\varepsilon^{2}-4\varepsilon^{2}NN_{+}\right\rangle ,\nonumber \\
+ & = & 4\varepsilon^{2}\left\langle N_{+}^{2}\right\rangle +N^{2}\varepsilon^{2}-2\varepsilon^{2}\left\langle N_{+}\right\rangle N,\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+amiből 
+\begin_inset Formula 
+\begin{equation}
+\frac{\left\langle E^{2}\right\rangle -\left\langle E\right\rangle ^{2}}{4\varepsilon^{2}}=\left\langle N_{+}^{2}\right\rangle -\left\langle N_{+}\right\rangle ^{2}.
+\end{equation}
+
+\end_inset
+
+Az energia tetszőleges hatványának várhatóértékét könnyű szerrel meghatározhatju
+k az állapotösszeg 
+\begin_inset Formula $\beta$
+\end_inset
+
+ szerinti derviáljaiból, hiszen
+\begin_inset Formula 
+\begin{equation}
+\partial_{\beta}^{p}Z=\sum_{j}\left(-E_{j}\right)^{p}\mathrm{e}^{\beta E_{j}}
+\end{equation}
+
+\end_inset
+
+tehát 
+\begin_inset Formula 
+\begin{equation}
+\left\langle E^{p}\right\rangle =\frac{\left(-1\right)^{p}}{Z}\partial_{\beta}^{p}Z.
+\end{equation}
+
+\end_inset
+
+A számunkra érdekes szórás
+\begin_inset Formula 
+\begin{equation}
+\left\langle E^{2}\right\rangle -\left\langle E\right\rangle ^{2}=\frac{1}{Z}\partial_{\beta}^{2}Z+\left(\partial_{\beta}\ln Z\right)^{2}.
+\end{equation}
+
+\end_inset
+
+Felhasználva az állapotösszeg 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2all-kanonikus-Z"
+
+\end_inset
+
+ kifejezését a konkrét problémánkra a releváns deriváltak:
+\begin_inset Formula 
+\begin{eqnarray}
+\partial_{\beta}\left(2\cosh\beta\varepsilon\right)^{N} & = & 2N\varepsilon\left(2\cosh\beta\varepsilon\right)^{N-1}\sinh\beta\varepsilon\\
+\partial_{\beta}^{2}\left(2\cosh\beta\varepsilon\right)^{N} & = & 2N\varepsilon\left[2\varepsilon\left(N-1\right)\left(2\cosh\beta\varepsilon\right)^{N-2}\sinh^{2}\beta\varepsilon+2^{N-1}\varepsilon\left(\cosh\beta\varepsilon\right)^{N}\right]\\
+ & = & \varepsilon^{2}N(N-1)2^{N}\sinh^{2}\beta\varepsilon\cosh^{N-2}\beta\varepsilon+N2^{N}\varepsilon^{2}\left(\cosh\beta\varepsilon\right)^{N}\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Az energia négyzet várható értéke tehát
+\begin_inset Formula 
+\begin{equation}
+\left\langle E^{2}\right\rangle =\varepsilon^{2}N(N-1)\tanh^{2}\beta\varepsilon+N\varepsilon^{2}.
+\end{equation}
+
+\end_inset
+
+Az energia szórása
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle E^{2}\right\rangle -\left\langle E\right\rangle ^{2} & = & \varepsilon^{2}N(N-1)\tanh^{2}\beta\varepsilon+N\varepsilon^{2}-N^{2}\varepsilon^{2}\tanh^{2}\beta\varepsilon\\
+ & = & \varepsilon^{2}N\left(1-\tanh^{2}\beta\varepsilon\right)=\frac{\varepsilon^{2}N}{\cosh^{2}\beta\varepsilon}.\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+A betöltési számok keresett szórása tehát
+\begin_inset Formula 
+\begin{equation}
+\left\langle N_{+}^{2}\right\rangle -\left\langle N_{+}\right\rangle ^{2}=\frac{N}{4\cosh^{2}\beta\varepsilon}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Rotátor elektromos térben
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:rotator-e-terben"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+H & = & E_{kin}+E_{pot}=\frac{1}{2\Theta}\left[p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right]-\vec{\mathcal{E}}\cdot\vec{d}\\
+ & = & \frac{1}{2\Theta}\left[p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right]-\mathcal{E}d\cos\vartheta\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Állapotösszeg
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \frac{1}{h^{2}}\int_{0}^{2\pi}\mbox{d}\varphi\int_{0}^{\pi}\mbox{d}\vartheta\int_{-\infty}^{\infty}\mbox{d}p_{\vartheta}\int_{-\infty}^{\infty}\mbox{d}p_{\varphi}\mathrm{e}^{-\frac{\beta}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)}\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta},\\
+ & = & \frac{1}{h^{2}}\int_{0}^{2\pi}\mbox{d}\varphi\int_{0}^{\pi}\mbox{d}\vartheta\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}\sqrt{\frac{2\Theta\pi}{\beta}}\sqrt{\frac{2\Theta\pi}{\beta}}\sin\vartheta\nonumber \\
+ & = & \frac{1}{h^{2}}\frac{2\pi\Theta2\pi}{\beta}\int_{0}^{\pi}\mbox{d}\vartheta\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}\sin\vartheta,\:\left(\text{változócsere:}\,x=\cos\vartheta,\frac{\mathrm{d}x}{\mathrm{d}\vartheta}=-\sin\vartheta\right)\nonumber \\
+ & = & \frac{\Theta}{\hbar^{2}\beta}\int_{-1}^{1}\mbox{d}x\mathrm{e}^{\beta\mathcal{E}dx}=\frac{\Theta}{\hbar^{2}\beta}\frac{\mathrm{e}^{\beta\mathcal{E}d}-\mathrm{e}^{-\beta\mathcal{E}d}}{\beta\mathcal{E}d}=\frac{2\Theta\sinh\beta\mathcal{E}d}{\hbar^{2}\beta^{2}d\mathcal{E}}\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Egy 
+\begin_inset Formula $A(\vartheta,\varphi)$
+\end_inset
+
+ mennyiség várható értéke 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-varhato-ertek"
+
+\end_inset
+
+-nek megfelelően
+\begin_inset Formula 
+\begin{equation}
+\int\mbox{d}\varphi\mbox{d}\vartheta A(\vartheta,\varphi)\int\frac{\mbox{d}p_{\vartheta}\mbox{d}p_{\varphi}}{h^{2}}\frac{\mathrm{e}^{-\beta H}}{Z}=\int\mbox{d}\varphi\mbox{d}\vartheta A(\vartheta,\varphi)P(\vartheta,\varphi)
+\end{equation}
+
+\end_inset
+
+Ahol bevezettük a 
+\begin_inset Formula $P(\vartheta,\varphi)$
+\end_inset
+
+ valószínűségi sűrűséget.
+ 
+\begin_inset Formula 
+\begin{eqnarray}
+P(\vartheta,\varphi) & = & \frac{1}{h^{2}Z}\int_{-\infty}^{\infty}\mbox{d}p_{\vartheta}\mbox{d}p_{\varphi}\mathrm{e}^{-\beta H}\\
+ & = & \frac{\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}}{h^{2}Z}\int_{-\infty}^{\infty}\mbox{d}p_{\vartheta}\mbox{d}p_{\varphi}\mathrm{e}^{-\frac{\beta}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)}\nonumber \\
+ & = & \frac{\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}}{h^{2}Z}\frac{2\Theta\pi}{\beta}\sin\vartheta\nonumber \\
+ & = & \frac{\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}\frac{2\Theta\pi}{\beta}\sin\vartheta}{h^{2}\frac{2\Theta\sinh\beta\mathcal{E}d}{\hbar^{2}\beta^{2}d\mathcal{E}}}\nonumber \\
+ & = & \frac{1}{4\pi}\frac{\beta d\mathcal{E}}{\sinh\beta\mathcal{E}d}\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}\sin\vartheta\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Vegyük észre hogy 
+\begin_inset Formula $\mathcal{E}=0$
+\end_inset
+
+ esetén illetve magas hőmérsékleten amikor 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+P(\vartheta,\varphi)\mbox{d}\varphi\mbox{d}\vartheta=\frac{\sin\vartheta\mbox{d}\varphi\mbox{d}\vartheta}{4\pi}=\frac{\mbox{d}\Omega}{4\pi}
+\end{equation}
+
+\end_inset
+
+azaz ahogy várjuk ha a rendszerben nincs kitüntetett irány, vagy a termikus
+ fluktuációk mindent kiátlagolnak akkor a szög szerinti eloszlás egyenletes!
+\end_layout
+
+\begin_layout Standard
+Ha a rendszer tulajdonságai függetlenek 
+\begin_inset Formula $\varphi$
+\end_inset
+
+-től akkor érdemes bevezetni a 
+\begin_inset Formula 
+\begin{equation}
+\bar{P}\left(\vartheta\right)=\int_{0}^{2\pi}P(\vartheta,\varphi)\mbox{d}\varphi=\frac{1}{2}\frac{\beta d\mathcal{E}}{\sinh\beta\mathcal{E}d}\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}\sin\vartheta\label{eq:ERrotator-eloszlas-theta}
+\end{equation}
+
+\end_inset
+
+átlagolt eloszlásfüggvényt.
+ 
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg az energia várható értékét!
+\begin_inset Formula 
+\begin{eqnarray}
+E & = & -\partial_{\beta}\ln Z=-\partial_{\beta}\left[\ln\frac{2\Theta}{\hbar^{2}d\mathcal{E}}+\ln\left(\sinh\beta\mathcal{E}d\right)-2\ln\beta\right]\\
+ & = & \frac{2}{\beta}+\mathcal{E}d\frac{\cosh\beta\mathcal{E}d}{\sinh\beta\mathcal{E}d}=\frac{1}{\beta}-\mathcal{E}d\left[\coth\beta\mathcal{E}d-\frac{1}{\beta\mathcal{E}d}\right]\nonumber \\
+ & = & k_{\mathrm{B}}T-\mathcal{E}d\mathcal{L}\left(\beta\mathcal{E}d\right)\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Langevin.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A Langevin-függvény
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Langevin-fuggveny"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "67col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+ahol bevezettük a 
+\begin_inset CommandInset href
+LatexCommand href
+name "Langevin-függvényt"
+target "https://en.wikipedia.org/wiki/Brillouin_and_Langevin_functions"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}\left(x\right)=\coth x-\frac{1}{x}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg a rendszer dipólmomentumának várható értékét.
+ A meghatározandó várhatóérték 
+\begin_inset Formula 
+\begin{equation}
+\left\langle d_{\mathcal{E}}\right\rangle =\left\langle d\cos\vartheta\right\rangle 
+\end{equation}
+
+\end_inset
+
+Induljunk ki a Hellmann--Feynman-tételből 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:hellmann-feynman-tetel"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle d\cos\vartheta\right\rangle  & = & -\left\langle \partial_{\mathcal{E}}H\right\rangle =\frac{1}{\beta}\partial_{\mathcal{E}}\ln Z\\
+ & = & \frac{1}{\beta}\partial_{\mathcal{E}}\left[\ln\frac{2\Theta}{\hbar^{2}\beta^{2}d}+\ln\left(\sinh\beta\mathcal{E}d\right)-\ln\mathcal{E}\right]\nonumber \\
+ & = & \frac{1}{\beta}\left[\beta d\frac{\cosh\beta\mathcal{E}d}{\sinh\beta\mathcal{E}d}-\frac{1}{\mathcal{E}}\right]\nonumber \\
+ & = & d\left[\frac{\cosh\beta\mathcal{E}d}{\sinh\beta\mathcal{E}d}-\frac{1}{\beta\mathcal{E}d}\right]=d\mathcal{L}\left(\beta\mathcal{E}d\right)\label{eq:ratator-eter-dipolmomentum}
+\end{eqnarray}
+
+\end_inset
+
+Vegyük észre hogy ugyan erre a kifejezésre jutottunk volna ha a várható
+ értékek egyszerű definícióját használtuk volna: 
+\begin_inset Formula 
+\begin{equation}
+\left\langle d\cos\vartheta\right\rangle =\frac{\int_{0}^{\pi}\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}d\cos\vartheta\sin\vartheta\mathrm{d}\vartheta}{\int_{0}^{\pi}\mathrm{e}^{\beta\mathcal{E}d\cos\vartheta}\sin\vartheta\mathrm{d}\vartheta}=d\frac{\int_{-1}^{1}\mathrm{e}^{\beta\mathcal{E}dx}x\mathrm{d}x}{\int_{-1}^{1}\mathrm{e}^{\beta\mathcal{E}dx}\mathrm{d}x}=\frac{1}{\beta}\partial_{\mathcal{E}}\ln Z.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Független kvantumos mágneses momentum külső mágneses térben
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{H}=-\vec{M}\cdot\vec{B}=-\mu_{B}\hat{\vec{S}}\cdot\vec{B}=-\mu_{B}\hat{S_{z}}B
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\hat{S_{z}}$
+\end_inset
+
+ sajátértékei : 
+\begin_inset Formula $-j,-j+1,\dots j$
+\end_inset
+
+ ahol a 
+\begin_inset Formula $j$
+\end_inset
+
+ lehet egész vagy félegész szám.
+ Az állapot összeg 
+\begin_inset Formula 
+\begin{equation}
+Z=\sum_{m=-j}^{j}\mathrm{e}^{\beta\mu_{B}mB}
+\end{equation}
+
+\end_inset
+
+Vegyük észre hogy ez egy 
+\begin_inset CommandInset href
+LatexCommand href
+name "mértani sor"
+target "https://hu.wikipedia.org/wiki/M%C3%A9rtani_sorozat"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \mathrm{e}^{-\beta\mu_{B}Bj}\frac{\mathrm{e}^{\beta\mu_{B}B\left(2j+1\right)}-1}{\mathrm{e}^{\beta\mu_{B}B}-1},\\
+ & = & \frac{\mathrm{e}^{\beta\mu_{B}B(j+1/2)}-\mathrm{e}^{-\beta\mu_{B}B(j+1/2)}}{\mathrm{e}^{\beta\mu_{B}B/2}-\mathrm{e}^{-\beta\mu_{B}B/2}},\nonumber \\
+ & = & \frac{\sinh\left(\beta\mu_{B}B(j+1/2)\right)}{\sinh\left(\beta\mu_{B}B/2\right)}\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Az állapotösszeg tehát 
+\begin_inset Formula $\beta B$
+\end_inset
+
+ mennyiség függvénye.
+ Azaz a rendszerben jelenlevő két meghatározó energia skála a termális energia
+ és a mágneses energia hányadosa a releváns paraméter.
+ A rendszer energiája 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kanonikus-energia"
+
+\end_inset
+
+ szerint
+\begin_inset Formula 
+\begin{eqnarray}
+E & = & -\partial_{\beta}\ln Z=-\partial_{\beta}\left[\ln\sinh\left(\beta\mu_{B}B(j+1/2)\right)-\ln\sinh\left(\beta\mu_{B}B/2\right)\right],\\
+ & = & -\left[\mu_{B}B(j+1/2)\frac{\cosh\left(\beta\mu_{B}B(j+1/2)\right)}{\sinh\left(\beta\mu_{B}B(j+1/2)\right)}-\mu_{B}B/2\frac{\cosh\left(\beta\mu_{B}B/2\right)}{\sinh\left(\beta\mu_{B}B/2\right)}\right],\nonumber \\
+ & = & \mu_{B}B/2\coth\left(\beta\mu_{B}B/2\right)-\mu_{B}B(j+1/2)\coth\left(\beta\mu_{B}B(j+1/2)\right).\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+A szabad energia
+\begin_inset Formula 
+\begin{equation}
+F=-k_{\mathrm{B}}T\ln Z,
+\end{equation}
+
+\end_inset
+
+melyből a Hellmann--Feynman-tétel 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:hellmann-feynman-tetel"
+
+\end_inset
+
+ segítségével megkapjuk a mágnesezettséget 
+\begin_inset Formula 
+\begin{equation}
+M=-\partial_{B}F=\frac{1}{\beta}\partial_{B}\ln Z\underset{Z=f(\beta B)}{=}-\frac{E}{B},
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+M & = & \mu_{B}/2\coth\left(\beta\mu_{B}B/2\right)-\mu_{B}(j+1/2)\coth\left(\beta\mu_{B}B(j+1/2)\right)\\
+ & = & \mu_{B}j\mathcal{B}_{j}(x),\quad x=\mu_{B}\beta Bj.\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Brillouin.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A Brillouin-függvény különböző 
+\begin_inset Formula $j$
+\end_inset
+
+-kre illetve a Langevin-függvény 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Brillouin-fuggveny"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "65col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Ahol bevezettük a 
+\begin_inset Formula $\mathcal{B}{}_{j}(x)$
+\end_inset
+
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "Brillouin-függvényt"
+target "https://en.wikipedia.org/wiki/Brillouin_and_Langevin_functions"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathcal{B}_{j}(x)=\frac{2j+1}{2j}\coth\left(\frac{2j+1}{2j}x\right)-\frac{1}{2j}\coth\left(\frac{x}{2j}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg a fenn kapott eredmények viselkedését nagy mágneses tér illetve
+ alacsony hőmérséklet mellett azaz ha a Brillouin-függvény argumentuma nagy,
+ vagyis 
+\begin_inset Formula 
+\begin{eqnarray}
+x & = & \mu_{B}\beta Bj\gg1.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset Formula $\coth(x)$
+\end_inset
+
+ függvény ezen a tartományon jó közelítéssel 
+\begin_inset Formula $\coth\left(x\right)\approx1.$
+\end_inset
+
+ A mágnesezettség tehát
+\begin_inset Formula 
+\begin{equation}
+M\approx\mu_{B}\left[\frac{2j+1}{2}-\frac{1}{2}\right]=\mu_{B}j.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Azaz ahogy várjuk csak a legkisebb energiájú álapot ad járulékot.
+\end_layout
+
+\begin_layout Standard
+Az ellentétes határesetben azaz nagy hőmérséklet vagy kicsi mágneses tér
+ esetén az vagyis 
+\begin_inset Formula 
+\begin{eqnarray}
+x & = & \mu_{B}\beta Bj\ll1
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "20col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/coth.png
+	lyxscale 40
+	width 15text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A 
+\begin_inset Formula $\coth(x)$
+\end_inset
+
+ függvény és közelítései.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ekkor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\coth\left(x\right)\approx\frac{1}{x}+\frac{x}{3},
+\end{equation}
+
+\end_inset
+
+a Brillouin-függvény pedig
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\mathcal{B}_{j}(x) & \underset{x\rightarrow0}{\approx} & \frac{2j+1}{2j}\left(\frac{2j}{\left(2j+1\right)x}+\frac{1}{3}\times\frac{2j+1}{2j}x\right)-\frac{1}{2j}\left(\frac{2j}{x}+\frac{1}{3}\frac{x}{2j}\right),\\
+ & = & \frac{1}{x}+\frac{x}{3}\left(\frac{2j+1}{2j}\right)^{2}-\frac{1}{x}-\frac{x}{3}\frac{1}{\left(2j\right)^{2}},\\
+ & = & \frac{x}{3}\frac{4j^{2}+4j}{\left(2j\right)^{2}}=\frac{x}{3}\frac{j+1}{j}.
+\end{eqnarray}
+
+\end_inset
+
+A mágnesezettség tehát
+\begin_inset Formula 
+\begin{equation}
+M\approx\mu_{B}^{2}\frac{j\left(j+1\right)}{3k_{\mathrm{B}}T}B.
+\end{equation}
+
+\end_inset
+
+Magas hőmérsékleten tehát a 
+\begin_inset CommandInset href
+LatexCommand href
+name "Curie-törvénynek"
+target "https://en.wikipedia.org/wiki/Curie%E2%80%93Weiss_law"
+
+\end_inset
+
+ megfelelő viselkedést kapunk
+\begin_inset Formula 
+\begin{equation}
+\chi=\partial_{B}M=\mu_{B}^{2}\frac{j\left(j+1\right)}{3k_{\mathrm{B}}T}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg a nagy impulzusmomentum 
+\begin_inset Formula $j\gg1$
+\end_inset
+
+ határesetet, ez a klasszikus határeset.
+ Vegyük észre hogy ekkor a Brillouin-függvény a Langevin-függvényre egyszerűsödi
+k 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{B}_{j}(x)\underset{j\gg1}{\approx}\coth\left(x\right)-\frac{1}{2j}\coth\left(\frac{x}{2j}\right)\approx\coth\left(x\right)-\frac{1}{x}=\mathcal{L}(x),
+\end{equation}
+
+\end_inset
+
+a mágnesezettség tehát
+\begin_inset Formula 
+\begin{equation}
+M=\mu_{B}j\mathcal{L}(\mu_{B}\beta Bj).
+\end{equation}
+
+\end_inset
+
+Érdemes összevetni ezt az eredményt a klasszikus rotátor vizsgálata során
+ számolt dipól momentummal 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ratator-eter-dipolmomentum"
+
+\end_inset
+
+, ahol szintén hasonló viselkedést kaptunk.
+\end_layout
+
+\begin_layout Standard
+Végül foglaljuk össze a kapott eredményeket feles spin azaz 
+\begin_inset Formula $j=1/2$
+\end_inset
+
+ esetére:
+\begin_inset Formula 
+\begin{equation}
+Z=2\cosh\left(\frac{\beta\mu_{B}B}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+E=-\frac{\mu_{B}B}{2}\tanh\left(\frac{\beta\mu_{B}B}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{\mu_{B}}{2}\tanh\left(\frac{\beta\mu_{B}B}{2}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+2D oszcillátor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\frac{p_{x}^{2}+p_{y}^{2}}{2m}+\frac{1}{2}m\omega^{2}\left(x^{2}+y^{2}\right)=\frac{\vec{p}\cdot\vec{p}}{2m}+\frac{1}{2}m\omega^{2}\vec{r}\cdot\vec{r}
+\end{equation}
+
+\end_inset
+
+Az állapotösszeg a klasszikus rendszerekre vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-Z"
+
+\end_inset
+
+ kifejezésből
+\begin_inset Formula 
+\begin{equation}
+Z=\frac{1}{h^{2}}\int_{-\infty}^{\infty}\mathrm{d}\vec{p}\mathrm{d}\vec{r}\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}r^{2}\right]}=\frac{1}{h^{2}}\frac{2\pi m}{\beta}\frac{2\pi}{\beta m\omega^{2}}=\frac{1}{\left(\hbar\beta\omega\right)^{2}}.
+\end{equation}
+
+\end_inset
+
+Mennyi a kitérés négyzet várható értéke ?
+\begin_inset Formula 
+\begin{equation}
+\left\langle r^{2}\right\rangle =\frac{1}{Zh^{2}}\int_{-\infty}^{\infty}r^{2}\mathrm{d}\vec{p}\mathrm{d}\vec{r}\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}r^{2}\right]}
+\end{equation}
+
+\end_inset
+
+Vegyük észre hogy
+\begin_inset Formula 
+\begin{equation}
+\partial_{\omega^{2}}Z=\frac{1}{h^{2}}\int_{-\infty}^{\infty}\left(-\frac{1}{2}\beta mr^{2}\right)\mathrm{d}\vec{p}\mathrm{d}\vec{r}\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}r^{2}\right]}
+\end{equation}
+
+\end_inset
+
+tehát 
+\begin_inset Formula 
+\begin{equation}
+-\frac{2}{m\beta}\frac{1}{Z}\partial_{\omega^{2}}Z=-\frac{2}{m\beta}\partial_{\omega^{2}}\ln Z=\left\langle r^{2}\right\rangle 
+\end{equation}
+
+\end_inset
+
+azaz 
+\begin_inset Formula 
+\begin{equation}
+\left\langle r^{2}\right\rangle =\frac{2}{m\beta}\partial_{\omega^{2}}\ln\left(\hbar\beta\omega\right)^{2}=\frac{2}{m\beta\omega^{2}}
+\end{equation}
+
+\end_inset
+
+átrendezve 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{2}m\omega^{2}\left\langle r^{2}\right\rangle =\left\langle E_{pot}\right\rangle =k_{\mathrm{B}}T
+\end{equation}
+
+\end_inset
+
+az ekvipartició tétel szellemének megfelelően.
+\end_layout
+
+\begin_layout Standard
+Hasonló eredményre jutunk ha a Hellmann-Feynman tételt 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:hellmann-feynman-tetel"
+
+\end_inset
+
+ alkalmazzuk:
+\begin_inset Formula 
+\begin{equation}
+\partial_{\omega^{2}}H=\frac{1}{2}mr^{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left\langle \partial_{\omega^{2}}H\right\rangle =\frac{1}{2}m\left\langle r^{2}\right\rangle =-\frac{1}{\beta}\partial_{\omega^{2}}\ln Z
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Síkinga
+\end_layout
+
+\begin_layout Standard
+A síkinga Lagrange függvénye, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\frac{1}{2}ml^{2}\dot{\varphi}^{2}+mgl\cos\varphi-mgl.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "20col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/sikinga.svg
+	lyxscale 40
+	width 20text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Síkinga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+A 
+\begin_inset Formula $\varphi$
+\end_inset
+
+-koordinátához konjugált kanonikus impulzus tehát
+\begin_inset Formula 
+\begin{equation}
+p_{\varphi}=\frac{\partial L}{\partial\dot{\varphi}}=ml^{2}\dot{\varphi}.
+\end{equation}
+
+\end_inset
+
+A Hamilton-függvény a következő alakot ölti 
+\begin_inset Formula 
+\begin{equation}
+H=\frac{p_{\varphi}^{2}}{2ml^{2}}-mgl\cos\varphi+mgl.
+\end{equation}
+
+\end_inset
+
+Az állapot összeg 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-Z"
+
+\end_inset
+
+ alapján
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \frac{1}{h}\int_{-\pi}^{\pi}\mathrm{d}\varphi\int_{-\infty}^{\infty}\mathrm{d}p_{\varphi}\mathrm{e}^{-\beta\frac{p_{\varphi}^{2}}{2ml^{2}}}\mathrm{e}^{\beta mgl\cos\varphi},\\
+ & = & \frac{\mathrm{e}^{-\beta mgl}}{h}\sqrt{\frac{2\pi ml^{2}}{\beta}}\int_{-\pi}^{\pi}\mathrm{d}\varphi\mathrm{e}^{\beta mgl\cos\varphi,}\nonumber \\
+ & = & \frac{\mathrm{e}^{-\beta mgl}}{\hbar}\sqrt{\frac{2\pi ml^{2}}{\beta}}I_{0}\left(\beta mgl\right).\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+A szög szerinti integrál egy 
+\begin_inset CommandInset href
+LatexCommand href
+name "módosított Bessel-függvény"
+target "https://en.wikipedia.org/wiki/Bessel_function"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+I_{0}\left(x\right)=\frac{1}{2\pi}\int_{-\pi}^{\pi}\mathrm{d}\varphi\mathrm{e}^{x\cos\varphi}.
+\end{equation}
+
+\end_inset
+
+Hasznos közelítő formulák 
+\begin_inset Formula 
+\begin{eqnarray}
+I_{0}(x) & \underset{x\ll1}{\approx} & 1+\frac{x^{2}}{2}+\mathcal{O}\left(x^{4}\right)\label{eq:modositott-bessel-kicsi-x}\\
+I_{0}(x) & \underset{x\gg1}{\approx} & \frac{\mathrm{e}^{x}}{\sqrt{2\pi x}}\left(1+\mathcal{O}\left(x^{-1}\right)\right)\label{eq:modositott-bessel-nagy-x}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg a rendszer alacsony és magas hőmérsékletű viselkedését! Alacsony
+ hőmérsékleten azaz ha 
+\begin_inset Formula $mgl\gg k_{\mathrm{B}}T$
+\end_inset
+
+ a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:modositott-bessel-nagy-x"
+
+\end_inset
+
+ közelítést alkalmazva
+\begin_inset Formula 
+\begin{equation}
+Z\approx\frac{\mathrm{e}^{-\beta mgl}}{\hbar}\sqrt{\frac{2\pi ml^{2}}{\beta}}\frac{\mathrm{e}^{\beta mgl}}{\sqrt{2\pi\beta mgl}}=\frac{1}{\hbar\beta}\sqrt{\frac{l}{g}}.
+\end{equation}
+
+\end_inset
+
+Az átlag energia alacsony hőmérsékleten 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kanonikus-energia"
+
+\end_inset
+
+-ből 
+\begin_inset Formula 
+\begin{equation}
+E=-\partial_{\beta}\ln Z=-\partial_{\beta}\ln\frac{1}{\beta}=k_{\mathrm{B}}T.
+\end{equation}
+
+\end_inset
+
+Vegyük észre hogy ez az eredmény összhangban van az ekvipartíció tétel kapcsán
+ tanultakkal.
+ Ebben a határesetben a rendszer úgy viselkedik mint egy harmonikus oszcillátor,
+ a koordináta 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, és hozzárendelt kanonikus impulzus 
+\begin_inset Formula $p_{\varphi}$
+\end_inset
+
+, ahogy várjuk, 
+\begin_inset Formula $\frac{1}{2}k_{\mathrm{B}}T$
+\end_inset
+
+-t ad az energiához.
+ 
+\end_layout
+
+\begin_layout Standard
+Magas hőmérsékleten 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $mgl\ll k_{\mathrm{B}}T$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang magyar
+ alkalmazva a módosított Bessel-függvények kis argumentumaira vonatkozó
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:modositott-bessel-kicsi-x"
+
+\end_inset
+
+ összefüggés első járulékát (konstans 
+\begin_inset Formula $1$
+\end_inset
+
+) kapjuk hogy 
+\begin_inset Formula 
+\begin{equation}
+Z\approx\frac{\mathrm{e}^{-\beta mgl}}{\hbar}\sqrt{\frac{2\pi ml^{2}}{\beta}}.
+\end{equation}
+
+\end_inset
+
+Az energia szokás szerint: 
+\begin_inset Formula 
+\begin{equation}
+E=-\partial_{\beta}\ln Z=mgl+\frac{1}{2}k_{\mathrm{B}}T.
+\end{equation}
+
+\end_inset
+
+Ebben a határesetben a koordináta szerinti energiajárulék tehát kiátlagolódik,
+ vegyük észre hogy a 
+\end_layout
+
+\begin_layout Section
+Negyedfokú potenciál
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg a negyedfokú potenciálba zárt klasszikus részecske átlagos
+ energiáját az általánosított ekvipartició tétel 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:altalanos-ekviparticio-tetel"
+
+\end_inset
+
+ illetve a már megszokott 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kanonikus-energia"
+
+\end_inset
+
+ formula segítségével.
+ 
+\end_layout
+
+\begin_layout Standard
+A Hamilton-függvény
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\frac{p^{2}}{2m}+\frac{1}{4}\alpha x^{4}.
+\end{equation}
+
+\end_inset
+
+Vegyük észre hogy 
+\begin_inset Formula 
+\begin{eqnarray}
+p\partial_{p}H & = & \frac{p^{2}}{2m},\\
+x\partial_{x}H & = & \alpha x^{4}.
+\end{eqnarray}
+
+\end_inset
+
+Alkalmazva 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:altalanos-ekviparticio-tetel"
+
+\end_inset
+
+-t
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle \frac{p^{2}}{2m}\right\rangle  & = & k_{\mathrm{B}}T,\\
+\left\langle \alpha x^{4}\right\rangle  & = & k_{\mathrm{B}}T,
+\end{eqnarray}
+
+\end_inset
+
+azaz 
+\begin_inset Formula 
+\begin{equation}
+\left\langle H\right\rangle =k_{\mathrm{B}}T+k_{\mathrm{B}}T/4=\frac{3}{4}k_{\mathrm{B}}T.
+\end{equation}
+
+\end_inset
+
+Kicsit több számolást igényel ha az állapotösszegen keresztül végezzük el
+ a számolást:
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \frac{1}{h}\int_{-\infty}^{\infty}\mathrm{d}p\mathrm{d}x\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}+\frac{1}{4}\alpha x^{4}\right]},\\
+ & = & \frac{1}{h}\sqrt{\frac{\pi2m}{\beta}}\int_{-\infty}^{\infty}\mathrm{d}x\mathrm{e}^{-\beta\frac{1}{4}\alpha x^{4}},\,u=x^{4},\mathrm{d}u=4x^{3}\mathrm{d}x,\nonumber \\
+ & = & \frac{1}{h}\sqrt{\frac{\pi2m}{\beta}}2\int_{0}^{\infty}\frac{\mathrm{d}u}{4}u^{-3/4}\mathrm{e}^{-\frac{\beta\alpha}{4}u},\,s=\beta\alpha u/4,\nonumber \\
+ & = & \frac{1}{h}\sqrt{\frac{\pi2m}{\beta}}\frac{1}{2}\left(\frac{4}{\beta\alpha}\right)^{1/4}\underbrace{\int_{0}^{\infty}s^{-3/4}\mathrm{e}^{-s}\mathrm{d}s}_{\Gamma\left(\frac{1}{4}\right)},\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+azaz
+\begin_inset Formula 
+\begin{equation}
+Z=\frac{1}{h}\sqrt{\frac{\pi2m}{\beta}}\frac{1}{2}\left(\frac{4}{\beta\alpha}\right)^{1/4}\Gamma\left(\frac{1}{4}\right).
+\end{equation}
+
+\end_inset
+
+Képezve ennek a kifejezésnek a logaritmusát
+\begin_inset Formula 
+\begin{equation}
+\ln Z=-\frac{3}{4}\ln\beta+\dots
+\end{equation}
+
+\end_inset
+
+azaz az energia
+\begin_inset Formula 
+\begin{equation}
+E=-\partial_{\beta}\ln Z=\frac{3}{4}k_{\mathrm{B}}T.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
