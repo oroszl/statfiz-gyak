@@ -2404,6 +2404,10 @@ E=-\partial_{\beta}\ln Z=\frac{3}{4}k_{\mathrm{B}}T.
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2593,6 +2597,274 @@ E & = & -\partial_{\beta}\ln Z\approx-\partial_{\beta}\left(\ln Z_{0}-\beta\lamb
 \begin_inset Formula 
 \begin{equation}
 C=k_{\mathrm{B}}-\frac{6\lambda}{m^{2}\omega^{4}}k_{\mathrm{B}}^{2}T
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ideális gáz forgó hengerben
+\end_layout
+
+\begin_layout Standard
+Dinamika forgó koordinátákban:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\frac{1}{2}m\left(\dot{\vec{r}}'\right)^{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+L=\frac{1}{2}m\left(\dot{\vec{r}}+\vec{\omega}\times\vec{r}\right)^{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{p}=\frac{\partial L}{\partial\dot{\vec{r}}}=m\left(\dot{\vec{r}}+\vec{\omega}\times\vec{r}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\dot{\vec{r}}=\vec{p}/m-\vec{\omega}\times\vec{r}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+H & = & \dot{\vec{r}}\cdot\vec{p}-L\\
+ & = & \vec{p}\cdot\left(\vec{p}/m-\vec{\omega}\times\vec{r}\right)-\frac{1}{2}m\left(\vec{p}/m\right)^{2}\\
+ & = & \frac{\left(\vec{p}-m\vec{\omega}\times\vec{r}\right)^{2}}{2m}-\frac{1}{2}m\left(\vec{\omega}\times\vec{r}\right)^{2}
+\end{eqnarray}
+
+\end_inset
+
+Coriolis sztori,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{\omega}=\left(\begin{array}{c}
+0\\
+0\\
+\omega
+\end{array}\right),\,\vec{r}=\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+x^{2}+y^{2}<R^{2},\ z\in[0,L]
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+H=\sum_{i}\frac{p_{i}^{2}}{2m}-\frac{1}{2}m\omega^{2}r_{2D,i}^{2},\,r_{2D,i}^{2}=x_{i}^{2}+y_{i}^{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Z=\frac{Z_{1}^{N}}{N!},\ Z_{1}=\frac{1}{h^{3}}\int\mathrm{d}^{3}p\int_{\text{henger}}\mathrm{d}^{3}r\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}-\frac{1}{2}m\omega^{2}r_{2D}^{2}\right]}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}L2\pi\int_{0}^{R}\mathrm{d}r_{2D}r_{2D}\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}\\
+u & = & \frac{\beta m\omega^{2}r_{2D}^{2}}{2},\ \frac{\mathrm{d}u}{\beta m\omega^{2}r_{2D}}=\mathrm{d}r\\
+Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\int_{0}^{\frac{\beta m\omega^{2}R^{2}}{2}}\mathrm{d}u\mathrm{e}^{u}\\
+ & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\left[\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right]
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}TN\ln Z_{1}+Nk_{\mathrm{B}}T\left(\ln N-1\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Súlyos dugattyú
+\end_layout
+
+\begin_layout Standard
+Mekkora a rendszer energiája, átlagosan milyen magasan helyezkedik el a
+ dugattyú?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\frac{P^{2}}{2M}+MgX+\sum_{i}\frac{p_{i}^{2}}{2m}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+0<x_{i}<X,\,0<y_{i,}z_{i}<L,\ L^{2}=A
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \frac{1}{h^{3N}N!}\frac{1}{h}\int\mathrm{e}^{-\beta H}\left(\prod_{i}\mathrm{d}\vec{p}_{i}\mathrm{d}\vec{r}_{i}\right)\mathrm{d}P\mathrm{d}X\nonumber \\
+ & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\int_{0}^{\infty}X^{N}\mathrm{e}^{-\beta MgX}\mathrm{d}X
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+u=\beta MgX,\,\frac{\mathrm{d}u}{\mathrm{d}X}=\beta Mg
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\int_{0}^{\infty}\left(\frac{u}{\beta Mg}\right)^{N}\mathrm{e}^{-u}\frac{\mathrm{d}u}{\beta Mg}\\
+ & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\frac{\Gamma\left(N+1\right)}{\left(\beta Mg\right)^{N+1}}\nonumber \\
+ & = & \frac{1}{h^{3N}}A^{N}\left(\sqrt{2m\pi}\right)^{3N}\sqrt{2M\pi}\frac{1}{\left(Mg\right)^{N+1}}\beta^{-(N+1+3N/2+1/2)}\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Átlagos energia:
+\begin_inset Formula 
+\begin{equation}
+E=-\partial_{\beta}\ln Z=(N+1+3N/2+1/2)k_{\mathrm{B}}T\underset{N\gg1}{\approx}\frac{5N}{2}k_{\mathrm{B}}T
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+C_{p}=C_{V}+Nk_{\mathrm{B}}
+\end{equation}
+
+\end_inset
+
+A dugattyú helyzete
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\left\langle X\right\rangle $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+egy intelligens becslés:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+pV & = & Nk_{\mathrm{B}}T\\
+\frac{Mg}{A}A\left\langle X\right\rangle  & = & Nk_{\mathrm{B}}T\\
+\left\langle X\right\rangle  & = & \frac{Nk_{\mathrm{B}}T}{Mg}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ekvipartició tételből
+\begin_inset Formula 
+\begin{equation}
+E=\underbrace{\left\langle \frac{p^{2}}{2M}\right\rangle }_{\frac{1}{2}k_{\mathrm{B}}T}+Mg\left\langle X\right\rangle +\underbrace{\left\langle \sum_{i}\frac{p_{i}^{2}}{2m}\right\rangle }_{\frac{3}{2}Nk_{\mathrm{B}}T}=(N+1+3N/2+1/2)k_{\mathrm{B}}T
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left\langle X\right\rangle =\frac{(N+1)k_{\mathrm{B}}T}{Mg}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definíció szerint
+\begin_inset Formula 
+\begin{equation}
+\left\langle X\right\rangle =\frac{\int X\mathrm{e}^{-\beta H}\mathrm{d}\Gamma}{\int\mathrm{e}^{-\beta H}\mathrm{d}\Gamma}=-\frac{1}{\beta M}\frac{1}{Z}\frac{\partial}{\partial g}\int\mathrm{e}^{-\beta H}\mathrm{d}\Gamma=-\frac{1}{\beta M}\partial_{g}\ln Z=\frac{1}{M}\partial_{g}F
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\ln Z=-\left(N+1\right)\ln g+\dots
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left\langle X\right\rangle =\frac{(N+1)k_{\mathrm{B}}T}{Mg}
 \end{equation}
 
 \end_inset
