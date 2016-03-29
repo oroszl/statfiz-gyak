@@ -2406,5 +2406,199 @@ E=-\partial_{\beta}\ln Z=\frac{3}{4}k_{\mathrm{B}}T.
 
 \end_layout
 
+\begin_layout Section
+Perturmációszámítás
+\end_layout
+
+\begin_layout Standard
+Klasszikus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=H_{0}+\lambda V
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Z=\int\mathrm{e}^{-\beta H}\mathrm{d}\Gamma=\int\mathrm{e}^{-\beta H_{0}}\mathrm{e}^{-\beta\lambda V}\mathrm{d}\Gamma\approx\int\mathrm{e}^{-\beta H_{0}}\left[1-\beta\lambda V\right]\mathrm{d}\Gamma=Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kvantumos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{n}=E_{n}^{0}+\lambda\left\langle n\right|\hat{V}\left|n\right\rangle =
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Z=\sum_{n}\mathrm{e}^{-\beta E_{n}}=\sum_{n}\mathrm{e}^{-\beta E_{n}^{0}}\mathrm{e}^{-\beta\lambda\left\langle n\right|\hat{V}\left|n\right\rangle }\approx\sum_{n}\mathrm{e}^{-\beta E_{n}^{0}}\left[1-\beta\lambda\left\langle n\right|\hat{V}\left|n\right\rangle \right]=Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}T\ln Z_{0}-k_{\mathrm{B}}T\ln\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\ln(1-x)\underset{x\ll1}{\approx}-x
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+F\approx F_{0}+\lambda\left\langle V\right\rangle _{0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\partial_{\lambda}H=V\rightarrow\left\langle \partial_{\lambda}H\right\rangle =\left\langle V\right\rangle =\partial_{\lambda}F
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+F=F|_{\lambda=0}+\left.\frac{\partial F}{\partial\lambda}\right|_{\lambda=0}\lambda=F_{0}+\lambda\left\langle V\right\rangle _{0}
+\end{equation}
+
+\end_inset
+
+Az energia várható értéke
+\begin_inset Formula 
+\begin{eqnarray}
+E & = & -\partial_{\beta}\ln Z=\approx-\partial_{\beta}\left[\ln Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)\right]\approx-\partial_{\beta}\left[\ln Z_{0}+\beta\lambda\left\langle V\right\rangle _{0}\right]\\
+ & = & E_{0}-\partial_{\beta}\left[\beta\lambda\left\langle V\right\rangle _{0}\right]=E_{0}-\lambda\left\langle V\right\rangle _{0}-\beta\lambda\partial_{\beta}\left\langle V\right\rangle _{0}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\partial_{\beta}\left\langle V\right\rangle _{0}=\partial_{\beta}\frac{\int V\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma}{\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma}=\frac{\left(\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)\left(\int V\left[-H_{0}\right]\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)-\left(\int V\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)\left(\int\left[-H_{0}\right]\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)}{\left(\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)^{2}}=\left\langle V\right\rangle _{0}\left\langle H_{0}\right\rangle _{0}-\left\langle VH_{0}\right\rangle _{0}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left(\frac{f}{g}\right)^{'}=\frac{f'g-fg'}{g^{2}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+E=\left\langle H\right\rangle _{0}-\beta\lambda\left(\left\langle V\right\rangle _{0}\left\langle H_{0}\right\rangle _{0}-\left\langle VH_{0}\right\rangle _{0}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Anharmonikus oszcillátor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\underbrace{\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}x^{2}}_{H_{0}}+\lambda x^{4}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Z_{0}=\frac{1}{\hbar\beta\omega}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle x^{4}\right\rangle _{0} & = & \frac{\int x^{4}\mathrm{e}^{-\beta H_{0}}\mathrm{d}x}{\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}x}\underset{u=\frac{\beta m\omega^{2}}{2}}{=}\frac{\int x^{4}\mathrm{e}^{-ux^{2}}\mathrm{d}x}{\int\mathrm{e}^{-ux^{2}}\mathrm{d}x}=\frac{\partial_{u}^{2}\sqrt{\pi/u}}{\sqrt{\pi/u}}=\frac{\sqrt{\pi}\partial_{u}^{2}u^{-1/2}}{\sqrt{\pi/u}}=\frac{1}{2}\times\frac{3}{2}\frac{u^{-5/2}}{u^{-1/2}}=\frac{3}{4}\frac{1}{u^{2}}\\
+ & = & \frac{3}{\left(\beta m\omega^{2}\right)^{2}}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+E & = & -\partial_{\beta}\ln Z\approx-\partial_{\beta}\left(\ln Z_{0}-\beta\lambda\left\langle x^{4}\right\rangle _{0}\right)=-\partial_{\beta}\left(\ln Z_{0}-\beta\lambda\frac{3}{\left(\beta m\omega^{2}\right)^{2}}\right)\\
+ & = & k_{\mathrm{B}}T-\frac{3\lambda}{m^{2}\omega^{4}}\left(k_{\mathrm{B}}T\right)^{2}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+C=k_{\mathrm{B}}-\frac{6\lambda}{m^{2}\omega^{4}}k_{\mathrm{B}}^{2}T
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
