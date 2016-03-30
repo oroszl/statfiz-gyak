@@ -2294,8 +2294,7 @@ E=-\partial_{\beta}\ln Z=mgl+\frac{1}{2}k_{\mathrm{B}}T.
 
 \end_inset
 
-Ebben a határesetben a koordináta szerinti energiajárulék tehát kiátlagolódik,
- vegyük észre hogy a 
+Ebben a határesetben a koordináta szerinti energiajárulék tehát kiátlagolódik.
 \end_layout
 
 \begin_layout Section
@@ -2415,60 +2414,113 @@ Perturmációszámítás
 \end_layout
 
 \begin_layout Standard
-Klasszikus
+Sokszor előfordul hogy valamilyen ismert rendszer tulajdonságait kívánjuk
+ vizsgálni egy kis változtatás, vagy zavar jelenlétében.
+ Ekkor a perturbáció számítás eszköztára nyújt számunkra jól használható
+ közelítő kifejezéseket.
+ Vizsgáljuk meg az alábbiakban hogy általános esetben, kanonikus eloszlást
+ feltételezve, milyen kapcsolatban van egy viszonyítási alapul szolgáló
+ rendszer és egy tőle kicsi 
+\begin_inset Formula $\lambda V$
+\end_inset
+
+ perturbációban különböző rendszer állapotösszege és a szabadenergiája.
+ 
+\end_layout
+
+\begin_layout Standard
+A klasszikus esetben a rendszer Hamilton-függvénye az eredeti 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ és a perturbáció 
+\begin_inset Formula $\lambda V$
+\end_inset
+
+ összege:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H=H_{0}+\lambda V
+H=H_{0}+\lambda V.
 \end{equation}
 
 \end_inset
 
+A teljes rendszer 
+\begin_inset Formula $Z$
+\end_inset
 
+ állapotösszege: 
 \begin_inset Formula 
 \begin{equation}
-Z=\int\mathrm{e}^{-\beta H}\mathrm{d}\Gamma=\int\mathrm{e}^{-\beta H_{0}}\mathrm{e}^{-\beta\lambda V}\mathrm{d}\Gamma\approx\int\mathrm{e}^{-\beta H_{0}}\left[1-\beta\lambda V\right]\mathrm{d}\Gamma=Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)
+Z=\int\mathrm{e}^{-\beta H}\mathrm{d}\Gamma=\int\mathrm{e}^{-\beta H_{0}}\mathrm{e}^{-\beta\lambda V}\mathrm{d}\Gamma\approx\int\mathrm{e}^{-\beta H_{0}}\left[1-\beta\lambda V\right]\mathrm{d}\Gamma=Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right),
 \end{equation}
 
 \end_inset
 
+ahol használtuk a mennyiségek átlagaira vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:klasszik-varhato-ertek"
 
+\end_inset
+
+ klasszikus kifejezést.
 \end_layout
 
 \begin_layout Standard
-Kvantumos:
+Kvantumos esetben a 
+\begin_inset Formula $\lambda\hat{V}$
+\end_inset
+
+ operátor hatására a perturbáció számítás első rendjében az állapotok 
+\begin_inset Formula $E_{n}^{0}$
+\end_inset
+
+ energiája az
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{n}=E_{n}^{0}+\lambda\left\langle n\right|\hat{V}\left|n\right\rangle =
+E_{n}=E_{n}^{0}+\lambda\left\langle n\right|\hat{V}\left|n\right\rangle ,
 \end{equation}
 
 \end_inset
 
-
+szerint módosul.
+ (Itt feltettük hogy az esetleges degenerált alterekben egy megfelelő unitér
+ transzformációt elvégezve a perturbáció operátora diagonális.
+ ) A pertubált rendszer állapotösszege tehát 
 \begin_inset Formula 
 \begin{equation}
-Z=\sum_{n}\mathrm{e}^{-\beta E_{n}}=\sum_{n}\mathrm{e}^{-\beta E_{n}^{0}}\mathrm{e}^{-\beta\lambda\left\langle n\right|\hat{V}\left|n\right\rangle }\approx\sum_{n}\mathrm{e}^{-\beta E_{n}^{0}}\left[1-\beta\lambda\left\langle n\right|\hat{V}\left|n\right\rangle \right]=Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)
+Z=\sum_{n}\mathrm{e}^{-\beta E_{n}}=\sum_{n}\mathrm{e}^{-\beta E_{n}^{0}}\mathrm{e}^{-\beta\lambda\left\langle n\right|\hat{V}\left|n\right\rangle }\approx\sum_{n}\mathrm{e}^{-\beta E_{n}^{0}}\left[1-\beta\lambda\left\langle n\right|\hat{V}\left|n\right\rangle \right]=Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right).
 \end{equation}
 
 \end_inset
 
+Ahol az átlagok 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kvanum-varhato-ertek"
 
+\end_inset
+
+ kvantumos kifejezését használtuk.
+ A szabad energia tehát mind a két esetben 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}T\ln Z_{0}-k_{\mathrm{B}}T\ln\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)
+F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}T\ln Z_{0}-k_{\mathrm{B}}T\ln\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right).
 \end{equation}
 
 \end_inset
 
-
+Kihasználva hogy 
 \begin_inset Formula 
 \begin{equation}
 \ln(1-x)\underset{x\ll1}{\approx}-x
@@ -2476,7 +2528,7 @@ F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}T\ln Z_{0}-k_{\mathrm{B}}T\ln\left(
 
 \end_inset
 
-
+kapjuk a szabadenergia megváltozását első rendben 
 \begin_inset Box Shaded
 position "t"
 hor_pos "c"
@@ -2493,7 +2545,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-F\approx F_{0}+\lambda\left\langle V\right\rangle _{0}
+F\approx F_{0}+\lambda\left\langle V\right\rangle _{0}.\label{eq:kanonikus-perturbacio-szabad-energia}
 \end{equation}
 
 \end_inset
@@ -2503,10 +2555,17 @@ F\approx F_{0}+\lambda\left\langle V\right\rangle _{0}
 
 \end_inset
 
+ A deriváltakra vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:hellmann-feynman-tetel"
 
+\end_inset
+
+ Hellmann-Feynman-tétel segítségével hasonló eredményre jutunk 
 \begin_inset Formula 
 \begin{equation}
-\partial_{\lambda}H=V\rightarrow\left\langle \partial_{\lambda}H\right\rangle =\left\langle V\right\rangle =\partial_{\lambda}F
+\partial_{\lambda}H=V\rightarrow\left\langle \partial_{\lambda}H\right\rangle =\left\langle V\right\rangle =\partial_{\lambda}F,
 \end{equation}
 
 \end_inset
@@ -2514,7 +2573,7 @@ F\approx F_{0}+\lambda\left\langle V\right\rangle _{0}
 
 \begin_inset Formula 
 \begin{equation}
-F=F|_{\lambda=0}+\left.\frac{\partial F}{\partial\lambda}\right|_{\lambda=0}\lambda=F_{0}+\lambda\left\langle V\right\rangle _{0}
+F=F|_{\lambda=0}+\left.\frac{\partial F}{\partial\lambda}\right|_{\lambda=0}\lambda=F_{0}+\lambda\left\langle V\right\rangle _{0}.
 \end{equation}
 
 \end_inset
@@ -2522,13 +2581,18 @@ F=F|_{\lambda=0}+\left.\frac{\partial F}{\partial\lambda}\right|_{\lambda=0}\lam
 Az energia várható értéke
 \begin_inset Formula 
 \begin{eqnarray}
-E & = & -\partial_{\beta}\ln Z=\approx-\partial_{\beta}\left[\ln Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)\right]\approx-\partial_{\beta}\left[\ln Z_{0}+\beta\lambda\left\langle V\right\rangle _{0}\right]\\
- & = & E_{0}-\partial_{\beta}\left[\beta\lambda\left\langle V\right\rangle _{0}\right]=E_{0}-\lambda\left\langle V\right\rangle _{0}-\beta\lambda\partial_{\beta}\left\langle V\right\rangle _{0}
+E & = & -\partial_{\beta}\ln Z=\approx-\partial_{\beta}\left[\ln Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)\right]\approx-\partial_{\beta}\left[\ln Z_{0}+\beta\lambda\left\langle V\right\rangle _{0}\right],\\
+ & = & E_{0}-\partial_{\beta}\left[\beta\lambda\left\langle V\right\rangle _{0}\right]=E_{0}-\lambda\left\langle V\right\rangle _{0}-\beta\lambda\partial_{\beta}\left\langle V\right\rangle _{0}.
 \end{eqnarray}
 
 \end_inset
 
+A 
+\begin_inset Formula $\beta$
+\end_inset
 
+ szerinti derivált a perturbálatlan rendszer eloszlása szerinti átlagokkal
+ kifejezhető 
 \begin_inset Formula 
 \begin{equation}
 \partial_{\beta}\left\langle V\right\rangle _{0}=\partial_{\beta}\frac{\int V\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma}{\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma}=\frac{\left(\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)\left(\int V\left[-H_{0}\right]\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)-\left(\int V\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)\left(\int\left[-H_{0}\right]\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)}{\left(\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}\Gamma\right)^{2}}=\left\langle V\right\rangle _{0}\left\langle H_{0}\right\rangle _{0}-\left\langle VH_{0}\right\rangle _{0}
@@ -2536,7 +2600,7 @@ E & = & -\partial_{\beta}\ln Z=\approx-\partial_{\beta}\left[\ln Z_{0}\left(1-\b
 
 \end_inset
 
-
+ahol a törtfüggvény deriváltjára vonatkozó ismert
 \begin_inset Formula 
 \begin{equation}
 \left(\frac{f}{g}\right)^{'}=\frac{f'g-fg'}{g^{2}}
@@ -2544,11 +2608,31 @@ E & = & -\partial_{\beta}\ln Z=\approx-\partial_{\beta}\left[\ln Z_{0}\left(1-\b
 
 \end_inset
 
+szabályt alkalmaztuk.
+ Az energia várható értéke tehát a perturbáció számítás első rendjében
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-E=\left\langle H\right\rangle _{0}-\beta\lambda\left(\left\langle V\right\rangle _{0}\left\langle H_{0}\right\rangle _{0}-\left\langle VH_{0}\right\rangle _{0}\right)
+E=\left\langle H\right\rangle _{0}-\beta\lambda\left(\left\langle V\right\rangle _{0}\left\langle H_{0}\right\rangle _{0}-\left\langle VH_{0}\right\rangle _{0}\right)\label{eq:kanonikus-perturbacio-energia-atlag}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2560,43 +2644,50 @@ Anharmonikus oszcillátor
 \end_layout
 
 \begin_layout Standard
+Az előző fejezetben tárgyalt perturbációszámítás módszereit alkalmazzuk
+ az anharmonikus inga esetére! Vizsgáljuk az alábbi Hamilton-függvényt 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H=\underbrace{\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}x^{2}}_{H_{0}}+\lambda x^{4}
+H=\underbrace{\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}x^{2}}_{H_{0}}+\lambda x^{4}.
 \end{equation}
 
 \end_inset
 
-
+A perturbálatlan rendszer állapotösszege a szokásos harmonikus oszcillátor
+ állapotösszeg: 
 \begin_inset Formula 
 \begin{equation}
-Z_{0}=\frac{1}{\hbar\beta\omega}
+Z_{0}=\frac{1}{\hbar\beta\omega}.
 \end{equation}
 
 \end_inset
 
-
+A negyedfokú potenciál várhatóértéke a perturbálatlan rendszer eloszlása
+ szerint
 \begin_inset Formula 
 \begin{eqnarray}
-\left\langle x^{4}\right\rangle _{0} & = & \frac{\int x^{4}\mathrm{e}^{-\beta H_{0}}\mathrm{d}x}{\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}x}\underset{u=\frac{\beta m\omega^{2}}{2}}{=}\frac{\int x^{4}\mathrm{e}^{-ux^{2}}\mathrm{d}x}{\int\mathrm{e}^{-ux^{2}}\mathrm{d}x}=\frac{\partial_{u}^{2}\sqrt{\pi/u}}{\sqrt{\pi/u}}=\frac{\sqrt{\pi}\partial_{u}^{2}u^{-1/2}}{\sqrt{\pi/u}}=\frac{1}{2}\times\frac{3}{2}\frac{u^{-5/2}}{u^{-1/2}}=\frac{3}{4}\frac{1}{u^{2}}\\
- & = & \frac{3}{\left(\beta m\omega^{2}\right)^{2}}
+\left\langle x^{4}\right\rangle _{0} & = & \frac{\int x^{4}\mathrm{e}^{-\beta H_{0}}\mathrm{d}x}{\int\mathrm{e}^{-\beta H_{0}}\mathrm{d}x}\underset{u=\frac{\beta m\omega^{2}}{2}}{=}\frac{\int x^{4}\mathrm{e}^{-ux^{2}}\mathrm{d}x}{\int\mathrm{e}^{-ux^{2}}\mathrm{d}x}=\frac{\partial_{u}^{2}\sqrt{\pi/u}}{\sqrt{\pi/u}}=\frac{\sqrt{\pi}\partial_{u}^{2}u^{-1/2}}{\sqrt{\pi/u}}=\frac{1}{2}\times\frac{3}{2}\frac{u^{-5/2}}{u^{-1/2}}=\frac{3}{4}\frac{1}{u^{2}},\\
+ & = & \frac{3}{\left(\beta m\omega^{2}\right)^{2}}.
 \end{eqnarray}
 
 \end_inset
 
-
+Az energia tehát
 \begin_inset Formula 
 \begin{eqnarray}
 E & = & -\partial_{\beta}\ln Z\approx-\partial_{\beta}\left(\ln Z_{0}-\beta\lambda\left\langle x^{4}\right\rangle _{0}\right)=-\partial_{\beta}\left(\ln Z_{0}-\beta\lambda\frac{3}{\left(\beta m\omega^{2}\right)^{2}}\right)\\
- & = & k_{\mathrm{B}}T-\frac{3\lambda}{m^{2}\omega^{4}}\left(k_{\mathrm{B}}T\right)^{2}
+ & = & k_{\mathrm{B}}T-\frac{3\lambda}{m^{2}\omega^{4}}\left(k_{\mathrm{B}}T\right)^{2}.
 \end{eqnarray}
 
 \end_inset
 
-
+A hőkapacitás pedig
 \begin_inset Formula 
 \begin{equation}
-C=k_{\mathrm{B}}-\frac{6\lambda}{m^{2}\omega^{4}}k_{\mathrm{B}}^{2}T
+C=k_{\mathrm{B}}-\frac{6\lambda}{m^{2}\omega^{4}}k_{\mathrm{B}}^{2}T.
 \end{equation}
 
 \end_inset
@@ -2609,7 +2700,31 @@ Ideális gáz forgó hengerben
 \end_layout
 
 \begin_layout Standard
-Dinamika forgó koordinátákban:
+Az alábbiakban egy olyan rendszert fogunk vizsgálni melyet célszerű nem
+ inerciális rendszerben leírni.
+ A vizsgálandó rendszer egy 
+\begin_inset Formula $L$
+\end_inset
+
+ hosszúságú és 
+\begin_inset Formula $R$
+\end_inset
+
+ sugarú tengelye körül 
+\begin_inset Formula $\omega$
+\end_inset
+
+ szögsebességgel forgó henger alakú tartályba zárt ideális gáz.
+ 
+\end_layout
+
+\begin_layout Standard
+Jelöljük a labor rendszerben egyetlen részecske koordinátáit 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+'-al.
+ Ezen részecske Lagrange-függvénye a szokásos
 \end_layout
 
 \begin_layout Standard
@@ -2620,7 +2735,8 @@ L=\frac{1}{2}m\left(\dot{\vec{r}}'\right)^{2}
 
 \end_inset
 
-
+alakot ölti.
+ Ha a hengerrel együtt forgó koordináta rendszerben ez az 
 \begin_inset Formula 
 \begin{equation}
 L=\frac{1}{2}m\left(\dot{\vec{r}}+\vec{\omega}\times\vec{r}\right)^{2}
@@ -2628,33 +2744,55 @@ L=\frac{1}{2}m\left(\dot{\vec{r}}+\vec{\omega}\times\vec{r}\right)^{2}
 
 \end_inset
 
+kifejezésre módosul.
+ Az 
+\begin_inset Formula $\vec{r}$
+\end_inset
 
+ koordinátához kanonikusan konjugált impulzus
 \begin_inset Formula 
 \begin{equation}
-\vec{p}=\frac{\partial L}{\partial\dot{\vec{r}}}=m\left(\dot{\vec{r}}+\vec{\omega}\times\vec{r}\right)
+\vec{p}=\frac{\partial L}{\partial\dot{\vec{r}}}=m\left(\dot{\vec{r}}+\vec{\omega}\times\vec{r}\right),
 \end{equation}
 
 \end_inset
 
-
+azaz
 \begin_inset Formula 
 \begin{equation}
-\dot{\vec{r}}=\vec{p}/m-\vec{\omega}\times\vec{r}
+\dot{\vec{r}}=\vec{p}/m-\vec{\omega}\times\vec{r}.
 \end{equation}
 
 \end_inset
 
-
+A Hamilton-függvény a Lagrange-függvény Legendre-transzformációjából határozzuk
+ meg:
 \begin_inset Formula 
 \begin{eqnarray}
-H & = & \dot{\vec{r}}\cdot\vec{p}-L\\
- & = & \vec{p}\cdot\left(\vec{p}/m-\vec{\omega}\times\vec{r}\right)-\frac{1}{2}m\left(\vec{p}/m\right)^{2}\\
- & = & \frac{\left(\vec{p}-m\vec{\omega}\times\vec{r}\right)^{2}}{2m}-\frac{1}{2}m\left(\vec{\omega}\times\vec{r}\right)^{2}
+H & = & \dot{\vec{r}}\cdot\vec{p}-L,\\
+ & = & \vec{p}\cdot\left(\vec{p}/m-\vec{\omega}\times\vec{r}\right)-\frac{1}{2}m\left(\vec{p}/m\right)^{2},\\
+ & = & \frac{\left(\vec{p}-m\vec{\omega}\times\vec{r}\right)^{2}}{2m}-\frac{1}{2}m\left(\vec{\omega}\times\vec{r}\right)^{2}.
 \end{eqnarray}
 
 \end_inset
 
-Coriolis sztori,
+Vegyük észre hogy a Coriolis-erőért felelős 
+\begin_inset Formula $\vec{\omega}\times\vec{r}$
+\end_inset
+
+ tag a kifejezés első részében a statisztikus állapotösszegbe nem ad járulékot
+ hiszen az az impulzus integrál origóját tologatja csak! A kifejezés második
+ része pedig egy harmonikus potenciál, a centrifugális erőért felelős tag
+ mely a henger palástjához igyekszik szorítani a részecskét.
+ Az 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ és 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+ vektorokat vegyük fel az
 \end_layout
 
 \begin_layout Standard
@@ -2668,55 +2806,208 @@ Coriolis sztori,
 x\\
 y\\
 z
-\end{array}\right)
+\end{array}\right),
 \end{equation}
 
 \end_inset
 
+alakban ahol az 
+\begin_inset Formula $x,y$
+\end_inset
 
+ és 
+\begin_inset Formula $z$
+\end_inset
+
+ koordinátákra a henger a következő megszorításokat rója ki:
 \begin_inset Formula 
 \begin{equation}
-x^{2}+y^{2}<R^{2},\ z\in[0,L]
+x^{2}+y^{2}<R^{2},\ z\in[0,L].
 \end{equation}
 
 \end_inset
 
-
+A Hamilton-függvény tehát 
 \begin_inset Formula 
 \begin{equation}
-H=\sum_{i}\frac{p_{i}^{2}}{2m}-\frac{1}{2}m\omega^{2}r_{2D,i}^{2},\,r_{2D,i}^{2}=x_{i}^{2}+y_{i}^{2}
+H=\sum_{i}\frac{p_{i}^{2}}{2m}-\frac{1}{2}m\omega^{2}r_{2D,i}^{2},\,r_{2D,i}^{2}=x_{i}^{2}+y_{i}^{2}.
 \end{equation}
 
 \end_inset
 
-
+Az állapotösszeg pedig
 \begin_inset Formula 
 \begin{equation}
-Z=\frac{Z_{1}^{N}}{N!},\ Z_{1}=\frac{1}{h^{3}}\int\mathrm{d}^{3}p\int_{\text{henger}}\mathrm{d}^{3}r\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}-\frac{1}{2}m\omega^{2}r_{2D}^{2}\right]}
+Z=\frac{Z_{1}^{N}}{N!},\ Z_{1}=\frac{1}{h^{3}}\int\mathrm{d}^{3}p\int_{\text{henger}}\mathrm{d}^{3}r\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}-\frac{1}{2}m\omega^{2}r_{2D}^{2}\right]}.\label{eq:forgo-allapot-osszeg}
 \end{equation}
 
 \end_inset
 
-
+Egy részecske járuléka
 \begin_inset Formula 
 \begin{eqnarray}
-Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}L2\pi\int_{0}^{R}\mathrm{d}r_{2D}r_{2D}\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}\\
-u & = & \frac{\beta m\omega^{2}r_{2D}^{2}}{2},\ \frac{\mathrm{d}u}{\beta m\omega^{2}r_{2D}}=\mathrm{d}r\\
-Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\int_{0}^{\frac{\beta m\omega^{2}R^{2}}{2}}\mathrm{d}u\mathrm{e}^{u}\\
- & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\left[\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right]
+Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}L2\pi\int_{0}^{R}\mathrm{d}r_{2D}r_{2D}\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}},\\
+u & = & \frac{\beta m\omega^{2}r_{2D}^{2}}{2},\ \frac{\mathrm{d}u}{\beta m\omega^{2}r_{2D}}=\mathrm{d}r,\\
+Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\int_{0}^{\frac{\beta m\omega^{2}R^{2}}{2}}\mathrm{d}u\mathrm{e}^{u},\\
+ & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\left[\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right].
 \end{eqnarray}
 
 \end_inset
 
+Az energia várható értéke:
+\begin_inset Formula 
+\begin{eqnarray}
+E & = & -\partial_{\beta}\ln Z=-\partial_{\beta}N\left[\ln\left(\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right)-\frac{5}{2}\ln\beta\right],\\
+ & = & \frac{5}{2}Nk_{\mathrm{B}}T-N\frac{m\omega^{2}R^{2}}{2}\frac{\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}}{\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1}.\label{eq:fogo-gaz-energia}
+\end{eqnarray}
 
+\end_inset
+
+Vetekedő energia skálák: 
+\begin_inset Formula $k_{\mathrm{B}}T$
+\end_inset
+
+ és 
+\begin_inset Formula $\frac{\beta m\omega^{2}R^{2}}{2}$
+\end_inset
+
+.
+ Ha 
+\begin_inset Formula $\frac{m\omega^{2}R^{2}}{2}\ll k_{\mathrm{B}}T$
+\end_inset
+
+ lassú forgás vagy nagy hőmérséklet esetén, alkalmazva az ismert
 \begin_inset Formula 
 \begin{equation}
-F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}TN\ln Z_{1}+Nk_{\mathrm{B}}T\left(\ln N-1\right)
+\mathrm{e}^{x}\underset{x\approx0}{\approx}1+x
 \end{equation}
 
 \end_inset
 
+közelítést az energia várhatóértéke az 
+\begin_inset Formula 
+\begin{eqnarray}
+E & \approx & \frac{5}{2}Nk_{\mathrm{B}}T-N\frac{m\omega^{2}R^{2}}{2}\frac{1+\frac{\beta m\omega^{2}R^{2}}{2}}{\frac{\beta m\omega^{2}R^{2}}{2}}\\
+ & = & \frac{5}{2}Nk_{\mathrm{B}}T-Nk_{\mathrm{B}}T\left[1+\frac{\beta m\omega^{2}R^{2}}{2}\right]\nonumber \\
+ & = & \frac{3}{2}Nk_{\mathrm{B}}T-N\frac{m\omega^{2}R^{2}}{2}\nonumber 
+\end{eqnarray}
 
+\end_inset
+
+kifejezéssel becsülhető.
+ 
+\end_layout
+
+\begin_layout Standard
+Ha 
+\begin_inset Formula $\frac{m\omega^{2}R^{2}}{2}\gg k_{\mathrm{B}}T$
+\end_inset
+
+ azaz gyors forgás illetve kicsi hőmérséklet akkor a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fogo-gaz-energia"
+
+\end_inset
+
+ képletben az első tagot elhanyagolhatjuk és a második tag pedig az 
+\begin_inset Formula 
+\begin{equation}
+E\approx-N\frac{m\omega^{2}R^{2}}{2}
+\end{equation}
+
+\end_inset
+
+alakra egyszerűsödik.
+ Azaz minden részecske a henger palástjára simul!
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg a rendszerben uralkodó nyomásviszonyokat.
+ Ehhez először határozzuk meg a szabad energiát termodinamikai határesetben
+ a Stirling-formula 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:stirling-log"
+
+\end_inset
+
+ segítségével kapjuk hogy 
+\begin_inset Formula 
+\begin{equation}
+F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}TN\ln Z_{1}+Nk_{\mathrm{B}}T\left(\ln N-1\right).
+\end{equation}
+
+\end_inset
+
+A tetőlapra ható erő
+\begin_inset Formula 
+\begin{equation}
+-\partial_{L}F=-\partial_{L}\left[-k_{\mathrm{B}}TN\ln L\right]=\frac{k_{\mathrm{B}}TN}{L}\label{eq:forgo-tetolap-ero}
+\end{equation}
+
+\end_inset
+
+A palástra ható nyomás 
+\begin_inset Formula $p_{\text{palást}}$
+\end_inset
+
+ a szabadenergia sugár szerinti deriváltjával hozható kapcsolatba: 
+\begin_inset Formula 
+\begin{eqnarray}
+p_{\text{palást}}2R\pi L=-\partial_{R}F & = & -\partial_{R}\left[-k_{\mathrm{B}}TN\ln\left(\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right)\right]=Nm\omega^{2}R\frac{\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}}{\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1}\\
+p_{\text{palást}} & = & \frac{Nm\omega^{2}}{2\pi L}\frac{\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}}{\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1}.\label{eq:forgo-palast-nyomas}
+\end{eqnarray}
+
+\end_inset
+
+A részecskék radiális sűrűség eloszlása a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:forgo-allapot-osszeg"
+
+\end_inset
+
+-ben szereplő integrálok részleges elvégzéséből 
+\begin_inset Formula 
+\begin{eqnarray}
+n(r) & = & N\frac{\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}}{\int_{\text{henger}}\mathrm{d}^{3}r\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}}=\frac{N\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}}{2\pi L\int_{0}^{R}\mathrm{d}r_{2D}r_{2D}\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}}\\
+ & = & \frac{N}{2\pi L}\frac{\beta m\omega^{2}\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}}{\left(\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right)}.\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Össze vetve ezt a kifejezés a palástot érő nyomás 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:forgo-palast-nyomas"
+
+\end_inset
+
+ kifejezésével kapjuk hogy 
+\begin_inset Formula 
+\begin{equation}
+p(r)=n(r)k_{\mathrm{B}}T.
+\end{equation}
+
+\end_inset
+
+Felintegrálva a nyomást a henger tetőlapjára 
+\begin_inset Formula 
+\begin{equation}
+2\pi k_{\mathrm{B}}T\int_{0}^{R}\mathrm{dr}rn(r)=\frac{Nk_{\mathrm{B}}T}{L}
+\end{equation}
+
+\end_inset
+
+nem meglepő módon, visszakapjuk a tetőlapra ható erő 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:forgo-tetolap-ero"
+
+\end_inset
+
+ kifejezését.
 \end_layout
 
 \begin_layout Section
@@ -2724,36 +3015,43 @@ Súlyos dugattyú
 \end_layout
 
 \begin_layout Standard
-Mekkora a rendszer energiája, átlagosan milyen magasan helyezkedik el a
- dugattyú?
+Vizsgáljunk egy súlyos dugattyúszelep által kordában tartott ideális gázt!
+ A gáz részecskéinek súlya a szelep súlyához képest elhanyagolható ezért
+ tekintsünk el a nehézségi erőnek a gáz részecskékre gyakorolt hatásától!
+ Határozzuk meg a rendszer energiáját illetve a dugattyú pozíciójának várható
+ értékét!
+\end_layout
+
+\begin_layout Standard
+A rendszer Hamilton-függvénye:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H=\frac{P^{2}}{2M}+MgX+\sum_{i}\frac{p_{i}^{2}}{2m}
+H=\frac{P^{2}}{2M}+MgX+\sum_{i}\frac{p_{i}^{2}}{2m},
 \end{equation}
 
 \end_inset
 
-
+A koordináták az alábbi határok között változhatnak
 \begin_inset Formula 
 \begin{equation}
-0<x_{i}<X,\,0<y_{i,}z_{i}<L,\ L^{2}=A
+0<x_{i}<X,\,0<y_{i,}z_{i}<L,\ L^{2}=A.
 \end{equation}
 
 \end_inset
 
-
+Az állapotösszeg tehát
 \begin_inset Formula 
 \begin{eqnarray}
-Z & = & \frac{1}{h^{3N}N!}\frac{1}{h}\int\mathrm{e}^{-\beta H}\left(\prod_{i}\mathrm{d}\vec{p}_{i}\mathrm{d}\vec{r}_{i}\right)\mathrm{d}P\mathrm{d}X\nonumber \\
- & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\int_{0}^{\infty}X^{N}\mathrm{e}^{-\beta MgX}\mathrm{d}X
+Z & = & \frac{1}{h^{3N}N!}\frac{1}{h}\int\mathrm{e}^{-\beta H}\left(\prod_{i}\mathrm{d}\vec{p}_{i}\mathrm{d}\vec{r}_{i}\right)\mathrm{d}P\mathrm{d}X,\nonumber \\
+ & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\int_{0}^{\infty}X^{N}\mathrm{e}^{-\beta MgX}\mathrm{d}X.
 \end{eqnarray}
 
 \end_inset
 
-
+Végrehajtva az
 \begin_inset Formula 
 \begin{equation}
 u=\beta MgX,\,\frac{\mathrm{d}u}{\mathrm{d}X}=\beta Mg
@@ -2761,25 +3059,26 @@ u=\beta MgX,\,\frac{\mathrm{d}u}{\mathrm{d}X}=\beta Mg
 
 \end_inset
 
-
+változó cserét kapjuk, hogy 
 \begin_inset Formula 
 \begin{eqnarray}
-Z & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\int_{0}^{\infty}\left(\frac{u}{\beta Mg}\right)^{N}\mathrm{e}^{-u}\frac{\mathrm{d}u}{\beta Mg}\\
- & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\frac{\Gamma\left(N+1\right)}{\left(\beta Mg\right)^{N+1}}\nonumber \\
- & = & \frac{1}{h^{3N}}A^{N}\left(\sqrt{2m\pi}\right)^{3N}\sqrt{2M\pi}\frac{1}{\left(Mg\right)^{N+1}}\beta^{-(N+1+3N/2+1/2)}\nonumber 
+Z & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\int_{0}^{\infty}\left(\frac{u}{\beta Mg}\right)^{N}\mathrm{e}^{-u}\frac{\mathrm{d}u}{\beta Mg},\\
+ & = & \frac{1}{h^{3N}N!}A^{N}\left(\sqrt{\frac{2m\pi}{\beta}}\right)^{3N}\left(\sqrt{\frac{2M\pi}{\beta}}\right)\frac{\Gamma\left(N+1\right)}{\left(\beta Mg\right)^{N+1}},\nonumber \\
+ & = & \frac{1}{h^{3N}}A^{N}\left(\sqrt{2m\pi}\right)^{3N}\sqrt{2M\pi}\frac{1}{\left(Mg\right)^{N+1}}\beta^{-(N+1+3N/2+1/2)}.\nonumber 
 \end{eqnarray}
 
 \end_inset
 
-Átlagos energia:
+Ebből az átlagos energia:
 \begin_inset Formula 
 \begin{equation}
-E=-\partial_{\beta}\ln Z=(N+1+3N/2+1/2)k_{\mathrm{B}}T\underset{N\gg1}{\approx}\frac{5N}{2}k_{\mathrm{B}}T
+E=-\partial_{\beta}\ln Z=(N+1+3N/2+1/2)k_{\mathrm{B}}T\underset{N\gg1}{\approx}\frac{5N}{2}k_{\mathrm{B}}T\label{eq:nehez-dugattyu-energia}
 \end{equation}
 
 \end_inset
 
-
+Kapjuk tehát hogy az állandó nyomáson az ideális gáz hőkapacitása nagyobb
+ mint állandó térfogaton:
 \begin_inset Formula 
 \begin{equation}
 C_{p}=C_{V}+Nk_{\mathrm{B}}
@@ -2787,28 +3086,13 @@ C_{p}=C_{V}+Nk_{\mathrm{B}}
 
 \end_inset
 
-A dugattyú helyzete
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
+A dugattyú átlagos helyzetét
 \begin_inset Formula $\left\langle X\right\rangle $
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Standard
-egy intelligens becslés:
+ háromféle módon fogjuk meghatározni.
+ Először is az ideális gáztörvényből egy durvának tűnő de intelligens becslés
+ alapján kapjuk hogy:
 \end_layout
 
 \begin_layout Standard
@@ -2825,7 +3109,21 @@ pV & = & Nk_{\mathrm{B}}T\\
 \end_layout
 
 \begin_layout Standard
-Ekvipartició tételből
+Az ekvipartíció tétel 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ekviparticio-tetel"
+
+\end_inset
+
+ és a fent számolt átlagos energia 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:nehez-dugattyu-energia"
+
+\end_inset
+
+ segítségével kapjuk hogy: 
 \begin_inset Formula 
 \begin{equation}
 E=\underbrace{\left\langle \frac{p^{2}}{2M}\right\rangle }_{\frac{1}{2}k_{\mathrm{B}}T}+Mg\left\langle X\right\rangle +\underbrace{\left\langle \sum_{i}\frac{p_{i}^{2}}{2m}\right\rangle }_{\frac{3}{2}Nk_{\mathrm{B}}T}=(N+1+3N/2+1/2)k_{\mathrm{B}}T
@@ -2833,10 +3131,10 @@ E=\underbrace{\left\langle \frac{p^{2}}{2M}\right\rangle }_{\frac{1}{2}k_{\mathr
 
 \end_inset
 
-
+azaz
 \begin_inset Formula 
 \begin{equation}
-\left\langle X\right\rangle =\frac{(N+1)k_{\mathrm{B}}T}{Mg}
+\left\langle X\right\rangle =\frac{(N+1)k_{\mathrm{B}}T}{Mg}.
 \end{equation}
 
 \end_inset
@@ -2845,7 +3143,7 @@ E=\underbrace{\left\langle \frac{p^{2}}{2M}\right\rangle }_{\frac{1}{2}k_{\mathr
 \end_layout
 
 \begin_layout Standard
-Definíció szerint
+Hasonló eredményre jutunk ha az átlag értékét direkt módon számítjuk:
 \begin_inset Formula 
 \begin{equation}
 \left\langle X\right\rangle =\frac{\int X\mathrm{e}^{-\beta H}\mathrm{d}\Gamma}{\int\mathrm{e}^{-\beta H}\mathrm{d}\Gamma}=-\frac{1}{\beta M}\frac{1}{Z}\frac{\partial}{\partial g}\int\mathrm{e}^{-\beta H}\mathrm{d}\Gamma=-\frac{1}{\beta M}\partial_{g}\ln Z=\frac{1}{M}\partial_{g}F
@@ -2864,7 +3162,7 @@ Definíció szerint
 
 \begin_inset Formula 
 \begin{equation}
-\left\langle X\right\rangle =\frac{(N+1)k_{\mathrm{B}}T}{Mg}
+\left\langle X\right\rangle =\frac{(N+1)k_{\mathrm{B}}T}{Mg}.
 \end{equation}
 
 \end_inset
