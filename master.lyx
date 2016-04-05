@@ -4,6 +4,9 @@
 \begin_header
 \textclass article
 \use_default_options true
+\begin_modules
+theorems-std
+\end_modules
 \maintain_unincluded_children false
 \language magyar
 \language_package default
@@ -176,6 +179,16 @@ filename "03-Kanonikus_sokasag.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "04-Nagykanonikus_sokasag.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "05-Gyakorlo_peldak-I.lyx"
 
 \end_inset
 

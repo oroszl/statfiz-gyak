@@ -1,0 +1,328 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language magyar
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\boxbgcolor #55aaff
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language polish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Gyakorló példák - I 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Vizsgáljunk feles spinű részecskék inkoherens szuperpozícióját! Legyen 
+\begin_inset Formula $t=0$
+\end_inset
+
+-ban a rendszer az 
+\begin_inset Formula $\hat{S}_{z}=\frac{\hbar}{2}\hat{\sigma}_{z}$
+\end_inset
+
+ operátor 
+\begin_inset Formula $+\frac{\hbar}{2}$
+\end_inset
+
+ sajátértékű állapotának és a 
+\begin_inset Formula $\hat{S}_{x}=\frac{\hbar}{2}\hat{\sigma}_{x}$
+\end_inset
+
+ operátor 
+\begin_inset Formula $-\frac{\hbar}{2}$
+\end_inset
+
+ sajátértékű állapotának 
+\begin_inset Formula $60\%$
+\end_inset
+
+-
+\begin_inset Formula $40\%$
+\end_inset
+
+ keveréke.
+ Hasson a rendszerre 
+\begin_inset Formula $T$
+\end_inset
+
+ ideig egy 
+\begin_inset Formula $y$
+\end_inset
+
+ irányú mágneses tér azaz a Hamilton-operátor 
+\begin_inset Formula $\hat{H}=\mu\frac{\hbar}{2}B\hat{\sigma}_{y}$
+\end_inset
+
+.
+ Számítsuk ki
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t=0$
+\end_inset
+
+-ban 
+\begin_inset Formula $\hat{S}_{z}$
+\end_inset
+
+ sajátbázisában a sűrűségmátrixot
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t=T$
+\end_inset
+
+-ben 
+\begin_inset Formula $\hat{S}_{z}$
+\end_inset
+
+ sajátbázisában a sűrűségmátrixot
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t=T$
+\end_inset
+
+-ben
+\begin_inset Formula $\left\langle \hat{S}_{z}\right\rangle $
+\end_inset
+
+-t
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Útmutatás
+\emph default
+: Hasznos lehet a Pauli-mátrixokra vonatkozó
+\begin_inset Formula 
+\begin{equation}
+\mathrm{e}^{\mathrm{i}\alpha\vec{n}\cdot\vec{\sigma}}=\sigma_{0}\cos\alpha+\vec{n}\cdot\vec{\sigma}\sin\alpha,
+\end{equation}
+
+\end_inset
+
+ahol 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ egy egység hosszúságú vektor.
+\end_layout
+
+\begin_layout Exercise
+Egy pont részecske két dimenziós mozgást végez.
+ A rendszer Hamilton-operátora 
+\begin_inset Formula 
+\begin{eqnarray}
+H & = & \frac{p_{x}^{2}+p_{y}^{2}}{2m}+U(x,y),\\
+U(x,y) & = & A(x^{2}-xy+3y^{2})^{2}.
+\end{eqnarray}
+
+\end_inset
+
+Határozzuk meg a potenciális energia várható értékét ha a részecske egy
+ véges hőmérsékletű hőtartállyal van kapcsolatban!
+\emph on
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Útmutatás: 
+\emph default
+Vegyük észre hogy a potenciál a koordináták 
+\begin_inset CommandInset href
+LatexCommand href
+name "homogén"
+target "https://en.wikipedia.org/wiki/Homogeneous_function"
+
+\end_inset
+
+ függvénye!
+\end_layout
+
+\begin_layout Exercise
+Lássuk be Von Leeuwen tételét: klasszikus fizikában nincs diamágnesség!
+\end_layout
+
+\begin_layout Standard
+Legyen egy 
+\begin_inset Formula $N$
+\end_inset
+
+ töltött részecskéből álló rendszer Hamilton-operátora mágneses tér nélkül
+ 
+\begin_inset Formula $H(\vec{r}_{1},\vec{p}_{1},\vec{r}_{2},\vec{p}_{2},\dots,\vec{r}_{N},\vec{p}_{N})$
+\end_inset
+
+ mely a 
+\begin_inset Formula $\vec{B}=\vec{\nabla}\times\vec{A}$
+\end_inset
+
+ tér hatására 
+\begin_inset Formula $H(\vec{r}_{1},\vec{p}_{1}-e_{1}\vec{A}_{1},\vec{r}_{2},\vec{p}_{2}-e_{2}\vec{A}_{2},\dots,\vec{r}_{N},\vec{p}_{N}-e_{N}\vec{A}_{N})$
+\end_inset
+
+ alakot ölti ahol értelem szerűen 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ az 
+\begin_inset Formula $i-$
+\end_inset
+
+edik részecske töltése és 
+\begin_inset Formula $\vec{A}_{i}$
+\end_inset
+
+ a vektor potenciál értéke az 
+\begin_inset Formula $i-$
+\end_inset
+
+edik részecske helyén, 
+\begin_inset Formula $\vec{A}_{i}=\vec{A}(\vec{r}_{i})$
+\end_inset
+
+.
+ Határozzuk meg a rendszer 
+\begin_inset Formula $M$
+\end_inset
+
+ mágnesezettségét
+\begin_inset Formula 
+\begin{equation}
+M=\left\langle -\partial_{B}H\right\rangle =k_{\mathrm{B}}T\partial_{B}\ln Z.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Vizsgáljunk 
+\begin_inset Formula $N$
+\end_inset
+
+ darab két atomos molekula ideális gázát 
+\begin_inset Formula $V$
+\end_inset
+
+ térfogaton és 
+\begin_inset Formula $T$
+\end_inset
+
+ hőmérsékleten.
+ Egy molekula Hamilton-operátora legyen
+\begin_inset Formula 
+\begin{equation}
+H=\frac{p_{1}^{2}+p_{2}^{2}}{2m}+\frac{1}{2}K(\vec{r}_{1}-\vec{r}_{2})^{2}
+\end{equation}
+
+\end_inset
+
+Határozzuk meg a
+\end_layout
+
+\begin_layout Enumerate
+szabad energiát
+\end_layout
+
+\begin_layout Enumerate
+a fajhőt
+\end_layout
+
+\begin_layout Enumerate
+a molekulák méretére jellemző 
+\begin_inset Formula $\left\langle (\vec{r}_{1}-\vec{r}_{2})^{2}\right\rangle $
+\end_inset
+
+ várható értéket
+\end_layout
+
+\begin_layout Exercise
+Átlagosan milyen magasságban helyezkedik el egy relativisztikus pattogó
+ labda ha 
+\begin_inset Formula $T$
+\end_inset
+
+hőmérsékletű hőfürdővel van kapcsolatban?
+\end_layout
+
+\end_body
+\end_document

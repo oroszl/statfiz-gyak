@@ -5,6 +5,9 @@
 \textclass article
 \use_default_options false
 \master master.lyx
+\begin_modules
+theorems-std
+\end_modules
 \maintain_unincluded_children false
 \language magyar
 \language_package babel
@@ -290,7 +293,6 @@ Kapjuk tehát hogy
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Box Shadowbox
 position "t"
 hor_pos "c"
@@ -304,12 +306,8 @@ height "1in"
 height_special "totalheight"
 status open
 
-\begin_layout Plain Layout
-
-\series bold
-HF-01:
-\series default
- Lássuk be hogy ha 
+\begin_layout Exercise
+Lássuk be hogy ha 
 \begin_inset Formula $a>0$
 \end_inset
 
@@ -1978,12 +1976,8 @@ height "1in"
 height_special "totalheight"
 status open
 
-\begin_layout Plain Layout
-
-\series bold
-HF-02:
-\series default
- Tekintsük egy két állapotú rendszer két (
+\begin_layout Exercise
+Tekintsük egy két állapotú rendszer két (
 \begin_inset Formula $\left|\alpha\right\rangle $
 \end_inset
 

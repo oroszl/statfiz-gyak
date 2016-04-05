@@ -5,6 +5,9 @@
 \textclass article
 \use_default_options true
 \master master.lyx
+\begin_modules
+theorems-std
+\end_modules
 \maintain_unincluded_children false
 \language magyar
 \language_package default
@@ -1072,12 +1075,8 @@ height "1in"
 height_special "totalheight"
 status collapsed
 
-\begin_layout Plain Layout
-
-\series bold
-HF-03:
-\series default
- Határozzuk meg a klasszikus állapotok 
+\begin_layout Exercise
+Határozzuk meg a klasszikus állapotok 
 \begin_inset Formula $\Omega_{0}$
 \end_inset
 
@@ -2362,12 +2361,8 @@ height "1in"
 height_special "totalheight"
 status open
 
-\begin_layout Plain Layout
-
-\series bold
-HF-04:
-\series default
- Határozzuk meg a hőmérséklet a nyomás és a kémiai potenciálra vonatkozó
+\begin_layout Exercise
+Határozzuk meg a hőmérséklet a nyomás és a kémiai potenciálra vonatkozó
  összefüggéseket a klasszikus relativisztikus 
 \begin_inset Quotes eld
 \end_inset

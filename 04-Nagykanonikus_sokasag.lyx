@@ -621,12 +621,12 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 \series bold
-HF-XX:
+HF-07:
 \series default
  Vezessük le 
 \begin_inset CommandInset ref

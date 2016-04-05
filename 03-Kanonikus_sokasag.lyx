@@ -4,6 +4,9 @@
 \begin_header
 \textclass article
 \use_default_options true
+\begin_modules
+theorems-std
+\end_modules
 \maintain_unincluded_children false
 \language magyar
 \language_package default
@@ -805,14 +808,10 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
-\begin_layout Plain Layout
-
-\series bold
-HF-05:
-\series default
- Határozzuk meg az előző feladatban kiszámított entrópiát mikrokanonikus
+\begin_layout Exercise
+Határozzuk meg az előző feladatban kiszámított entrópiát mikrokanonikus
  formalizmusban is! 
 \end_layout
 
@@ -922,12 +921,8 @@ height "1in"
 height_special "totalheight"
 status open
 
-\begin_layout Plain Layout
-
-\series bold
-HF-06:
-\series default
- Egy rendszer fajhője 
+\begin_layout Exercise
+Egy rendszer fajhője 
 \begin_inset Formula $C=fk_{\mathrm{B}}$
 \end_inset
 
