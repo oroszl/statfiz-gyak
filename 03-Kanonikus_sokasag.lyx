@@ -395,7 +395,7 @@ reference "eq:entropia-praktice"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-S=k_{\mathrm{B}}\ln\omega\left(E\right)\delta E=k_{\mathrm{B}}N\ln V+k_{\mathrm{B}}\ln A\left(\frac{\alpha1}{N}\right)^{N}\left(\frac{E}{N}\right)^{fN}\delta E.
+S=k_{\mathrm{B}}\ln\omega\left(E\right)\delta E=k_{\mathrm{B}}N\ln V+k_{\mathrm{B}}\ln A\left(\frac{\alpha}{N}\right)^{N}\left(\frac{E}{N}\right)^{fN}\delta E.
 \end{equation}
 
 \end_inset
@@ -2410,7 +2410,7 @@ E=-\partial_{\beta}\ln Z=\frac{3}{4}k_{\mathrm{B}}T.
 \end_layout
 
 \begin_layout Section
-Perturmációszámítás
+Perturbációszámítás
 \end_layout
 
 \begin_layout Standard

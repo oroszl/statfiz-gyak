@@ -172,5 +172,15 @@ filename "03-Kanonikus_sokasag.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "04-Nagykanonikus_sokasag.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
