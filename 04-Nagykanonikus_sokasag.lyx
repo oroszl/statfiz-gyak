@@ -5,6 +5,9 @@
 \textclass article
 \use_default_options true
 \master master.lyx
+\begin_modules
+theorems-std
+\end_modules
 \maintain_unincluded_children false
 \language magyar
 \language_package default
@@ -414,7 +417,7 @@ name "tab:orias-molekula-terkep"
 
 Melyből a nagykanonikus potenciál 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand eqref
 reference "eq:nagykan-potencial-Z"
 
 \end_inset
@@ -429,7 +432,7 @@ reference "eq:nagykan-potencial-Z"
 
 az átlagos abszorbeált gázmolekulák számára 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand eqref
 reference "eq:nagykan-reszecskeszam"
 
 \end_inset
@@ -510,7 +513,7 @@ Z_{1}=\frac{1}{h^{3}}\int\mathrm{d}^{3}p\mathrm{d}^{3}r\mathrm{e}^{-\beta\frac{p
 egy gáz atom kanonikus állapotösszege.
  A gázfázisban lévő atomok átlagos száma tehát 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand eqref
 reference "eq:nagykan-reszecskeszam"
 
 \end_inset
@@ -623,19 +626,15 @@ height "1in"
 height_special "totalheight"
 status open
 
-\begin_layout Plain Layout
-
-\series bold
-HF-07:
-\series default
- Vezessük le 
+\begin_layout Exercise
+Vezessük le 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:nagykan-expbetamu-vs-NZ1"
 
 \end_inset
 
- kanonikus formalizmusban.
+-t kanonikus formalizmusban.
 \end_layout
 
 \end_inset
