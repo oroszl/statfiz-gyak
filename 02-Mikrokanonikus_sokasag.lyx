@@ -556,7 +556,7 @@ z
 \end{array}\right),\quad\dot{\vec{r}}=r\left(\begin{array}{c}
 \dot{\vartheta}\cos\vartheta\cos\varphi-\dot{\varphi}\sin\vartheta\sin\varphi\\
 \dot{\vartheta}\cos\vartheta\sin\varphi+\dot{\varphi}\sin\vartheta\cos\varphi\\
--r\dot{\vartheta}\sin\vartheta
+-\dot{\vartheta}\sin\vartheta
 \end{array}\right)
 \end{equation}
 
@@ -1599,7 +1599,7 @@ normál
 Az entrópia ismeretében a hőmérséklet 
 \begin_inset Formula 
 \begin{eqnarray}
-\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{\partial S}{\partial M}\frac{\partial m}{\partial E}=\frac{1}{\varepsilon N}\frac{\partial S}{\partial m}.
+\frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\frac{\partial S}{\partial m}\frac{\partial m}{\partial E}=\frac{1}{\varepsilon N}\frac{\partial S}{\partial m}.
 \end{eqnarray}
 
 \end_inset

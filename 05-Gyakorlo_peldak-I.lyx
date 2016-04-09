@@ -171,7 +171,7 @@ Vizsgáljunk feles spinű részecskék inkoherens szuperpozícióját! Legyen
 : Hasznos lehet a Pauli-mátrixokra vonatkozó
 \begin_inset Formula 
 \begin{equation}
-\mathrm{e}^{\mathrm{i}\alpha\vec{n}\cdot\vec{\sigma}}=\sigma_{0}\cos\alpha+\vec{n}\cdot\vec{\sigma}\sin\alpha,
+\mathrm{e}^{\mathrm{i}\alpha\vec{n}\cdot\vec{\sigma}}=\sigma_{0}\cos\alpha+\mathrm{i}\vec{n}\cdot\vec{\sigma}\sin\alpha,
 \end{equation}
 
 \end_inset

@@ -1604,7 +1604,7 @@ Mivel a Pauli-mátrixok nyoma eltűnik ezért tetszőleges lineár kombinációi
 Szintén a szorzat szabályok és a nyomtalanság következménye hogy
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\sigma_{i}\right)=a_{i}.
+\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\sigma_{i}\right)=2a_{i}.
 \end{equation}
 
 \end_inset
@@ -1957,7 +1957,7 @@ p & 0\\
 
 \begin_inset Formula 
 \begin{equation}
-d=\left(p-\frac{1}{2}\right)\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=\frac{1}{2}+\left(p-\frac{1}{2}\right)^{2}
+d=\left(p-\frac{1}{2}\right)\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=\frac{1}{2}+2\left(p-\frac{1}{2}\right)^{2}
 \end{equation}
 
 \end_inset
