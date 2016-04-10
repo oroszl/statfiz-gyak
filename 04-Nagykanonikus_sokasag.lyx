@@ -155,7 +155,7 @@ Nagykanonikus potenciál:
 Részecskeszám (átlagos):
 \begin_inset Formula 
 \begin{eqnarray}
-\left\langle N\right\rangle  & = & -\partial_{\alpha}\left.\mathcal{Z}\right|_{V,\beta}\label{eq:nagykan-reszecskeszam}\\
+\left\langle N\right\rangle  & = & -\partial_{\alpha}\left.\mathcal{\ln}\mathcal{Z}\right|_{V,\beta}\label{eq:nagykan-reszecskeszam}\\
 \left\langle \Delta N^{2}\right\rangle  & = & -\partial_{\alpha}\left.\left\langle N\right\rangle \right|_{V,\beta}\label{eq:nagykan-reszecskeszam-szoras}
 \end{eqnarray}
 
