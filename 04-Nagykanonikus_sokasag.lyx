@@ -521,7 +521,7 @@ reference "eq:nagykan-reszecskeszam"
  segítségével
 \begin_inset Formula 
 \begin{eqnarray}
-\left\langle N_{\text{id.gáz}}\right\rangle  & = & -\partial_{\mu}\Phi_{\text{id.gáz}}=-\partial_{\mu}\left(-\frac{\ln\mathcal{Z}_{\text{id.gáz}}}{\beta}\right)\\
+\left\langle N_{\text{id.gáz}}\right\rangle  & = & -\partial_{\alpha}\Phi_{\text{id.gáz}}=-\partial_{\alpha}\left(-\frac{\ln\mathcal{Z}_{\text{id.gáz}}}{\beta}\right)\\
  & = & \frac{1}{\beta}\partial_{\mu}\left(Z_{1}\mathrm{e}^{\beta\mu}\right)=Z_{1}\mathrm{e}^{\beta\mu}\nonumber 
 \end{eqnarray}
 
@@ -530,7 +530,7 @@ reference "eq:nagykan-reszecskeszam"
 Kapjuk tehát, hogy
 \begin_inset Formula 
 \begin{equation}
-\mathrm{e}^{\beta\mu}=\frac{\left\langle N_{\text{id.gáz}}\right\rangle }{Z_{1}}=\frac{\left\langle N_{\text{id.gáz}}\right\rangle }{V}\left(\frac{2\pi m}{\beta h}\right)^{-3/2}.\label{eq:nagykan-expbetamu-vs-NZ1}
+\mathrm{e}^{\beta\mu}=\frac{\left\langle N_{\text{id.gáz}}\right\rangle }{Z_{1}}=\frac{\left\langle N_{\text{id.gáz}}\right\rangle }{V}\left(\frac{2\pi m}{\beta h^{2}}\right)^{-3/2}.\label{eq:nagykan-expbetamu-vs-NZ1}
 \end{equation}
 
 \end_inset
@@ -546,7 +546,7 @@ pV=\frac{\left\langle N_{\text{id.gáz}}\right\rangle }{\beta},
 kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
-\mathrm{e}^{\beta\mu}=p\beta\left(\frac{2\pi m}{\beta h}\right)^{-3/2}.
+\mathrm{e}^{\beta\mu}=p\beta\left(\frac{2\pi m}{\beta h^{2}}\right)^{-3/2}.
 \end{equation}
 
 \end_inset
