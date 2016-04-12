@@ -326,7 +326,7 @@ u=\beta E,\quad\mbox{d}E=\frac{\mbox{d}u}{\beta},
 kapjuk hogy
 \begin_inset Formula 
 \begin{eqnarray}
-Z & = & \int_{0}^{\infty}A\left(N\right)\left(\frac{u}{\beta}\right)^{-\alpha N}\mathrm{e}^{-u}\frac{\mbox{d}u}{\beta}=A\left(N\right)\beta^{-(\alpha N+1)}\underbrace{\int_{0}^{\infty}u^{-\alpha N}\mathrm{e}^{-u}\mbox{d}u}_{\Gamma\left(\alpha N+1\right)},\\
+Z & = & \int_{0}^{\infty}A\left(N\right)\left(\frac{u}{\beta}\right)^{\alpha N}\mathrm{e}^{-u}\frac{\mbox{d}u}{\beta}=A\left(N\right)\beta^{-(\alpha N+1)}\underbrace{\int_{0}^{\infty}u^{\alpha N}\mathrm{e}^{-u}\mbox{d}u}_{\Gamma\left(\alpha N+1\right)},\\
  & = & A\left(N\right)\beta^{-(\alpha N+1)}\Gamma\left(\alpha N+1\right).
 \end{eqnarray}
 
@@ -351,7 +351,7 @@ E=-\frac{\partial}{\partial\beta}\ln Z=\frac{(\alpha N+1)}{\beta}=k_{\mathrm{B}}
 és a fajhő
 \begin_inset Formula 
 \begin{equation}
-C=\frac{\partial E}{\partial T}=k_{\mathrm{B}}T(\alpha N+1).
+C=\frac{\partial E}{\partial T}=k_{\mathrm{B}}(\alpha N+1).
 \end{equation}
 
 \end_inset
