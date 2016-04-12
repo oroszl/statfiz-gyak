@@ -1130,10 +1130,10 @@ Mi a valószínűsége hogy
 P\left(N_{+}=n\right)=\frac{\left(\begin{array}{c}
 N\\
 n
-\end{array}\right)\mathrm{e}^{\beta E(n)}}{Z}=\frac{\left(\begin{array}{c}
+\end{array}\right)\mathrm{e}^{-\beta E(n)}}{Z}=\frac{\left(\begin{array}{c}
 N\\
 n
-\end{array}\right)\mathrm{e}^{\beta\varepsilon\left(2n-N\right)}}{Z}
+\end{array}\right)\mathrm{e}^{-\beta\varepsilon\left(2n-N\right)}}{Z}
 \end{equation}
 
 \end_inset
@@ -1156,7 +1156,7 @@ reference "eq:stirling-log"
  Stirling-formulát 
 \begin_inset Formula 
 \begin{equation}
-\ln\frac{N!}{n!\left(N-n\right)!}\mathrm{e}^{\beta E(n)}\approx\beta\varepsilon\left(2n-N\right)+N\ln N-n\ln n-\left(N-n\right)\ln\left(N-n\right)
+\ln\frac{N!}{n!\left(N-n\right)!}\mathrm{e}^{\beta E(n)}\approx-\beta\varepsilon\left(2n-N\right)+N\ln N-n\ln n-\left(N-n\right)\ln\left(N-n\right)
 \end{equation}
 
 \end_inset
@@ -1164,8 +1164,8 @@ reference "eq:stirling-log"
 
 \begin_inset Formula 
 \begin{eqnarray}
-\partial_{n}\ln P & = & 2\beta\varepsilon-\ln n-1+\ln\left(N-n\right)+1\\
- & = & 2\beta\varepsilon+\ln\frac{N-n}{n}
+\partial_{n}\ln P & = & -2\beta\varepsilon-\ln n-1+\ln\left(N-n\right)+1\\
+ & = & -2\beta\varepsilon+\ln\frac{N-n}{n}
 \end{eqnarray}
 
 \end_inset
@@ -1174,7 +1174,7 @@ kapjuk tehát hogy a legvalószínűbb állapotban a pozitív energiás részecs
  száma
 \begin_inset Formula 
 \begin{equation}
-n=N\frac{1}{\mathrm{e}^{-2\beta\varepsilon}+1}.
+n=N\frac{1}{\mathrm{e}^{2\beta\varepsilon}+1}.
 \end{equation}
 
 \end_inset
@@ -1247,7 +1247,7 @@ tehát
 A számunkra érdekes szórás
 \begin_inset Formula 
 \begin{equation}
-\left\langle E^{2}\right\rangle -\left\langle E\right\rangle ^{2}=\frac{1}{Z}\partial_{\beta}^{2}Z+\left(\partial_{\beta}\ln Z\right)^{2}.
+\left\langle E^{2}\right\rangle -\left\langle E\right\rangle ^{2}=\frac{1}{Z}\partial_{\beta}^{2}Z-\left(\partial_{\beta}\ln Z\right)^{2}.
 \end{equation}
 
 \end_inset
