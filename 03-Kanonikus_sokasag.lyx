@@ -1156,7 +1156,7 @@ reference "eq:stirling-log"
  Stirling-formulát 
 \begin_inset Formula 
 \begin{equation}
-\ln\frac{N!}{n!\left(N-n\right)!}\mathrm{e}^{\beta E(n)}\approx-\beta\varepsilon\left(2n-N\right)+N\ln N-n\ln n-\left(N-n\right)\ln\left(N-n\right)
+\ln\frac{N!}{n!\left(N-n\right)!}\mathrm{e}^{-\beta E(n)}\approx-\beta\varepsilon\left(2n-N\right)+N\ln N-n\ln n-\left(N-n\right)\ln\left(N-n\right)
 \end{equation}
 
 \end_inset
