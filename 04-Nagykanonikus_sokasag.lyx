@@ -521,7 +521,7 @@ reference "eq:nagykan-reszecskeszam"
  segítségével
 \begin_inset Formula 
 \begin{eqnarray}
-\left\langle N_{\text{id.gáz}}\right\rangle  & = & -\partial_{\alpha}\Phi_{\text{id.gáz}}=-\partial_{\alpha}\left(-\frac{\ln\mathcal{Z}_{\text{id.gáz}}}{\beta}\right)\\
+\left\langle N_{\text{id.gáz}}\right\rangle  & = & -\partial_{\alpha}\ln\mathcal{Z}_{\text{id.gáz}}=\frac{1}{\beta}\partial_{\alpha}\ln\mathcal{Z}_{\text{id.gáz}}=-\partial_{\mu}\ln\Phi_{\text{id.gáz}}\\
  & = & \frac{1}{\beta}\partial_{\mu}\left(Z_{1}\mathrm{e}^{\beta\mu}\right)=Z_{1}\mathrm{e}^{\beta\mu}\nonumber 
 \end{eqnarray}
 
