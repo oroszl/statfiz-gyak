@@ -193,6 +193,13 @@ filename "05-Gyakorlo_peldak-I.lyx"
 \end_inset
 
 
+\begin_inset CommandInset include
+LatexCommand include
+filename "06-Kvantumgazok.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

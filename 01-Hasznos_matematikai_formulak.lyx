@@ -876,7 +876,7 @@ f_{n}(t)\approx n-n\ln n+\underbrace{\partial_{t}f_{n}(t_{0})\left(t-t_{0}\right
 
 \end_inset
 
-Vissza írva ezt a 
+Visszaírva ezt a 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:stirling-init"
@@ -978,7 +978,7 @@ status open
 Sokszor szükségünk lesz több dimenziós integrálok elvégzésére.
  Ezen integrálok elvégzésében rendszerint segítségünkre lesz az adott dimenzióbe
 li gömb térfogata.
- Vizsgáljuk meg hát hogy hogyan függ a térfogat kifejezése a dimenziótól:
+ Vizsgáljuk meg hát, hogy hogyan függ a térfogat kifejezése a dimenziótól:
 \end_layout
 
 \begin_layout Standard
@@ -1547,7 +1547,7 @@ Identitás:
 
 A teljesség igénye nélkül tekintsünk át néhány a Pauli-mátrixokra vonatkozó
  hasznos azonosságot! A Pauli-mátrixok négyzete az egység, illetve két Pauli-mát
-rix szorzata a harmadik mátrixszal arányos (sorrendtől függően
+rix szorzata a harmadik mátrixszal arányos (sorrendtől függően 
 \begin_inset Formula $\pm\mathrm{i}$
 \end_inset
 

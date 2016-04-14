@@ -2576,8 +2576,8 @@ F=F|_{\lambda=0}+\left.\frac{\partial F}{\partial\lambda}\right|_{\lambda=0}\lam
 Az energia várható értéke
 \begin_inset Formula 
 \begin{eqnarray}
-E & = & -\partial_{\beta}\ln Z=\approx-\partial_{\beta}\left[\ln Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)\right]\approx-\partial_{\beta}\left[\ln Z_{0}+\beta\lambda\left\langle V\right\rangle _{0}\right],\\
- & = & E_{0}-\partial_{\beta}\left[\beta\lambda\left\langle V\right\rangle _{0}\right]=E_{0}-\lambda\left\langle V\right\rangle _{0}-\beta\lambda\partial_{\beta}\left\langle V\right\rangle _{0}.
+E & = & -\partial_{\beta}\ln Z=-\partial_{\beta}\left[\ln Z_{0}\left(1-\beta\lambda\left\langle V\right\rangle _{0}\right)\right]\approx-\partial_{\beta}\left[\ln Z_{0}-\beta\lambda\left\langle V\right\rangle _{0}\right],\\
+ & = & E_{0}+\partial_{\beta}\left[\beta\lambda\left\langle V\right\rangle _{0}\right]=E_{0}+\lambda\left\langle V\right\rangle _{0}+\beta\lambda\partial_{\beta}\left\langle V\right\rangle _{0}.
 \end{eqnarray}
 
 \end_inset
@@ -2621,7 +2621,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-E=\left\langle H\right\rangle _{0}-\beta\lambda\left(\left\langle V\right\rangle _{0}\left\langle H_{0}\right\rangle _{0}-\left\langle VH_{0}\right\rangle _{0}\right)\label{eq:kanonikus-perturbacio-energia-atlag}
+E=\left\langle H\right\rangle _{0}+\beta\lambda\left(\left\langle V\right\rangle _{0}\left\langle H_{0}\right\rangle _{0}-\left\langle VH_{0}\right\rangle _{0}\right)\label{eq:kanonikus-perturbacio-energia-atlag}
 \end{equation}
 
 \end_inset
