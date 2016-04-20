@@ -51,6 +51,7 @@ theorems-std
 \suppress_date false
 \justification true
 \use_refstyle 1
+\boxbgcolor #55aaff
 \index Index
 \shortcut idx
 \color #008000
@@ -74,6 +75,554 @@ theorems-std
 
 \begin_layout Part
 Ideális kvantumgázok
+\end_layout
+
+\begin_layout Section
+Kvantumgázok nagykanonikus vizsgálata
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg az állapotok számát 
+\begin_inset Formula $\Omega_{0}(E)$
+\end_inset
+
+ egy adott 
+\begin_inset Formula $E$
+\end_inset
+
+energia alatt egy 
+\begin_inset Formula $d$
+\end_inset
+
+ dimenziós rendszerre ha a diszperziós reláció	
+\begin_inset Formula 
+\begin{equation}
+\varepsilon(\vec{k})=\alpha\left|\hbar\vec{k}\right|^{\nu}
+\end{equation}
+
+\end_inset
+
+alakú.
+ 
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=\sum_{\vec{k},\varepsilon(\vec{k})<E}1=g\frac{L^{d}}{\left(2\pi\right)^{d}}\int_{\varepsilon(\vec{k})<E}\mathrm{d}^{d}k
+\end{equation}
+
+\end_inset
+
+Itt 
+\begin_inset Formula $g$
+\end_inset
+
+ az a szabadsági fokok esetleges degenerációjának felel meg.
+ Például 
+\begin_inset Formula $1/2$
+\end_inset
+
+ -es spin esetén 
+\begin_inset Formula $g=2$
+\end_inset
+
+.
+ A kiszámítandó integrál nem más mint egy 
+\begin_inset Formula $d$
+\end_inset
+
+ dimenziós gömb térfogata melynek a sugara 
+\begin_inset Formula $\frac{\left(E/\alpha\right)^{1/\nu}}{\hbar}$
+\end_inset
+
+!
+\begin_inset Formula 
+\begin{equation}
+\Omega_{0}(E)=g\frac{L^{d}}{\left(2\pi\right)^{d}}\frac{\pi^{d/2}}{\Gamma\left(d/2+1\right)}\frac{\left(E/\alpha\right)^{d/\nu}}{\hbar^{d}}
+\end{equation}
+
+\end_inset
+
+Az állapot sűrűség 
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\varrho(E)=\partial_{E}\Omega_{0}(E)=g\frac{L^{d}}{h}\frac{\pi^{d/2}}{\Gamma\left(d/2+1\right)\alpha^{d/\nu}}\frac{d}{\nu}E^{\frac{d}{\nu}-1}=AE^{\frac{d}{\nu}-1}\label{eq:altalanos-idgaz-allapotsuruseg}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Határozzuk meg az általános diszperziós relációval rendelkező kvantumgázban
+ a részecskék számát és az energia várható értékét! Vegyük először észre
+ hogy a kvantumos eloszlás függvényeket felírhatjuk mértani sor alakjában:
+ 
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}=\mathrm{e}^{-\beta\left(E-\mu\right)}\frac{1}{1\pm\mathrm{e}^{-\beta\left(E-\mu\right)}}=\mathrm{e}^{-\beta\left(E-\mu\right)}\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{-\beta l\left(E-\mu\right)}.\label{eq:q_eloszlas_mertani}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+A részecskék száma
+\begin_inset Formula 
+\begin{eqnarray}
+N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}\mathrm{d}E=A\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta\left(E-\mu\right)}\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{-\beta l\left(E-\mu\right)}\mathrm{d}E,\\
+ & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta E(l+1)}\mathrm{d}E,\ u=\beta E(l+1),\ \mathrm{d}E=\frac{\mathrm{d}u}{\beta(l+1)},\nonumber \\
+ & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\left(\frac{1}{\beta(l+1)}\right)^{\frac{d}{\nu}}\underbrace{\int_{0}^{\infty}u^{\frac{d}{\nu}-1}\mathrm{e}^{-u}\mathrm{d}E}_{\Gamma\left(\frac{d}{\nu}\right)},\nonumber \\
+ & = & A\Gamma\left(\frac{d}{\nu}\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\sum_{l=0}\left(\mp1\right)^{l}\frac{\mathrm{e}^{\beta\mu l}}{\left(l+1\right)^{\frac{d}{\nu}}}\approx A\Gamma\left(\frac{d}{\nu}\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}}}\pm\dots\right).\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle E\right\rangle  & = & \int_{0}^{\infty}E\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}\mathrm{d}E\label{eq:atalanos-id-qgaz-energia}\\
+ & = & A\Gamma\left(\frac{d}{\nu}+1\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}+1}}\sum_{l=0}\left(\mp1\right)^{l}\frac{\mathrm{e}^{\beta\mu l}}{\left(l+1\right)^{\frac{d}{\nu}+1}}\approx A\Gamma\left(\frac{d}{\nu}+1\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}+1}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}+1}}\pm\dots\right)\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\left\langle E\right\rangle }{N} & = & \frac{\frac{A\Gamma\left(\frac{d}{\nu}+1\right)\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}+1}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}}}\pm\dots\right)}{\frac{A\Gamma\left(\frac{d}{\nu}\right)\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}+1}}\pm\dots\right)}\\
+ & \approx & \frac{d}{\nu}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}+1}}\dots\right)
+\end{eqnarray}
+
+\end_inset
+
+azaz a nem relativisztikus és az ultrarelativisztikus gázok esetén a következő
+ kvantum korrekciókat kapjuk
+\begin_inset Formula 
+\begin{eqnarray}
+\mbox{\mbox{nem relativisztikus}:}d & = & 3,\ \nu=2\rightarrow\left\langle E\right\rangle =\frac{3}{2}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{5}{2}}}\dots\right)\\
+\mbox{\mbox{ultrarelativisztikus}:}d & = & 3,\ \nu=1\rightarrow\left\langle E\right\rangle =3k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)
+\end{eqnarray}
+
+\end_inset
+
+Határozzuk meg most a fenn tárgyalt általánosított ideális kvantumgáz nagykanoni
+kus állapotösszegét és a nagykanonikus potenciált!
+\begin_inset Formula 
+\begin{equation}
+\mathcal{Z}=\sum_{\{n_{i}\}}\mathrm{e}^{-\sum_{i}\beta\left(\varepsilon_{i}-\mu\right)n_{i}}=\prod_{i}\sum_{n_{i}=0}\mathrm{e}^{-\beta\left(\varepsilon_{i}-\mu\right)n_{i}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\mbox{fermion:}\,\mathcal{Z} & = & \prod_{i}\left(1+\mathrm{e}^{-\beta\left(\varepsilon_{i}-\mu\right)}\right)\\
+\mbox{bozon:}\,\mathcal{Z} & = & \prod_{i}\left(1-\mathrm{e}^{-\beta\left(\varepsilon_{i}-\mu\right)}\right)^{-1}
+\end{eqnarray}
+
+\end_inset
+
+a nagykanonikus potenciál tehát:
+\begin_inset Formula 
+\begin{equation}
+\Phi=-pV=-k_{\mathrm{B}}T\ln\mathcal{Z}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray}
+\Phi & = & \mp k_{\mathrm{B}}T\sum_{i}\ln\left[1\pm\mathrm{e}^{-\beta\left(\varepsilon_{i}-\mu\right)}\right]\\
+ & = & \mp k_{\mathrm{B}}T\int_{0}^{\infty}\varrho(\varepsilon)\ln\left[1\pm\mathrm{e}^{-\beta\left(\varepsilon-\mu\right)}\right]\mathrm{d}\varepsilon
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ a korábban tárgyalt 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:altalanos-idgaz-allapotsuruseg"
+
+\end_inset
+
+ általános állapotsűrűséget felhasználva 
+\begin_inset Formula 
+\begin{eqnarray}
+\Phi & = & \mp k_{\mathrm{B}}TA\int_{0}^{\infty}\varepsilon^{\frac{d}{\nu}-1}\ln\left(1\pm\mathrm{e}^{-\beta\left(\varepsilon-\mu\right)}\right)\mathrm{d}\varepsilon\\
+ & = & \mp k_{\mathrm{B}}TA\left\{ \underbrace{\left[\frac{\varepsilon^{\frac{d}{\nu}}}{\frac{d}{\nu}}\ln\left(1\pm\mathrm{e}^{-\beta\left(\varepsilon-\mu\right)}\right)\right]_{0}^{\infty}}_{=0}\pm\beta\frac{\nu}{d}\int_{0}^{\infty}\frac{\varepsilon^{\frac{d}{\nu}}\mathrm{e}^{-\beta\left(\varepsilon-\mu\right)}}{1\pm\mathrm{e}^{-\beta\left(\varepsilon-\mu\right)}}\mathrm{d}\varepsilon\right\} \\
+ & =- & \frac{\nu}{d}\int_{0}^{\infty}\frac{A\varepsilon^{\frac{d}{\nu}}\mathrm{e}^{-\beta\left(\varepsilon-\mu\right)}}{1\pm\mathrm{e}^{-\beta\left(\varepsilon-\mu\right)}}\mathrm{d}\varepsilon
+\end{eqnarray}
+
+\end_inset
+
+ahol a második lépésben a parciális integrálás 
+\begin_inset Formula $\int u'v=uv-\int uv'$
+\end_inset
+
+ ismert szabályát alkalmaztuk.
+ Összevetve ezt a kifejezést az energiának 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:atalanos-id-qgaz-energia"
+
+\end_inset
+
+-ban számolt átlagával kapjuk hogy 
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+pV=\frac{\nu}{d}\left\langle E\right\rangle .\label{eq:qgaz-pv_nu_per_d}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+azaz 
+\begin_inset Formula 
+\begin{eqnarray}
+\mbox{\mbox{nem relativisztikus}:}d & = & 3,\ \nu=2\rightarrow pV=\frac{2}{3}\left\langle E\right\rangle \\
+\mbox{\mbox{ultrarelativisztikus}:}d & = & 3,\ \nu=1\rightarrow pV=\frac{1}{3}\left\langle E\right\rangle 
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ideális Fermi-gáz
+\end_layout
+
+\begin_layout Standard
+Fermi-rendszereket jellemző betöltésszám eloszlás a Fermi-Dirac eloszlás:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left\langle n\right\rangle =f(\varepsilon)=\frac{1}{\mathrm{e}^{\beta\left(\varepsilon-\mu\right)}+1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "20col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/fermi_eloszlas.png
+	lyxscale 40
+	width 20text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fermi-Dirac eloszlás
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Zérus hőmérséklet
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg egy három dimenziós Fermi-gáz részecskéinek és energiájának
+ átlagát ha a rendszer zérus hőmérsékleten van.
+ Tegyük fel hogy a diszperziós reláció 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon(\vec{k})=\frac{\left|\hbar\vec{k}\right|^{2}}{2m},
+\end{equation}
+
+\end_inset
+
+alakú tehát az állapotsűrűség 
+\begin_inset Formula 
+\begin{equation}
+\varrho\left(E\right)=(2s+1)V2\pi\left(\frac{2m}{\hbar^{2}}\right)^{3/2}\sqrt{E}=\alpha V\sqrt{E}.
+\end{equation}
+
+\end_inset
+
+A részecskék számának várható értéke zérus hőmérsékleten tehát 
+\begin_inset Formula 
+\begin{eqnarray}
+N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\underset{T\rightarrow0}{=}\int_{0}^{\mu}\varrho\left(E\right)\mathrm{d}E,\\
+ & = & \alpha V\int_{0}^{\mu}\sqrt{E}\mathrm{d}E=\alpha V\frac{2}{3}\mu^{3/2},\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+azaz a kémiai potenciál: 
+\begin_inset Formula 
+\begin{equation}
+\mu=\left(\frac{3}{2}\frac{N}{V}\frac{1}{\alpha}\alpha\right)^{2/3}.
+\end{equation}
+
+\end_inset
+
+Hasonló meggondolásokból az energia várható értéke
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle E\right\rangle  & = & \int_{0}^{\infty}\frac{E\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\underset{T\rightarrow0}{=}\int_{0}^{\mu}E\varrho\left(E\right)\mathrm{d}E\\
+ & = & \alpha V\int_{0}^{\mu}E^{3/2}\mathrm{d}E=\alpha V\frac{2}{5}\mu^{5/2}.\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Felhasználva a fenti két összefüggést az energiára és a kémiai potenciálra
+ és a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:qgaz-pv_nu_per_d"
+
+\end_inset
+
+ állapotegyenletet kapjuk hogy 
+\begin_inset Formula 
+\begin{equation}
+p=\frac{2}{3}\frac{\left\langle E\right\rangle }{V}=\frac{2}{3}\times\frac{2}{5}\alpha\left(\frac{3}{2}\frac{N}{V}\frac{1}{\alpha}\alpha\right)^{5/3}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Véges hőmérséklet két dimenzióban
+\end_layout
+
+\begin_layout Standard
+Véges hőmérsékleten általában nem tudjuk elvégezni azokat az integrálokat
+ melyekben a Fermi-függvény szerepel.
+ Ha viszont két dimenziós nem relativisztikus rendszert vizsgálunk akkor
+ a részecskék számát zárt alakra tudjuk hozni!
+\end_layout
+
+\begin_layout Standard
+Vegyük észre hogy két dimenzióban 
+\begin_inset Formula $d=2$
+\end_inset
+
+ egy nem relativisztikus rendszer állapotsűrűsége nem függ az energiától!
+\begin_inset Formula 
+\begin{equation}
+\varrho_{2D}\left(E\right)=2D.
+\end{equation}
+
+\end_inset
+
+Ekkor a részecskék száma
+\begin_inset Formula 
+\begin{eqnarray}
+N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\\
+ & = & 2D\int_{0}^{\infty}\frac{1}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E,\ x=\mathrm{e}^{\beta\left(E-\mu\right)},\ \mathrm{d}E=\frac{\mathrm{d}x}{\beta x}\nonumber \\
+ & = & \frac{2D}{\beta}\int_{0}^{\infty}\frac{1}{x}\frac{1}{x+1}\mathrm{d}x=\int_{0}^{\infty}\frac{1}{x}-\frac{1}{x+1}\mathrm{d}x\nonumber \\
+ & = & \frac{2D}{\beta}\left[\ln\frac{x}{x+1}\right]_{0}^{\infty}=\frac{2D}{\beta}\ln\left(1+\mathrm{e}^{\beta\mu}\right)\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+kapjuk tehát, hogy
+\begin_inset Formula 
+\begin{equation}
+\mathrm{e}^{\beta\mu}=\mathrm{e}^{\frac{\beta N}{2D}}-1,
+\end{equation}
+
+\end_inset
+
+melyből a kémiai potenciál kifejezhető a hőmérséklet függvényében 
+\begin_inset Formula 
+\begin{equation}
+\mu=\frac{\ln\left(\mathrm{e}^{\frac{\beta N}{2D}}-1\right)}{\beta}.
+\end{equation}
+
+\end_inset
+
+Az energia várhatóértékét már nem tudjuk zárt alakra hozni.
+ a felmerülő integrál
+\begin_inset Formula 
+\begin{equation}
+F_{j}(x)=\frac{1}{\Gamma\left(j+1\right)}\int_{0}^{\infty}\frac{t^{j}}{\mathrm{e}^{t-x}+1}\mathrm{d}t
+\end{equation}
+
+\end_inset
+
+alakú melyet 
+\begin_inset CommandInset href
+LatexCommand href
+name "Fermi-Dirac integrálnak"
+target "https://en.wikipedia.org/wiki/Complete_Fermi%E2%80%93Dirac_integral"
+
+\end_inset
+
+ hívnak.
+\end_layout
+
+\begin_layout Subsection*
+Magas hőmérsékletű sorfejtés
+\end_layout
+
+\begin_layout Standard
+Láttuk hogy a kvantumos eloszlásfüggvényeket értelmezhetjük mértani összegként
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:q_eloszlas_mertani"
+
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}=\mathrm{e}^{-\beta\left(E-\mu\right)}\sum_{l=0}\left(-1\right)^{l}\mathrm{e}^{-\beta l\left(E-\mu\right)}.
+\end{equation}
+
+\end_inset
+
+Határozzuk meg az fenn vizsgált kétdimenziós rendszer részecskeszámát és
+ energia várható értékét magas hőmérsékleten, azaz amikor a mértani sor
+ helyett csak az első két tagot vesszük figyelembe!
+\begin_inset Formula 
+\begin{equation}
+N=2D\int_{0}^{\infty}\frac{1}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\approx2D\int_{0}^{\infty}\mathrm{e}^{-\beta\left(E-\mu\right)}\left[1-\mathrm{e}^{-\beta\left(E-\mu\right)}+\dots\right]\mathrm{d}E=\frac{2D}{\beta}\mathrm{e}^{\beta\mu}\left[1-\frac{\mathrm{e}^{\beta\mu}}{2}+\dots\right]
+\end{equation}
+
+\end_inset
+
+Ebből megtartva az első tagot (
+\begin_inset Formula $l=0$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{equation}
+\frac{N\beta}{2D}\left(1+\frac{\mathrm{e}^{\beta\mu}}{2}+\dots\right)=\mathrm{e}^{\beta\mu}
+\end{equation}
+
+\end_inset
+
+Az energia hasonlóan
+\begin_inset Formula 
+\begin{equation}
+\left\langle E\right\rangle \approx2D\int_{0}^{\infty}E\mathrm{e}^{-\beta\left(E-\mu\right)}\left[1-\mathrm{e}^{-\beta\left(E-\mu\right)}+\dots\right]\mathrm{d}E=\frac{2D}{\beta^{2}}\mathrm{e}^{\beta\mu}\left[1-\frac{\mathrm{e}^{\beta\mu}}{4}+\dots\right]
+\end{equation}
+
+\end_inset
+
+Vezető rendben vissza írva 
+\begin_inset Formula $\mathrm{e}^{\beta\mu}\approx\frac{N\beta}{2D}$
+\end_inset
+
+-t: 
+\begin_inset Formula 
+\begin{equation}
+\left\langle E\right\rangle \approx\frac{N}{\beta}\left[1-\frac{N\beta}{8D}+\dots\right]
+\end{equation}
+
+\end_inset
+
+Vegyük észre hogy mivel 
+\begin_inset Formula $D\propto V$
+\end_inset
+
+ (azaz extenzív mennyiség) a zárójelben megjelenő tag intenzív!
+\end_layout
+
+\begin_layout Subsection*
+Kvantumkorrekciók magas hőmérsékleten
 \end_layout
 
 \end_body
