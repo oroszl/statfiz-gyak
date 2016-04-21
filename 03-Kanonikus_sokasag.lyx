@@ -1210,7 +1210,7 @@ illetve az energia négyzetének várható értéke
 \begin{eqnarray}
 \left\langle E^{2}\right\rangle  & = & \left\langle \left(2\varepsilon N_{+}-N\varepsilon\right)^{2}\right\rangle ,\\
  & = & \left\langle 4\varepsilon^{2}N_{+}^{2}+N^{2}\varepsilon^{2}-4\varepsilon^{2}NN_{+}\right\rangle ,\nonumber \\
- & = & 4\varepsilon^{2}\left\langle N_{+}^{2}\right\rangle +N^{2}\varepsilon^{2}-2\varepsilon^{2}\left\langle N_{+}\right\rangle N,\nonumber 
+ & = & 4\varepsilon^{2}\left\langle N_{+}^{2}\right\rangle +N^{2}\varepsilon^{2}-4\varepsilon^{2}\left\langle N_{+}\right\rangle N,\nonumber 
 \end{eqnarray}
 
 \end_inset
@@ -1633,7 +1633,7 @@ M=-\partial_{B}F=\frac{1}{\beta}\partial_{B}\ln Z\underset{Z=f(\beta B)}{=}-\fra
 
 \begin_inset Formula 
 \begin{eqnarray}
-M & = & \mu_{B}/2\coth\left(\beta\mu_{B}B/2\right)-\mu_{B}(j+1/2)\coth\left(\beta\mu_{B}B(j+1/2)\right)\\
+M & = & \mu_{B}(j+1/2)\coth\left(\beta\mu_{B}B(j+1/2)\right)-\mu_{B}/2\coth\left(\beta\mu_{B}B/2\right)\\
  & = & \mu_{B}j\mathcal{B}_{j}(x),\quad x=\mu_{B}\beta Bj.\nonumber 
 \end{eqnarray}
 
@@ -2841,10 +2841,10 @@ Z=\frac{Z_{1}^{N}}{N!},\ Z_{1}=\frac{1}{h^{3}}\int\mathrm{d}^{3}p\int_{\text{hen
 Egy részecske járuléka
 \begin_inset Formula 
 \begin{eqnarray}
-Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}L2\pi\int_{0}^{R}\mathrm{d}r_{2D}r_{2D}\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}},\\
-u & = & \frac{\beta m\omega^{2}r_{2D}^{2}}{2},\ \frac{\mathrm{d}u}{\beta m\omega^{2}r_{2D}}=\mathrm{d}r,\\
-Z_{1} & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\int_{0}^{\frac{\beta m\omega^{2}R^{2}}{2}}\mathrm{d}u\mathrm{e}^{u},\\
- & = & \frac{1}{h^{3}}\sqrt{\frac{\pi2m}{\beta}}\frac{L2\pi}{\beta m\omega^{2}}\left[\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right].
+Z_{1} & = & \frac{1}{h^{3}}\left(\frac{\pi2m}{\beta}\right)^{3/2}L2\pi\int_{0}^{R}\mathrm{d}r_{2D}r_{2D}\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}},\\
+u & = & \frac{\beta m\omega^{2}r_{2D}^{2}}{2},\ \frac{\mathrm{d}u}{\beta m\omega^{2}r_{2D}}=\mathrm{d}r_{2D},\\
+Z_{1} & = & \frac{1}{h^{3}}\left(\frac{\pi2m}{\beta}\right)^{3/2}\frac{L2\pi}{\beta m\omega^{2}}\int_{0}^{\frac{\beta m\omega^{2}R^{2}}{2}}\mathrm{d}u\mathrm{e}^{u},\\
+ & = & \frac{1}{h^{3}}\left(\frac{\pi2m}{\beta}\right)^{3/2}\frac{L2\pi}{\beta m\omega^{2}}\left[\mathrm{e}^{\frac{\beta m\omega^{2}R^{2}}{2}}-1\right].
 \end{eqnarray}
 
 \end_inset

@@ -447,7 +447,7 @@ N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\
 azaz a kémiai potenciál: 
 \begin_inset Formula 
 \begin{equation}
-\mu=\left(\frac{3}{2}\frac{N}{V}\frac{1}{\alpha}\alpha\right)^{2/3}.
+\mu=\left(\frac{3}{2}\frac{N}{V}\frac{1}{\alpha}\right)^{2/3}.
 \end{equation}
 
 \end_inset
@@ -472,7 +472,7 @@ reference "eq:qgaz-pv_nu_per_d"
  állapotegyenletet kapjuk hogy 
 \begin_inset Formula 
 \begin{equation}
-p=\frac{2}{3}\frac{\left\langle E\right\rangle }{V}=\frac{2}{3}\times\frac{2}{5}\alpha\left(\frac{3}{2}\frac{N}{V}\frac{1}{\alpha}\alpha\right)^{5/3}.
+p=\frac{2}{3}\frac{\left\langle E\right\rangle }{V}=\frac{2}{3}\times\frac{2}{5}\alpha\left(\frac{3}{2}\frac{N}{V}\frac{1}{\alpha}\right)^{5/3}.
 \end{equation}
 
 \end_inset
@@ -509,8 +509,8 @@ Ekkor a részecskék száma
 \begin{eqnarray}
 N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\\
  & = & 2D\int_{0}^{\infty}\frac{1}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E,\ x=\mathrm{e}^{\beta\left(E-\mu\right)},\ \mathrm{d}E=\frac{\mathrm{d}x}{\beta x}\nonumber \\
- & = & \frac{2D}{\beta}\int_{0}^{\infty}\frac{1}{x}\frac{1}{x+1}\mathrm{d}x=\int_{0}^{\infty}\frac{1}{x}-\frac{1}{x+1}\mathrm{d}x\nonumber \\
- & = & \frac{2D}{\beta}\left[\ln\frac{x}{x+1}\right]_{0}^{\infty}=\frac{2D}{\beta}\ln\left(1+\mathrm{e}^{\beta\mu}\right)\nonumber 
+ & = & \frac{2D}{\beta}\int_{\mathrm{e}^{-\beta\mu}}^{\infty}\frac{1}{x}\frac{1}{x+1}\mathrm{d}x=\int_{\mathrm{e}^{-\beta\mu}}^{\infty}\frac{1}{x}-\frac{1}{x+1}\mathrm{d}x\nonumber \\
+ & = & \frac{2D}{\beta}\left[\ln\frac{x}{x+1}\right]_{\mathrm{e}^{-\beta\mu}}^{\infty}=\frac{2D}{\beta}\ln\left(1+\mathrm{e}^{\beta\mu}\right)\nonumber 
 \end{eqnarray}
 
 \end_inset
