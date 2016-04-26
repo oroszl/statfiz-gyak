@@ -632,7 +632,7 @@ Vegyük észre hogy mivel
 \end_layout
 
 \begin_layout Subsection*
-Kvantumkorrekciók magashőmérsékleten a három dimenziós ultrarelativisztikus
+Kvantumkorrekciók magas hőmérsékleten a három dimenziós ultrarelativisztikus
  Ferm-igázban
 \end_layout
 
@@ -685,15 +685,15 @@ N=\int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\rig
 illetve 
 \begin_inset Formula 
 \begin{equation}
-E=\int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\approx g\frac{4\pi V}{\left(hc\right)^{3}}\frac{\mathrm{e}^{\beta\mu}6}{\beta^{4}}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{4}}+\dots\right).\label{eq:ultrarel-id-qgaz-E}
+\left\langle E\right\rangle =\int_{0}^{\infty}\frac{E\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\approx g\frac{4\pi V}{\left(hc\right)^{3}}\frac{\mathrm{e}^{\beta\mu}6}{\beta^{4}}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{4}}+\dots\right).\label{eq:ultrarel-id-qgaz-E}
 \end{equation}
 
 \end_inset
 
-Az egy részeckére jutó átlagos energia
+Az egy részecskére jutó átlagos energia
 \begin_inset Formula 
 \begin{equation}
-\frac{E}{N}=\frac{\frac{3}{\beta}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{4}}+\dots\right)}{\left(1-\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right)}\approx\frac{3}{\beta}\left(1+\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)\label{eq:ultrarel-id-qgaz-EpN}
+\frac{\left\langle E\right\rangle }{N}=\frac{\frac{3}{\beta}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{4}}+\dots\right)}{\left(1-\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right)}\approx\frac{3}{\beta}\left(1+\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)\label{eq:ultrarel-id-qgaz-EpN}
 \end{equation}
 
 \end_inset
@@ -712,7 +712,7 @@ reference "eq:ultrarel-id-qgaz-N"
 -ből kapjuk hogy
 \begin_inset Formula 
 \begin{equation}
-\mathrm{e}^{\beta\mu}\approx\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{g8\pi},
+\mathrm{e}^{\beta\mu}\approx\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{g8\pi},\label{eq:ultrarel-id-qgaz-expbetamu}
 \end{equation}
 
 \end_inset
@@ -727,7 +727,7 @@ reference "eq:ultrarel-id-qgaz-EpN"
 -be 
 \begin_inset Formula 
 \begin{equation}
-\frac{E}{N}\approx\frac{3}{\beta}\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right).
+\frac{\left\langle E\right\rangle }{N}\approx\frac{3}{\beta}\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right).\label{eq:ultrarel-id-qgaz-EpN-munelkul}
 \end{equation}
 
 \end_inset
@@ -735,7 +735,7 @@ reference "eq:ultrarel-id-qgaz-EpN"
 Érdemes a klasszikus esetből kapott eredménnyel összehasonlítani: 
 \begin_inset Formula 
 \begin{equation}
-E=3Nk_{\mathrm{B}}T.
+\left\langle E\right\rangle =3Nk_{\mathrm{B}}T.
 \end{equation}
 
 \end_inset
@@ -760,69 +760,189 @@ Kapjuk tehát hogy az ultrarelativisztikus ideális gáz állapotegyenlete magas
  hőmérsékleten: 
 \begin_inset Formula 
 \begin{equation}
-pV=Nk_{\mathrm{B}}T\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right)
+pV=Nk_{\mathrm{B}}T\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right)\label{ultrarel-idqgaz-allapotegyenlet}
 \end{equation}
 
 \end_inset
 
 Határozzuk most meg az entrópia kvantumos korrekcióit magas hőmérsékleten!
- Nagykanonikus formalizmusban az entrópia a nagykanonikus potenciál hőmérséklet
- szerinti deriváltjaként áll elő
+ Célszerű a Gibbs-Duhem-relációt segítségül hívni
 \begin_inset Formula 
 \begin{equation}
-S=-\left.\frac{\partial\Phi}{\partial T}\right|_{V,\mu}.
+E=TS-pV+\mu N
 \end{equation}
 
 \end_inset
 
-A nagykanonikus potenciál szokás szerint 
+
 \begin_inset Formula 
 \begin{equation}
-\Phi=-pV,
+S=\frac{N}{T}\left(\frac{4}{3}\frac{E}{N}-\mu\right)\label{eq:ultrarel-id-q-gaz-Gibbs-Duuhem-S}
 \end{equation}
 
 \end_inset
 
-ami a konkrét esetünkre
-\begin_inset Formula 
-\begin{equation}
-\Phi=-\frac{1}{3}E
-\end{equation}
-
-\end_inset
-
-Felhasználva 
-\begin_inset Formula $E$
-\end_inset
-
- 
+Szükségünk lesz tehát a kémiai potenciál magas hőmérsékletű közelítésére
+ is! Induljunk ki 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:atalanos-id-qgaz-energia"
+reference "eq:ultrarel-id-qgaz-N"
 
 \end_inset
 
- kifejezését 
-\begin_inset Formula $V$
+-ból! Kihasználva hogy 
+\begin_inset Formula $\mathrm{e}^{\beta\mu}$
 \end_inset
 
- és 
-\begin_inset Formula $\mu$
-\end_inset
-
- függvényében:
+ kicsi kapjuk hogy
 \begin_inset Formula 
 \begin{equation}
-S=\partial_{T}\frac{1}{3}E
+\mathrm{e}^{\beta\mu}\approx N\frac{\left(hc\right)^{3}\beta^{3}}{g8\pi V}\left(1+\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right)
 \end{equation}
+
+\end_inset
+
+a jobboldalon 
+\begin_inset Formula $\mathrm{e}^{\beta\mu}$
+\end_inset
+
+-t a vezetőrendjével helyettesítve 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ultrarel-id-qgaz-expbetamu"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\mathrm{e}^{\beta\mu} & \approx & N\frac{\left(hc\right)^{3}\beta^{3}}{g8\pi V}\left(1+\frac{N\left(hc\right)^{3}\beta^{3}}{g64\pi V}+\dots\right)\\
+\mu & \approx & \frac{1}{\beta}\ln\left(\frac{N\left(hc\right)^{3}\beta^{3}}{g8\pi V}\right)+\frac{N\left(hc\right)^{3}\beta^{2}}{g64\pi V}
+\end{eqnarray}
+
+\end_inset
+
+visszahelyettesítve 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ultrarel-id-qgaz-EpN"
+
+\end_inset
+
+-t és a fenti kifejezést 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ultrarel-id-q-gaz-Gibbs-Duuhem-S"
+
+\end_inset
+
+-be kapjuk hogy 
+\begin_inset Formula 
+\begin{eqnarray}
+S & = & \frac{N}{T}\left(\frac{4}{\beta}\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\right)-\frac{1}{\beta}\ln\left(\frac{N\left(hc\right)^{3}\beta^{3}}{g8\pi V}\right)-\frac{N\left(hc\right)^{3}\beta^{2}}{g64\pi V}\right)\nonumber \\
+S & = & \frac{N}{T}\left(\frac{4}{\beta}-\frac{1}{\beta}\ln\left(\frac{N\left(hc\right)^{3}\beta^{3}}{g8\pi V}\right)+\left(4\frac{N}{V}\frac{\left(hc\right)^{3}\beta^{2}}{128g\pi}\right)-\frac{N\left(hc\right)^{3}\beta^{2}}{g64\pi V}\right)\nonumber \\
+S & = & \frac{N}{T}\left(\frac{4}{\beta}-\frac{1}{\beta}\ln\left(\frac{N\left(hc\right)^{3}\beta^{3}}{g8\pi V}\right)+\left(\frac{N}{V}\frac{\left(hc\right)^{3}\beta^{2}}{64g\pi}\right)\right)\nonumber \\
+S & = & Nk_{\mathrm{B}}\left(4-\ln\left(\frac{1}{8\pi}\frac{N}{gV}\left(\frac{hc}{k_{\mathrm{B}}T}\right)^{3}\right)+\frac{1}{64\pi}\frac{N}{gV}\left(\frac{hc}{k_{\mathrm{B}}T}\right)^{3}\right)
+\end{eqnarray}
+
+\end_inset
+
+A fenti kifejezés első két tagja megegyezik a klasszikus ultrarelativisztikus
+ ideális gáz entrópiájával.
+ 
+\end_layout
+
+\begin_layout Standard
+Határozzunk meg végül két mérhető mennyiség, az állandó térfogaton 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+ mért fajhő illetve a 
+\begin_inset Formula $\kappa_{T}$
+\end_inset
+
+ izoterm kompresszibilitás magashőmérsékletű viselkedését is! Kezdjük 
+\begin_inset Formula $C_{V}$
+\end_inset
+
+-vel! Kiindulva 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ultrarel-id-qgaz-EpN-munelkul"
+
+\end_inset
+
+-ből kapjuk hogy 
+\begin_inset Formula 
+\begin{eqnarray}
+C_{V} & = & \left.\partial_{T}E\right|_{V}=\\
+ & =\partial_{T} & 3N\left(k_{\mathrm{B}}T\right)\left(1+\frac{N}{V}\frac{\left(hc\right)^{3}}{128g\pi\left(k_{\mathrm{B}}T\right)^{3}}\dots\right)\nonumber \\
+ & = & 3k_{\mathrm{B}}N\left(1-\frac{N}{V}\frac{1}{64g\pi}\left(\frac{hc}{k_{\mathrm{B}}T}\right)^{3}\right)\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+A kompresszibilitás 
+\begin_inset Formula 
+\begin{equation}
+\kappa_{T}=-\frac{1}{V}\left.\partial_{p}V\right|_{T,N}
+\end{equation}
+
+\end_inset
+
+meghatározásához induljunk ki az 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "ultrarel-idqgaz-allapotegyenlet"
+
+\end_inset
+
+ állapot egyenletből.
+\begin_inset Formula 
+\begin{eqnarray}
+V & = & \frac{Nk_{\mathrm{B}}T}{p}\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right)\\
+ & \approx & \frac{Nk_{\mathrm{B}}T}{p}\left(1+\frac{p}{k_{\mathrm{B}}T}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right)\\
+ & = & \frac{Nk_{\mathrm{B}}T}{p}+N\frac{\left(\beta hc\right)^{3}}{128g\pi}
+\end{eqnarray}
+
+\end_inset
+
+ahol 
+\begin_inset Formula $\frac{N}{V}$
+\end_inset
+
+-t ismét az első rendbeli értékével közelítettük a második tagban.
+\begin_inset Formula 
+\begin{eqnarray}
+-\frac{1}{V}\partial_{p}V & = & -\frac{1}{V}\left(-\frac{Nk_{\mathrm{B}}T}{p^{2}}\right)\\
+ & = & \frac{p}{Nk_{\mathrm{B}}T}\left(1-\frac{p}{k_{\mathrm{B}}T}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right)\frac{Nk_{\mathrm{B}}T}{p^{2}}\\
+\kappa_{T} & = & \frac{1}{p}\left(1-\frac{p}{k_{\mathrm{B}}T}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right)
+\end{eqnarray}
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Exercise
+Határozzuk meg az állandó nyomáson vett fajhő magashőmérsékletű kvantum
+ korrekcióit ultrarelativisztikus Fermi-gáz esetében.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Határozzuk meg az ultrarelativsztikus Bose-gáz magas hőmérsékletű korrekcióit!
+ Vizsgáljuk meg a Fermi-gáz tárgyalásánál kiszámolt mennyiségeket! 
+\end_layout
+
 \begin_layout Subsection*
-Alacsonyhőmérsékletű ultrarelativisztikus Fermi-gáz
+Alacsony hőmérsékletű ultrarelativisztikus Fermi-gáz
 \end_layout
 
 \begin_layout Standard
@@ -837,7 +957,7 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -847,13 +967,198 @@ Bethe-Sommerfeld sorfejtés:
 
 \begin_inset Formula 
 \begin{equation}
-\int_{0}^{\infty}g(E)f(E)\mathrm{d}E\approx\int_{0}^{\mu}g(E)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}g'(\mu)+\dots
+\int_{0}^{\infty}\varphi(E)f(E)\mathrm{d}E\approx\int_{0}^{\mu}\varphi(E)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}\varphi'(\mu)+\dots
 \end{equation}
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\varrho(E)=g\frac{4\pi V}{\left(hc\right)^{3}}E^{2}=AE^{2}
+\end{equation}
+
+\end_inset
+
+Határozzuk meg először az energia és a részecskeszám értékét zérus hőmérsékleten
+!
+\begin_inset Formula 
+\begin{equation}
+N=\int_{0}^{\mu}\varrho\left(E\right)\mathrm{d}E=g\frac{4\pi V}{3\left(hc\right)^{3}}\mu^{3}
+\end{equation}
+
+\end_inset
+
+A kémiai potenciál tehát zérus hőmérsékleten
+\begin_inset Formula 
+\begin{equation}
+\mu_{0}=\left(\frac{N3}{g4\pi V}\right)^{1/3}\left(hc\right).
+\end{equation}
+
+\end_inset
+
+Az energia 
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle E\right\rangle  & = & \int_{0}^{\mu}E\varrho\left(E\right)\mathrm{d}E=g\frac{\pi V}{\left(hc\right)^{3}}\mu^{4}\\
+ & = & g\pi Vhc\left(\frac{N3}{g4\pi V}\right)^{4/3}\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Határozzuk most meg az alacsony hőmérsékletű viselkedést!
+\begin_inset Formula 
+\begin{eqnarray}
+N & = & \int_{0}^{\mu}\varrho\left(E\right)f(E)\mathrm{d}E=\int_{0}^{\mu}\varrho\left(E\right)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}\varrho'\left(\mu\right)+\dots\\
+ & = & g\frac{4\pi V}{3\left(hc\right)^{3}}\mu^{3}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}g\frac{2\pi V}{\left(hc\right)^{3}}\mu\nonumber \\
+ & = & g\frac{4\pi V}{\left(hc\right)^{3}}\left(\frac{\mu^{3}}{3}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}2\mu\right)\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+ebből 
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{N\left(hc\right)^{3}h}{g4\pi V} & = & \mu^{3}+\pi^{2}\left(k_{\mathrm{B}}T\right)^{2}\mu\\
+\mu_{0}^{3} & = & \mu^{3}+\pi^{2}\left(k_{\mathrm{B}}T\right)^{2}\mu\\
+ & \approx & \mu^{3}\left(1+\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}\right)
+\end{eqnarray}
+
+\end_inset
+
+A kémiai potenciál első véges hőmérsékletű korrekciója tehát 
+\begin_inset Formula 
+\begin{equation}
+\mu\approx\mu_{0}\left(1-\frac{\pi^{2}}{3}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}\right).\label{eq:ultrarel-id-qgaz-BS-kempot}
+\end{equation}
+
+\end_inset
+
+Az energia várható értéke
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle E\right\rangle  & = & \int_{0}^{\mu}E\varrho\left(E\right)f(E)\mathrm{d}E=\int_{0}^{\mu}E\varrho\left(E\right)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}\left(E\varrho\right)'\left(\mu\right)\\
+ & = & g\frac{4\pi V}{\left(hc\right)^{3}}\left(\frac{\mu^{4}}{4}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}3\mu^{2}+\dots\right)
+\end{eqnarray}
+
+\end_inset
+
+Egy részecskére jutó energia
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\left\langle E\right\rangle }{N} & = & \frac{\left(\frac{\mu^{4}}{4}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}3\mu^{2}+\dots\right)}{\left(\frac{\mu^{3}}{3}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}2\mu+\dots\right)}\\
+ & = & \frac{\frac{\mu^{4}}{4}\left(1+2\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu}\right)^{2}+\dots\right)}{\frac{\mu^{3}}{3}\left(1+\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu}\right)^{2}+\dots\right)}\nonumber \\
+ & \approx & \frac{3}{4}\mu\left(1+\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}+\dots\right)\nonumber \\
+ & \approx & \frac{3}{4}\mu_{0}\left(1-\frac{\pi^{2}}{3}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}\right)\left(1+\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}+\dots\right)\nonumber \\
+\frac{\left\langle E\right\rangle }{N} & \approx & \frac{3}{4}\mu_{0}\left(1+\frac{2}{3}\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}\right)
+\end{eqnarray}
+
+\end_inset
+
+Ennek ismeretében és felhasználva az 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:qgaz-pv_nu_per_d"
+
+\end_inset
+
+ összefüggést, az állapot egyenletre vonatkozó alacsony hőmérsékletű korrekciók
+ meghatározhatóak:
+\begin_inset Formula 
+\begin{equation}
+pV=\frac{1}{3}\left\langle E\right\rangle =\frac{1}{4}\mu_{0}N\left(1+\frac{2}{3}\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}\right)
+\end{equation}
+
+\end_inset
+
+A fajhő pedig 
+\begin_inset Formula 
+\begin{equation}
+C_{V}=\partial_{T}\left\langle E\right\rangle =\pi^{2}k_{\mathrm{B}}N\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Milyen hőmérsékleten tűnik el a kémiai potenciál?
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg azt a kritikus hőmérsékletet ahol egy ideális nem reativisztikus
+ Fermi-gáz kémiai potenciálja eltűnik!
+\begin_inset Formula 
+\begin{equation}
+\varrho(E)=\alpha V\sqrt{E}.
+\end{equation}
+
+\end_inset
+
+Keressük tehát azt a 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ hőmérsékletet ahol 
+\begin_inset Formula 
+\begin{equation}
+N=\int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta_{1}E}+1}\mathrm{d}E=\int_{0}^{\infty}\frac{\alpha V\sqrt{E}}{\mathrm{e}^{\beta_{1}E}+1}\mathrm{d}E.
+\end{equation}
+
+\end_inset
+
+Legyen 
+\begin_inset Formula 
+\begin{eqnarray}
+\beta_{1}E & = & x^{2},\ \sqrt{E\beta_{1}}=x,\\
+\beta_{1}\mathrm{d}E & = & 2x\mathrm{d}x,
+\end{eqnarray}
+
+\end_inset
+
+ekkor
+\begin_inset Formula 
+\begin{eqnarray}
+N & = & \frac{\alpha V}{\sqrt{\beta_{1}}}\int_{0}^{\infty}\frac{x}{\mathrm{e}^{x^{2}}+1}\frac{2x\mathrm{d}x}{\beta_{1}},\\
+ & = & 2\alpha V\left(k_{\mathrm{B}}T_{1}\right)^{3/2}\int_{0}^{\infty}\frac{x^{2}}{\mathrm{e}^{x^{2}}+1}\mathrm{d}x.\label{eq:fermion-zerus-mu-N}
+\end{eqnarray}
+
+\end_inset
+
+Természetesen zérus hőmérsékleten a kémiai potenciál véges és ekkor 
+\begin_inset Formula 
+\begin{equation}
+N=\int_{0}^{\mu}\alpha V\sqrt{E}\mathrm{d}E=\frac{\alpha2V}{3}\mu^{3/2}=\frac{\alpha2V}{3}\left(k_{\mathrm{B}}T_{F}\right)^{3/2}.\label{eq:fermion-zerus-T-N}
+\end{equation}
+
+\end_inset
+
+A 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fermion-zerus-mu-N"
+
+\end_inset
+
+ és 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fermion-zerus-T-N"
+
+\end_inset
+
+ kifejezések hányadosából kapjuk tehát hogy
+\begin_inset Formula 
+\begin{eqnarray}
+1 & = & \frac{2\alpha V\left(k_{\mathrm{B}}T_{1}\right)^{3/2}}{\frac{\alpha2V}{3}\left(k_{\mathrm{B}}T_{F}\right)^{3/2}}\int_{0}^{\infty}\frac{x^{2}}{\mathrm{e}^{x^{2}}+1}\mathrm{d}x,\\
+1 & = & \frac{1}{3}\left(\frac{T_{1}}{T_{F}}\right)\underbrace{\int_{0}^{\infty}\frac{x^{2}}{\mathrm{e}^{x^{2}}+1}\mathrm{d}x}_{\approx0.339}\rightarrow\left(\frac{T_{F}}{T_{1}}\right)\approx1.01139.
+\end{eqnarray}
 
 \end_inset
 
