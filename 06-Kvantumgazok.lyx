@@ -81,6 +81,10 @@ Ideális kvantumgázok
 Kvantumgázok nagykanonikus vizsgálata
 \end_layout
 
+\begin_layout Subsection*
+Az állapotsűrűség
+\end_layout
+
 \begin_layout Standard
 Határozzuk meg az állapotok számát 
 \begin_inset Formula $\Omega_{0}(E)$
@@ -202,14 +206,20 @@ A részecskék száma
 \begin_inset Formula 
 \begin{eqnarray}
 N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}\mathrm{d}E=A\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta\left(E-\mu\right)}\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{-\beta l\left(E-\mu\right)}\mathrm{d}E,\\
- & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta E(l+1)}\mathrm{d}E,\ u=\beta E(l+1),\ \mathrm{d}E=\frac{\mathrm{d}u}{\beta(l+1)},\nonumber \\
+ & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta E(l+1)}\mathrm{d}E,\ u=\beta E(l+1),\ \mathrm{d}E=\frac{\mathrm{d}u}{\beta(l+1)},\label{eq:altalanos-id-qgaz-reszcskeszam}\\
  & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\left(\frac{1}{\beta(l+1)}\right)^{\frac{d}{\nu}}\underbrace{\int_{0}^{\infty}u^{\frac{d}{\nu}-1}\mathrm{e}^{-u}\mathrm{d}E}_{\Gamma\left(\frac{d}{\nu}\right)},\nonumber \\
  & = & A\Gamma\left(\frac{d}{\nu}\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\sum_{l=0}\left(\mp1\right)^{l}\frac{\mathrm{e}^{\beta\mu l}}{\left(l+1\right)^{\frac{d}{\nu}}}\approx A\Gamma\left(\frac{d}{\nu}\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}}}\pm\dots\right).\nonumber 
 \end{eqnarray}
 
 \end_inset
 
+Az energia várható értékének kiszámítása a részecskék számának kiszámításával
+ analóg módon történik.
+ Vegyük észre hogy ha a fenti kifejezésben elvégezzük a 
+\begin_inset Formula $\frac{d}{\nu}\rightarrow\frac{d}{\nu}+1$
+\end_inset
 
+helyettesítést akkor épp az energia várhatóértékét kapjuk:
 \begin_inset Formula 
 \begin{eqnarray}
 \left\langle E\right\rangle  & = & \int_{0}^{\infty}E\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}\mathrm{d}E\label{eq:atalanos-id-qgaz-energia}\\
@@ -218,11 +228,11 @@ N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\
 
 \end_inset
 
-
+Az egy részecskére jutó energia tehát
 \begin_inset Formula 
 \begin{eqnarray}
-\frac{\left\langle E\right\rangle }{N} & = & \frac{\frac{A\Gamma\left(\frac{d}{\nu}+1\right)\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}+1}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}}}\pm\dots\right)}{\frac{A\Gamma\left(\frac{d}{\nu}\right)\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}+1}}\pm\dots\right)}\\
- & \approx & \frac{d}{\nu}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}+1}}\dots\right)
+\frac{\left\langle E\right\rangle }{N} & = & \frac{\frac{A\Gamma\left(\frac{d}{\nu}+1\right)\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}+1}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}+1}}\pm\dots\right)}{\frac{A\Gamma\left(\frac{d}{\nu}\right)\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}}}\pm\dots\right)},\\
+ & \approx & \frac{d}{\nu}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}+1}}\dots\right).
 \end{eqnarray}
 
 \end_inset
@@ -478,6 +488,10 @@ p=\frac{2}{3}\frac{\left\langle E\right\rangle }{V}=\frac{2}{3}\times\frac{2}{5}
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -532,7 +546,7 @@ melyből a kémiai potenciál kifejezhető a hőmérséklet függvényében
 \end_inset
 
 Az energia várhatóértékét már nem tudjuk zárt alakra hozni.
- a felmerülő integrál
+ A felmerülő integrál
 \begin_inset Formula 
 \begin{equation}
 F_{j}(x)=\frac{1}{\Gamma\left(j+1\right)}\int_{0}^{\infty}\frac{t^{j}}{\mathrm{e}^{t-x}+1}\mathrm{d}t
@@ -549,10 +563,6 @@ target "https://en.wikipedia.org/wiki/Complete_Fermi%E2%80%93Dirac_integral"
 \end_inset
 
  hívnak.
-\end_layout
-
-\begin_layout Subsection*
-Magas hőmérsékletű sorfejtés
 \end_layout
 
 \begin_layout Standard
@@ -582,8 +592,8 @@ N=2D\int_{0}^{\infty}\frac{1}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E
 
 \end_inset
 
-Ebből megtartva az első tagot (
-\begin_inset Formula $l=0$
+Ebből megtartva az első két tagot (
+\begin_inset Formula $l=0,1$
 \end_inset
 
 )
@@ -622,7 +632,232 @@ Vegyük észre hogy mivel
 \end_layout
 
 \begin_layout Subsection*
-Kvantumkorrekciók magas hőmérsékleten
+Kvantumkorrekciók magashőmérsékleten a három dimenziós ultrarelativisztikus
+ Ferm-igázban
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E(\vec{k})=c\left|\hbar\vec{k}\right|,\ d=3,\nu=1
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\varrho(E)=g\frac{4\pi V}{\left(hc\right)^{3}}E^{2}=AE^{2}
+\end{equation}
+
+\end_inset
+
+A részecskék 
+\begin_inset Formula $N$
+\end_inset
+
+ száma és az energia 
+\begin_inset Formula $E$
+\end_inset
+
+ várható értéke az 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:altalanos-id-qgaz-reszcskeszam"
+
+\end_inset
+
+ és 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:atalanos-id-qgaz-energia"
+
+\end_inset
+
+ alapján 
+\begin_inset Formula 
+\begin{equation}
+N=\int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\approx A\Gamma\left(3\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{3}}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{3}}+\dots\right)=g\frac{4\pi V}{\left(hc\right)^{3}}\frac{\mathrm{e}^{\beta\mu}2}{\beta^{3}}\left(1-\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right),\label{eq:ultrarel-id-qgaz-N}
+\end{equation}
+
+\end_inset
+
+illetve 
+\begin_inset Formula 
+\begin{equation}
+E=\int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\approx g\frac{4\pi V}{\left(hc\right)^{3}}\frac{\mathrm{e}^{\beta\mu}6}{\beta^{4}}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{4}}+\dots\right).\label{eq:ultrarel-id-qgaz-E}
+\end{equation}
+
+\end_inset
+
+Az egy részeckére jutó átlagos energia
+\begin_inset Formula 
+\begin{equation}
+\frac{E}{N}=\frac{\frac{3}{\beta}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{4}}+\dots\right)}{\left(1-\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right)}\approx\frac{3}{\beta}\left(1+\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)\label{eq:ultrarel-id-qgaz-EpN}
+\end{equation}
+
+\end_inset
+
+Vezető rendben 
+\begin_inset Formula $\mathrm{e}{}^{\beta\mu}$
+\end_inset
+
+-t kifejezve 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ultrarel-id-qgaz-N"
+
+\end_inset
+
+-ből kapjuk hogy
+\begin_inset Formula 
+\begin{equation}
+\mathrm{e}^{\beta\mu}\approx\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{g8\pi},
+\end{equation}
+
+\end_inset
+
+Vissza helyettesítve 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ultrarel-id-qgaz-EpN"
+
+\end_inset
+
+-be 
+\begin_inset Formula 
+\begin{equation}
+\frac{E}{N}\approx\frac{3}{\beta}\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right).
+\end{equation}
+
+\end_inset
+
+Érdemes a klasszikus esetből kapott eredménnyel összehasonlítani: 
+\begin_inset Formula 
+\begin{equation}
+E=3Nk_{\mathrm{B}}T.
+\end{equation}
+
+\end_inset
+
+A 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:qgaz-pv_nu_per_d"
+
+\end_inset
+
+ kifejezés szerint az ideális kvantumgáz energiája kifejezhető a nyomás
+ és a térfogat szorzatával 
+\begin_inset Formula 
+\begin{equation}
+pV=\frac{1}{3}\left\langle E\right\rangle .
+\end{equation}
+
+\end_inset
+
+Kapjuk tehát hogy az ultrarelativisztikus ideális gáz állapotegyenlete magas
+ hőmérsékleten: 
+\begin_inset Formula 
+\begin{equation}
+pV=Nk_{\mathrm{B}}T\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\dots\right)
+\end{equation}
+
+\end_inset
+
+Határozzuk most meg az entrópia kvantumos korrekcióit magas hőmérsékleten!
+ Nagykanonikus formalizmusban az entrópia a nagykanonikus potenciál hőmérséklet
+ szerinti deriváltjaként áll elő
+\begin_inset Formula 
+\begin{equation}
+S=-\left.\frac{\partial\Phi}{\partial T}\right|_{V,\mu}.
+\end{equation}
+
+\end_inset
+
+A nagykanonikus potenciál szokás szerint 
+\begin_inset Formula 
+\begin{equation}
+\Phi=-pV,
+\end{equation}
+
+\end_inset
+
+ami a konkrét esetünkre
+\begin_inset Formula 
+\begin{equation}
+\Phi=-\frac{1}{3}E
+\end{equation}
+
+\end_inset
+
+Felhasználva 
+\begin_inset Formula $E$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:atalanos-id-qgaz-energia"
+
+\end_inset
+
+ kifejezését 
+\begin_inset Formula $V$
+\end_inset
+
+ és 
+\begin_inset Formula $\mu$
+\end_inset
+
+ függvényében:
+\begin_inset Formula 
+\begin{equation}
+S=\partial_{T}\frac{1}{3}E
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Alacsonyhőmérsékletű ultrarelativisztikus Fermi-gáz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Bethe-Sommerfeld sorfejtés:
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+\int_{0}^{\infty}g(E)f(E)\mathrm{d}E\approx\int_{0}^{\mu}g(E)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}g'(\mu)+\dots
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
