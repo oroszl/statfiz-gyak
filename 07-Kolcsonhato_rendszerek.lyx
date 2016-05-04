@@ -1,0 +1,236 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language magyar
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language polish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Kölcsönható rendszerek
+\end_layout
+
+\begin_layout Section
+Egy dimenziós Ising-model
+\end_layout
+
+\begin_layout Standard
+Vizsgáljunk két állapotú klasszikus spinek 
+\begin_inset Formula $S_{i}=\pm1$
+\end_inset
+
+ egy dimenziós rendszerét.
+ Legyen a rendszer véges és rendelkezzen szabad peremfeltétellel.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=-J\sum_{\left\langle ij\right\rangle }S_{i}S_{j}
+\end{equation}
+
+\end_inset
+
+A kanonikus állapotösszeg 
+\begin_inset Formula 
+\begin{equation}
+Z=\sum_{\left\{ S_{i}\right\} }\mathrm{e^{\kappa S_{1}S_{2}}\dots e^{\kappa S_{N-1}S_{N}}},\ \kappa=\beta J
+\end{equation}
+
+\end_inset
+
+Vegyük észre hogy ha az egyik végen lévő spin-re elvégezzük az összeget
+ akkor az a mellette lévő spin értékétől függetlenül ugyan azt a járulékot
+ fogja adni! 
+\begin_inset Formula 
+\begin{equation}
+\sum_{S_{N}=\pm1}e^{\kappa S_{N-1}S_{N}}=2\cosh\kappa.
+\end{equation}
+
+\end_inset
+
+Kapjuk tehát hogy 
+\begin_inset Formula 
+\begin{equation}
+Z_{N}=2\cosh\kappa Z_{N-1}.
+\end{equation}
+
+\end_inset
+
+Figyelembe véve hogy 
+\begin_inset Formula 
+\begin{equation}
+Z_{1}=2,
+\end{equation}
+
+\end_inset
+
+a teljes rendszer állapotösszege 
+\begin_inset Formula 
+\begin{equation}
+Z_{N}=2\left(2\cosh\kappa\right)^{N-1}.
+\end{equation}
+
+\end_inset
+
+Határozzuk meg a rendszer korrelációs függvényét! Azaz az 
+\begin_inset Formula $\left\langle S_{i}S_{j}\right\rangle $
+\end_inset
+
+ várhatóértéket! Ehhez először tegyük fel hogy a 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ csatolás nem homogén hanem minden párra külön külön értékeket vehet fel!
+ Ekkor
+\begin_inset Formula 
+\begin{equation}
+Z=2^{N}\prod_{p=1}^{N}\cosh\kappa_{p}.\label{eq:ising-chain-Z}
+\end{equation}
+
+\end_inset
+
+Az állapotösszeg definíciójából nyilvánvaló hogy 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{Z}\frac{\partial^{n}Z}{\partial\kappa_{i}\partial\kappa_{i+1}\dots\partial\kappa_{i+n-1}}=\left\langle S_{i}\overbrace{S_{i+1}S_{i+1}}^{1}\underbrace{S_{i+2}S_{i+2}}_{1}S_{i+3}\dots S_{i+n-1}S_{i+n}\right\rangle =\left\langle S_{i}S_{i+n}\right\rangle 
+\end{equation}
+
+\end_inset
+
+Vegyük észre hogy tetszőleges két spin korrelációs függvénye tehát kifejezhető
+ a fenti derivált segítségével! A deriváltat viszont közvetlenül is elvégezhetjü
+k az állapotösszeg 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ising-chain-Z"
+
+\end_inset
+
+ kifejezésén!
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\left(2^{N}\prod_{p=1}^{N}\cosh\kappa_{i}\right)}\frac{\partial^{n}}{\partial\kappa_{i}\partial\kappa_{i+1}\dots\partial\kappa_{i+n-1}}\left(2^{N}\prod_{p=1}^{N}\cosh\kappa_{i}\right)=\prod_{p=i}^{i+n-1}\frac{\sinh\kappa_{i}}{\cosh\kappa_{i}}=\prod_{p=i}^{i+n-1}\tanh\kappa_{i}.
+\end{equation}
+
+\end_inset
+
+Visszaállítva a rendszer homogenitását, azaz 
+\begin_inset Formula $\kappa_{i}=\kappa$
+\end_inset
+
+ esetén, 
+\begin_inset Formula 
+\begin{equation}
+\left\langle S_{i}S_{i+n}\right\rangle =\tanh^{n}\kappa=\mathrm{e}^{n\ln\tanh\kappa}.
+\end{equation}
+
+\end_inset
+
+Mivel 
+\begin_inset Formula $\tanh\kappa<1$
+\end_inset
+
+ezért a logaritmus előjele mindig negatív!
+\begin_inset Formula 
+\begin{equation}
+\left\langle S_{i}S_{i+n}\right\rangle =\mathrm{e}^{-an\frac{\left|\ln\tanh\kappa\right|}{a}}=\mathrm{e}^{-\frac{an}{\xi}}
+\end{equation}
+
+\end_inset
+
+Ahol bevezettük a korrelációs hosszt mint 
+\begin_inset Formula 
+\begin{equation}
+\xi=\frac{a}{\left|\ln\tanh\kappa\right|},
+\end{equation}
+
+\end_inset
+
+illetve 
+\begin_inset Formula $a$
+\end_inset
+
+ egy a rendszerre jellemző hossz mennyiség (pl.
+ a spinek közötti távolság a valós térben).
+ Ha az alacsony hőmérsékletű viselkedést vizsgáljuk akkor 
+\begin_inset Formula $\beta\rightarrow\infty,\ \kappa\rightarrow\infty,\ \tanh\kappa\rightarrow1,\ \ln\tanh\kappa\rightarrow0$
+\end_inset
+
+ tehát 
+\begin_inset Formula $\xi\rightarrow\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document
