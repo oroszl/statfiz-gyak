@@ -98,7 +98,7 @@ energia alatt egy
 \begin_inset Formula $d$
 \end_inset
 
- dimenziós rendszerre ha a diszperziós reláció	
+ dimenziós rendszerre ha a diszperziós reláció egy darab részecskére	
 \begin_inset Formula 
 \begin{equation}
 \varepsilon(\vec{k})=\alpha\left|\hbar\vec{k}\right|^{\nu}
@@ -137,7 +137,7 @@ Itt
 \begin_inset Formula $\frac{\left(E/\alpha\right)^{1/\nu}}{\hbar}$
 \end_inset
 
-!
+ melyet a diszperziós relációból nyertünk!
 \begin_inset Formula 
 \begin{equation}
 \Omega_{0}(E)=g\frac{L^{d}}{\left(2\pi\right)^{d}}\frac{\pi^{d/2}}{\Gamma\left(d/2+1\right)}\frac{\left(E/\alpha\right)^{d/\nu}}{\hbar^{d}}
@@ -162,7 +162,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\varrho(E)=\partial_{E}\Omega_{0}(E)=g\frac{L^{d}}{h}\frac{\pi^{d/2}}{\Gamma\left(d/2+1\right)\alpha^{d/\nu}}\frac{d}{\nu}E^{\frac{d}{\nu}-1}=AE^{\frac{d}{\nu}-1}\label{eq:altalanos-idgaz-allapotsuruseg}
+\varrho(E)=\partial_{E}\Omega_{0}(E)=g\frac{L^{d}}{h^{d}}\frac{\pi^{d/2}}{\Gamma\left(d/2+1\right)\alpha^{d/\nu}}\frac{d}{\nu}E^{\frac{d}{\nu}-1}=AE^{\frac{d}{\nu}-1}\label{eq:altalanos-idgaz-allapotsuruseg}
 \end{equation}
 
 \end_inset
@@ -172,7 +172,12 @@ status open
 
 \end_inset
 
-Határozzuk meg az általános diszperziós relációval rendelkező kvantumgázban
+ ahol az 
+\begin_inset Formula $A$
+\end_inset
+
+-ba rejtetük bele a térfogatot.
+ Határozzuk meg az általános diszperziós relációval rendelkező kvantumgázban
  a részecskék számát és az energia várható értékét! Vegyük először észre
  hogy a kvantumos eloszlás függvényeket felírhatjuk mértani sor alakjában:
  
@@ -202,7 +207,8 @@ status open
 
 \end_inset
 
-A részecskék száma
+A részecskék számának várható értékét úgy kapjuk, hogy az állapot sűrűséget
+ szorozzuk az adott energián a betöltési számmal:
 \begin_inset Formula 
 \begin{eqnarray}
 N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}\mathrm{d}E=A\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta\left(E-\mu\right)}\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{-\beta l\left(E-\mu\right)}\mathrm{d}E,\\
@@ -213,7 +219,9 @@ N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\
 
 \end_inset
 
-Az energia várható értékének kiszámítása a részecskék számának kiszámításával
+Az energiát úgy csoportosítottuk, számolás közben, hogy a szumma kiemelhető
+ legyen.
+ Az energia várható értékének kiszámítása a részecskék számának kiszámításával
  analóg módon történik.
  Vegyük észre hogy ha a fenti kifejezésben elvégezzük a 
 \begin_inset Formula $\frac{d}{\nu}\rightarrow\frac{d}{\nu}+1$
@@ -238,7 +246,11 @@ Az egy részecskére jutó energia tehát
 \end_inset
 
 azaz a nem relativisztikus és az ultrarelativisztikus gázok esetén a következő
- kvantum korrekciókat kapjuk
+ kvantum korrekciókat kapjuk (konvenció: a 
+\begin_inset Formula $\pm$
+\end_inset
+
+-ból mindig a felső vonatkozik a bozonra, az alsó pedig a fermionra.
 \begin_inset Formula 
 \begin{eqnarray}
 \mbox{\mbox{nem relativisztikus}:}d & = & 3,\ \nu=2\rightarrow\left\langle E\right\rangle =\frac{3}{2}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{5}{2}}}\dots\right)\\
@@ -257,9 +269,12 @@ kus állapotösszegét és a nagykanonikus potenciált!
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-\mbox{fermion:}\,\mathcal{Z} & = & \prod_{i}\left(1+\mathrm{e}^{-\beta\left(\varepsilon_{i}-\mu\right)}\right)\\
+\mbox{fermion (a szumma itt nem 0-tól végtelenig megy):}\,\mathcal{Z} & = & \prod_{i}\left(1+\mathrm{e}^{-\beta\left(\varepsilon_{i}-\mu\right)}\right)\\
 \mbox{bozon:}\,\mathcal{Z} & = & \prod_{i}\left(1-\mathrm{e}^{-\beta\left(\varepsilon_{i}-\mu\right)}\right)^{-1}
 \end{eqnarray}
 
@@ -487,7 +502,10 @@ p=\frac{2}{3}\frac{\left\langle E\right\rangle }{V}=\frac{2}{3}\times\frac{2}{5}
 
 \end_inset
 
+A Pauli-elv miatt van 0-hőmérsékleten nyomása a gáznak.
+\end_layout
 
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -690,7 +708,11 @@ illetve
 
 \end_inset
 
-Az egy részecskére jutó átlagos energia
+Az egy részecskére jutó átlagos energia (kihasználva, hogy 
+\begin_inset Formula $\frac{1-x}{1-\frac{x}{2}}\approx1+\frac{x}{2}$
+\end_inset
+
+):
 \begin_inset Formula 
 \begin{equation}
 \frac{\left\langle E\right\rangle }{N}=\frac{\frac{3}{\beta}\left(1-\frac{\mathrm{e}^{\beta\mu}}{2^{4}}+\dots\right)}{\left(1-\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right)}\approx\frac{3}{\beta}\left(1+\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)\label{eq:ultrarel-id-qgaz-EpN}
@@ -794,7 +816,11 @@ reference "eq:ultrarel-id-qgaz-N"
 \begin_inset Formula $\mathrm{e}^{\beta\mu}$
 \end_inset
 
- kicsi kapjuk hogy
+ kicsi kapjuk hogy (átrendezve 
+\begin_inset Formula $N$
+\end_inset
+
+ várható értékének a sorát, majd visszaírva önmagába): 
 \begin_inset Formula 
 \begin{equation}
 \mathrm{e}^{\beta\mu}\approx N\frac{\left(hc\right)^{3}\beta^{3}}{g8\pi V}\left(1+\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right)
@@ -822,7 +848,11 @@ reference "eq:ultrarel-id-qgaz-expbetamu"
 
 \end_inset
 
-visszahelyettesítve 
+(kihasználtuk az 
+\begin_inset Formula $\ln(x)\approx1+x$
+\end_inset
+
+ közelítést), visszahelyettesítve 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:ultrarel-id-qgaz-EpN"
@@ -994,7 +1024,7 @@ N=\int_{0}^{\mu}\varrho\left(E\right)\mathrm{d}E=g\frac{4\pi V}{3\left(hc\right)
 
 \end_inset
 
-A kémiai potenciál tehát zérus hőmérsékleten
+A kémiai potenciál tehát zérus hőmérsékleten lépcsős függvény:
 \begin_inset Formula 
 \begin{equation}
 \mu_{0}=\left(\frac{N3}{g4\pi V}\right)^{1/3}\left(hc\right).
@@ -1031,7 +1061,8 @@ ebből
 
 \end_inset
 
-A kémiai potenciál első véges hőmérsékletű korrekciója tehát 
+A kémiai potenciál első véges hőmérsékletű korrekciója tehát ( a hárommal
+ való osztás a köbgyök közelítéséből jön): 
 \begin_inset Formula 
 \begin{equation}
 \mu\approx\mu_{0}\left(1-\frac{\pi^{2}}{3}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}\right).\label{eq:ultrarel-id-qgaz-BS-kempot}
