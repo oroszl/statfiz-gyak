@@ -162,7 +162,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\varrho(E)=\partial_{E}\Omega_{0}(E)=g\frac{L^{d}}{h}\frac{\pi^{d/2}}{\Gamma\left(d/2+1\right)\alpha^{d/\nu}}\frac{d}{\nu}E^{\frac{d}{\nu}-1}=AE^{\frac{d}{\nu}-1}\label{eq:altalanos-idgaz-allapotsuruseg}
+\varrho(E)=\partial_{E}\Omega_{0}(E)=g\frac{L^{d}}{h^{d}}\frac{\pi^{d/2}}{\Gamma\left(d/2+1\right)\alpha^{d/\nu}}\frac{d}{\nu}E^{\frac{d}{\nu}-1}=AE^{\frac{d}{\nu}-1}\label{eq:altalanos-idgaz-allapotsuruseg}
 \end{equation}
 
 \end_inset
@@ -207,7 +207,7 @@ A részecskék száma
 \begin{eqnarray}
 N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}\mathrm{d}E=A\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta\left(E-\mu\right)}\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{-\beta l\left(E-\mu\right)}\mathrm{d}E,\\
  & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\int_{0}^{\infty}E^{\frac{d}{\nu}-1}\mathrm{e}^{-\beta E(l+1)}\mathrm{d}E,\ u=\beta E(l+1),\ \mathrm{d}E=\frac{\mathrm{d}u}{\beta(l+1)},\label{eq:altalanos-id-qgaz-reszcskeszam}\\
- & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\left(\frac{1}{\beta(l+1)}\right)^{\frac{d}{\nu}}\underbrace{\int_{0}^{\infty}u^{\frac{d}{\nu}-1}\mathrm{e}^{-u}\mathrm{d}E}_{\Gamma\left(\frac{d}{\nu}\right)},\nonumber \\
+ & = & A\sum_{l=0}\left(\mp1\right)^{l}\mathrm{e}^{\beta\mu(l+1)}\left(\frac{1}{\beta(l+1)}\right)^{\frac{d}{\nu}}\underbrace{\int_{0}^{\infty}u^{\frac{d}{\nu}-1}\mathrm{e}^{-u}\mathrm{d}u}_{\Gamma\left(\frac{d}{\nu}\right)},\nonumber \\
  & = & A\Gamma\left(\frac{d}{\nu}\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\sum_{l=0}\left(\mp1\right)^{l}\frac{\mathrm{e}^{\beta\mu l}}{\left(l+1\right)^{\frac{d}{\nu}}}\approx A\Gamma\left(\frac{d}{\nu}\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{\nu}}}\left(1\mp\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{d}{\nu}}}\dots\right).\nonumber 
 \end{eqnarray}
 
@@ -241,8 +241,8 @@ azaz a nem relativisztikus és az ultrarelativisztikus gázok esetén a követke
  kvantum korrekciókat kapjuk
 \begin_inset Formula 
 \begin{eqnarray}
-\mbox{\mbox{nem relativisztikus}:}d & = & 3,\ \nu=2\rightarrow\left\langle E\right\rangle =\frac{3}{2}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{5}{2}}}\dots\right)\\
-\mbox{\mbox{ultrarelativisztikus}:}d & = & 3,\ \nu=1\rightarrow\left\langle E\right\rangle =3k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)
+\mbox{\mbox{nem relativisztikus}:}d & = & 3,\ \nu=2\rightarrow\frac{\left\langle E\right\rangle }{N}=\frac{3}{2}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{5}{2}}}\dots\right)\\
+\mbox{\mbox{ultrarelativisztikus}:}d & = & 3,\ \nu=1\rightarrow\frac{\left\langle E\right\rangle }{N}=3k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)
 \end{eqnarray}
 
 \end_inset
@@ -440,7 +440,7 @@ Határozzuk meg egy három dimenziós Fermi-gáz részecskéinek és energiájá
 alakú tehát az állapotsűrűség 
 \begin_inset Formula 
 \begin{equation}
-\varrho\left(E\right)=(2s+1)V2\pi\left(\frac{2m}{\hbar^{2}}\right)^{3/2}\sqrt{E}=\alpha V\sqrt{E}.
+\varrho\left(E\right)=(2s+1)V2\pi\left(\frac{2m}{h^{2}}\right)^{3/2}\sqrt{E}=\alpha V\sqrt{E}.
 \end{equation}
 
 \end_inset
@@ -523,7 +523,7 @@ Ekkor a részecskék száma
 \begin{eqnarray}
 N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E\\
  & = & 2D\int_{0}^{\infty}\frac{1}{\mathrm{e}^{\beta\left(E-\mu\right)}+1}\mathrm{d}E,\ x=\mathrm{e}^{\beta\left(E-\mu\right)},\ \mathrm{d}E=\frac{\mathrm{d}x}{\beta x}\nonumber \\
- & = & \frac{2D}{\beta}\int_{\mathrm{e}^{-\beta\mu}}^{\infty}\frac{1}{x}\frac{1}{x+1}\mathrm{d}x=\int_{\mathrm{e}^{-\beta\mu}}^{\infty}\frac{1}{x}-\frac{1}{x+1}\mathrm{d}x\nonumber \\
+ & = & \frac{2D}{\beta}\int_{\mathrm{e}^{-\beta\mu}}^{\infty}\frac{1}{x}\frac{1}{x+1}\mathrm{d}x=\frac{2D}{\beta}\left[\int_{\mathrm{e}^{-\beta\mu}}^{\infty}\frac{1}{x}-\frac{1}{x+1}\mathrm{d}x\right]\nonumber \\
  & = & \frac{2D}{\beta}\left[\ln\frac{x}{x+1}\right]_{\mathrm{e}^{-\beta\mu}}^{\infty}=\frac{2D}{\beta}\ln\left(1+\mathrm{e}^{\beta\mu}\right)\nonumber 
 \end{eqnarray}
 
@@ -633,7 +633,7 @@ Vegyük észre hogy mivel
 
 \begin_layout Subsection*
 Kvantumkorrekciók magas hőmérsékleten a három dimenziós ultrarelativisztikus
- Ferm-igázban
+ Fermi-gázban
 \end_layout
 
 \begin_layout Standard
@@ -962,7 +962,7 @@ status open
 \begin_layout Plain Layout
 
 \series bold
-Bethe-Sommerfeld sorfejtés:
+Sommerfeld sorfejtés:
 \series default
 
 \begin_inset Formula 
@@ -1014,9 +1014,9 @@ Az energia
 Határozzuk most meg az alacsony hőmérsékletű viselkedést!
 \begin_inset Formula 
 \begin{eqnarray}
-N & = & \int_{0}^{\mu}\varrho\left(E\right)f(E)\mathrm{d}E=\int_{0}^{\mu}\varrho\left(E\right)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}\varrho'\left(\mu\right)+\dots\\
- & = & g\frac{4\pi V}{3\left(hc\right)^{3}}\mu^{3}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}g\frac{2\pi V}{\left(hc\right)^{3}}\mu\nonumber \\
- & = & g\frac{4\pi V}{\left(hc\right)^{3}}\left(\frac{\mu^{3}}{3}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}2\mu\right)\nonumber 
+N & = & \int_{0}^{\infty}\varrho\left(E\right)f(E)\mathrm{d}E=\int_{0}^{\mu}\varrho\left(E\right)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}\varrho'\left(\mu\right)+\dots\\
+ & = & g\frac{4\pi V}{3\left(hc\right)^{3}}\mu^{3}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}g\frac{8\pi V}{\left(hc\right)^{3}}\mu\nonumber \\
+ & = & g\frac{4\pi V}{\left(hc\right)^{3}}\left(\frac{\mu^{3}}{3}+\frac{\pi^{2}}{3}\left(k_{\mathrm{B}}T\right)^{2}\mu\right)\nonumber 
 \end{eqnarray}
 
 \end_inset
@@ -1024,7 +1024,7 @@ N & = & \int_{0}^{\mu}\varrho\left(E\right)f(E)\mathrm{d}E=\int_{0}^{\mu}\varrho
 ebből 
 \begin_inset Formula 
 \begin{eqnarray}
-\frac{N\left(hc\right)^{3}h}{g4\pi V} & = & \mu^{3}+\pi^{2}\left(k_{\mathrm{B}}T\right)^{2}\mu\\
+\frac{N\left(hc\right)^{3}3}{g4\pi V} & = & \mu^{3}+\pi^{2}\left(k_{\mathrm{B}}T\right)^{2}\mu\\
 \mu_{0}^{3} & = & \mu^{3}+\pi^{2}\left(k_{\mathrm{B}}T\right)^{2}\mu\\
  & \approx & \mu^{3}\left(1+\pi^{2}\left(\frac{k_{\mathrm{B}}T}{\mu_{0}}\right)^{2}\right)
 \end{eqnarray}
@@ -1042,7 +1042,7 @@ A kémiai potenciál első véges hőmérsékletű korrekciója tehát
 Az energia várható értéke
 \begin_inset Formula 
 \begin{eqnarray}
-\left\langle E\right\rangle  & = & \int_{0}^{\mu}E\varrho\left(E\right)f(E)\mathrm{d}E=\int_{0}^{\mu}E\varrho\left(E\right)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}\left(E\varrho\right)'\left(\mu\right)\\
+\left\langle E\right\rangle  & = & \int_{0}^{\infty}E\varrho\left(E\right)f(E)\mathrm{d}E=\int_{0}^{\mu}E\varrho\left(E\right)\mathrm{d}E+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}\left(E\varrho\right)'\left(\mu\right)\\
  & = & g\frac{4\pi V}{\left(hc\right)^{3}}\left(\frac{\mu^{4}}{4}+\frac{\pi^{2}}{6}\left(k_{\mathrm{B}}T\right)^{2}3\mu^{2}+\dots\right)
 \end{eqnarray}
 
