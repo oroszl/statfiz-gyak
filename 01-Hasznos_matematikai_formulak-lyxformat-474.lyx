@@ -1,0 +1,2010 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\master master.lyx
+\begin_modules
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language magyar
+\language_package babel
+\inputencoding utf8x
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\boxbgcolor #55aaff
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 2
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Néhány hasznos matematikai formula
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset href
+LatexCommand href
+name "Gauss-integrál"
+target "https://en.wikipedia.org/wiki/Gaussian_integral"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vezessük le a következő integrált:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+I=\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}.\label{eq:gauss-0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Célszerű a kifejezés négyzetét vizsgálni!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I^{2}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}-y^{2}}\mathrm{d}x\mathrm{d}y.\label{eq:gauss-levezet-1}
+\end{equation}
+
+\end_inset
+
+Az integrált írjuk át polárkoordinátákba!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+x & = & r\cos\varphi,\label{eq:gauss-polar}\\
+y & = & r\sin\varphi,\nonumber \\
+\mathrm{d}x\mathrm{d}y & = & r\mathrm{d}\varphi\mathrm{d}r.\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+A keresett integrál a következő alakot ölti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I^{2}=\int_{0}^{\infty}\int_{0}^{2\pi}\mathrm{e}^{-r^{2}}r\mathrm{d}\varphi\mathrm{d}r=2\pi\int_{0}^{\infty}\mathrm{e}^{-r^{2}}r\mathrm{d}r.\label{eq:gauss-levezet-2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+Megjegyzés:
+\emph default
+ Vegyük észre, hogy míg a polárkoordinátáknál 
+\begin_inset Formula $0$
+\end_inset
+
+-tól 
+\begin_inset Formula $\infty$
+\end_inset
+
+-ig integráltunk, az eredeti integrálunk 
+\begin_inset Formula $-\infty$
+\end_inset
+
+-től 
+\begin_inset Formula $\infty$
+\end_inset
+
+-ig megy.
+ Itt nem követtünk el semmilyen matematikai hibát ugyanis ezt a szögfüggéssel
+ figyelembe vettük a polárkoordináták segítségével.
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+Végezzünk el még egy változó cserét!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+u & = & r^{2},\label{eq:gauss-rtou}\\
+\frac{\mathrm{d}u}{\mathrm{d}r} & = & 2r\rightarrow\mathrm{d}r=\frac{\mathrm{d}u}{2r}.\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+Így már elemi integrációs szabályokkal kiértékelhető összefüggésre jutunk:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I^{2}=2\pi\int_{0}^{\infty}\frac{\mathrm{e}^{-u}}{2}\mathrm{d}u=\pi\left[-\mathrm{e}^{-u}\right]_{0}^{\infty}=\pi.\label{eq:gauss-levezet-3}
+\end{equation}
+
+\end_inset
+
+A keresett integrál tehát:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}.\label{eq:gauss-eredmeny}
+\end{equation}
+
+\end_inset
+
+Egy egyszerű változó cserével lássuk be a Gauss-integrál egyszerű általánosításá
+t:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\int_{-\infty}^{\infty}\mathrm{e}^{-ax^{2}}\mathrm{d}x=\sqrt{\frac{\pi}{a}}.\label{eq:gauss-scaled}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ax^{2} & =t^{2},\\
+\frac{\mbox{d}t}{\mbox{d}x} & =\sqrt{a}\rightarrow\mbox{d}t=\sqrt{a}\mbox{d}x.
+\end{align}
+
+\end_inset
+
+Kapjuk tehát hogy
+\begin_inset Formula 
+\begin{equation}
+\int_{-\infty}^{\infty}\mathrm{e}^{-ax^{2}}\mathrm{d}x=\int_{-\infty}^{\infty}\mathrm{e}^{-t^{2}}\frac{\mbox{d}t}{\sqrt{a}}=\sqrt{\frac{\pi}{a}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Exercise
+Lássuk be hogy ha 
+\begin_inset Formula $a>0$
+\end_inset
+
+ valós szám akkor:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\int_{-\infty}^{\infty}\mathrm{e}^{-ax^{2}+bx+c}\mathrm{d}x=\sqrt{\frac{\pi}{a}}e^{\frac{b^{2}}{4a}+c}\label{eq:gauss-alltalanos}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Útmutatás:
+\end_layout
+
+\begin_layout Itemize
+Alakítsuk teljes négyzetté a kitevőben szereplő polinomot! 
+\end_layout
+
+\begin_layout Itemize
+A Gauss-integrál invariáns az integrandus 
+\begin_inset Quotes eld
+\end_inset
+
+eltolására
+\begin_inset Quotes erd
+\end_inset
+
+! 
+\end_layout
+
+\begin_layout Itemize
+A négyzetes tag együtthatójától egy alkalmas változó cserével szabadulhatunk
+ meg.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A 
+\begin_inset CommandInset href
+LatexCommand href
+name "Gamma-függvény"
+target "https://hu.wikipedia.org/wiki/Gamma-f%C3%BCggv%C3%A9ny"
+
+\end_inset
+
+ néhány tulajdonsága
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Gamma.png
+	lyxscale 40
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A Gamma függvény
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:A-Gamma-fuggveny"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+A Gamma-függvény:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\Gamma(x)=\int_{0}^{\infty}\mathrm{e}^{-t}t^{x-1}\mathrm{d}t,\quad\mathrm{Re}(x)>0,\label{eq:gamma-def}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A fenti definíció segítségével lássuk be hogy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\Gamma(x+1)=x\Gamma(x).\label{eq:gamma-plusone}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Gamma(x+1) & = & \int_{0}^{\infty}\underbrace{\mbox{e}^{-t}}_{v'}\underbrace{t^{x}}_{u}\mbox{d}t\label{eq:gamma-levezet-1}\\
+ & = & \underbrace{[t^{x}(-\mbox{e}^{-t})]_{0}^{\infty}}_{0}-\int_{0}^{\infty}\underbrace{-\mbox{e}^{-t}}_{v}\underbrace{xt^{x-1}}_{u'}\mbox{d}t\\
+ & = & x\int_{0}^{\infty}\mbox{e}^{-t}t^{x-1}\mbox{d}t\\
+ & = & x\Gamma(x)
+\end{eqnarray}
+
+\end_inset
+
+ahol kihasználtuk a parciális integrálás szabályát
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int u(t)v'(t)\mbox{d}t=u(t)v(t)-\int u'(t)v(t)\mbox{d}t
+\end{equation}
+
+\end_inset
+
+és az alábbi két ismert összefüggést
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\int\mbox{e}^{\alpha t}\mbox{d}t & = & \frac{\mbox{e}^{\alpha t}}{\alpha},\\
+\partial_{t}t^{\alpha} & = & \alpha t^{\alpha-1}.
+\end{eqnarray}
+
+\end_inset
+
+Lássuk be a következő két összefüggést is!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray}
+\Gamma(1) & = & 1\label{eq:gamma-one}\\
+\Gamma\left(\frac{1}{2}\right) & = & \sqrt{\pi}\label{eq:gamma-half}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Gamma(1) & = & \int_{0}^{\infty}\mbox{e}^{-t}t^{1-1}\mbox{d}t\\
+ & = & \int_{0}^{\infty}\mbox{e}^{-t}\mbox{d}t\\
+ & = & [-\mbox{e}^{-t}]_{0}^{\infty}=1
+\end{eqnarray}
+
+\end_inset
+
+Felhasználva a (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:gamma-plusone"
+
+\end_inset
+
+) és (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:gamma-one"
+
+\end_inset
+
+) összefüggéseket a 
+\begin_inset Formula $\Gamma(x)$
+\end_inset
+
+ függvényt tetszőleges pozitív egész számokra meghatározhatjuk:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Gamma(2) & = & 1\Gamma(1)=1\\
+\Gamma(3) & = & 2\Gamma(2)=2\cdot1\\
+\Gamma(4) & = & 3\Gamma(3)=3\cdot2\cdot1
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\Gamma(n)=(n-1)!\quad n\in\mathbb{N}\label{eq:gamma-factorial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Gamma(1/2) & = & \int_{0}^{\infty}\mbox{e}^{-t}t^{1/2-1}\mbox{d}t\\
+ & = & \int_{0}^{\infty}\frac{\mbox{e}^{-t}}{t^{1/2}}\mbox{d}t
+\end{eqnarray}
+
+\end_inset
+
+Hajtsuk végre a következő változó cserét:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+u & = & t^{1/2},\\
+\frac{\mbox{d}u}{\mbox{d}t} & = & \frac{1}{2}\frac{1}{t^{1/2}}.
+\end{eqnarray}
+
+\end_inset
+
+Így kapjuk hogy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\int_{0}^{\infty}\frac{\mbox{e}^{-t}}{t^{1/2}}\mbox{d}t & = & \int_{0}^{\infty}\mbox{e}^{-u^{2}}2\mbox{d}u,\\
+ & = & \int_{-\infty}^{\infty}\mbox{e}^{-u^{2}}\mbox{d}u=\sqrt{\pi}.
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig/Stirling.png
+	lyxscale 40
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A Stirling-formula levezetése során alkalmazott közelítés 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Stirling formula-integrand"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\quad\quad\quad\quad$
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig/Stirling-approx.png
+	lyxscale 40
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A Stirling-formula és a 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-függvény 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Stirling közelítés
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Termodinamikai határesetek vizsgálata során sokszor fogunk találkozni olyan
+ esetekkel amikor a 
+\begin_inset Formula $\Gamma(n)$
+\end_inset
+
+ függvényt a 
+\begin_inset Formula $n\gg1$
+\end_inset
+
+ értékekre kell kiértékelnünk.
+ 
+\end_layout
+
+\begin_layout Standard
+Lássuk be a következő hasznos közelítő formulát:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset href
+LatexCommand href
+name "Stirling-formula:"
+target "https://hu.wikipedia.org/wiki/Stirling-formula"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+n!=n^{n}\mbox{e}^{-n}\sqrt{2\pi n}\left(1+\mathcal{O}\left(\frac{1}{n}\right)\right)\label{eq:stirling-formula}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+n! & =\Gamma(n+1)=\int_{0}^{\infty}\mbox{e}^{-t}t^{n}\mbox{d}t\label{eq:stirling-init}\\
+ & =\int_{0}^{\infty}\mbox{e}^{-t+n\ln t}\mbox{d}t\nonumber \\
+ & =\int_{0}^{\infty}\mbox{e}^{-f_{n}(t)}\mbox{d}t,\nonumber \\
+f_{n}(t) & =t-n\ln t.
+\end{align}
+
+\end_inset
+
+Fejtsük sorba az 
+\begin_inset Formula $f_{n}(t)$
+\end_inset
+
+ függvényt a minimuma körül!
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}f_{n}(t)=1-\frac{n}{t},
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}f_{n}(t_{0})=0\rightarrow t_{0}=n.
+\end{equation}
+
+\end_inset
+
+Elegendő elvégezni a sorfejtést másod rendig.
+ Azaz a következő közelítéssel élünk:
+\begin_inset Formula 
+\begin{equation}
+f_{n}(t)\approx f_{n}(t_{0})+\partial_{t}f_{n}(t_{0})\left(t-t_{0}\right)+\frac{1}{2}\partial_{t}^{2}f_{n}(t_{0})\left(t-t_{0}\right)^{2},
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\partial_{t}^{2}f_{n}(t)=\frac{n}{t^{2}}\rightarrow\partial_{t}^{2}f_{n}(t_{0})=\frac{n}{n^{2}}=\frac{1}{n},
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+f_{n}(t)\approx n-n\ln n+\underbrace{\partial_{t}f_{n}(t_{0})\left(t-t_{0}\right)}_{\text{by def}=0}+\frac{1}{2}\left(\frac{1}{n}\right)\left(t-n\right)^{2}.
+\end{equation}
+
+\end_inset
+
+Visszaírva ezt a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:stirling-init"
+
+\end_inset
+
+ kifejezésbe:
+\begin_inset Formula 
+\begin{align}
+n! & =\int_{0}^{\infty}\mbox{e}^{-t}t^{n}\mbox{d}t\\
+ & =\int_{0}^{\infty}\mbox{e}^{-f_{n}(t)}\mbox{d}t\nonumber \\
+ & \approx\mbox{e}^{-\left(n-n\ln n\right)}\int_{0}^{\infty}\mbox{e}^{-\frac{\left(t-n\right)^{2}}{2n}}\mbox{d}t.\nonumber 
+\end{align}
+
+\end_inset
+
+A kifejezésben szereplő integrál alsó határát kiterjeszthetjük 
+\begin_inset Formula $-\infty$
+\end_inset
+
+-ig hiszen feltettük hogy 
+\begin_inset Formula $n\gg1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align}
+n! & \approx\mbox{e}^{-\left(n-n\ln n\right)}\int_{-\infty}^{\infty}\mbox{e}^{-\frac{\left(t-n\right)^{2}}{2n}}\mbox{d}t\\
+ & =\mbox{e}^{-\left(n-n\ln n\right)}\sqrt{2\pi n}.\nonumber 
+\end{align}
+
+\end_inset
+
+Ahol felhasználtuk a Gauss-integrálra vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:gauss-scaled"
+
+\end_inset
+
+ azonosságot.
+ A kapott eredmény pedig nem más mint maga a 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:stirling-formula"
+
+\end_inset
+
+ Stirling-formula.
+ Sokszor fogunk találkozni a Stirling-formula logaritmusával: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\ln n!\approx n\ln n-n+\frac{1}{2}\ln\left(2\pi n\right)\label{eq:stirling-log}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\ln\Gamma(n)\approx n\ln n-n+\mathcal{O}\left(\ln n\right)\label{eq:stirling-gamma}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $D$
+\end_inset
+
+-dimenziós gömb térfogata
+\end_layout
+
+\begin_layout Standard
+Sokszor szükségünk lesz több dimenziós integrálok elvégzésére.
+ Ezen integrálok elvégzésében rendszerint segítségünkre lesz az adott dimenzióbe
+li gömb térfogata.
+ Vizsgáljuk meg hát, hogy hogyan függ a térfogat kifejezése a dimenziótól:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dimenzió
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{D}(r)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S_{D}(r)\mathrm{d}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\mathrm{d}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi r^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\pi r\mathrm{d}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{4}{3}\pi r^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4\pi r^{2}\mathrm{d}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{D}r^{D}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{D}Dr^{D-1}\mathrm{d}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Egy adott dimenzióban egy adott sugarú gömb térfogata 
+\begin_inset Formula $V_{D}(r)$
+\end_inset
+
+ és a felülete között az alábbi általános összefüggés teremt kapcsolatot:
+\begin_inset Formula 
+\begin{align}
+V_{D}(r) & =\int_{0}^{r}S_{D}(\varrho)\mbox{d}\varrho,\\
+C_{D}r^{D} & =C_{D}D\int_{0}^{r}\varrho^{D-1}\mbox{d}\varrho
+\end{align}
+
+\end_inset
+
+Határozzuk meg 
+\begin_inset Formula $C_{D}$
+\end_inset
+
+értékét! Induljunk ki 
+\begin_inset Formula $D$
+\end_inset
+
+ darab Gauss-integrál szorzatából: 
+\begin_inset Formula 
+\begin{equation}
+\left[\int_{-\infty}^{\infty}\mbox{e}^{-x^{2}}\mbox{d}x\right]^{D}=\pi^{D/2}
+\end{equation}
+
+\end_inset
+
+Mivel az integrandus 
+\begin_inset Quotes eld
+\end_inset
+
+gömb szimmetrikus
+\begin_inset Quotes erd
+\end_inset
+
+ ezért elég csak a sugár irányú integrálra koncentrálnunk.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\pi^{D/2} & =\int\underbrace{\mbox{e}^{-\left(x_{1}^{2}+x_{2}^{2}+\dots+x_{D}^{2}\right)}}_{e^{-r^{2}}}\overbrace{\mbox{d}x_{1}\mbox{d}x_{1}\dots\mbox{d}x_{D}}^{DC_{D}r^{D-1}\mbox{d}r}\\
+ & =DC_{D}\int_{0}^{\infty}e^{-r^{2}}r^{D-1}\mbox{d}r\nonumber 
+\end{align}
+
+\end_inset
+
+Alkalmazzunk egy változó cserét:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+u & = & r^{2},\\
+\frac{\mathrm{d}u}{\mathrm{d}r} & = & 2r\rightarrow\mathrm{d}u=2r\mathrm{d}r.\nonumber \\
+\mbox{d}r & = & u^{-\frac{1}{2}}\frac{\mbox{d}u}{2}
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+\pi^{D/2} & =DC_{D}\int_{0}^{\infty}e^{-u}u^{\frac{D}{2}-1}\frac{\mbox{d}u,}{2}\\
+\pi^{D/2} & =C_{D}\frac{D}{2}\Gamma\left(\frac{D}{2}\right)=C_{D}\Gamma\left(\frac{D}{2}+1\right).
+\end{align}
+
+\end_inset
+
+A keresett együttható tehát: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+C_{D}=\frac{\pi^{D/2}}{\Gamma\left(\frac{D}{2}+1\right)}.\label{eq:D-dim-gomb-terfogat-eggyutthat}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Kiértékelve ezt az összefüggést vissza kapjuk a már ismert együtthatókat:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+D & =1\rightarrow C_{1}=\frac{\pi^{1/2}}{\Gamma(3/2)}=\frac{\pi^{1/2}}{\frac{1}{2}\Gamma(1/2)}=2\\
+D & =2\rightarrow C_{2}=\frac{\pi^{2/2}}{\Gamma\left(2\right)}=\pi\\
+D & =3\rightarrow C_{3}=\frac{\pi^{3/2}}{\Gamma\left(\frac{3}{2}+1\right)}=\frac{\pi^{3/2}}{\frac{3}{2}\Gamma\left(\frac{3}{2}\right)}=\frac{\pi^{3/2}}{\frac{3}{2}\times\frac{1}{2}\Gamma\left(\frac{1}{2}\right)}=\frac{\pi}{\frac{3}{2}\times\frac{1}{2}}=\frac{4}{3}\pi
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset href
+LatexCommand href
+name "Pauli mátrixok"
+target "https://en.wikipedia.org/wiki/Pauli_matrices"
+
+\end_inset
+
+ és 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+-spin algebra
+\end_layout
+
+\begin_layout Subsection
+A 
+\begin_inset Formula $\hat{\rho}$
+\end_inset
+
+ sűrűségmátrix általános tulajdonságai
+\end_layout
+
+\begin_layout Standard
+Kvantumos rendszerek statisztikus vizsgálatában kulcs szerep jut a 
+\begin_inset Formula $\hat{\rho}$
+\end_inset
+
+ sűrűségmátrixnak:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =\sum_{\alpha}w_{\alpha}\left|\alpha\right\rangle \left\langle \alpha\right|,
+\end{align}
+
+\end_inset
+
+ahol 
+\begin_inset Formula $\left|\alpha\right\rangle $
+\end_inset
+
+ a rendszer valamely tiszta állapotát jelöli és a 
+\begin_inset Formula $w_{\alpha}>0$
+\end_inset
+
+ valószínűségi súlyok összege egységnyi: 
+\begin_inset Formula 
+\begin{equation}
+\sum_{\alpha}w_{\alpha}=1.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\psi=\sum p_{\alpha}\left|\alpha\right\rangle 
+\end{equation}
+
+\end_inset
+
+Ezekből 
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =\hat{\rho}^{\dagger},\label{eq:suruseg-hermitikus}\\
+\mathrm{Tr}\hat{\rho} & =1,\label{eq:suruseg-trace-1}\\
+\mathrm{Tr}\hat{\rho}^{2} & \le1.\label{eq:suruseg2-trace-le-1}
+\end{align}
+
+\end_inset
+
+Az utolsó egyenlőség tiszta állapotokra áll fenn, azaz ha igaz, hogy 
+\begin_inset Formula 
+\begin{equation}
+\hat{\rho}=\left|\varphi\right\rangle \left\langle \varphi\right|.
+\end{equation}
+
+\end_inset
+
+
+\emph on
+\color blue
+Megjegyzés:
+\emph default
+ A legegyszerűbb a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:suruseg2-trace-le-1"
+
+\end_inset
+
+.
+ egyenletből megkapni, hogy mennyire tiszta az állapot.
+\end_layout
+
+\begin_layout Subsection
+Két állapotú kvantum rendszerek
+\end_layout
+
+\begin_layout Standard
+A legegyszerűbb nem triviális kvantum rendszer két állapottal bír.
+ Gondoljunk egy magányos elektron spin szabadsági fokára! Ebben az esetben
+ a két dimenziós Hilbert-teret kifeszítő bázisvektorok választhatóak például
+ a spin 
+\begin_inset Formula $z$
+\end_inset
+
+ komponensének sajátvektorjaiként:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left|\uparrow\right\rangle =\left(\begin{array}{c}
+1\\
+0
+\end{array}\right),\quad\left|\downarrow\right\rangle =\left(\begin{array}{c}
+0\\
+1
+\end{array}\right).
+\end{equation}
+
+\end_inset
+
+Egy általános tiszta állapot ezek lineár kombinációjaként áll elő:
+\begin_inset Formula 
+\begin{equation}
+\left|\varphi\right\rangle =a\left|\uparrow\right\rangle +b\left|\downarrow\right\rangle =\left(\begin{array}{c}
+a\\
+b
+\end{array}\right).
+\end{equation}
+
+\end_inset
+
+Az állapotok normáltsága megszorítja a két kifejtési együtthatót:
+\begin_inset Formula 
+\begin{equation}
+\left\langle \varphi\right.\left|\varphi\right\rangle =1,\rightarrow aa^{*}+bb^{*}=1.
+\end{equation}
+
+\end_inset
+
+Ezen a Hilbert-téren ható hermitikus operátorok, mint például a 
+\begin_inset Formula $\hat{\rho}$
+\end_inset
+
+ sűrűségmátrix, a Pauli-mátrixok 
+\begin_inset Formula $\sigma_{x,y,z}$
+\end_inset
+
+ és az egység mátrix 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ segítségével kifejthetőek.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Pauli-mátrixok:
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+\sigma_{x}=\left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right),\quad\sigma_{y}=\left(\begin{array}{cc}
+0 & -\mathrm{i}\\
+\mathrm{i} & 0
+\end{array}\right),\quad\sigma_{z}=\left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Identitás:
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+\sigma_{0}=\left(\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+A teljesség igénye nélkül tekintsünk át néhány a Pauli-mátrixokra vonatkozó
+ hasznos azonosságot! A Pauli-mátrixok négyzete az egység, illetve két Pauli-mát
+rix szorzata a harmadik mátrixszal arányos (sorrendtől függően 
+\begin_inset Formula $\pm\mathrm{i}$
+\end_inset
+
+ faktorral): 
+\begin_inset Formula 
+\begin{equation}
+\sigma_{i}\sigma_{j}=\mathrm{i}\varepsilon_{ijk}\sigma_{k}+\delta_{ij}\sigma_{0}.\label{eq:pauli-szorzat-szabaly}
+\end{equation}
+
+\end_inset
+
+Vezessük be a Pauli-mátrixokból alkotott 
+\begin_inset Formula $\vec{\sigma}$
+\end_inset
+
+ vektort: 
+\begin_inset Formula 
+\begin{equation}
+\vec{\sigma}=\left(\begin{array}{c}
+\sigma_{x}\\
+\sigma_{y}\\
+\sigma_{z}
+\end{array}\right)
+\end{equation}
+
+\end_inset
+
+A 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pauli-szorzat-szabaly"
+
+\end_inset
+
+ szorzat szabályokból következik hogy: 
+\begin_inset Formula 
+\begin{align}
+\left(\vec{a}\cdot\vec{\sigma}\right)\left(\vec{b}\cdot\vec{\sigma}\right) & =a_{p}\sigma_{p}b_{q}\sigma_{q}\\
+ & =\mathrm{i}\varepsilon_{pqk}a_{p}b_{q}\sigma_{k}+\delta_{pq}a_{p}b_{q}\sigma_{0}\\
+ & =\left(\vec{a}\cdot\vec{b}\right)\sigma_{0}+\mathrm{i}\left(\vec{a}\times\vec{b}\right)\cdot\vec{\sigma}
+\end{align}
+
+\end_inset
+
+Mivel a Pauli-mátrixok nyoma eltűnik ezért tetszőleges lineár kombinációik
+ nyoma is eltűnik: 
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\right)=0.
+\end{equation}
+
+\end_inset
+
+Szintén a szorzat szabályok és a nyomtalanság következménye hogy
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\sigma_{i}\right)=2a_{i}.
+\end{equation}
+
+\end_inset
+
+Pauli-mátrixok lineárkombinációjának determinánsa az együttható vektor hosszának
+ négyzetével arányos: 
+\begin_inset Formula 
+\begin{equation}
+\det\left(\vec{a}\cdot\vec{\sigma}\right)=-\vec{a}\cdot\vec{a}=-a^{2},
+\end{equation}
+
+\end_inset
+
+ahol
+\begin_inset Formula 
+\begin{equation}
+a=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}.
+\end{equation}
+
+\end_inset
+
+Vizsgáljuk meg hogy egy általános 
+\begin_inset Formula $2\times2$
+\end_inset
+
+-es hermitikus mátrix mikor lehet egy rendszer sűrűség mátrixa! Induljunk
+ a legáltalánosabb alakból: 
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}=d_{0}\sigma_{0}+d_{x}\sigma_{x}+d_{y}\sigma_{y}+d_{z}\sigma_{z}\\
+ & =\left(\begin{array}{cc}
+d_{0}+d_{z} & d_{x}-\mathrm{i}d_{y}\\
+d_{x}+\mathrm{i}d_{y} & d_{0}-d_{z}
+\end{array}\right)
+\end{align}
+
+\end_inset
+
+Mivel a Pauli-mátrixok nyoma zérus, ezért 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ együtthatóját 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:suruseg-trace-1"
+
+\end_inset
+
+ egyértelműen meghatározza: 
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\hat{\rho}=1\rightarrow d_{0}=\frac{1}{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+A 
+\begin_inset Formula $\hat{\rho}^{2}$
+\end_inset
+
+-re vonatkozó 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:suruseg2-trace-le-1"
+
+\end_inset
+
+ kritérium a 
+\begin_inset Formula $\vec{d}$
+\end_inset
+
+ vektor hosszára ró megszorítást:
+\begin_inset Formula 
+\begin{align}
+\mathrm{Tr}\hat{\rho}^{2} & =\mathrm{Tr}\left(\left(d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}\right)\left(d_{0}\sigma_{0}+\vec{d}\cdot\vec{\sigma}\right)\right)\\
+ & =\mathrm{Tr}\left(\left(d_{0}^{2}+d^{2}\right)\sigma_{0}\right)=2\left(d_{0}^{2}+d^{2}\right).
+\end{align}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\hat{\rho}^{2}\le1\rightarrow0\le d\le\frac{1}{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Példák
+\end_layout
+
+\begin_layout Subsubsection*
+a) Tiszta állapot:
+\end_layout
+
+\begin_layout Standard
+A kétállapotú kvantumrendszer egy tetszőleges állapotát szokás a Bloch-gömb
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ és 
+\begin_inset Formula $\phi$
+\end_inset
+
+ szögeivel paraméterezni:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left|\varphi\right\rangle =\cos\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle +\mathrm{e}^{\mathrm{i}\phi}\sin\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle .
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "30col%"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig/Bloch_Sphere.svg
+	width 20col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A Bloch-gömb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Számítsuk ki ebben a tiszta állapotban a sűrűség mátrixot:
+\begin_inset Formula 
+\begin{equation}
+\hat{\rho}=\left|\varphi\right\rangle \left\langle \varphi\right|
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =\cos^{2}\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle \left\langle \uparrow\right|+\mathrm{e}^{-\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\uparrow\right\rangle \left\langle \downarrow\right|\\
+ & +\mathrm{e}^{\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\left|\downarrow\right\rangle \left\langle \uparrow\right|+\sin^{2}\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle \left\langle \downarrow\right|
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\hat{\rho} & = & \left(\begin{array}{cc}
+\cos^{2}\left(\frac{\theta}{2}\right) & \mathrm{e}^{-\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2}\\
+\mathrm{e}^{\mathrm{i}\phi}\frac{\sin\left(\theta\right)}{2} & \sin^{2}\left(\frac{\theta}{2}\right)
+\end{array}\right)=\frac{1}{2}\left(\begin{array}{cc}
+1+\cos\left(\theta\right) & \mathrm{e}^{-\mathrm{i}\phi}\sin\left(\theta\right)\\
+\mathrm{e}^{\mathrm{i}\phi}\sin\left(\theta\right) & 1-\cos\left(\theta\right)
+\end{array}\right)
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\hat{\rho}=\frac{1}{2}\left(\sigma_{0}+\sin\left(\theta\right)\cos\left(\phi\right)\sigma_{x}+\sin\left(\theta\right)\sin\left(\phi\right)\sigma_{y}+\cos\left(\theta\right)\sigma_{z}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+d=\frac{1}{2}\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+b) Teljesen kevert állapot:
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg a 
+\begin_inset Formula $\left|\uparrow\right\rangle $
+\end_inset
+
+ és 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ állapotok 
+\begin_inset Formula $1/2$
+\end_inset
+
+ valószínűséggel vett statisztikus keverékének sűrűség mátrixát: 
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =\frac{\left|\uparrow\right\rangle \left\langle \uparrow\right|+\left|\downarrow\right\rangle \left\langle \downarrow\right|}{2},\\
+ & =\frac{1}{2}\left(\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right)=\frac{\sigma_{0}}{2}.
+\end{align}
+
+\end_inset
+
+
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+d=0\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=\frac{1}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+c) Részlegesen kevert állapot
+\end_layout
+
+\begin_layout Standard
+Határozzuk meg a 
+\begin_inset Formula $\left|\uparrow\right\rangle $
+\end_inset
+
+ és 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ állapotok 
+\begin_inset Formula $p$
+\end_inset
+
+ valószínűséggel vett statisztikus keverékének sűrűség mátrixát:
+\begin_inset Formula 
+\begin{align}
+\hat{\rho} & =p\left|\uparrow\right\rangle \left\langle \uparrow\right|+(1-p)\left|\downarrow\right\rangle \left\langle \downarrow\right|\\
+ & =\left(\begin{array}{cc}
+p & 0\\
+0 & 1-p
+\end{array}\right)=\frac{\sigma_{0}}{2}+\left(p-\frac{1}{2}\right)\sigma_{z}
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+d=\left(p-\frac{1}{2}\right)\rightarrow\mathrm{Tr}\hat{\rho}=1,\quad\mathrm{Tr}\hat{\rho}^{2}=\frac{1}{2}+2\left(p-\frac{1}{2}\right)^{2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Exercise
+Tekintsük egy két állapotú rendszer két (
+\begin_inset Formula $\left|\alpha\right\rangle $
+\end_inset
+
+ és 
+\begin_inset Formula $\left|\beta\right\rangle $
+\end_inset
+
+) nem ortogonális állapotából (
+\begin_inset Formula $\left\langle \alpha\right.\left|\beta\right\rangle =x$
+\end_inset
+
+) 
+\begin_inset Formula $p$
+\end_inset
+
+ valószínűséggel kevert állapotot.
+ Határozzuk meg 
+\begin_inset Formula $\mathrm{Tr}\hat{\rho}^{2}$
+\end_inset
+
+-t !
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
