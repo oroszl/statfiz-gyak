@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \begin_modules
@@ -12,16 +14,16 @@ theorems-std
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 1
@@ -157,6 +159,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -187,6 +194,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -219,7 +231,7 @@ Az energia várható értékének kiszámítása a részecskék számának kisz�
 \begin_inset Formula $\frac{d}{\nu}\rightarrow\frac{d}{\nu}+1$
 \end_inset
 
-helyettesítést akkor épp az energia várhatóértékét kapjuk:
+ helyettesítést akkor épp az energia várhatóértékét kapjuk:
 \begin_inset Formula 
 \begin{eqnarray}
 \left\langle E\right\rangle  & = & \int_{0}^{\infty}E\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\mu\right)}\pm1}\mathrm{d}E\label{eq:atalanos-id-qgaz-energia}\\
@@ -241,8 +253,8 @@ azaz a nem relativisztikus és az ultrarelativisztikus gázok esetén a követke
  kvantum korrekciókat kapjuk
 \begin_inset Formula 
 \begin{eqnarray}
-\mbox{\mbox{nem relativisztikus}:}d & = & 3,\ \nu=2\rightarrow\frac{\left\langle E\right\rangle }{N}=\frac{3}{2}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{5}{2}}}\dots\right)\\
-\mbox{\mbox{ultrarelativisztikus}:}d & = & 3,\ \nu=1\rightarrow\frac{\left\langle E\right\rangle }{N}=3k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)
+\mbox{\mbox{nem relativisztikus}:\quad}d & = & 3,\ \nu=2\rightarrow\frac{\left\langle E\right\rangle }{N}=\frac{3}{2}k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{\frac{5}{2}}}\dots\right)\\
+\mbox{\mbox{ultrarelativisztikus}:\quad}d & = & 3,\ \nu=1\rightarrow\frac{\left\langle E\right\rangle }{N}=3k_{\mathrm{B}}T\left(1\pm\frac{\mathrm{e}^{\beta\mu}}{2^{4}}\dots\right)
 \end{eqnarray}
 
 \end_inset
@@ -285,6 +297,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -330,7 +347,7 @@ reference "eq:atalanos-id-qgaz-energia"
 
 \end_inset
 
--ban számolt átlagával kapjuk hogy 
+-ban számolt átlagával kapjuk, hogy 
 \begin_inset Box Shaded
 position "t"
 hor_pos "c"
@@ -342,6 +359,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -582,7 +604,7 @@ reference "eq:q_eloszlas_mertani"
 
 \end_inset
 
-Határozzuk meg az fenn vizsgált kétdimenziós rendszer részecskeszámát és
+Határozzuk meg az fent vizsgált kétdimenziós rendszer részecskeszámát és
  energia várható értékét magas hőmérsékleten, azaz amikor a mértani sor
  helyett csak az első két tagot vesszük figyelembe!
 \begin_inset Formula 
@@ -957,6 +979,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1314,7 +1341,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -1588,6 +1615,11 @@ width "70col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status collapsed
 
 \begin_layout Plain Layout
@@ -1675,6 +1707,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1716,7 +1753,7 @@ target "http://journals.aps.org/pr/pdf/10.1103/PhysRev.83.678"
 : 
 \begin_inset Formula 
 \begin{equation}
-F^{-}\left(s,\alpha\right)\approx\zeta\left(s\right)+\Gamma\left(1-s\right)\alpha^{s-1}\dots,\mbox{ha \ensuremath{s} nem pozotív egész és \alpha\ll}1
+F^{-}\left(s,\alpha\right)\approx\zeta\left(s\right)+\Gamma\left(1-s\right)\alpha^{s-1}\dots,\mbox{ha \ensuremath{s} nem pozitív egész és \alpha\ll}1
 \end{equation}
 
 \end_inset
@@ -1732,7 +1769,7 @@ F^{-}\left(s,\alpha\right)\approx\zeta\left(s\right)+\Gamma\left(1-s\right)\alph
 \begin_layout Standard
 Vizsgáljuk meg most a három dimenziós nem relativisztikus Bose-gáz kémiai
  potenciáljának viselkedését a kritikus hőmérséklet közelében.
- A Bose-gáz részecske száma általános esetben az alábbiak szerint fejezhető
+ A Bose-gáz részecskeszáma általános esetben az alábbiak szerint fejezhető
  ki a fenn definiált Bose-Einstein integrálokkal
 \begin_inset Formula 
 \begin{eqnarray}
@@ -1770,7 +1807,7 @@ Esetünkben
 
 \end_inset
 
-Ahol kihasználtuk hogy
+Ahol kihasználtuk hogy 
 \begin_inset Formula $\Gamma(-1/2)=-2\sqrt{\pi}$
 \end_inset
 

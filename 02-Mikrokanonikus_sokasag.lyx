@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \master master.lyx
@@ -13,16 +15,16 @@ theorems-std
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -90,6 +92,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -177,7 +184,7 @@ Az alábbiakban három egyszerűen számítható rendszer állapotainak számát
 \end_layout
 
 \begin_layout Section
-Egy darab, dobozba zárt, egy dimenziós részecske
+Egy darab, dobozba zárt, egydimenziós részecske
 \end_layout
 
 \begin_layout Subsection
@@ -741,7 +748,7 @@ Mivel minden
 
 \end_inset
 
-A klasszikus kifejezést vissza kapjuk ha 
+A klasszikus kifejezést visszakapjuk ha 
 \begin_inset Formula $l_{max}\gg1\rightarrow l_{max}(l_{max}+1)\approx(l_{max}+1)^{2}$
 \end_inset
 
@@ -1073,6 +1080,11 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status collapsed
 
 \begin_layout Exercise
@@ -1150,6 +1162,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1392,7 +1409,7 @@ A rendszer teljes
 \begin_inset Formula $E$
 \end_inset
 
- energiája értelem szerűen 
+ energiája értelemszerűen 
 \end_layout
 
 \begin_layout Standard
@@ -1641,7 +1658,7 @@ A hőmérséklet, ahogy azt várjuk, intenzív mennyiség hiszen
 \end_inset
 
  esetén tart 
-\begin_inset Formula $\pm\infty$
+\begin_inset Formula $\mp\infty$
 \end_inset
 
 -hez.
@@ -1993,8 +2010,8 @@ most azonban az
 \end_inset
 
  tetszőleges nem negatív egész értéket felvehetnek.
- Az állapotok számának meghatározásához vegyük észere hogy az állapotok
- száma adott 
+ Az állapotok számának meghatározásához vegyük észre hogy az állapotok száma
+ adott 
 \begin_inset Formula $M$
 \end_inset
 
@@ -2359,6 +2376,11 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Exercise

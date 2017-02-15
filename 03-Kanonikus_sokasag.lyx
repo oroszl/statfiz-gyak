@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \begin_modules
@@ -12,16 +14,16 @@ theorems-std
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -89,6 +91,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -360,7 +367,7 @@ Jól látszik tehát hogy
 \begin_inset Formula $N\gg1$
 \end_inset
 
- esetén a két formalizmus ugyan azt adja.
+ esetén a két formalizmus ugyanazt adja.
 \end_layout
 
 \begin_layout Subsection
@@ -565,7 +572,7 @@ E_{l}=\frac{\hbar^{2}}{2\Theta}l(l+1).
 
 \end_inset
 
-Az állapotösszeg az eggyes nívók ismert 
+Az állapotösszeg az egyes nívók ismert 
 \begin_inset Formula $(2l+1)$
 \end_inset
 
@@ -581,8 +588,8 @@ Alacsony hőmérsékleten
 \begin_inset Formula $\beta\rightarrow\infty$
 \end_inset
 
- a legelső nem triviális járulékot akkor kapjuk ha a két legalsó energia
- szintet figyelembe vesszük:
+ a legelső nem triviális járulékot akkor kapjuk ha a két legalsó energiaszintet
+ figyelembe vesszük:
 \begin_inset Formula 
 \begin{equation}
 Z\underset{T\rightarrow0}{\approx}1+3\mathrm{e}^{-\beta\frac{\hbar^{2}}{2\Theta}2}
@@ -610,6 +617,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -668,7 +680,7 @@ Magas hőmérsékleten egy durva becslés, hogy csak azon tagokat vesszük melye
 \begin_inset Formula $1/\mathrm{e}$
 \end_inset
 
- és ezeket úgy vesszük figyelembe hogy mindegyiknek ugyan azt a súlyt adjuk!
+ és ezeket úgy vesszük figyelembe hogy mindegyiknek ugyanazt a súlyt adjuk!
  A feltevés matematikailag a legnagyobb 
 \begin_inset Formula $l$
 \end_inset
@@ -808,6 +820,11 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Exercise
@@ -919,6 +936,11 @@ width "90col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Exercise
@@ -957,6 +979,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1406,7 +1433,7 @@ Határozzuk meg az energia várható értékét!
 \begin_inset Formula 
 \begin{eqnarray}
 E & = & -\partial_{\beta}\ln Z=-\partial_{\beta}\left[\ln\frac{2\Theta}{\hbar^{2}d\mathcal{E}}+\ln\left(\sinh\beta\mathcal{E}d\right)-2\ln\beta\right]\\
- & = & \frac{2}{\beta}+\mathcal{E}d\frac{\cosh\beta\mathcal{E}d}{\sinh\beta\mathcal{E}d}=\frac{1}{\beta}-\mathcal{E}d\left[\coth\beta\mathcal{E}d-\frac{1}{\beta\mathcal{E}d}\right]\nonumber \\
+ & = & \frac{2}{\beta}-\mathcal{E}d\frac{\cosh\beta\mathcal{E}d}{\sinh\beta\mathcal{E}d}=\frac{1}{\beta}-\mathcal{E}d\left[\coth\beta\mathcal{E}d-\frac{1}{\beta\mathcal{E}d}\right]\nonumber \\
  & = & k_{\mathrm{B}}T-\mathcal{E}d\mathcal{L}\left(\beta\mathcal{E}d\right)\nonumber 
 \end{eqnarray}
 
@@ -1465,6 +1492,11 @@ width "67col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1502,7 +1534,7 @@ Határozzuk meg a rendszer dipólmomentumának várható értékét.
 
 \end_inset
 
-Induljunk ki a Hellmann--Feynman-tételből 
+Induljunk ki a Hellmann–Feynman-tételből 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:hellmann-feynman-tetel"
@@ -1557,7 +1589,7 @@ Független kvantumos mágneses momentum külső mágneses térben
 \end_inset
 
  lehet egész vagy félegész szám.
- Az állapot összeg 
+ Az állapotösszeg 
 \begin_inset Formula 
 \begin{equation}
 Z=\sum_{m=-j}^{j}\mathrm{e}^{\beta\mu_{B}mB}
@@ -1568,12 +1600,16 @@ Z=\sum_{m=-j}^{j}\mathrm{e}^{\beta\mu_{B}mB}
 Vegyük észre hogy ez egy 
 \begin_inset CommandInset href
 LatexCommand href
-name "mértani sor"
+name "mértani sorozat"
 target "https://hu.wikipedia.org/wiki/M%C3%A9rtani_sorozat"
 
 \end_inset
 
+ eső 
+\begin_inset Formula $(2j+1)$
+\end_inset
 
+ tagjának összege 
 \begin_inset Formula 
 \begin{eqnarray}
 Z & = & \mathrm{e}^{-\beta\mu_{B}Bj}\frac{\mathrm{e}^{\beta\mu_{B}B\left(2j+1\right)}-1}{\mathrm{e}^{\beta\mu_{B}B}-1},\\
@@ -1588,7 +1624,7 @@ Az állapotösszeg tehát
 \end_inset
 
  mennyiség függvénye.
- Azaz a rendszerben jelenlevő két meghatározó energia skála a termális energia
+ Azaz a rendszerben jelenlevő két meghatározó energiaskála a termális energia
  és a mágneses energia hányadosa a releváns paraméter.
  A rendszer energiája 
 \begin_inset CommandInset ref
@@ -1607,7 +1643,7 @@ E & = & -\partial_{\beta}\ln Z=-\partial_{\beta}\left[\ln\sinh\left(\beta\mu_{B}
 
 \end_inset
 
-A szabad energia
+A szabadenergia
 \begin_inset Formula 
 \begin{equation}
 F=-k_{\mathrm{B}}T\ln Z,
@@ -1615,7 +1651,7 @@ F=-k_{\mathrm{B}}T\ln Z,
 
 \end_inset
 
-melyből a Hellmann--Feynman-tétel 
+melyből a Hellmann–Feynman-tétel 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:hellmann-feynman-tetel"
@@ -1702,6 +1738,11 @@ width "65col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2139,6 +2180,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2196,7 +2242,7 @@ Z\approx\frac{\mathrm{e}^{-\beta mgl}}{\hbar}\sqrt{\frac{2\pi ml^{2}}{\beta}}\fr
 
 \end_inset
 
-Az átlag energia alacsony hőmérsékleten 
+Az átlagenergia alacsony hőmérsékleten 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:kanonikus-energia"
@@ -2504,7 +2550,7 @@ reference "eq:kvanum-varhato-ertek"
 \end_inset
 
  kvantumos kifejezését használtuk.
- A szabad energia tehát mind a két esetben 
+ A szabadenergia tehát mind a két esetben 
 \end_layout
 
 \begin_layout Standard
@@ -2535,6 +2581,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2616,6 +2667,11 @@ width ""
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2731,7 +2787,7 @@ L=\frac{1}{2}m\left(\dot{\vec{r}}'\right)^{2}
 \end_inset
 
 alakot ölti.
- Ha a hengerrel együtt forgó koordináta rendszerben ez az 
+ A hengerrel együtt forgó koordináta rendszerben ez az 
 \begin_inset Formula 
 \begin{equation}
 L=\frac{1}{2}m\left(\dot{\vec{r}}+\vec{\omega}\times\vec{r}\right)^{2}
@@ -2760,7 +2816,7 @@ azaz
 
 \end_inset
 
-A Hamilton-függvény a Lagrange-függvény Legendre-transzformációjából határozzuk
+A Hamilton-függvényt a Lagrange-függvény Legendre-transzformációjából határozzuk
  meg:
 \begin_inset Formula 
 \begin{eqnarray}
@@ -2956,7 +3012,7 @@ p_{\text{palást}} & = & \frac{Nm\omega^{2}}{2\pi L}\frac{\mathrm{e}^{\frac{\bet
 
 \end_inset
 
-A részecskék radiális sűrűség eloszlása a 
+A részecskék radiális sűrűségeloszlása a 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:forgo-allapot-osszeg"
@@ -2972,7 +3028,7 @@ n(r) & = & N\frac{\mathrm{e}^{\beta\frac{1}{2}m\omega^{2}r_{2D}^{2}}}{\int_{\tex
 
 \end_inset
 
-Össze vetve ezt a kifejezés a palástot érő nyomás 
+Összevetve ezt a kifejezés a palástot érő nyomás 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:forgo-palast-nyomas"
@@ -3011,7 +3067,7 @@ Súlyos dugattyú
 
 \begin_layout Standard
 Vizsgáljunk egy súlyos dugattyúszelep által kordában tartott ideális gázt!
- A gáz részecskéinek súlya a szelep súlyához képest elhanyagolható ezért
+ A gázrészecskéinek súlya a szelep súlyához képest elhanyagolható ezért
  tekintsünk el a nehézségi erőnek a gáz részecskékre gyakorolt hatásától!
  Határozzuk meg a rendszer energiáját illetve a dugattyú pozíciójának várható
  értékét!
