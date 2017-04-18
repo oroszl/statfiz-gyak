@@ -180,7 +180,7 @@ status open
 \end_inset
 
 Határozzuk meg az általános diszperziós relációval rendelkező kvantumgázban
- a részecskék számát és az energia várható értékét! Vegyük először észre
+ a részecskék számát és az energia várható értékét! Vegyük először észre,
  hogy a kvantumos eloszlás függvényeket felírhatjuk mértani sor alakjában:
  
 \begin_inset Box Shaded
@@ -227,7 +227,7 @@ N & = & \int_{0}^{\infty}\frac{\varrho\left(E\right)}{\mathrm{e}^{\beta\left(E-\
 
 Az energia várható értékének kiszámítása a részecskék számának kiszámításával
  analóg módon történik.
- Vegyük észre hogy ha a fenti kifejezésben elvégezzük a 
+ Vegyük észre, hogy ha a fenti kifejezésben elvégezzük a 
 \begin_inset Formula $\frac{d}{\nu}\rightarrow\frac{d}{\nu}+1$
 \end_inset
 
@@ -451,7 +451,7 @@ Zérus hőmérséklet
 \begin_layout Standard
 Határozzuk meg egy három dimenziós Fermi-gáz részecskéinek és energiájának
  átlagát ha a rendszer zérus hőmérsékleten van.
- Tegyük fel hogy a diszperziós reláció 
+ Tegyük fel, hogy a diszperziós reláció 
 \begin_inset Formula 
 \begin{equation}
 \varepsilon(\vec{k})=\frac{\left|\hbar\vec{k}\right|^{2}}{2m},
@@ -501,7 +501,7 @@ reference "eq:qgaz-pv_nu_per_d"
 
 \end_inset
 
- állapotegyenletet kapjuk hogy 
+ állapotegyenletet kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
 p=\frac{2}{3}\frac{\left\langle E\right\rangle }{V}=\frac{2}{3}\times\frac{2}{5}\alpha\left(\frac{3}{2}\frac{N}{V}\frac{1}{\alpha}\right)^{5/3}.
@@ -528,7 +528,7 @@ Véges hőmérsékleten általában nem tudjuk elvégezni azokat az integráloka
 \end_layout
 
 \begin_layout Standard
-Vegyük észre hogy két dimenzióban 
+Vegyük észre, hogy két dimenzióban 
 \begin_inset Formula $d=2$
 \end_inset
 
@@ -588,7 +588,7 @@ target "https://en.wikipedia.org/wiki/Complete_Fermi%E2%80%93Dirac_integral"
 \end_layout
 
 \begin_layout Standard
-Láttuk hogy a kvantumos eloszlásfüggvényeket értelmezhetjük mértani összegként
+Láttuk, hogy a kvantumos eloszlásfüggvényeket értelmezhetjük mértani összegként
  
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -646,7 +646,7 @@ Vezető rendben vissza írva
 
 \end_inset
 
-Vegyük észre hogy mivel 
+Vegyük észre, hogy mivel 
 \begin_inset Formula $D\propto V$
 \end_inset
 
@@ -731,7 +731,7 @@ reference "eq:ultrarel-id-qgaz-N"
 
 \end_inset
 
--ből kapjuk hogy
+-ből kapjuk, hogy
 \begin_inset Formula 
 \begin{equation}
 \mathrm{e}^{\beta\mu}\approx\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{g8\pi},\label{eq:ultrarel-id-qgaz-expbetamu}
@@ -778,7 +778,7 @@ pV=\frac{1}{3}\left\langle E\right\rangle .
 
 \end_inset
 
-Kapjuk tehát hogy az ultrarelativisztikus ideális gáz állapotegyenlete magas
+Kapjuk tehát, hogy az ultrarelativisztikus ideális gáz állapotegyenlete magas
  hőmérsékleten: 
 \begin_inset Formula 
 \begin{equation}
@@ -812,11 +812,11 @@ reference "eq:ultrarel-id-qgaz-N"
 
 \end_inset
 
--ból! Kihasználva hogy 
+-ból! Kihasználva, hogy 
 \begin_inset Formula $\mathrm{e}^{\beta\mu}$
 \end_inset
 
- kicsi kapjuk hogy
+ kicsi kapjuk, hogy
 \begin_inset Formula 
 \begin{equation}
 \mathrm{e}^{\beta\mu}\approx N\frac{\left(hc\right)^{3}\beta^{3}}{g8\pi V}\left(1+\frac{\mathrm{e}^{\beta\mu}}{8}+\dots\right)
@@ -858,7 +858,7 @@ reference "eq:ultrarel-id-q-gaz-Gibbs-Duuhem-S"
 
 \end_inset
 
--be kapjuk hogy 
+-be kapjuk, hogy 
 \begin_inset Formula 
 \begin{eqnarray}
 S & = & \frac{N}{T}\left(\frac{4}{\beta}\left(1+\frac{N}{V}\frac{\left(\beta hc\right)^{3}}{128g\pi}\right)-\frac{1}{\beta}\ln\left(\frac{N\left(hc\right)^{3}\beta^{3}}{g8\pi V}\right)-\frac{N\left(hc\right)^{3}\beta^{2}}{g64\pi V}\right)\nonumber \\
@@ -894,7 +894,7 @@ reference "eq:ultrarel-id-qgaz-EpN-munelkul"
 
 \end_inset
 
--ből kapjuk hogy 
+-ből kapjuk, hogy 
 \begin_inset Formula 
 \begin{eqnarray}
 C_{V} & = & \left.\partial_{T}E\right|_{V}=\\
@@ -1180,7 +1180,7 @@ reference "eq:fermion-zerus-T-N"
 
 \end_inset
 
- kifejezések hányadosából kapjuk tehát hogy
+ kifejezések hányadosából kapjuk tehát, hogy
 \begin_inset Formula 
 \begin{eqnarray}
 1 & = & \frac{2\alpha V\left(k_{\mathrm{B}}T_{1}\right)^{3/2}}{\frac{\alpha2V}{3}\left(k_{\mathrm{B}}T_{F}\right)^{3/2}}\int_{0}^{\infty}\frac{x^{2}}{\mathrm{e}^{x^{2}}+1}\mathrm{d}x,\\
@@ -1683,12 +1683,12 @@ A kémiai potenciál viselkedése a kritikus hőmérséklet közelében
 \end_layout
 
 \begin_layout Standard
-Tudjuk hogy a kondenzációs hőmérséklet alatt a 
+Tudjuk, hogy a kondenzációs hőmérséklet alatt a 
 \begin_inset Formula $\mu$
 \end_inset
 
  kémiai potenciál értéke zérus.
- Vizsgáljuk meg hogy miként viselkedik a kémiai potenciál a kritikus hőmérséklet
+ Vizsgáljuk meg, hogy miként viselkedik a kémiai potenciál a kritikus hőmérséklet
  felett de ahhoz közeli hőmérsékleten! A vizsgálódás során szükségünk lesz
  a Bose-Einstein integrálok néhány tulajdonságára.
  Foglaljuk az alábbiakban össze ezeket.
@@ -1820,7 +1820,7 @@ Ahol kihasználtuk hogy
 \begin_inset Formula $\mu$
 \end_inset
 
--t kapjuk hogy 
+-t kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
 \mu=-k_{\mathrm{B}}T_{c}\left[\frac{3\zeta\left(\frac{3}{2}\right)}{4\sqrt{\pi}}\left(1-\frac{T_{c}}{T}\right)\right]^{2}\approx-k_{\mathrm{B}}T_{c}\left[\frac{3\zeta\left(\frac{3}{2}\right)}{4\sqrt{\pi}}\right]^{2}\left(\frac{T}{T_{c}}-1\right)^{2}
@@ -1837,7 +1837,7 @@ ahol felhasználtuk az
 \end_inset
 
  esetén igaz.
- Kapjuk tehát hogy a kémiai potenciál 
+ Kapjuk tehát, hogy a kémiai potenciál 
 \begin_inset Formula $T_{c}$
 \end_inset
 
@@ -1851,7 +1851,7 @@ Alacsony dimenziós Bose-gáz nem kondenzál
 \begin_layout Standard
 A három dimenziós nem relativisztikus Bose-gáz esetén a részecskeszám zérus
  kémiai potenciál esetén egy véges értékhez tart.
- Az ebből adódó koncepcionális paradoxon magyarázata hogy egy kritikus hőmérsékl
+ Az ebből adódó koncepcionális paradoxon magyarázata, hogy egy kritikus hőmérsékl
 et alatt a részecskék jelentős hányada a zérus impulzusú állapotba kondenzál.
  
 \end_layout
@@ -1868,7 +1868,7 @@ reference "eq:altalanos-bose-gaz-reszecskeszam"
 
 \end_inset
 
- láttuk hogy általános Bose-gáz esetén a részecskeszám 
+ láttuk, hogy általános Bose-gáz esetén a részecskeszám 
 \end_layout
 
 \begin_layout Standard
@@ -1880,7 +1880,7 @@ N=A\Gamma\left(\frac{d}{\nu}\right)\frac{\mathrm{e}^{\beta\mu}}{\beta^{\frac{d}{
 \end_inset
 
 alakot ölti.
- A kondenzációhoz szükséges általános feltétel tehát hogy az összeg véges
+ A kondenzációhoz szükséges általános feltétel tehát, hogy az összeg véges
  legyen zérus kémiai potenciál esetére! Ez a feltétel nyilván valóan teljesül
  ha 
 \begin_inset Formula $\frac{d}{\nu}>1$
