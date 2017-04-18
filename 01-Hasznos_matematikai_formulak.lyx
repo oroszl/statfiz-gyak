@@ -293,7 +293,7 @@ ax^{2} & =t^{2},\\
 
 \end_inset
 
-Kapjuk tehát hogy
+Kapjuk tehát, hogy
 \begin_inset Formula 
 \begin{equation}
 \int_{-\infty}^{\infty}\mathrm{e}^{-ax^{2}}\mathrm{d}x=\int_{-\infty}^{\infty}\mathrm{e}^{-t^{2}}\frac{\mbox{d}t}{\sqrt{a}}=\sqrt{\frac{\pi}{a}}.
@@ -324,7 +324,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Exercise
-Lássuk be hogy ha 
+Lássuk be, hogy ha 
 \begin_inset Formula $a>0$
 \end_inset
 
@@ -474,7 +474,7 @@ A Gamma-függvény:
 \end_layout
 
 \begin_layout Standard
-A fenti definíció segítségével lássuk be hogy
+A fenti definíció segítségével lássuk be, hogy
 \end_layout
 
 \begin_layout Standard
@@ -685,7 +685,7 @@ u & = & t^{1/2},\\
 
 \end_inset
 
-Így kapjuk hogy
+Így kapjuk, hogy
 \end_layout
 
 \begin_layout Standard
@@ -939,7 +939,7 @@ A kifejezésben szereplő integrál alsó határát kiterjeszthetjük
 \begin_inset Formula $-\infty$
 \end_inset
 
--ig hiszen feltettük hogy 
+-ig hiszen feltettük, hogy 
 \begin_inset Formula $n\gg1$
 \end_inset
 
@@ -1476,7 +1476,7 @@ reference "eq:suruseg2-trace-le-1"
 \end_inset
 
 .
- egyenletből megkapni, hogy mennyire tiszta az állapot.
+ egyenletből megkapni hogy mennyire tiszta az állapot.
 \end_layout
 
 \begin_layout Subsection
@@ -1644,7 +1644,7 @@ reference "eq:pauli-szorzat-szabaly"
 
 \end_inset
 
- szorzat szabályokból következik hogy: 
+ szorzat szabályokból következik, hogy: 
 \begin_inset Formula 
 \begin{align}
 \left(\vec{a}\cdot\vec{\sigma}\right)\left(\vec{b}\cdot\vec{\sigma}\right) & =a_{p}\sigma_{p}b_{q}\sigma_{q}\\
@@ -1663,7 +1663,7 @@ Mivel a Pauli-mátrixok nyoma eltűnik ezért tetszőleges lineár kombinációi
 
 \end_inset
 
-Szintén a szorzat szabályok és a nyomtalanság következménye hogy
+Szintén a szorzat szabályok és a nyomtalanság következménye, hogy
 \begin_inset Formula 
 \begin{equation}
 \mathrm{Tr}\left(\left(\vec{a}\cdot\vec{\sigma}\right)\sigma_{i}\right)=2a_{i}.
@@ -1688,7 +1688,7 @@ a=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}.
 
 \end_inset
 
-Vizsgáljuk meg hogy egy általános 
+Vizsgáljuk meg, hogy egy általános 
 \begin_inset Formula $2\times2$
 \end_inset
 
