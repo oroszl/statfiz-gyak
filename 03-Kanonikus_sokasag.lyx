@@ -262,7 +262,7 @@ reference "eq:entropia-praktice"
 
 \end_inset
 
- praktikus összefüggésből kapjuk hogy
+ praktikus összefüggésből kapjuk, hogy
 \end_layout
 
 \begin_layout Standard
@@ -330,7 +330,7 @@ u=\beta E,\quad\mbox{d}E=\frac{\mbox{d}u}{\beta},
 
 \end_inset
 
-kapjuk hogy
+kapjuk, hogy
 \begin_inset Formula 
 \begin{eqnarray}
 Z & = & \int_{0}^{\infty}A\left(N\right)\left(\frac{u}{\beta}\right)^{\alpha N}\mathrm{e}^{-u}\frac{\mbox{d}u}{\beta}=A\left(N\right)\beta^{-(\alpha N+1)}\underbrace{\int_{0}^{\infty}u^{\alpha N}\mathrm{e}^{-u}\mbox{d}u}_{\Gamma\left(\alpha N+1\right)},\\
@@ -363,7 +363,7 @@ C=\frac{\partial E}{\partial T}=k_{\mathrm{B}}(\alpha N+1).
 
 \end_inset
 
-Jól látszik tehát hogy 
+Jól látszik tehát, hogy 
 \begin_inset Formula $N\gg1$
 \end_inset
 
@@ -516,7 +516,7 @@ reference "eq:klasszik-Z"
 
 \end_inset
 
- alakját felhasználva kapjuk hogy 
+ alakját felhasználva kapjuk, hogy 
 \begin_inset Formula 
 \begin{eqnarray}
 Z & = & \frac{1}{h^{2}}\int_{0}^{2\pi}\mbox{d}\varphi\int_{0}^{\pi}\mbox{d}\vartheta\underbrace{\int_{-\infty}^{\infty}\mbox{d}p_{\vartheta}\int_{-\infty}^{\infty}\mbox{d}p_{\varphi}\mathrm{e}^{-\frac{\beta}{2\Theta}\left(p_{\vartheta}^{2}+\frac{p_{\varphi}^{2}}{\sin^{2}\vartheta}\right)}}_{\text{2 db Gauss integrál!!}},\\
@@ -680,7 +680,7 @@ Magas hőmérsékleten egy durva becslés, hogy csak azon tagokat vesszük melye
 \begin_inset Formula $1/\mathrm{e}$
 \end_inset
 
- és ezeket úgy vesszük figyelembe hogy mindegyiknek ugyanazt a súlyt adjuk!
+ és ezeket úgy vesszük figyelembe, hogy mindegyiknek ugyanazt a súlyt adjuk!
  A feltevés matematikailag a legnagyobb 
 \begin_inset Formula $l$
 \end_inset
@@ -693,7 +693,7 @@ Magas hőmérsékleten egy durva becslés, hogy csak azon tagokat vesszük melye
 
 \end_inset
 
-Ezt felhasználva kapjuk hogy 
+Ezt felhasználva kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
 Z=\sum_{l=0}^{l_{max}}\left(2l+1\right)=\left(l_{max}+1\right)^{2}\approx l_{max}^{2}=\frac{2\Theta}{\hbar^{2}\beta}.
@@ -1142,7 +1142,7 @@ E & = & \varepsilon\left(2N_{+}-N\right)\label{eq:2allapot-kanonikus-evs-nplus}
 
 \end_inset
 
-Mi a valószínűsége hogy 
+Mi a valószínűsége, hogy 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1197,7 +1197,7 @@ reference "eq:stirling-log"
 
 \end_inset
 
-kapjuk tehát hogy a legvalószínűbb állapotban a pozitív energiás részecskék
+kapjuk tehát, hogy a legvalószínűbb állapotban a pozitív energiás részecskék
  száma
 \begin_inset Formula 
 \begin{equation}
@@ -1391,7 +1391,7 @@ P(\vartheta,\varphi) & = & \frac{1}{h^{2}Z}\int_{-\infty}^{\infty}\mbox{d}p_{\va
 
 \end_inset
 
-Vegyük észre hogy 
+Vegyük észre, hogy 
 \begin_inset Formula $\mathcal{E}=0$
 \end_inset
 
@@ -1407,7 +1407,7 @@ P(\vartheta,\varphi)\mbox{d}\varphi\mbox{d}\vartheta=\frac{\sin\vartheta\mbox{d}
 
 \end_inset
 
-azaz ahogy várjuk ha a rendszerben nincs kitüntetett irány, vagy a termikus
+azaz, ahogy várjuk, ha a rendszerben nincs kitüntetett irány, vagy a termikus
  fluktuációk mindent kiátlagolnak akkor a szög szerinti eloszlás egyenletes!
 \end_layout
 
@@ -1552,7 +1552,7 @@ reference "eq:hellmann-feynman-tetel"
 
 \end_inset
 
-Vegyük észre hogy ugyan erre a kifejezésre jutottunk volna ha a várható
+Vegyük észre, hogy ugyan erre a kifejezésre jutottunk volna ha a várható
  értékek egyszerű definícióját használtuk volna: 
 \begin_inset Formula 
 \begin{equation}
@@ -1597,7 +1597,7 @@ Z=\sum_{m=-j}^{j}\mathrm{e}^{\beta\mu_{B}mB}
 
 \end_inset
 
-Vegyük észre hogy ez egy 
+Vegyük észre, hogy ez egy 
 \begin_inset CommandInset href
 LatexCommand href
 name "mértani sorozat"
@@ -1921,7 +1921,7 @@ Vizsgáljuk meg a nagy impulzusmomentum
 \end_inset
 
  határesetet, ez a klasszikus határeset.
- Vegyük észre hogy ekkor a Brillouin-függvény a Langevin-függvényre egyszerűsödi
+ Vegyük észre, hogy ekkor a Brillouin-függvény a Langevin-függvényre egyszerűsödi
 k 
 \begin_inset Formula 
 \begin{equation}
@@ -2019,7 +2019,7 @@ Mennyi a kitérés négyzet várható értéke ?
 
 \end_inset
 
-Vegyük észre hogy
+Vegyük észre, hogy
 \begin_inset Formula 
 \begin{equation}
 \partial_{\omega^{2}}Z=\frac{1}{h^{2}}\int_{-\infty}^{\infty}\left(-\frac{1}{2}\beta mr^{2}\right)\mathrm{d}\vec{p}\mathrm{d}\vec{r}\mathrm{e}^{-\beta\left[\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2}r^{2}\right]}
@@ -2257,7 +2257,7 @@ E=-\partial_{\beta}\ln Z=-\partial_{\beta}\ln\frac{1}{\beta}=k_{\mathrm{B}}T.
 
 \end_inset
 
-Vegyük észre hogy ez az eredmény összhangban van az ekvipartíció tétel kapcsán
+Vegyük észre, hogy ez az eredmény összhangban van az ekvipartíció tétel kapcsán
  tanultakkal.
  Ebben a határesetben a rendszer úgy viselkedik mint egy harmonikus oszcillátor,
  a koordináta 
@@ -2319,7 +2319,7 @@ reference "eq:modositott-bessel-kicsi-x"
 \begin_inset Formula $1$
 \end_inset
 
-) kapjuk hogy 
+) kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
 Z\approx\frac{\mathrm{e}^{-\beta mgl}}{\hbar}\sqrt{\frac{2\pi ml^{2}}{\beta}}.
@@ -2374,7 +2374,7 @@ H=\frac{p^{2}}{2m}+\frac{1}{4}\alpha x^{4}.
 
 \end_inset
 
-Vegyük észre hogy 
+Vegyük észre, hogy 
 \begin_inset Formula 
 \begin{eqnarray}
 p\partial_{p}H & = & \frac{p^{2}}{m},\\
@@ -2455,11 +2455,11 @@ Perturbációszámítás
 \end_layout
 
 \begin_layout Standard
-Sokszor előfordul hogy valamilyen ismert rendszer tulajdonságait kívánjuk
+Sokszor előfordul, hogy valamilyen ismert rendszer tulajdonságait kívánjuk
  vizsgálni egy kis változtatás, vagy zavar jelenlétében.
  Ekkor a perturbáció számítás eszköztára nyújt számunkra jól használható
  közelítő kifejezéseket.
- Vizsgáljuk meg az alábbiakban hogy általános esetben, kanonikus eloszlást
+ Vizsgáljuk meg az alábbiakban, hogy általános esetben, kanonikus eloszlást
  feltételezve, milyen kapcsolatban van egy viszonyítási alapul szolgáló
  rendszer és egy tőle kicsi 
 \begin_inset Formula $\lambda V$
@@ -2532,7 +2532,7 @@ E_{n}=E_{n}^{0}+\lambda\left\langle n\right|\hat{V}\left|n\right\rangle ,
 \end_inset
 
 szerint módosul.
- (Itt feltettük hogy az esetleges degenerált alterekben egy megfelelő unitér
+ (Itt feltettük, hogy az esetleges degenerált alterekben egy megfelelő unitér
  transzformációt elvégezve a perturbáció operátora diagonális.
  ) A pertubált rendszer állapotösszege tehát 
 \begin_inset Formula 
@@ -2561,7 +2561,7 @@ F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}T\ln Z_{0}-k_{\mathrm{B}}T\ln\left(
 
 \end_inset
 
-Kihasználva hogy 
+Kihasználva, hogy 
 \begin_inset Formula 
 \begin{equation}
 \ln(1-x)\underset{x\ll1}{\approx}-x
@@ -2827,7 +2827,7 @@ H & = & \dot{\vec{r}}\cdot\vec{p}-L,\\
 
 \end_inset
 
-Vegyük észre hogy a Coriolis-erőért felelős 
+Vegyük észre, hogy a Coriolis-erőért felelős 
 \begin_inset Formula $\vec{\omega}\times\vec{r}$
 \end_inset
 
@@ -2983,7 +2983,7 @@ reference "eq:stirling-log"
 
 \end_inset
 
- segítségével kapjuk hogy 
+ segítségével kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
 F=-k_{\mathrm{B}}T\ln Z\approx-k_{\mathrm{B}}TN\ln Z_{1}+Nk_{\mathrm{B}}T\left(\ln N-1\right).
@@ -3035,7 +3035,7 @@ reference "eq:forgo-palast-nyomas"
 
 \end_inset
 
- kifejezésével kapjuk hogy 
+ kifejezésével kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
 p(r)=n(r)k_{\mathrm{B}}T.
@@ -3128,7 +3128,7 @@ E=-\partial_{\beta}\ln Z=(N+1+3N/2+1/2)k_{\mathrm{B}}T\underset{N\gg1}{\approx}\
 
 \end_inset
 
-Kapjuk tehát hogy az állandó nyomáson az ideális gáz hőkapacitása nagyobb
+Kapjuk tehát, hogy az állandó nyomáson az ideális gáz hőkapacitása nagyobb
  mint állandó térfogaton:
 \begin_inset Formula 
 \begin{equation}
@@ -3143,7 +3143,7 @@ A dugattyú átlagos helyzetét
 
  háromféle módon fogjuk meghatározni.
  Először is az ideális gáztörvényből egy durvának tűnő de intelligens becslés
- alapján kapjuk hogy:
+ alapján kapjuk, hogy:
 \end_layout
 
 \begin_layout Standard
@@ -3174,7 +3174,7 @@ reference "eq:nehez-dugattyu-energia"
 
 \end_inset
 
- segítségével kapjuk hogy: 
+ segítségével kapjuk, hogy: 
 \begin_inset Formula 
 \begin{equation}
 E=\underbrace{\left\langle \frac{p^{2}}{2M}\right\rangle }_{\frac{1}{2}k_{\mathrm{B}}T}+Mg\left\langle X\right\rangle +\underbrace{\left\langle \sum_{i}\frac{p_{i}^{2}}{2m}\right\rangle }_{\frac{3}{2}Nk_{\mathrm{B}}T}=(N+1+3N/2+1/2)k_{\mathrm{B}}T
