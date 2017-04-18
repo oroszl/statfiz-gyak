@@ -277,7 +277,7 @@ k & = & \frac{\sqrt{2mE}}{\hbar}.
 
 \end_inset
 
-Itt feltettük hogy egy végtelen rendszert vizsgálunk.
+Itt feltettük, hogy egy végtelen rendszert vizsgálunk.
  A véges rendszer állapotait illetve spektrumát a végtelen rendszerből a
  megfelelő peremfeltételek kirovásával és azok teljesítésével kapjuk.
  Vizsgáljuk meg a két leggyakrabban tárgyalt peremfeltételt!
@@ -471,7 +471,7 @@ energia alatt lévő állapotok száma tehát
 
 \end_inset
 
-Mindkét peremfeltétel esetén teljesül tehát hogy nagy energiákra a klasszikus
+Mindkét peremfeltétel esetén teljesül tehát, hogy nagy energiákra a klasszikus
  állapotszám jó közelítése a kvantumos kifejezéseknek.
 \end_layout
 
@@ -821,7 +821,7 @@ Az oszcillátor fázistere
 
 \end_inset
 
-jól látszik hogy egy adott 
+jól látszik, hogy egy adott 
 \begin_inset Formula $E$
 \end_inset
 
@@ -925,7 +925,7 @@ amiből
 
 \end_inset
 
-Itt is látjuk hogy nagy energiákra vagy a 
+Itt is látjuk, hogy nagy energiákra vagy a 
 \begin_inset Formula $\hbar\rightarrow0$
 \end_inset
 
@@ -937,7 +937,7 @@ Egy érdekes feladat
 \end_layout
 
 \begin_layout Standard
-Mikrokanonikus sokaságot feltételezve lássuk be hogy annak a valószínűsége
+Mikrokanonikus sokaságot feltételezve lássuk be, hogy annak a valószínűsége,
  hogy egy klasszikus harmonikus oszcillátor helyzete 
 \begin_inset Formula $x$
 \end_inset
@@ -1596,7 +1596,7 @@ ami várható hiszen ekkor
 \end_inset
 
 .
- Érdemes megjegyezni hogy az entrópia energia szerinti deriváltja csak negatív
+ Érdemes megjegyezni, hogy az entrópia energia szerinti deriváltja csak negatív
  energiákra pozitív mennyiség! Pozitív energiákra viszont negatív azaz ezen
  a tartományon a hőmérséklet negatív! Ez a rendszer tehát termodinamikai
  értelemben nem 
@@ -1621,7 +1621,7 @@ Az entrópia ismeretében a hőmérséklet
 
 \end_inset
 
-Felhasználva hogy
+Felhasználva, hogy
 \begin_inset Formula 
 \begin{equation}
 \frac{\partial}{\partial x}(1+px)\ln(1+px)=p\left[\ln(1+px)+1\right],
@@ -1653,7 +1653,7 @@ A hőmérséklet, ahogy azt várjuk, intenzív mennyiség hiszen
 \end_inset
 
  függvénye.
- Érdemes megjegyezni hogy az entrópia deriváltja 
+ Érdemes megjegyezni, hogy az entrópia deriváltja 
 \begin_inset Formula $m=\pm1$
 \end_inset
 
@@ -1871,7 +1871,7 @@ Az egyenletet numerikusan megoldva
 
 \begin_layout Standard
 Vizsgáljuk meg most a rendszerből kiszemelt egy alrendszer statisztikáját.
- Mi a valószínűsége hogy az 1.
+ Mi a valószínűsége, hogy az 1.
  rendszer a 
 \begin_inset Formula $+\varepsilon$
 \end_inset
@@ -1888,7 +1888,7 @@ P_{1}^{+}=\frac{\left(N-1\right)!}{\left(N_{+}-1\right)!N_{-}!}\frac{N_{+}!N_{-}
 
 \end_inset
 
-Hasonló megfontolások alapján annak a valószínűsége hogy az 1.
+Hasonló megfontolások alapján annak a valószínűsége, hogy az 1.
  rendszer a 
 \begin_inset Formula $-\varepsilon$
 \end_inset
@@ -2001,7 +2001,7 @@ most azonban az
 \end_inset
 
  az összes gerjesztések száma.
- Figyeljük meg hogy az előző példával ellentétben az energia (adott 
+ Figyeljük meg, hogy az előző példával ellentétben az energia (adott 
 \begin_inset Formula $N$
 \end_inset
 
@@ -2010,7 +2010,7 @@ most azonban az
 \end_inset
 
  tetszőleges nem negatív egész értéket felvehetnek.
- Az állapotok számának meghatározásához vegyük észre hogy az állapotok száma
+ Az állapotok számának meghatározásához vegyük észre, hogy az állapotok száma
  adott 
 \begin_inset Formula $M$
 \end_inset
@@ -2046,7 +2046,7 @@ reference "eq:stirling-log"
 \begin_inset Formula $N-1$
 \end_inset
 
- oszcillátort vizsgálunk) kapjuk hogy az entrópia
+ oszcillátort vizsgálunk) kapjuk, hogy az entrópia
 \begin_inset Formula 
 \begin{eqnarray}
 \frac{S}{k_{\mathrm{B}}} & = & \ln\Omega(E,\delta E)\\
@@ -2113,7 +2113,7 @@ reference "eq:homerseklet"
 
 \end_inset
 
--nek megfelelően számítva kapjuk hogy
+-nek megfelelően számítva kapjuk, hogy
 \begin_inset Formula 
 \begin{eqnarray}
 \frac{1}{T} & = & \left.\frac{\partial S}{\partial E}\right|_{V,N}=\left.\frac{\partial S}{\partial M}\right|_{V,N}\underbrace{\left.\frac{\partial M}{\partial E}\right|_{V,N}}_{1/\hbar\omega}=\frac{k_{\mathrm{B}}}{\hbar\omega}\left[\ln\left(M+N\right)+1-\ln M-1\right]=\frac{k_{\mathrm{B}}}{\hbar\omega}\ln\frac{M+N}{M}\\
@@ -2127,7 +2127,7 @@ A hőmérséklet tehát
 \end_inset
 
  függvénye azaz, talán nem túl meglepő módon, intenzív mennyiség! Exponencializá
-lva ezt a kifejezést kapjuk hogy 
+lva ezt a kifejezést kapjuk, hogy 
 \begin_inset Formula 
 \begin{equation}
 \frac{\alpha+\frac{1}{2}}{\alpha-\frac{1}{2}}=\mathrm{e}^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}=\mathrm{e}^{x},\quad x=\frac{\hbar\omega}{k_{\mathrm{B}}T}.
@@ -2135,7 +2135,7 @@ lva ezt a kifejezést kapjuk hogy
 
 \end_inset
 
-Amelyből némi algebra után az energia a hőmérséklet függésére kapjuk hogy
+Amelyből némi algebra után az energia a hőmérséklet függésére kapjuk, hogy
 \begin_inset Formula 
 \begin{equation}
 \alpha=\left(\frac{1}{2}+\frac{1}{\mathrm{e}^{x}-1}\right)
