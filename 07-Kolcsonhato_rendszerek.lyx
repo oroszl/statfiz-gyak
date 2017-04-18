@@ -106,7 +106,7 @@ Z=\sum_{\left\{ S_{i}\right\} }\mathrm{e^{\kappa S_{1}S_{2}}\dots e^{\kappa S_{N
 
 \end_inset
 
-Vegyük észre hogy ha az egyik végen lévő spin-re elvégezzük az összeget
+Vegyük észre, hogy ha az egyik végen lévő spin-re elvégezzük az összeget
  akkor az a mellette lévő spin értékétől függetlenül ugyan azt a járulékot
  fogja adni! 
 \begin_inset Formula 
@@ -116,7 +116,7 @@ Vegyük észre hogy ha az egyik végen lévő spin-re elvégezzük az összeget
 
 \end_inset
 
-Kapjuk tehát hogy 
+Kapjuk tehát, hogy 
 \begin_inset Formula 
 \begin{equation}
 Z_{N}=2\cosh\kappa Z_{N-1}.
@@ -124,7 +124,7 @@ Z_{N}=2\cosh\kappa Z_{N-1}.
 
 \end_inset
 
-Figyelembe véve hogy 
+Figyelembe véve, hogy 
 \begin_inset Formula 
 \begin{equation}
 Z_{1}=2,
@@ -144,7 +144,7 @@ Határozzuk meg a rendszer korrelációs függvényét! Azaz az
 \begin_inset Formula $\left\langle S_{i}S_{j}\right\rangle $
 \end_inset
 
- várhatóértéket! Ehhez először tegyük fel hogy a 
+ várhatóértéket! Ehhez először tegyük fel, hogy a 
 \begin_inset Formula $\kappa$
 \end_inset
 
@@ -157,7 +157,7 @@ Z=2^{N}\prod_{p=1}^{N}\cosh\kappa_{p}.\label{eq:ising-chain-Z}
 
 \end_inset
 
-Az állapotösszeg definíciójából nyilvánvaló hogy 
+Az állapotösszeg definíciójából nyilvánvaló, hogy 
 \begin_inset Formula 
 \begin{equation}
 \frac{1}{Z}\frac{\partial^{n}Z}{\partial\kappa_{i}\partial\kappa_{i+1}\dots\partial\kappa_{i+n-1}}=\left\langle S_{i}\overbrace{S_{i+1}S_{i+1}}^{1}\underbrace{S_{i+2}S_{i+2}}_{1}S_{i+3}\dots S_{i+n-1}S_{i+n}\right\rangle =\left\langle S_{i}S_{i+n}\right\rangle 
@@ -165,7 +165,7 @@ Az állapotösszeg definíciójából nyilvánvaló hogy
 
 \end_inset
 
-Vegyük észre hogy tetszőleges két spin korrelációs függvénye tehát kifejezhető
+Vegyük észre, hogy tetszőleges két spin korrelációs függvénye tehát kifejezhető
  a fenti derivált segítségével! A deriváltat viszont közvetlenül is elvégezhetjü
 k az állapotösszeg 
 \begin_inset CommandInset ref
