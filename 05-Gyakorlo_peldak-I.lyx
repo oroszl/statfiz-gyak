@@ -205,7 +205,7 @@ Határozzuk meg a potenciális energia várható értékét ha a részecske egy
 \emph on
 Útmutatás: 
 \emph default
-Vegyük észre hogy a potenciál a koordináták 
+Vegyük észre, hogy a potenciál a koordináták 
 \begin_inset CommandInset href
 LatexCommand href
 name "homogén"
