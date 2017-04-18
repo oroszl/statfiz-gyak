@@ -196,7 +196,7 @@ Vizsgáljunk egy óriás abszorbens molekula és egy adott
 \end_layout
 
 \begin_layout Standard
-Határozzuk meg hogy átlagosan hány részecske van a molekulára kötve az ideális
+Határozzuk meg, hogy átlagosan hány részecske van a molekulára kötve az ideális
  gáz nyomásának és hőmérsékletének függvényében.
  Vizsgáljuk a 
 \begin_inset Formula $p\rightarrow0$
@@ -494,7 +494,7 @@ status open
 
  ahol az exponenciális függvény Taylor-sorát felismerve értékeltük ki az
  összegzést.
- Ideális gáz esetén tehát kapjuk hogy
+ Ideális gáz esetén tehát kapjuk, hogy
 \begin_inset Formula 
 \begin{equation}
 \mathcal{Z}_{\text{id.gáz}}=\mathrm{e}^{\left(Z_{1}\mathrm{e}^{\beta\mu}\right)},
@@ -558,7 +558,7 @@ reference "eq:orias-molekula-absz-atom-szam"
 
 \end_inset
 
- megkapjuk hogy a környezet nyomásától és hőmérsékletétől függően hány atom
+ megkapjuk, hogy a környezet nyomásától és hőmérsékletétől függően hány atom
  van a molekulához kötve.
  Vizsgáljuk most meg nagy és kis nyomás határesetekben hogy alakul ez a
  kifejezés! 
@@ -665,7 +665,7 @@ Vizsgáljuk meg kanonikus és nagykanonikus formalizmusban egy tapadós falú
 \end_inset
 
  kötési energiával bír.
- Tegyük fel hogy a gáz részecskéinek száma 
+ Tegyük fel, hogy a gáz részecskéinek száma 
 \begin_inset Formula $N$
 \end_inset
 
@@ -754,7 +754,7 @@ n
 
 \end_inset
 
-Kihasználva hogy 
+Kihasználva, hogy 
 \begin_inset Formula $N\gg B$
 \end_inset
 
@@ -845,7 +845,7 @@ reference "eq:nagykan-reszecskeszam"
 
 \end_inset
 
-Az előző feladatban láttuk hogy a 
+Az előző feladatban láttuk, hogy a 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -1100,7 +1100,7 @@ reference "eq:vegyes-tartaly-teljes-nyomas"
 
 \end_inset
 
--el kapjuk hogy a tartályban uralkodó nyomás, a parciális nyomások törvényének
+-el kapjuk, hogy a tartályban uralkodó nyomás, a parciális nyomások törvényének
  megfelelően
 \begin_inset Formula 
 \begin{equation}
@@ -1125,7 +1125,7 @@ Az
 
  atomok egyensúlyi eloszlását a rájuk vonatkozó kémiai potenciálok azonosságából
  is megkaphatjuk.
- Először is vegyük észre hogy a tartályban a két komponensű ideális gáz
+ Először is vegyük észre, hogy a tartályban a két komponensű ideális gáz
  állapotegyenlete egyszerűen 
 \begin_inset Formula 
 \begin{equation}
