@@ -1436,14 +1436,6 @@ ahol
 
 \end_inset
 
-
-\begin_inset Formula 
-\begin{equation}
-\psi=\sum p_{\alpha}\left|\alpha\right\rangle 
-\end{equation}
-
-\end_inset
-
 Ezekből 
 \begin_inset Formula 
 \begin{align}
@@ -1508,7 +1500,7 @@ A legegyszerűbb nem triviális kvantum rendszer két állapottal bír.
 
 \end_inset
 
-Egy általános tiszta állapot ezek lineár kombinációjaként áll elő:
+Egy általános tiszta állapot ezek lineárkombinációjaként áll elő:
 \begin_inset Formula 
 \begin{equation}
 \left|\varphi\right\rangle =a\left|\uparrow\right\rangle +b\left|\downarrow\right\rangle =\left(\begin{array}{c}
@@ -1688,6 +1680,53 @@ a=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}.
 
 \end_inset
 
+A kvantummechanikai problémák megoldásakor számos alkalommal előfordul,
+ hogy egy operátor exponenciális függvényét kell kiértékelni.
+ Két állapotú rendszer esetén az operátorok exponencializáltja zárt alakban
+ meghatározható 
+\begin_inset Formula 
+\begin{equation}
+\exp(\text{i}\alpha\left(\vec{a}\cdot\vec{\sigma}\right))=\sigma_{0}\cos\alpha+\text{i}\left(\vec{a}\cdot\vec{\sigma}\right)\sin(\alpha).\label{eq:exppauli}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Exercise
+Bizonyítsuk be 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:exppauli"
+
+\end_inset
+
+-t!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Vizsgáljuk meg, hogy egy általános 
 \begin_inset Formula $2\times2$
 \end_inset
@@ -1831,7 +1870,7 @@ A kétállapotú kvantumrendszer egy tetszőleges állapotát szokás a Bloch-g�
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left|\varphi\right\rangle =\cos\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle +\mathrm{e}^{\mathrm{i}\phi}\sin\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle .
+\left|\varphi\right\rangle =\cos\left(\frac{\theta}{2}\right)\left|\uparrow\right\rangle +\mathrm{e}^{\mathrm{i}\phi}\sin\left(\frac{\theta}{2}\right)\left|\downarrow\right\rangle .\label{eq:bloch_state}
 \end{equation}
 
 \end_inset
@@ -2091,6 +2130,176 @@ Tekintsük egy két állapotú rendszer két (
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Két kétállapotú kvantum rendszer
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg hogy milyen állapotok írhatnak le egy olyan kvantum rendszert
+ melyet két darab két állapotú rendszer alkot.
+ Gondoljunk például itt két darab lokalizált elektron spin szabadsági fokára!
+ Ekkor az első két állapotú rendszer állapotait az 
+\begin_inset Formula $\left|\uparrow\right\rangle _{1}$
+\end_inset
+
+,
+\begin_inset Formula $\left|\downarrow\right\rangle _{1}$
+\end_inset
+
+ állapotokkal jellemezhetjük míg a második rendszer leírására a
+\begin_inset Formula $\left|\uparrow\right\rangle _{2}$
+\end_inset
+
+,
+\begin_inset Formula $\left|\downarrow\right\rangle _{2}$
+\end_inset
+
+ állapotok szolgálnak bázisul.
+ A két rendszer együttes leírására természetszerűen adódik a következő négy,
+ teljes ortonormált rendszert alkotó bázis állapot:
+\begin_inset Formula 
+\begin{align}
+\left|\uparrow\right\rangle _{1}\left|\uparrow\right\rangle _{2},\ \left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2},\\
+\left|\downarrow\right\rangle _{1}\left|\uparrow\right\rangle _{2},\ \left|\downarrow\right\rangle _{1}\left|\downarrow\right\rangle _{2}.\nonumber 
+\end{align}
+
+\end_inset
+
+A 
+\begin_inset Formula $\left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2}$
+\end_inset
+
+ állapotban például az első spin felfelé míg a második lefelé áll.
+ A
+\begin_inset Formula 
+\begin{equation}
+\left|\Phi\right\rangle =\left|\vec{n}\right\rangle _{1}\left|\vec{m}\right\rangle _{2}
+\end{equation}
+
+\end_inset
+
+alakú állapotokon kívül, melyekben az összetevő rendszerek jól meghatározott
+ állapotban vannak, a kvantummechanika megengedi hogy ezen állapotok tetszőleges
+ lineáris kombinációjában legyen a rendszer.
+ Azaz lehetséges például a klasszikusan nem megengedett
+\begin_inset Formula 
+\begin{equation}
+\left|\Psi\right\rangle =\frac{\left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2}+\left|\downarrow\right\rangle _{1}\left|\uparrow\right\rangle _{2}}{\sqrt{2}}
+\end{equation}
+
+\end_inset
+
+
+\series bold
+összefonódott
+\series default
+ állapot! Figyeljük meg hogy ebben az állapotban nem tehetünk biztos kijelentést
+ a rendszer egyik rész részének az állapotáról, viszont a részrendszerek
+ kölcsönös állapotáról van információnk!
+\end_layout
+
+\begin_layout Standard
+Vizsgáljuk meg hogy a fent definiált két tiszta állapotot milyen sűrűségmátrix
+ írja le!
+\begin_inset Formula 
+\begin{align}
+\hat{\rho}_{\Phi} & =\left|\Phi\right\rangle \left\langle \Phi\right|=\left(\left|\vec{n}\right\rangle _{1}\left|\vec{m}\right\rangle _{2}\right)\left(\left\langle \vec{n}\right|_{1}\left\langle \vec{m}\right|_{2}\right)\\
+ & =\left|\vec{n}\right\rangle _{1}\left\langle \vec{n}\right|_{1}\otimes\left|\vec{m}\right\rangle _{2}\left\langle \vec{m}\right|_{2}
+\end{align}
+
+\end_inset
+
+Ahol a 
+\begin_inset Formula $\otimes$
+\end_inset
+
+ a két projektor tenzorszorzatát jelöli.
+ 
+\begin_inset Formula 
+\begin{align}
+\hat{\rho}_{\Psi}= & \frac{1}{2}\left(\left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2}+\left|\downarrow\right\rangle _{1}\left|\uparrow\right\rangle _{2}\right)\left(\left\langle \uparrow\right|_{1}\left\langle \downarrow\right|_{2}+\left\langle \downarrow\right|_{1}\left\langle \uparrow\right|_{2}\right)\\
+= & \frac{1}{2}\left(\left|\uparrow\right\rangle _{1}\left\langle \uparrow\right|_{1}\otimes\left|\downarrow\right\rangle _{2}\left\langle \downarrow\right|_{2}+\left|\uparrow\right\rangle _{1}\left\langle \downarrow\right|_{1}\otimes\left|\downarrow\right\rangle _{2}\left\langle \uparrow\right|_{2}\right.\\
+ & +\left.\left|\downarrow\right\rangle _{1}\left\langle \uparrow\right|_{1}\otimes\left|\uparrow\right\rangle _{2}\left\langle \downarrow\right|_{2}+\left|\downarrow\right\rangle _{1}\left\langle \downarrow\right|_{1}\otimes\left|\uparrow\right\rangle _{2}\left\langle \uparrow\right|_{2}\right)
+\end{align}
+
+\end_inset
+
+A sűrűségmátrix bevezetésénél láttuk, hogy egy mérés eredményének várhatóértékét
+, a mért mennyiség operátorának a sűrűségmátrixal vett szorzatának a nyoma
+ adja.
+ 
+\begin_inset Formula 
+\begin{equation}
+A=\text{Tr}\left[\hat{\rho}\hat{A}\right]
+\end{equation}
+
+\end_inset
+
+Ha egy több részrendszerből álló rendszeren végzünk méréseket akkor sokszor
+ ezen mérés egy rész rendszerre korlátozódik.
+ Ekkor célszerű bevezetni egy részrendszer sűrűségmátrixát melyet a teljes
+ sűrűségmátrix részleges nyoma adja az alábbiak szerint.
+ 
+\begin_inset Formula 
+\begin{equation}
+\hat{\rho}_{1}=\text{Tr}_{2}\left[\hat{\rho}\right],\ \hat{\rho}_{2}=\text{Tr}_{1}\left[\hat{\rho}\right]
+\end{equation}
+
+\end_inset
+
+ahol 
+\begin_inset Formula 
+\begin{equation}
+\text{Tr}_{2}\left[\hat{A}\otimes\hat{B}\right]=\text{Tr}\left[\hat{B}\right]\hat{A},\ \text{Tr}_{2}\left[\hat{A}\otimes\hat{B}\right]=\text{Tr}\left[\hat{A}\right]\hat{B}.
+\end{equation}
+
+\end_inset
+
+Vizsgáljuk meg 
+\begin_inset Formula $\hat{\rho}_{\Phi}$
+\end_inset
+
+-ből és 
+\begin_inset Formula $\hat{\rho}_{\Psi}$
+\end_inset
+
+ -ből előálló effektív sűrűségmátrixokat ha a második részrendszerre kiátlagolun
+k.
+ 
+\begin_inset Formula 
+\begin{align}
+\hat{\rho}_{\Phi1} & =\text{Tr}_{2}\left(\left|\vec{n}\right\rangle _{1}\left\langle \vec{n}\right|_{1}\otimes\left|\vec{m}\right\rangle _{2}\left\langle \vec{m}\right|_{2}\right)\\
+ & =\left|\vec{n}\right\rangle _{1}\left\langle \vec{n}\right|_{1}\text{Tr}\left(\left|\vec{m}\right\rangle _{2}\left\langle \vec{m}\right|_{2}\right)\\
+ & =\left|\vec{n}\right\rangle _{1}\left\langle \vec{n}\right|_{1}
+\end{align}
+
+\end_inset
+
+Ebben az esetben tehát a részrendszert leíró effektív sűrűségmátrix egy
+ tiszta rendszer sűrűség mátrixa!
+\begin_inset Formula 
+\begin{align}
+\hat{\rho}_{\Psi1} & =\frac{1}{2}\text{Tr}_{2}\left[\left|\uparrow\right\rangle _{1}\left\langle \uparrow\right|_{1}\otimes\left|\downarrow\right\rangle _{2}\left\langle \downarrow\right|_{2}+\left|\downarrow\right\rangle _{1}\left\langle \downarrow\right|_{1}\otimes\left|\uparrow\right\rangle _{2}\left\langle \uparrow\right|_{2}\right]\\
+ & =\frac{1}{2}\left[\left|\uparrow\right\rangle _{1}\left\langle \uparrow\right|_{1}+\left|\downarrow\right\rangle _{1}\left\langle \downarrow\right|_{1}\right].
+\end{align}
+
+\end_inset
+
+ahol kihasználtuk hogy 
+\begin_inset Formula $\text{Tr}\left[\left|\downarrow\right\rangle \left\langle \uparrow\right|\right]=0$
+\end_inset
+
+.
+ Vegyük észre hogy ebben az esetben a kapott redukált sűrűségmátrix egy
+ teljesen kevert rendszer sűrűségmátrixa! 
+\end_layout
+
+\begin_layout Standard
+Az összefonódott tiszta állapotok ezen tulajdonságát, miszerint a belőlük
+ származtatott redukált sűrűségmátrixok kevert rendszerek sűrűségmátrixát
+ adják szokás általában is az összefonódás mértékével kapcsolatba hozni.
 \end_layout
 
 \end_body
