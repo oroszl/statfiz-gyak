@@ -2100,7 +2100,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Exercise
 Tekintsük egy két állapotú rendszer két (
@@ -2161,7 +2161,7 @@ Vizsgáljuk meg hogy milyen állapotok írhatnak le egy olyan kvantum rendszert
  teljes ortonormált rendszert alkotó bázis állapot:
 \begin_inset Formula 
 \begin{align}
-\left|\uparrow\right\rangle _{1}\left|\uparrow\right\rangle _{2},\ \left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2},\\
+\left|\uparrow\right\rangle _{1}\left|\uparrow\right\rangle _{2},\ \left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2},\label{eq:two_qbit_product_basis}\\
 \left|\downarrow\right\rangle _{1}\left|\uparrow\right\rangle _{2},\ \left|\downarrow\right\rangle _{1}\left|\downarrow\right\rangle _{2}.\nonumber 
 \end{align}
 
@@ -2238,7 +2238,7 @@ A=\text{Tr}\left[\hat{\rho}\hat{A}\right]
 \end_inset
 
 Ha egy több részrendszerből álló rendszeren végzünk méréseket akkor sokszor
- ezen mérés egy rész rendszerre korlátozódik.
+ ezen mérés egy részrendszerre korlátozódik.
  Ekkor célszerű bevezetni egy részrendszer sűrűségmátrixát melyet a teljes
  sűrűségmátrix részleges nyoma adja az alábbiak szerint.
  
@@ -2265,8 +2265,7 @@ Vizsgáljuk meg
 \begin_inset Formula $\hat{\rho}_{\Psi}$
 \end_inset
 
- -ből előálló effektív sűrűségmátrixokat ha a második részrendszerre kiátlagolun
-k.
+ -ből előálló az első részrendszert leíró effektív sűrűségmátrixokat.
  
 \begin_inset Formula 
 \begin{align}
@@ -2300,6 +2299,101 @@ ahol kihasználtuk hogy
 Az összefonódott tiszta állapotok ezen tulajdonságát, miszerint a belőlük
  származtatott redukált sűrűségmátrixok kevert rendszerek sűrűségmátrixát
  adják szokás általában is az összefonódás mértékével kapcsolatba hozni.
+\end_layout
+
+\begin_layout Standard
+Felmerül a kérdés, hogy lehetséges-e valamilyen módon összefonódott állapotokat
+ előállítani olyan állapotokból melyek eredetileg nem voltak összefonódva.
+ A válasz igen! Vizsgáljuk meg például az alábbi unitér operátort:
+\begin_inset Formula 
+\begin{align}
+\hat{U}_{CNOT} & =\left|\uparrow\right\rangle _{1}\left\langle \uparrow\right|_{1}\otimes\left|\uparrow\right\rangle _{2}\left\langle \uparrow\right|_{2}+\left|\uparrow\right\rangle _{1}\left\langle \uparrow\right|_{1}\otimes\left|\downarrow\right\rangle _{2}\left\langle \downarrow\right|_{2}\\
+ & +\left|\downarrow\right\rangle _{1}\left\langle \downarrow\right|_{1}\otimes\left|\uparrow\right\rangle _{2}\left\langle \downarrow\right|_{2}+\left|\downarrow\right\rangle _{1}\left\langle \downarrow\right|_{1}\otimes\left|\downarrow\right\rangle _{2}\left\langle \uparrow\right|_{2}\nonumber 
+\end{align}
+
+\end_inset
+
+Ez az operátor az első spin állapotától függően billenti a második állapotot.
+ Ha az első spin felfelé mutatott akkor a másodikat békén hagyja, ellenkező
+ esetben a második spin fordul! Tekintsük ezen operátor hatását a következő
+ állapotra
+\begin_inset Formula 
+\begin{equation}
+\left|\Phi\right\rangle _{xz}=\frac{1}{\sqrt{2}}(\left|\uparrow\right\rangle _{1}+\left|\downarrow\right\rangle _{1})\left|\downarrow\right\rangle _{2}.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\hat{U}_{CNOT}\left|\Phi\right\rangle _{xz}=\frac{1}{\sqrt{2}}(\left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2}+\left|\downarrow\right\rangle _{1}\left|\uparrow\right\rangle _{2})
+\end{equation}
+
+\end_inset
+
+A kapott állapot éppen az a teljesen összefont állapot melyet korábban vizsgáltu
+nk!
+\end_layout
+
+\begin_layout Standard
+Összefonódott állapotokat a szorzat alakban előálló állapotokhoz hasonlóan
+ (például 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:two_qbit_product_basis"
+
+\end_inset
+
+) használhatunk két kétállapotú rendszert leíró Hilbert-tér bázisául is.
+ 
+\begin_inset Formula 
+\begin{align}
+\left|\Phi^{\pm}\right\rangle  & =\frac{1}{\sqrt{2}}(\left|\uparrow\right\rangle _{1}\left|\uparrow\right\rangle _{2}\pm\left|\downarrow\right\rangle _{1}\left|\downarrow\right\rangle _{2})\label{eq:two_qbit_bell_basis}\\
+\left|\Psi^{\pm}\right\rangle  & =\frac{1}{\sqrt{2}}(\left|\uparrow\right\rangle _{1}\left|\downarrow\right\rangle _{2}\pm\left|\downarrow\right\rangle _{1}\left|\uparrow\right\rangle _{2})
+\end{align}
+
+\end_inset
+
+
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Exercise
+Bizonyítsuk be a következő algebrai összefüggést három darab kétállapotú
+ rendszerre vonatkozólag:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula 
+\begin{align}
+\left(\alpha\left|\uparrow\right\rangle _{1}+\beta\left|\downarrow\right\rangle _{1}\right)\left|\Phi^{\pm}\right\rangle _{23} & =\frac{1}{2}\left[\left|\Phi^{+}\right\rangle _{12}\left(\alpha\left|\uparrow\right\rangle _{3}+\beta\left|\downarrow\right\rangle _{3}\right)+\left|\Phi^{-}\right\rangle _{12}\left(\alpha\left|\uparrow\right\rangle _{3}-\beta\left|\downarrow\right\rangle _{3}\right)\right.\\
+ & \left.\left|\Psi^{+}\right\rangle _{12}\left(\beta\left|\uparrow\right\rangle _{3}+\alpha\left|\downarrow\right\rangle _{3}\right)+\left|\Psi^{-}\right\rangle _{12}\left(\beta\left|\uparrow\right\rangle _{3}-\alpha\left|\downarrow\right\rangle _{3}\right)\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
